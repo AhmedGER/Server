@@ -1,0 +1,10 @@
+{
+  "name": "Minecraft Server",
+  "image": "mcr.microsoft.com/devcontainers/java:16",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "chmod +x start.sh && nohup ./start.sh &",
+  "forwardPorts": [25565],
+  "remoteUser": "codespace"
+}
