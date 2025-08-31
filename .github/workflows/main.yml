@@ -1,0 +1,32 @@
+name: Minecraft Server Keep Alive
+
+on:
+  workflow_dispatch:  # تشغيل يدوي
+  schedule:
+    - cron: "0 * * * *" # يشتغل كل ساعة
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: "16"
+          distribution: "temurin"
+
+      - name: Run Minecraft Server
+        run: |
+          nohup java -Xmx16G -Xms12G -jar server.jar --nogui > server.log 2>&1 &
+
+      - name: Keep Alive Ping
+        run: |
+          for i in {1..60}; do
+            echo "Pinging to keep alive... $i"
+            curl -s https://google.com > /dev/null
+            sleep 60
+          done
