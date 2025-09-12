@@ -1,32 +1,95 @@
-name: Minecraft Server Keep Alive
+name: Minecraft Server
 
 on:
-  workflow_dispatch:  # تشغيل يدوي
+  workflow_dispatch:
   schedule:
-    - cron: "0 * * * *" # يشتغل كل ساعة
+    - cron: "0 * * * *"   # يعمل restart كل ساعة
 
 jobs:
-  keep-alive:
+  build:
     runs-on: ubuntu-latest
-
     steps:
+      # 1- Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
-      - name: Setup Java
+      # 2- Setup Git user (علشان نعمل push للتغييرات)
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+
+      # 3- Setup Java 16
+      - name: Setup Java 16
         uses: actions/setup-java@v3
         with:
-          java-version: "16"
-          distribution: "temurin"
+          distribution: 'temurin'
+          java-version: '16'
 
+      # 4- Download Paper 1.16.5
+      - name: Download PaperMC
+        run: |
+          mkdir -p server
+          cd server
+          if [ ! -f server.jar ]; then
+            curl -L -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+          fi
+
+      # 5- Setup configs + plugins
+      - name: Setup server configs and plugins
+        run: |
+          cd server
+          echo "eula=true" > eula.txt
+          echo "online-mode=false" > server.properties
+          echo "motd=Sigma's GitHub Server" >> server.properties
+          echo "max-players=20" >> server.properties
+
+          # انسخ الـ plugins من repo لو موجودة
+          mkdir -p plugins
+          cp -r ../plugins/* ./plugins/ || true
+
+      # 6- Setup Playit Tunnel
+      - name: Setup Playit Tunnel
+        run: |
+          cd server
+          curl -L https://playit-cloud.github.io/cli/playit-linux-amd64 -o playit
+          chmod +x playit
+          if [ -f playit.toml ]; then
+            echo "✅ Using saved Playit config"
+            ./playit --config playit.toml &
+          else
+            echo "⚠️ First time setup - check logs for registration link!"
+            ./playit &
+          fi
+          sleep 10
+
+      # 7- Run Minecraft Server with autorestart
       - name: Run Minecraft Server
         run: |
-          nohup java -Xmx16G -Xms12G -jar server.jar --nogui > server.log 2>&1 &
-
-      - name: Keep Alive Ping
-        run: |
-          for i in {1..60}; do
-            echo "Pinging to keep alive... $i"
-            curl -s https://google.com > /dev/null
-            sleep 60
+          cd server
+          while true; do
+            echo "🚀 Starting Minecraft server..."
+            java -Xmx16G -Xms12G -jar server.jar --nogui
+            echo "🔄 Restarting in 60 minutes..."
+            sleep 3600
           done
+
+      # 8- Save world + configs + playit.toml + plugins
+      - name: Save server data
+        if: always()
+        run: |
+          cd server
+          cp -r world ../world || true
+          cp -r world_nether ../world_nether || true
+          cp -r world_the_end ../world_the_end || true
+          cp -r plugins ../plugins || true
+          cp server.properties ../ || true
+          cp playit.toml ../ || true
+          cp eula.txt ../ || true
+
+          cd ..
+          git add .
+          git commit -m "Auto-save server data & plugins [skip ci]" || echo "No changes to commit"
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
