@@ -37,7 +37,7 @@ jobs:
             curl -L -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           fi
 
-      # 5- Setup configs + plugins
+      # 5- Setup configs + plugins (include Playit)
       - name: Setup server configs and plugins
         run: |
           cd server
@@ -50,22 +50,10 @@ jobs:
           mkdir -p plugins
           cp -r ../plugins/* ./plugins/ || true
 
-      # 6- Setup Playit Tunnel
-      - name: Setup Playit Tunnel
-        run: |
-          cd server
-          curl -L https://playit-cloud.github.io/cli/playit-linux-amd64 -o playit
-          chmod +x playit
-          if [ -f playit.toml ]; then
-            echo "✅ Using saved Playit config"
-            ./playit --config playit.toml &
-          else
-            echo "⚠️ First time setup - check logs for registration link!"
-            ./playit &
-          fi
-          sleep 10
+          # نزّل Playit plugin تلقائيًا
+          curl -L -o plugins/playit-minecraft-plugin-1.16.jar https://github.com/playit-cloud/playit-minecraft-plugin/releases/download/v0.1.4/playit-minecraft-plugin-1.16.jar
 
-      # 7- Run Minecraft Server with autorestart
+      # 6- Run Minecraft Server with autorestart
       - name: Run Minecraft Server
         run: |
           cd server
@@ -76,7 +64,7 @@ jobs:
             sleep 3600
           done
 
-      # 8- Save world + configs + playit.toml + plugins
+      # 7- Save world + configs + plugins
       - name: Save server data
         if: always()
         run: |
@@ -86,7 +74,6 @@ jobs:
           cp -r world_the_end ../world_the_end || true
           cp -r plugins ../plugins || true
           cp server.properties ../ || true
-          cp playit.toml ../ || true
           cp eula.txt ../ || true
 
           cd ..
