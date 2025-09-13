@@ -1,11 +1,12 @@
-name: Minecraft Server Test
+name: Minecraft Server
 
 on:
-  workflow_dispatch:  # تشغيل يدوي
+  workflow_dispatch:
 
 jobs:
-  run-server:
+  server-loop:
     runs-on: ubuntu-latest
+    timeout-minutes: 3600   # أقصى مدة (مثلاً ساعة) للـ job، ممكن تزودها لو عايز
 
     steps:
       - name: Checkout repo
@@ -17,48 +18,47 @@ jobs:
           distribution: temurin
           java-version: 16
 
-      - name: Install expect
-        run: sudo apt-get update && sudo apt-get install -y expect
+      - name: Install expect & curl
+        run: sudo apt-get update && sudo apt-get install -y expect curl
 
-      - name: Run server with auto-stop after 15 minutes
+      - name: Start Infinite Loop
         run: |
-          cat > run-server.exp <<'EOF'
-          #!/usr/bin/expect -f
-          set timeout 900        ;# 900 ثانية = 15 دقيقة
-          spawn java -Xmx16G -Xms12G -jar server.jar --nogui
-          expect {
-            timeout { send "stop\r" }
-          }
-          expect eof
-          EOF
-          chmod +x run-server.exp
-          ./run-server.exp
+          while true
+          do
+            echo "===== Starting new server cycle ====="
 
-      # 🟢 حفظ العوالم
-      - name: Upload Worlds
-        uses: actions/upload-artifact@v4
-        with:
-          name: worlds-backup
-          path: |
-            world
-            world_nether
-            world_the_end
+            # تحميل Paper
+            curl -o server.jar \
+            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      # 🟢 حفظ الـ Plugins
-      - name: Upload Plugins
-        uses: actions/upload-artifact@v4
-        with:
-          name: plugins-backup
-          path: plugins
+            # تشغيل السيرفر 15 دقيقة وبعدين stop
+            cat > run-server.exp <<'EOF'
+            #!/usr/bin/expect -f
+            set timeout 900
+            spawn java -Xmx4G -Xms2G -jar server.jar --nogui
+            expect {
+              timeout { send "stop\r" }
+            }
+            expect eof
+            EOF
+            chmod +x run-server.exp
+            ./run-server.exp
 
-      # 🟢 حفظ ملفات تانية مهمة (configs, logs, إلخ)
-      - name: Upload Configs and Logs
-        uses: actions/upload-artifact@v4
-        with:
-          name: configs-logs-backup
-          path: |
-            server.properties
-            bukkit.yml
-            spigot.yml
-            paper.yml
-            logs
+            echo "===== Server stopped, starting backup ====="
+
+            # حفظ worlds
+            tar -czf worlds-$(date +%s).tar.gz world world_nether world_the_end || true
+
+            # حفظ plugins
+            tar -czf plugins-$(date +%s).tar.gz plugins || true
+
+            # حفظ configs
+            tar -czf configs-$(date +%s).tar.gz server.properties bukkit.yml spigot.yml paper.yml logs || true
+
+            # رفع النسخ (Release)
+            gh release create "backup-$(date +%s)" \
+              worlds-*.tar.gz plugins-*.tar.gz configs-*.tar.gz \
+              --generate-notes || true
+
+            echo "===== Cycle finished, restarting loop ====="
+          done
