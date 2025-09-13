@@ -52,7 +52,7 @@ jobs:
           mkdir -p saved/config
           cp eula.txt server.properties saved/config/ || true
 
-      # 🔼 Push التغييرات
+      # 🔼 Commit & Push التغييرات باستخدام التوكن بشكل صحيح
       - name: Commit & Push changes
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
@@ -61,7 +61,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add saved/ || true
           git commit -m "⏺️ Auto-save worlds, plugins, and configs" || true
-          git push https://x-access-token:${GH_PAT}@github.com/AhmedGER/Server.git HEAD:main
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/AhmedGER/Server.git
+          git push origin HEAD:main
 
       # 🔁 Relaunch workflow
       - name: Relaunch workflow
