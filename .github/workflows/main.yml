@@ -6,68 +6,59 @@ on:
 jobs:
   run-server:
     runs-on: ubuntu-latest
-
     steps:
-      # 1️⃣ Checkout repo
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      # 2️⃣ Setup Java 16
-      - name: Setup Java
+      - name: Set up Java 16
         uses: actions/setup-java@v3
         with:
           distribution: temurin
           java-version: 16
 
-      # 3️⃣ Download Paper
-      - name: Download Paper 1.16.5
+      - name: Download PaperMC
         run: |
           curl -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      # 4️⃣ Accept EULA & configure properties
-      - name: Configure Server Files
+      - name: Accept EULA and set server.properties
         run: |
           echo "eula=true" > eula.txt
-          echo "online-mode=false" >> server.properties
-          echo "max-players=20" >> server.properties
-          echo "motd=SIGMA Server" >> server.properties
+          echo "online-mode=false" > server.properties
 
-      # 5️⃣ Run server (15 min then stop)
-      - name: Run Server
+      - name: Run server (5 min then stop)
         run: |
-          timeout 15m bash -c "java -Xmx16G -Xms12G -jar server.jar --nogui" || true
+          timeout 5m java -Xmx16G -Xms12G -jar server.jar --nogui || true
+          echo "stop" >> server.log
 
-      # 6️⃣ Save Worlds
-      - name: Save Worlds
+      # 🗂️ حفظ العوالم
+      - name: Save worlds
         run: |
           mkdir -p saved/worlds
-          cp -r world* saved/worlds/ || true
+          cp -r world world_nether world_the_end saved/worlds/ || true
 
-      # 7️⃣ Save Plugins
-      - name: Save Plugins
+      # 🛠️ حفظ الـ Plugins
+      - name: Save plugins
         run: |
           mkdir -p saved/plugins
           cp -r plugins/* saved/plugins/ || true
 
-      # 8️⃣ Save Other important files
-      - name: Save Configs and Properties
+      # 📦 حفظ أي ملفات مهمة تانية
+      - name: Save configs and properties
         run: |
-          mkdir -p saved/configs
-          cp eula.txt server.properties saved/configs/ || true
+          mkdir -p saved/config
+          cp eula.txt server.properties saved/config/ || true
 
-      # 9️⃣ Commit & Push changes
-      - name: Commit & Push
+      # 🔼 Push التغييرات
+      - name: Commit & Push changes
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add saved/*
-          git commit -m "Auto-save server data"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add saved/ || true
+          git commit -m "⏺️ Auto-save worlds, plugins, and configs" || true
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/AhmedGER/Server.git HEAD:main
 
-      # 🔁 Relaunch Workflow
-      - name: Relaunch Workflow
+      # 🔁 Relaunch workflow
+      - name: Relaunch workflow
         run: |
           echo "♻️ Relaunching workflow..."
           gh workflow run "Minecraft Server Loop"
