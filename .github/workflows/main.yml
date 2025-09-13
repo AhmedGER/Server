@@ -10,7 +10,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # 🛠️ تثبيت GitHub CLI في الأعلى
       - name: Install GitHub CLI
         run: sudo apt-get update && sudo apt-get install -y gh
 
@@ -34,40 +33,32 @@ jobs:
           timeout 5m java -Xmx16G -Xms12G -jar server.jar --nogui || true
           echo "stop" >> server.log
 
-      # 🗂️ حفظ العوالم
       - name: Save worlds
         run: |
           mkdir -p saved/worlds
           cp -r world world_nether world_the_end saved/worlds/ || true
 
-      # 🛠️ حفظ الـ Plugins
       - name: Save plugins
         run: |
           mkdir -p saved/plugins
           cp -r plugins/* saved/plugins/ || true
 
-      # 📦 حفظ أي ملفات مهمة تانية
       - name: Save configs and properties
         run: |
           mkdir -p saved/config
           cp eula.txt server.properties saved/config/ || true
 
-      # 🔼 Commit & Push التغييرات باستخدام التوكن بشكل صحيح
       - name: Commit & Push changes
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add saved/ || true
           git commit -m "⏺️ Auto-save worlds, plugins, and configs" || true
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/AhmedGER/Server.git
+          git remote set-url origin https://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@github.com/AhmedGER/Server.git
           git push origin HEAD:main
 
-      # 🔁 Relaunch workflow
       - name: Relaunch workflow
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           echo "♻️ Relaunching workflow..."
+          echo $'machine github.com\n  login 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' > ~/.netrc
           gh workflow run "Minecraft Server Loop" --repo AhmedGER/Server
