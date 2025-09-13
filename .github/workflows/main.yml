@@ -2,82 +2,74 @@ name: Minecraft Server Loop
 
 on:
   workflow_dispatch:
-  push:
 
 jobs:
   run-server:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
-      - name: Setup Java 16
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup Java 16
+      - name: Setup Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '16'
+          distribution: temurin
+          java-version: 16
 
-      - name: Download PaperMC
+      # 3️⃣ Download Paper
+      - name: Download Paper 1.16.5
         run: |
           curl -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: Accept EULA + server.properties
+      # 4️⃣ Accept EULA & configure properties
+      - name: Configure Server Files
         run: |
           echo "eula=true" > eula.txt
           echo "online-mode=false" >> server.properties
-          echo "server-port=25565" >> server.properties
+          echo "max-players=20" >> server.properties
+          echo "motd=SIGMA Server" >> server.properties
 
-      - name: Run Minecraft Server (15 min)
+      # 5️⃣ Run server (15 min then stop)
+      - name: Run Server
         run: |
-          java -Xmx16G -Xms12G -jar server.jar --nogui &
-          SERVER_PID=$!
-          echo "Server started with PID $SERVER_PID"
-          sleep 900
-          echo "stop" > stop.txt
-          kill $SERVER_PID || true
-          wait $SERVER_PID || true
+          timeout 15m bash -c "java -Xmx16G -Xms12G -jar server.jar --nogui" || true
 
-      # -------------------- حفظ الملفات --------------------
-
+      # 6️⃣ Save Worlds
       - name: Save Worlds
         run: |
-          echo "📂 Listing worlds before saving:"
-          ls -R world* || true
-        shell: bash
-      - uses: actions/upload-artifact@v4
-        with:
-          name: worlds-backup
-          path: |
-            world
-            world_nether
-            world_the_end
+          mkdir -p saved/worlds
+          cp -r world* saved/worlds/ || true
 
+      # 7️⃣ Save Plugins
       - name: Save Plugins
         run: |
-          echo "📂 Listing plugins before saving:"
-          ls -R plugins || true
-        shell: bash
-      - uses: actions/upload-artifact@v4
-        with:
-          name: plugins-backup
-          path: plugins
+          mkdir -p saved/plugins
+          cp -r plugins/* saved/plugins/ || true
 
-      - name: Save Configs
+      # 8️⃣ Save Other important files
+      - name: Save Configs and Properties
         run: |
-          echo "📂 Listing configs before saving:"
-          ls -R *.properties eula.txt || true
-        shell: bash
-      - uses: actions/upload-artifact@v4
-        with:
-          name: configs-backup
-          path: |
-            *.properties
-            eula.txt
+          mkdir -p saved/configs
+          cp eula.txt server.properties saved/configs/ || true
 
-      # -------------------- Loop --------------------
+      # 9️⃣ Commit & Push changes
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add saved/*
+          git commit -m "Auto-save server data"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+      # 🔁 Relaunch Workflow
       - name: Relaunch Workflow
         run: |
           echo "♻️ Relaunching workflow..."
           gh workflow run "Minecraft Server Loop"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
