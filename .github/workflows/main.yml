@@ -1,12 +1,12 @@
-name: Infinite Minecraft Server
+name: Minecraft Server Backup
 
 on:
   workflow_dispatch:
 
 jobs:
-  server-loop:
+  minecraft:
     runs-on: ubuntu-latest
-    timeout-minutes: 3600
+    timeout-minutes: 120
 
     steps:
       - name: Checkout repo
@@ -18,58 +18,48 @@ jobs:
           distribution: temurin
           java-version: 16
 
-      - name: Install tools
-        run: sudo apt-get update && sudo apt-get install -y expect curl
-
-      - name: Run Infinite Loop
+      - name: Run Paper Server
         run: |
-          while true
-          do
-            echo "===== Starting new server cycle ====="
+          # تحميل Paper jar
+          curl -L -o server.jar https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-            # تحميل Paper
-            curl -L -o server.jar \
-            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+          # سكربت expect لتشغيل السيرفر لمدة 15 دقيقة
+          cat > run-server.exp <<'EOF'
+          #!/usr/bin/expect -f
+          set timeout 900
+          spawn java -Xmx16G -Xms12G -jar server.jar --nogui
+          expect {
+            timeout { send "stop\r" }
+          }
+          expect eof
+          EOF
 
-            # سكربت expect لتشغيل السيرفر ووقفه بعد 15 دقيقة
-            cat > run-server.exp <<'EOF'
-            #!/usr/bin/expect -f
-            set timeout 900
-            spawn java -Xmx16G -Xms12G -jar server.jar --nogui
-            expect {
-              timeout { send "stop\r" }
-            }
-            expect eof
-            EOF
-            chmod +x run-server.exp
-            ./run-server.exp
+          chmod +x run-server.exp
+          ./run-server.exp
 
-            echo "===== Server stopped, will backup in next steps ====="
-            break
-          done
-
-      - name: Backup Worlds
-        run: |
-          tar -czf worlds-$(date +%s).tar.gz world world_nether world_the_end || true
-
-      - name: Backup Plugins
-        run: |
-          tar -czf plugins-$(date +%s).tar.gz plugins || true
-
-      - name: Backup Configs
-        run: |
-          tar -czf configs-$(date +%s).tar.gz server.properties bukkit.yml spigot.yml paper.yml logs || true
-
-      - name: Upload Backups
+      - name: Save Worlds
         uses: actions/upload-artifact@v4
         with:
-          name: server-backups
+          name: worlds-backup
           path: |
-            worlds-*.tar.gz
-            plugins-*.tar.gz
-            configs-*.tar.gz
+            world
+            world_nether
+            world_the_end
 
-      - name: Restart Loop
-        run: |
-          echo "===== Restarting loop ====="
-          gh workflow run Infinite-Minecraft-Server
+      - name: Save Plugins
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugins-backup
+          path: plugins
+
+      - name: Save Configs and Others
+        uses: actions/upload-artifact@v4
+        with:
+          name: configs-backup
+          path: |
+            server.properties
+            eula.txt
+            whitelist.json
+            ops.json
+            banned-players.json
+            banned-ips.json
