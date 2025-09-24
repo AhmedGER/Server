@@ -1,4 +1,4 @@
-name: Minecraft Server First Login
+name: Minecraft Server First Login (Generate Credentials)
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Python & PyDrive
         run: |
@@ -47,14 +47,14 @@ jobs:
           if not os.path.exists("credentials.json"):
               gauth.LocalWebserverAuth()
               gauth.SaveCredentialsFile("credentials.json")
-              print("✅ credentials.json generated")
+              print("✅ credentials.json generated and saved")
           else:
               print("⚡ credentials.json already exists")
           PY
 
       - name: Upload credentials.json as artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: credentials
           path: credentials.json
