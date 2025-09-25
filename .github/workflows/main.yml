@@ -1,4 +1,4 @@
-name: Service Account Drive Test
+name: 🚀 Google Drive Test
 
 on:
   workflow_dispatch:
@@ -7,47 +7,37 @@ jobs:
   test-drive:
     runs-on: ubuntu-latest
     steps:
-      - name: 📥 Checkout repo
-        uses: actions/checkout@v4
+      - name: 🛎️ Checkout repo
+        uses: actions/checkout@v3
 
-      # STEP 1: Check if service_account.json exists
-      - name: 🔍 Step 1 - Check service_account.json exists
+      - name: 📦 Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+
+      - name: 🔍 Check if service_account.json exists
         run: |
           if [ -f "service_account.json" ]; then
-            echo "✅ Found service_account.json"
+            echo "✅ service_account.json found!"
           else
-            echo "❌ service_account.json not found"
+            echo "❌ service_account.json NOT found!"
             exit 1
           fi
 
-      # STEP 2: Print private key
-      - name: 🔑 Step 2 - Print private key
+      - name: 🔑 Print private key
+        run: |
+          cat service_account.json | jq -r .private_key
+
+      - name: ✅ Validate JSON
         run: |
           python3 - <<'PY'
           import json
           with open("service_account.json") as f:
               data = json.load(f)
-          print("✅ client_email:", data.get("client_email"))
-          print("✅ project_id:", data.get("project_id"))
-          print("🔑 private_key:\n", data.get("private_key"))
+          print("✅ JSON is valid")
           PY
 
-      # STEP 3: Validate JSON
-      - name: ✅ Step 3 - Validate JSON
-        run: |
-          python3 - <<'PY'
-          import json, sys
-          try:
-              with open("service_account.json") as f:
-                  data = json.load(f)
-              print("✅ JSON is valid")
-          except Exception as e:
-              print("❌ JSON Error:", e)
-              sys.exit(1)
-          PY
-
-      # STEP 4: Authenticate with Google
-      - name: 🔐 Step 4 - Authenticate with Google
+      - name: 🔐 Authenticate with Google
         run: |
           python3 - <<'PY'
           from google.oauth2 import service_account
@@ -61,115 +51,20 @@ jobs:
           print("✅ Authenticated as:", about["user"]["displayName"], "-", about["user"]["emailAddress"])
           PY
 
-      # STEP 5 (NEW): Create folder
-      - name: 📁 Step 5 - Create folder
+      - name: 📂 Create folder in Google Drive
         run: |
           python3 - <<'PY'
           from google.oauth2 import service_account
           from googleapiclient.discovery import build
-          import sys
 
-          try:
-              scopes = ["https://www.googleapis.com/auth/drive"]
-              creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-              service = build("drive", "v3", credentials=creds, cache_discovery=False)
+          scopes = ["https://www.googleapis.com/auth/drive"]
+          creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
+          service = build("drive", "v3", credentials=creds, cache_discovery=False)
 
-              folder_metadata = {
-                  "name": "SIGMA_test_folder",
-                  "mimeType": "application/vnd.google-apps.folder"
-              }
-              folder = service.files().create(body=folder_metadata, fields="id, name").execute()
-              folder_id = folder.get("id")
-              print("✅ Folder created:", folder.get("name"))
-              print("📁 Folder ID:", folder_id)
-              with open("folder_id.txt", "w") as f:
-                  f.write(folder_id)
-          except Exception as e:
-              print("❌ Failed to create folder:", e)
-              sys.exit(1)
-          PY
-
-      # STEP 6: Upload test file
-      - name: ⬆️ Step 6 - Upload test file
-        run: |
-          echo "Hello SIGMA 🚀" > test_upload.txt
-          python3 - <<'PY'
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaFileUpload
-          import sys
-
-          try:
-              folder_id = open("folder_id.txt").read().strip()
-              scopes = ["https://www.googleapis.com/auth/drive"]
-              creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-              service = build("drive", "v3", credentials=creds, cache_discovery=False)
-
-              file_metadata = {
-                  "name": "test_upload.txt",
-                  "parents": [folder_id]
-              }
-              media = MediaFileUpload("test_upload.txt", mimetype="text/plain")
-              uploaded = service.files().create(body=file_metadata, media_body=media, fields="id, name, size").execute()
-              print("⬆️ Uploaded:", uploaded.get("name"), "ID:", uploaded.get("id"), "Size:", uploaded.get("size"))
-              with open("uploaded_id.txt", "w") as f:
-                  f.write(uploaded.get("id"))
-          except Exception as e:
-              print("❌ Upload failed:", e)
-              sys.exit(1)
-          PY
-
-      # STEP 7: List folder contents
-      - name: 📂 Step 7 - List folder contents
-        run: |
-          python3 - <<'PY'
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          import sys
-
-          try:
-              folder_id = open("folder_id.txt").read().strip()
-              scopes = ["https://www.googleapis.com/auth/drive"]
-              creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-              service = build("drive", "v3", credentials=creds, cache_discovery=False)
-
-              query = f"'{folder_id}' in parents"
-              res = service.files().list(q=query, pageSize=50, fields="files(id,name,mimeType,size)").execute()
-              items = res.get("files", [])
-              if not items:
-                  print("⚠️ Folder empty.")
-              else:
-                  print("✅ Folder contents:")
-                  for it in items:
-                      print(f"- {it.get('name')} (id={it.get('id')}, mime={it.get('mimeType')}, size={it.get('size')})")
-          except Exception as e:
-              print("❌ Failed to list folder contents:", e)
-              sys.exit(1)
-          PY
-
-      # STEP 8: Download test file
-      - name: ⬇️ Step 8 - Download test file
-        run: |
-          python3 - <<'PY'
-          import io, sys
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaIoBaseDownload
-
-          try:
-              file_id = open("uploaded_id.txt").read().strip()
-              creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=["https://www.googleapis.com/auth/drive"])
-              service = build("drive", "v3", credentials=creds, cache_discovery=False)
-              request = service.files().get_media(fileId=file_id)
-              fh = io.BytesIO()
-              downloader = MediaIoBaseDownload(fh, request)
-              done = False
-              while not done:
-                  status, done = downloader.next_chunk()
-              data = fh.getvalue()
-              print("⬇️ Downloaded bytes:", len(data))
-              print("📖 Content:\n", data.decode('utf-8', errors='replace'))
-          except Exception as e:
-              print("❌ Download failed:", e)
-              sys.exit(1)
+          folder_metadata = {
+              "name": "WorkflowTestFolder",
+              "mimeType": "application/vnd.google-apps.folder"
+          }
+          folder = service.files().create(body=folder_metadata, fields="id").execute()
+          print("📂 Folder created with ID:", folder.get("id"))
           PY
