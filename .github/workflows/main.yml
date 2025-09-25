@@ -1,10 +1,10 @@
-name: 🚀 Google Drive Test
+name: 🚀 Google Drive Workflow
 
 on:
   workflow_dispatch:
 
 jobs:
-  test-drive:
+  google-drive-test:
     runs-on: ubuntu-latest
     steps:
       - name: 🛎️ Checkout repo
@@ -13,31 +13,39 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client jq
 
-      - name: 🔍 Check if service_account.json exists
+      # 1️⃣ يشوف service_account.json
+      - name: 🔍 Step 1 - Check if service_account.json exists
         run: |
           if [ -f "service_account.json" ]; then
-            echo "✅ service_account.json found!"
+            echo "✅ Found service_account.json"
           else
-            echo "❌ service_account.json NOT found!"
+            echo "❌ File not found!"
             exit 1
           fi
 
-      - name: 🔑 Print private key
+      # 2️⃣ يطبع الـ private key
+      - name: 🔑 Step 2 - Print private key
         run: |
           cat service_account.json | jq -r .private_key
 
-      - name: ✅ Validate JSON
+      # 3️⃣ يتأكد إن JSON سليم
+      - name: ✅ Step 3 - Validate JSON
         run: |
           python3 - <<'PY'
           import json
-          with open("service_account.json") as f:
-              data = json.load(f)
-          print("✅ JSON is valid")
+          try:
+              with open("service_account.json") as f:
+                  data = json.load(f)
+              print("✅ JSON is valid")
+          except Exception as e:
+              print("❌ JSON Error:", e)
+              exit(1)
           PY
 
-      - name: 🔐 Authenticate with Google
+      # 4️⃣ يتأكد إنه يقدر يتصل بـ Google
+      - name: 🔐 Step 4 - Authenticate with Google
         run: |
           python3 - <<'PY'
           from google.oauth2 import service_account
@@ -51,7 +59,8 @@ jobs:
           print("✅ Authenticated as:", about["user"]["displayName"], "-", about["user"]["emailAddress"])
           PY
 
-      - name: 📂 Create folder in Google Drive
+      # 5️⃣ بدل قراءة الملفات → يعمل فولدر
+      - name: 📂 Step 5 - Create folder in Google Drive
         run: |
           python3 - <<'PY'
           from google.oauth2 import service_account
