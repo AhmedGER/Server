@@ -45,7 +45,9 @@ jobs:
           gauth.LoadClientConfigFile("client_secrets.json")
 
           if not os.path.exists("credentials.json"):
-              gauth.LocalWebserverAuth()
+              print("⚡ No credentials.json found → starting CommandLineAuth()")
+              print("👉 هيتعرضلك لينك في اللوجز → افتحه من التابلت وسجّل دخول")
+              gauth.CommandLineAuth()   # 👈 بيطبع لينك للوجز بدل ما يفتح متصفح
               gauth.SaveCredentialsFile("credentials.json")
               print("✅ credentials.json generated and saved")
           else:
