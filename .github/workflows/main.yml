@@ -1,4 +1,4 @@
-name: Validate & Test service_account.json (repo)
+name: Validate & Test service_account
 
 on:
   workflow_dispatch:
