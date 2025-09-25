@@ -1,19 +1,19 @@
-name: Test Service Account JSON
+name: Test Google Drive Connection
 
 on:
   workflow_dispatch:
 
 jobs:
-  validate-json:
+  test-drive:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Show repo files
+      - name: Install dependencies
         run: |
-          echo "📂 Listing repo files..."
-          ls -R
+          python3 -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
       - name: Validate service_account.json
         run: |
@@ -29,4 +29,28 @@ jobs:
           except Exception as e:
               print("❌ JSON Error:", e)
               exit(1)
+          PY
+
+      - name: Test Google Drive Access
+        run: |
+          echo "🌐 Connecting to Google Drive..."
+          python3 - <<'PY'
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+
+          SCOPES = ["https://www.googleapis.com/auth/drive.metadata.readonly"]
+          creds = service_account.Credentials.from_service_account_file(
+              "service_account.json", scopes=SCOPES
+          )
+          service = build("drive", "v3", credentials=creds)
+
+          results = service.files().list(pageSize=5, fields="files(id, name)").execute()
+          items = results.get("files", [])
+
+          if not items:
+              print("⚠️ No files found.")
+          else:
+              print("✅ Files from Google Drive:")
+              for item in items:
+                  print(f" - {item['name']} ({item['id']})")
           PY
