@@ -1,115 +1,43 @@
-name: Google Drive Service Account Full Test
+name: Test Google Service Account
 
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # تقدر تشغله يدوي من GitHub Actions
 
 jobs:
-  test-drive:
+  test-service-account:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Install Python Google API client
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.12"
+
+      - name: Save service account JSON
         run: |
-          sudo apt-get update
-          sudo apt-get install -y python3 python3-pip
-          pip3 install --upgrade google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
+          echo "$SERVICE_ACCOUNT_JSON" > service_account.json
 
-      - name: Write service_account.json from secret
-        run: echo '${{ secrets.SERVICE_ACCOUNT_JSON }}' > service_account.json
+      - name: Install dependencies
+        run: |
+          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
 
-      - name: Create test file
-        run: echo "Hello SIGMA from GitHub Actions 🚀" > test.txt
-
-      - name: Upload -> Download -> List -> Delete uploaded file -> Upload artifact
+      - name: Test authentication
         run: |
           python3 - <<'PY'
-          import io, sys, time
           from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
-          from googleapiclient.errors import HttpError
+          import json
 
-          SERVICE_ACCOUNT_FILE = "service_account.json"
-          SCOPES = ["https://www.googleapis.com/auth/drive"]
-          FOLDER_ID = "191AWhGPc0j--SFCDnUPSG1sFDCr-CauX"
+          # Load the service account file
+          creds = service_account.Credentials.from_service_account_file(
+              "service_account.json",
+              scopes=["https://www.googleapis.com/auth/drive.metadata.readonly"],
+          )
 
-          try:
-              creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-              drive = build("drive", "v3", credentials=creds)
-          except Exception as e:
-              print("❌ Failed to load credentials or build Drive client:", e)
-              sys.exit(2)
-
-          uploaded_id = None
-          try:
-              # Upload test.txt
-              print("➡️ Uploading test.txt ...")
-              file_metadata = {"name": "test.txt", "parents": [FOLDER_ID]}
-              media = MediaFileUpload("test.txt", resumable=True)
-              res = drive.files().create(body=file_metadata, media_body=media, fields="id", supportsAllDrives=True).execute()
-              uploaded_id = res.get("id")
-              print("✅ Uploaded file ID:", uploaded_id)
-          except HttpError as e:
-              print("❌ Upload failed:", e)
-              sys.exit(3)
-
-          try:
-              # Download uploaded file
-              print("⬇️ Downloading uploaded file...")
-              request = drive.files().get_media(fileId=uploaded_id)
-              fh = io.FileIO("downloaded_test.txt", "wb")
-              downloader = MediaIoBaseDownload(fh, request)
-              done = False
-              while not done:
-                  status, done = downloader.next_chunk()
-              print("✅ Downloaded as downloaded_test.txt")
-          except HttpError as e:
-              print("❌ Download failed:", e)
-              sys.exit(4)
-
-          try:
-              # List files in folder
-              print("\\n📂 Listing files in folder (name - id):")
-              page_token = None
-              all_files = []
-              while True:
-                  resp = drive.files().list(
-                      q=f"'{FOLDER_ID}' in parents and trashed=false",
-                      fields="nextPageToken, files(id, name)",
-                      supportsAllDrives=True,
-                      includeItemsFromAllDrives=True,
-                      pageToken=page_token
-                  ).execute()
-                  files = resp.get("files", [])
-                  for f in files:
-                      print(f"- {f.get('name')} (ID: {f.get('id')})")
-                      all_files.append(f)
-                  page_token = resp.get("nextPageToken", None)
-                  if not page_token:
-                      break
-          except HttpError as e:
-              print("❌ Listing failed:", e)
-              sys.exit(5)
-
-          try:
-              # Delete the uploaded test file to keep folder clean
-              if uploaded_id:
-                  print("\\n🗑️ Deleting the uploaded test file to clean up...")
-                  drive.files().delete(fileId=uploaded_id, supportsAllDrives=True).execute()
-                  print("✅ Deleted uploaded file ID:", uploaded_id)
-              else:
-                  print("⚠️ No uploaded_id to delete")
-          except HttpError as e:
-              print("❌ Delete failed:", e)
-              # Not fatal; continue to upload artifact
-
-          # Exit 0 successful
+          print("✅ Authenticated successfully!")
+          print("Service Account Email:", creds.service_account_email)
           PY
-
-      - name: Upload downloaded_test.txt as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: downloaded_test
-          path: downloaded_test.txt
+        env:
+          SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
