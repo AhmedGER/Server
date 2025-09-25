@@ -1,43 +1,35 @@
-name: Test Google Service Account
+name: Temp Test GCP Key
 
 on:
-  workflow_dispatch:  # تقدر تشغله يدوي من GitHub Actions
+  workflow_dispatch:
 
 jobs:
   test-service-account:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Put service account file
+        run: |
+          echo '${{ secrets.DUMMY_JSON }}' > service_account.json
+          echo "✅ File created"
+
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.12"
 
-      - name: Save service account JSON
-        run: |
-          echo "$SERVICE_ACCOUNT_JSON" > service_account.json
+      - name: Install deps
+        run: pip install google-auth google-api-python-client
 
-      - name: Install dependencies
-        run: |
-          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client
-
-      - name: Test authentication
+      - name: Test Google Auth
         run: |
           python3 - <<'PY'
           from google.oauth2 import service_account
-          import json
-
-          # Load the service account file
           creds = service_account.Credentials.from_service_account_file(
               "service_account.json",
               scopes=["https://www.googleapis.com/auth/drive.metadata.readonly"],
           )
-
-          print("✅ Authenticated successfully!")
-          print("Service Account Email:", creds.service_account_email)
+          print("✅ Works, Service Account:", creds.service_account_email)
           PY
-        env:
-          SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
