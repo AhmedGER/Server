@@ -1,4 +1,4 @@
-name: Validate & Test service_account
+name: Validate & Test services
 
 on:
   workflow_dispatch:
