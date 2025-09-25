@@ -1,62 +1,94 @@
-name: Minecraft Server First Login (Generate Credentials)
+name: Google Drive Service Account Test
 
 on:
   workflow_dispatch:
 
 jobs:
-  auth:
+  test-drive:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Install Python & PyDrive
+      - name: Install Python Google API client
         run: |
           sudo apt-get update
           sudo apt-get install -y python3 python3-pip
-          pip3 install PyDrive
+          pip3 install google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
 
-      - name: Create client_secrets.json (نوع web)
+      - name: Create service_account.json
         run: |
-          cat > client_secrets.json <<'JSON'
+          cat > service_account.json <<'JSON'
           {
-            "web": {
-              "client_id": "1075710372669-cbfkadsv6bih8svdr61nc2ckvp2p64tv.apps.googleusercontent.com",
-              "project_id": "server-472112",
-              "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-              "token_uri": "https://oauth2.googleapis.com/token",
-              "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-              "client_secret": "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",
-              "redirect_uris": [
-                "http://localhost:8080/",
-                "http://127.0.0.1:8080/"
-              ]
-            }
+            "type": "service_account",
+            "project_id": "server-472112",
+            "private_key_id": "fb0ef84bf8e4d48004641d0a4b5d239e14102ea0",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmNvhMcLykkaVs\n...\n-----END PRIVATE KEY-----\n",
+            "client_email": "server@server-472112.iam.gserviceaccount.com",
+            "client_id": "113111949371572393714",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://oauth2.googleapis.com/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/server%40server-472112.iam.gserviceaccount.com",
+            "universe_domain": "googleapis.com"
           }
           JSON
 
-      - name: Run OAuth to generate credentials.json
+      - name: Create test file
+        run: echo "Hello SIGMA from GitHub Actions 🚀" > test.txt
+
+      - name: Upload + Download + List files
         run: |
           python3 - <<'PY'
-          from pydrive.auth import GoogleAuth
-          import os
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
+          from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
+          import io
 
-          gauth = GoogleAuth()
-          gauth.LoadClientConfigFile("client_secrets.json")
+          SERVICE_ACCOUNT_FILE = "service_account.json"
+          SCOPES = ["https://www.googleapis.com/auth/drive"]
+          FOLDER_ID = "191AWhGPc0j--SFCDnUPSG1sFDCr-CauX"
 
-          if not os.path.exists("credentials.json"):
-              print("⚡ No credentials.json found → starting CommandLineAuth()")
-              print("👉 هيتعرضلك لينك في اللوجز → افتحه من التابلت وسجّل دخول")
-              gauth.CommandLineAuth()   # 👈 بيطبع لينك للوجز بدل ما يفتح متصفح
-              gauth.SaveCredentialsFile("credentials.json")
-              print("✅ credentials.json generated and saved")
-          else:
-              print("⚡ credentials.json already exists")
+          creds = service_account.Credentials.from_service_account_file(
+              SERVICE_ACCOUNT_FILE, scopes=SCOPES
+          )
+          drive = build("drive", "v3", credentials=creds)
+
+          # رفع الملف
+          file_metadata = {"name": "test.txt", "parents": [FOLDER_ID]}
+          media = MediaFileUpload("test.txt", resumable=True)
+          uploaded = drive.files().create(
+              body=file_metadata,
+              media_body=media,
+              fields="id",
+              supportsAllDrives=True
+          ).execute()
+          file_id = uploaded.get("id")
+          print("✅ Uploaded file ID:", file_id)
+
+          # تنزيل الملف
+          request = drive.files().get_media(fileId=file_id)
+          fh = io.FileIO("downloaded_test.txt", "wb")
+          downloader = MediaIoBaseDownload(fh, request)
+          done = False
+          while not done:
+              status, done = downloader.next_chunk()
+          print("⬇️ Downloaded file as downloaded_test.txt")
+
+          # لستة كل الملفات الموجودة
+          print("\\n📂 Files currently in the folder:")
+          results = drive.files().list(
+              q=f"'{FOLDER_ID}' in parents and trashed=false",
+              fields="files(id, name)",
+              supportsAllDrives=True,
+              includeItemsFromAllDrives=True
+          ).execute()
+          for f in results.get("files", []):
+              print(f"- {f['name']} (ID: {f['id']})")
           PY
 
-      - name: Upload credentials.json as artifact
-        if: always()
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: credentials
-          path: credentials.json
+          name: downloaded_test
+          path: downloaded_test.txt
