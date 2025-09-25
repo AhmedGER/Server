@@ -1,23 +1,21 @@
-name: Test GCP JSON
+name: Test Service Account JSON
 
 on:
   workflow_dispatch:
 
 jobs:
-  test:
+  validate-json:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Step 1 - Write and Show JSON
+      - name: Show repo files
         run: |
-          echo "📝 Writing DUMMY_JSON to service_account.json..."
-          echo "$DUMMY_JSON" > service_account.json
-          echo "📂 Content of service_account.json:"
-          cat service_account.json
+          echo "📂 Listing repo files..."
+          ls -R
 
-      - name: Step 2 - Validate JSON
+      - name: Validate service_account.json
         run: |
           echo "🔍 Checking JSON structure..."
           python3 - <<'PY'
