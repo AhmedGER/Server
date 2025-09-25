@@ -1,78 +1,34 @@
-name: Test Google Drive Full
+name: Test GCP JSON
 
 on:
   workflow_dispatch:
 
 jobs:
-  test-drive:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install google-auth google-auth-httplib2 google-api-python-client
-
-      - name: Write service account key from Secret
+      - name: Step 1 - Write and Show JSON
         run: |
+          echo "📝 Writing DUMMY_JSON to service_account.json..."
           echo "$DUMMY_JSON" > service_account.json
-          echo "✅ JSON file created"
-        shell: bash
+          echo "📂 Content of service_account.json:"
+          cat service_account.json
 
-      - name: Create test file
-        run: echo "Hello SIGMA 🚀" > test.txt
-
-      - name: Test Google Drive (Upload + List + Download)
+      - name: Step 2 - Validate JSON
         run: |
+          echo "🔍 Checking JSON structure..."
           python3 - <<'PY'
-          import io
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-          from googleapiclient.http import MediaFileUpload, MediaIoBaseDownload
-
-          # Load creds
-          creds = service_account.Credentials.from_service_account_file(
-              "service_account.json",
-              scopes=["https://www.googleapis.com/auth/drive"],
-          )
-          service = build("drive", "v3", credentials=creds)
-          print("✅ Authenticated as:", creds.service_account_email)
-
-          # Upload file
-          file_metadata = {"name": "test.txt"}
-          media = MediaFileUpload("test.txt", mimetype="text/plain")
-          uploaded = service.files().create(body=file_metadata, media_body=media, fields="id, name, size").execute()
-          file_id = uploaded["id"]
-          print(f"⬆️ Uploaded: {uploaded['name']} (ID: {file_id}, Size: {uploaded.get('size', 'N/A')})")
-
-          # List 5 files
-          results = service.files().list(pageSize=5, fields="files(id, name, size)").execute()
-          items = results.get("files", [])
-          if not items:
-              print("📂 No files found.")
-          else:
-              print("📂 Files in Drive:")
-              for item in items:
-                  print(f"  {item['name']} (ID: {item['id']}, Size: {item.get('size', 'N/A')})")
-
-          # Download file
-          request = service.files().get_media(fileId=file_id)
-          fh = io.FileIO("downloaded.txt", "wb")
-          downloader = MediaIoBaseDownload(fh, request)
-          done = False
-          while not done:
-              status, done = downloader.next_chunk()
-          print(f"⬇️ Downloaded file as downloaded.txt")
-
-          # Show downloaded content
-          with open("downloaded.txt", "r") as f:
-              print("📖 Downloaded content:", f.read())
+          import json
+          try:
+              with open("service_account.json") as f:
+                  data = json.load(f)
+              print("✅ JSON loaded successfully")
+              print("client_email:", data.get("client_email"))
+              print("project_id:", data.get("project_id"))
+          except Exception as e:
+              print("❌ JSON Error:", e)
+              exit(1)
           PY
-
-      - name: Clean up
-        run: rm service_account.json test.txt downloaded.txt
