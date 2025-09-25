@@ -1,203 +1,86 @@
-name: Validate & Test services
+name: Test Google Service Account
 
 on:
   workflow_dispatch:
 
 jobs:
-  validate-and-test:
+  test-service-account:
     runs-on: ubuntu-latest
+
     steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
 
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install Python deps
+      # 1️⃣ تأكد أن الملف موجود
+      - name: 🔍 Step 1 - Check if service_account.json exists
         run: |
-          python -m pip install --upgrade pip
-          pip install google-api-python-client google-auth google-auth-httplib2 google-auth-oauthlib
-        shell: bash
-
-      # STEP 1: Ensure file exists (and show basic info)
-      - name: Step 1 - Confirm file presence
-        run: |
-          echo "🔎 Step 1: Checking for service_account.json in repo..."
-          if [ -f service_account.json ]; then
-            echo "✅ service_account.json FOUND"
-            echo "📏 file size (bytes): $(wc -c < service_account.json)"
-            echo "📁 file perm & timestamp:"
-            ls -l --time-style=full-iso service_account.json || true
+          if [ -f "service_account.json" ]; then
+            echo "✅ service_account.json found!"
+            ls -l service_account.json
           else
-            echo "❌ service_account.json NOT FOUND in repo root. Make sure it's at repo root."
+            echo "❌ service_account.json not found!"
             exit 1
           fi
-        shell: bash
 
-      # STEP 2: Show a redacted private_key + fingerprint (NOT full key)
-      - name: Step 2 - Show private_key fingerprint & redacted preview
+      # 2️⃣ اطبع الـ private_key بالكامل
+      - name: 🔑 Step 2 - Print private key
         run: |
-          echo "🔐 Step 2: Extracting private_key (redacted) + SHA256 fingerprint..."
-          if [ ! -f service_account.json ]; then
-            echo "❌ service_account.json missing"
-            exit 1
-          fi
-
+          echo "🔑 Extracting private_key..."
           python3 - <<'PY'
-import json, hashlib, sys
+          import json
+          with open("service_account.json") as f:
+              data = json.load(f)
+          print("✅ private_key:")
+          print(data["private_key"])
+          PY
 
-try:
-    d = json.load(open("service_account.json"))
-except Exception as e:
-    print("❌ Failed to parse JSON:", e)
-    sys.exit(1)
-
-pk = d.get("private_key")
-if not pk:
-    print("❌ private_key field not found in JSON")
-    sys.exit(1)
-
-# Normalize: if the file contains literal "\n" sequences, convert them to newlines
-if "\\n" in pk and "\n" not in pk:
-    pk_norm = pk.replace("\\n", "\n")
-else:
-    pk_norm = pk
-
-# Compute SHA256 fingerprint of the raw private key bytes
-sha256 = hashlib.sha256(pk_norm.encode("utf-8")).hexdigest()
-print("✅ private_key SHA256 (fingerprint):", sha256)
-
-# Print a redacted preview: first & last 80 chars (safe check)
-start = pk_norm[:80].replace("\n","\\n")
-end = pk_norm[-80:].replace("\n","\\n")
-print("🔎 private_key preview (start):", repr(start))
-print("🔎 private_key preview (end)  :", repr(end))
-
-# If you really want full key printed (DANGEROUS), uncomment the following:
-# print("\\n*** FULL PRIVATE KEY (UNSAFE) ***\\n")
-# print(pk_norm)
-PY
-        shell: bash
-
-      # STEP 3: Validate JSON structure and important fields
-      - name: Step 3 - Validate JSON structure
+      # 3️⃣ تحقق أن JSON سليم
+      - name: ✅ Step 3 - Validate JSON structure
         run: |
-          echo "🔍 Step 3: Validating JSON structure and core fields..."
-          if [ ! -f service_account.json ]; then
-            echo "❌ service_account.json missing"
-            exit 1
-          fi
-
           python3 - <<'PY'
-import json, sys
-try:
-    j = json.load(open("service_account.json"))
-    print("✅ JSON parsed OK")
-    print("client_email:", j.get("client_email"))
-    print("client_id   :", j.get("client_id"))
-    print("project_id  :", j.get("project_id"))
-    # basic checks
-    required = ["type","private_key","client_email","token_uri"]
-    missing = [k for k in required if k not in j]
-    if missing:
-        print("❌ Missing required fields:", missing)
-        sys.exit(2)
-    if j.get("type") != "service_account":
-        print("❌ type != service_account (value: {})".format(j.get("type")))
-        sys.exit(3)
-except Exception as e:
-    print("❌ JSON validation error:", e)
-    sys.exit(1)
-PY
-        shell: bash
+          import json
+          try:
+              with open("service_account.json") as f:
+                  data = json.load(f)
+              print("✅ JSON loaded successfully")
+              print("client_email:", data.get("client_email"))
+              print("project_id:", data.get("project_id"))
+          except Exception as e:
+              print("❌ JSON Error:", e)
+              exit(1)
+          PY
 
-      # STEP 4: Try authenticating with Google (Auth test)
-      - name: Step 4 - Try authenticating with Google (no Drive actions yet)
+      # 4️⃣ جرب الاتصال بـ Google
+      - name: 🌍 Step 4 - Authenticate with Google
         run: |
-          echo "🌐 Step 4: Attempting to create Credentials (authenticate)..."
-          if [ ! -f service_account.json ]; then
-            echo "❌ service_account.json missing"
-            exit 1
-          fi
-
+          pip install google-auth google-auth-oauthlib google-api-python-client
           python3 - <<'PY'
-from google.oauth2 import service_account
-import sys
-try:
-    scopes = ["https://www.googleapis.com/auth/drive.metadata.readonly"]
-    creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-    print("✅ Credentials created. service_account_email:", getattr(creds, "service_account_email", "<unknown>"))
-except Exception as e:
-    print("❌ Authentication failed:", type(e).__name__, e)
-    sys.exit(1)
-PY
-        shell: bash
+          from google.oauth2 import service_account
+          creds = service_account.Credentials.from_service_account_file(
+              "service_account.json",
+              scopes=["https://www.googleapis.com/auth/drive.metadata.readonly"],
+          )
+          print("✅ Authenticated, Service Account:", creds.service_account_email)
+          PY
 
-      # STEP 5: Access Drive - list & (optionally) download first non-Google-Doc file
-      - name: Step 5 - Check Drive access and list files (read test)
+      # 5️⃣ اقرأ الملفات من Google Drive
+      - name: 📂 Step 5 - List Google Drive files
         run: |
-          echo "📂 Step 5: Listing files visible to the service account (and attempt a safe download of first file if possible)..."
-          if [ ! -f service_account.json ]; then
-            echo "❌ service_account.json missing"
-            exit 1
-          fi
-
           python3 - <<'PY'
-import io, sys
-from google.oauth2 import service_account
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
+          from google.oauth2 import service_account
+          from googleapiclient.discovery import build
 
-try:
-    scopes = ["https://www.googleapis.com/auth/drive"]
-    creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-    service = build("drive", "v3", credentials=creds, cache_discovery=False)
-
-    res = service.files().list(pageSize=10, fields="files(id,name,size,mimeType)").execute()
-    items = res.get("files", [])
-    if not items:
-        print("⚠️ No files visible to this service account (maybe nothing shared to it).")
-        sys.exit(0)
-    print("✅ Files visible (up to 10):")
-    for i, it in enumerate(items, start=1):
-        print(f"{i}. {it.get('name')} (id={it.get('id')}, size={it.get('size')}, mime={it.get('mimeType')})")
-
-    # Try safe download of the first file if it's not a Google Docs type
-    first = items[0]
-    mime = first.get("mimeType","")
-    if mime.startswith("application/vnd.google-apps"):
-        print("ℹ️ First file is a Google Docs file (cannot download raw). Skipping download.")
-    else:
-        fid = first.get("id")
-        print("⬇️ Attempting to download first file (id=%s) to 'downloaded_first' (only first 512 bytes will be shown)..." % fid)
-        request = service.files().get_media(fileId=fid)
-        fh = io.BytesIO()
-        downloader = MediaIoBaseDownload(fh, request)
-        done = False
-        while not done:
-            status, done = downloader.next_chunk()
-        data = fh.getvalue()
-        print("📥 Downloaded bytes:", len(data))
-        snippet = data[:512]
-        try:
-            print("📖 Snippet (utf-8 attempt):")
-            print(snippet.decode('utf-8', errors='replace'))
-        except Exception:
-            print("📖 Snippet (base64):")
-            import base64
-            print(base64.b64encode(snippet).decode())
-except Exception as e:
-    print("❌ Drive access or API error:", type(e).__name__, e)
-    sys.exit(1)
-PY
-        shell: bash
-
-      - name: Clean up (optional)
-        if: always()
-        run: |
-          echo "🧹 Cleaning temporary files (if any)"
-          rm -f service_account.json downloaded_first || true
-        shell: bash
+          creds = service_account.Credentials.from_service_account_file(
+              "service_account.json",
+              scopes=["https://www.googleapis.com/auth/drive.metadata.readonly"],
+          )
+          service = build("drive", "v3", credentials=creds)
+          results = service.files().list(pageSize=5, fields="files(id, name)").execute()
+          items = results.get("files", [])
+          if not items:
+              print("❌ No files found.")
+          else:
+              print("✅ Files found in Drive:")
+              for item in items:
+                  print(f"- {item['name']} ({item['id']})")
+          PY
