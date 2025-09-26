@@ -1,15 +1,17 @@
-name: Minecraft Server 5-min Test (Java 16 + plugins)
+name: Minecraft Infinite Loop (5.5h + save + retrigger)
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'   # fallback لو حصل أي شيء
 
 jobs:
-  test-run:
+  server:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 350      # 5.5 ساعة + هوامش
 
     steps:
-      - name: Checkout repo (includes plugins/)
+      - name: Checkout repo (world + plugins)
         uses: actions/checkout@v4
 
       - name: Set up Java 16
@@ -28,7 +30,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libjemalloc-dev
 
-      - name: Start server (5 min only)
+      - name: Start server (5.5h)
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -51,16 +53,28 @@ jobs:
           -XX:G1HeapWastePercent=5 \
           -jar server.jar --nogui &
           SERVER_PID=$!
-          echo $! > server.pid
-          sleep 300          # 5 دقائق
+          echo $SERVER_PID > server.pid
+          sleep 19800          # 5.5 ساعة
           echo "Stopping server..."
           kill $SERVER_PID
           wait $SERVER_PID || true
 
-      - name: Commit world + plugins (if changed)
+      - name: Commit & push world + plugins
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
           git add world/ plugins/ || true
-          git commit -m "Test save $(date -u)" || exit 0
+          git commit -m "Auto-save world+plugins $(date -u)" || exit 0
           git push
+
+  retrigger:
+    needs: server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait 30s cooldown
+        run: sleep 30
+
+      - name: Retrigger same workflow
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: gh workflow run minecraft-loop.yml
