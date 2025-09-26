@@ -1,0 +1,80 @@
+name: Minecraft Infinite Loop (5.5h + save + retrigger)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'   # fallback لو حصل أي شيء
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350      # 5.5 ساعة + هوامش
+
+    steps:
+      - name: Checkout repo (world + plugins)
+        uses: actions/checkout@v4
+
+      - name: Set up Java 16
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '16'
+
+      - name: Download Paper 1.16.5
+        run: |
+          curl -L -o server.jar \
+          https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+
+      - name: Install performance libs
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libjemalloc-dev
+
+      - name: Start server (5.5h)
+        run: |
+          export MALLOC_ARENA_MAX=2
+          export MALLOC_MMAP_THRESHOLD_=131072
+          export MALLOC_TRIM_THRESHOLD_=131072
+          export MALLOC_TOP_PAD_=131072
+          export MALLOC_TEMP_THRESHOLD_=0
+          export MALLOC_ARENA_TESTRATE=4
+          export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
+
+          java -Xmx16G -Xms12G \
+          -XX:+UseG1GC \
+          -XX:+ParallelRefProcEnabled \
+          -XX:MaxGCPauseMillis=200 \
+          -XX:+UnlockExperimentalVMOptions \
+          -XX:+DisableExplicitGC \
+          -XX:G1NewSizePercent=30 \
+          -XX:G1MaxNewSizePercent=40 \
+          -XX:G1HeapRegionSize=8M \
+          -XX:G1ReservePercent=20 \
+          -XX:G1HeapWastePercent=5 \
+          -jar server.jar --nogui &
+          SERVER_PID=$!
+          echo $SERVER_PID > server.pid
+          sleep 19800          # 5.5 ساعة
+          echo "Stopping server..."
+          kill $SERVER_PID
+          wait $SERVER_PID || true
+
+      - name: Commit & push world + plugins
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add world/ plugins/ || true
+          git commit -m "Auto-save world+plugins $(date -u)" || exit 0
+          git push
+
+  retrigger:
+    needs: server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait 30s cooldown
+        run: sleep 30
+
+      - name: Retrigger same workflow
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: gh workflow run minecraft-loop.yml
