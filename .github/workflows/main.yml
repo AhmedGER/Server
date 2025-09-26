@@ -1,79 +1,66 @@
-name: 🚀 Google Drive Workflow
+name: Minecraft Server 5-min Test (Java 16 + plugins)
 
 on:
   workflow_dispatch:
 
 jobs:
-  google-drive-test:
+  test-run:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - name: 🛎️ Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout repo (includes plugins/)
+        uses: actions/checkout@v4
 
-      - name: 📦 Install dependencies
+      - name: Set up Java 16
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '16'
+
+      - name: Download Paper 1.16.5
         run: |
-          python3 -m pip install --upgrade pip
-          pip install google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client jq
+          curl -L -o server.jar \
+          https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      # 1️⃣ يشوف service_account.json
-      - name: 🔍 Step 1 - Check if service_account.json exists
+      - name: Install performance libs
         run: |
-          if [ -f "service_account.json" ]; then
-            echo "✅ Found service_account.json"
-          else
-            echo "❌ File not found!"
-            exit 1
-          fi
+          sudo apt-get update
+          sudo apt-get install -y libjemalloc-dev
 
-      # 2️⃣ يطبع الـ private key
-      - name: 🔑 Step 2 - Print private key
+      - name: Start server (5 min only)
         run: |
-          cat service_account.json | jq -r .private_key
+          export MALLOC_ARENA_MAX=2
+          export MALLOC_MMAP_THRESHOLD_=131072
+          export MALLOC_TRIM_THRESHOLD_=131072
+          export MALLOC_TOP_PAD_=131072
+          export MALLOC_TEMP_THRESHOLD_=0
+          export MALLOC_ARENA_TESTRATE=4
+          export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-      # 3️⃣ يتأكد إن JSON سليم
-      - name: ✅ Step 3 - Validate JSON
+          java -Xmx16G -Xms12G \
+          -XX:+UseG1GC \
+          -XX:+ParallelRefProcEnabled \
+          -XX:MaxGCPauseMillis=200 \
+          -XX:+UnlockExperimentalVMOptions \
+          -XX:+DisableExplicitGC \
+          -XX:G1NewSizePercent=30 \
+          -XX:G1MaxNewSizePercent=40 \
+          -XX:G1HeapRegionSize=8M \
+          -XX:G1ReservePercent=20 \
+          -XX:G1HeapWastePercent=5 \
+          -jar server.jar --nogui &
+          SERVER_PID=$!
+          echo $! > server.pid
+          sleep 300          # 5 دقائق
+          echo "Stopping server..."
+          kill $SERVER_PID
+          wait $SERVER_PID || true
+
+      - name: Commit world + plugins (if changed)
         run: |
-          python3 - <<'PY'
-          import json
-          try:
-              with open("service_account.json") as f:
-                  data = json.load(f)
-              print("✅ JSON is valid")
-          except Exception as e:
-              print("❌ JSON Error:", e)
-              exit(1)
-          PY
-
-      # 4️⃣ يتأكد إنه يقدر يتصل بـ Google
-      - name: 🔐 Step 4 - Authenticate with Google
-        run: |
-          python3 - <<'PY'
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-
-          scopes = ["https://www.googleapis.com/auth/drive"]
-          creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-          service = build("drive", "v3", credentials=creds, cache_discovery=False)
-
-          about = service.about().get(fields="user").execute()
-          print("✅ Authenticated as:", about["user"]["displayName"], "-", about["user"]["emailAddress"])
-          PY
-
-      # 5️⃣ بدل قراءة الملفات → يعمل فولدر
-      - name: 📂 Step 5 - Create folder in Google Drive
-        run: |
-          python3 - <<'PY'
-          from google.oauth2 import service_account
-          from googleapiclient.discovery import build
-
-          scopes = ["https://www.googleapis.com/auth/drive"]
-          creds = service_account.Credentials.from_service_account_file("service_account.json", scopes=scopes)
-          service = build("drive", "v3", credentials=creds, cache_discovery=False)
-
-          folder_metadata = {
-              "name": "WorkflowTestFolder",
-              "mimeType": "application/vnd.google-apps.folder"
-          }
-          folder = service.files().create(body=folder_metadata, fields="id").execute()
-          print("📂 Folder created with ID:", folder.get("id"))
-          PY
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add world/ plugins/ || true
+          git commit -m "Test save $(date -u)" || exit 0
+          git push
