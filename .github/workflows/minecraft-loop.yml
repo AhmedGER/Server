@@ -1,17 +1,15 @@
-name: Minecraft Infinite Loop (5.5h + save + retrigger)
+name: Minecraft Infinite Loop (Safe)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *'   # fallback لو حصل أي شيء
 
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 350      # 5.5 ساعة + هوامش
+    timeout-minutes: 350
 
     steps:
-      - name: Checkout repo (world + plugins)
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Set up Java 16
@@ -26,55 +24,52 @@ jobs:
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
       - name: Install performance libs
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libjemalloc-dev
+        run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Start server (5.5h)
+      - name: Run server (5.5h)
         run: |
           export MALLOC_ARENA_MAX=2
-          export MALLOC_MMAP_THRESHOLD_=131072
-          export MALLOC_TRIM_THRESHOLD_=131072
-          export MALLOC_TOP_PAD_=131072
-          export MALLOC_TEMP_THRESHOLD_=0
-          export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
-
           java -Xmx16G -Xms12G \
-          -XX:+UseG1GC \
-          -XX:+ParallelRefProcEnabled \
-          -XX:MaxGCPauseMillis=200 \
-          -XX:+UnlockExperimentalVMOptions \
-          -XX:+DisableExplicitGC \
-          -XX:G1NewSizePercent=30 \
-          -XX:G1MaxNewSizePercent=40 \
-          -XX:G1HeapRegionSize=8M \
-          -XX:G1ReservePercent=20 \
-          -XX:G1HeapWastePercent=5 \
+          -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 \
+          -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
+          -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
+          -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
           -jar server.jar --nogui &
           SERVER_PID=$!
-          echo $SERVER_PID > server.pid
-          sleep 19800          # 5.5 ساعة
-          echo "Stopping server..."
-          kill $SERVER_PID
+          sleep 19800
+          echo stop | nc -N localhost 25565 || kill $SERVER_PID
           wait $SERVER_PID || true
 
-      - name: Commit & push world + plugins
+      - name: Check if anything changed
+        id: changed
+        run: |
+          git add world/ plugins/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & push (only if changed)
+        if: steps.changed.outputs.changed == 'true'
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add world/ plugins/ || true
-          git commit -m "Auto-save world+plugins $(date -u)" || exit 0
+          git commit -m "Save $(date -u)"
+          git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
-  retrigger:
-    needs: server
-    runs-on: ubuntu-latest
-    steps:
-      - name: Wait 30s cooldown
-        run: sleep 30
+      - name: Wait 10s cooldown
+        run: sleep 10
 
-      - name: Retrigger same workflow
+      - name: Retrigger same workflow (if no run queued)
         env:
           GH_TOKEN: ${{ secrets.PAT }}
-        run: gh workflow run minecraft-loop.yml
+        run: |
+          runs=$(gh run list --workflow=minecraft-infinite-loop-safe.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          if [ "$runs" -le 1 ]; then
+            gh workflow run minecraft-infinite-loop-safe.yml
+          else
+            echo "Another run already queued, skipping retrigger."
+          fi
