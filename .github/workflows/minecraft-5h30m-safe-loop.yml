@@ -1,4 +1,4 @@
-name: Minecraft Infinite Loop (Safe)
+name: Minecraft 5h30m Safe Loop
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 340      # 5.5h + هوامش
 
     steps:
       - name: Checkout repo
@@ -23,10 +23,20 @@ jobs:
           curl -L -o server.jar \
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: Install performance libs
-        run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
+      - name: Install performance libs & rcon
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libjemalloc-dev rcon-cli
 
-      - name: Run server (5.5h)
+      - name: Enable rcon in server.properties
+        run: |
+          awk '
+            /^enable-rcon=/ {$0 = "enable-rcon=true"}
+            /^rcon.port=/  {$0 = "rcon.port=25575"}
+            /^rcon.password=/{$0 = "rcon.password=secret123"}
+            {print}' server.properties > server.properties.tmp && mv server.properties.tmp server.properties
+
+      - name: Run server (background)
         run: |
           export MALLOC_ARENA_MAX=2
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
@@ -36,16 +46,23 @@ jobs:
           -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
           -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
           -jar server.jar --nogui &
-          SERVER_PID=$!
-          sleep 19800
-          echo stop | nc -N localhost 25565 || kill $SERVER_PID
-          wait $SERVER_PID || true
+          echo $! > server.pid
 
-      - name: Check if anything changed
+      - name: Wait 5h 30min
+        run: sleep 19800   # 5.5 ساعة بالثواني
+
+      - name: Send "stop" via rcon (safe shutdown)
+        run: rcon-cli -H 127.0.0.1 -P 25575 -p secret123 stop || true
+
+      - name: Wait for server to exit
+        run: |
+          while kill -0 $(cat server.pid) 2>/dev/null; do sleep 2; done
+
+      - name: Check real changes (size or new files)
         id: changed
         run: |
           git add world/ plugins/
-          if git diff --staged --quiet; then
+          if git diff --staged --quiet && git diff --cached --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -60,16 +77,16 @@ jobs:
           git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
-      - name: Wait 10s cooldown
+      - name: Cooldown 10s
         run: sleep 10
 
-      - name: Retrigger same workflow (if no run queued)
+      - name: Retrigger if no run queued
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-infinite-loop-safe.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5h30m-safe-loop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-infinite-loop-safe.yml
+            gh workflow run minecraft-5h30m-safe-loop.yml
           else
-            echo "Another run already queued, skipping retrigger."
+            echo "Another run active, skipping retrigger."
           fi
