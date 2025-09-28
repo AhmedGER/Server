@@ -1,4 +1,4 @@
-name: Minecraft 5h30m Safe Loop (stdin stop)
+name: Minecraft 5h30m One-Step Loop
 
 on:
   workflow_dispatch:
@@ -23,17 +23,17 @@ jobs:
           curl -L -o server.jar \
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: Install performance libs
+      - name: Install libjemalloc
         run: |
           sudo apt-get update
           sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server (background with stdin open)
+      - name: Start server & auto-stop after 5h30m (one step)
         run: |
           export MALLOC_ARENA_MAX=2
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-          # نفتح السيرفر ونربط stdin بملك قابل للكتابة
+          # نفتح السيرفر مع stdin متاح
           mkfifo server.stdin
           java -Xmx16G -Xms12G \
           -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 \
@@ -42,19 +42,17 @@ jobs:
           -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
           -jar server.jar --nogui < server.stdin &
           SERVER_PID=$!
-          echo $SERVER_PID > server.pid
-          sleep 30   # نعطيه وقت يشتغل
 
-      - name: Wait 5h 30min
-        run: sleep 19800
+          # ننتظر 5 ساعات و 30 دقيقة بالظبط
+          sleep 19800
 
-      - name: Send stop to stdin (safe shutdown)
-        run: |
+          # نكتب stop في نفس الـ stdin
           echo "stop" > server.stdin
-          # نستنى السيرفر يطفي
-          while kill -0 $(cat server.pid) 2>/dev/null; do sleep 2; done
 
-      - name: Check real changes
+          # نستني السيرفر يطفي
+          wait $SERVER_PID
+
+      - name: Save only if changed
         id: changed
         run: |
           git add world/ plugins/
@@ -64,7 +62,7 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Commit & push (only if changed)
+      - name: Commit & push (if changed)
         if: steps.changed.outputs.changed == 'true'
         run: |
           git config --global user.name "github-actions"
@@ -73,16 +71,11 @@ jobs:
           git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
-      - name: Cooldown 10s
-        run: sleep 10
-
-      - name: Retrigger if no run active
+      - name: Retrigger if alone
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5h30m-safe-loop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5h30m-one-step-loop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5h30m-safe-loop.yml
-          else
-            echo "Another run active, skipping retrigger."
+            gh workflow run minecraft-5h30m-one-step-loop.yml
           fi
