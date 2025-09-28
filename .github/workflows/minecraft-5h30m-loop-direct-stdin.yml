@@ -1,4 +1,4 @@
-name: Minecraft 5h30m One-Step Loop
+name: Minecraft 5h30m Loop (direct stdin)
 
 on:
   workflow_dispatch:
@@ -24,32 +24,39 @@ jobs:
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
       - name: Install libjemalloc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libjemalloc-dev
+        run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Start server & auto-stop after 5h30m (one step)
+      - name: Run server 5h30m then stop (one step)
         run: |
           export MALLOC_ARENA_MAX=2
+          export MALLOC_MMAP_THRESHOLD_=131072
+          export MALLOC_TRIM_THRESHOLD_=131072
+          export MALLOC_TOP_PAD_=131072
+          export MALLOC_TEMP_THRESHOLD_=0
+          export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-          # نفتح السيرفر مع stdin متاح
-          mkfifo server.stdin
-          java -Xmx16G -Xms12G \
-          -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 \
-          -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
-          -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
-          -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
-          -jar server.jar --nogui < server.stdin &
+          # نفتح السيرفر مع stdin متاح من الـ process نفسه
+          {
+            java -Xmx16G -Xms12G \
+            -XX:+UseG1GC \
+            -XX:+ParallelRefProcEnabled \
+            -XX:MaxGCPauseMillis=200 \
+            -XX:+UnlockExperimentalVMOptions \
+            -XX:+DisableExplicitGC \
+            -XX:G1NewSizePercent=30 \
+            -XX:G1MaxNewSizePercent=40 \
+            -XX:G1HeapRegionSize=8M \
+            -XX:G1ReservePercent=20 \
+            -XX:G1HeapWastePercent=5 \
+            -jar server.jar --nogui
+          } &
           SERVER_PID=$!
 
-          # ننتظر 5 ساعات و 30 دقيقة بالظبط
-          sleep 19800
+          sleep 19800          # 5h 30m
 
-          # نكتب stop في نفس الـ stdin
-          echo "stop" > server.stdin
-
-          # نستني السيرفر يطفي
+          # نكتب stop فى نفس الـ process
+          echo "stop" | nc -N localhost 25565 || kill $SERVER_PID
           wait $SERVER_PID
 
       - name: Save only if changed
@@ -75,7 +82,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5h30m-one-step-loop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5h30m-loop-direct-stdin.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5h30m-one-step-loop.yml
+            gh workflow run minecraft-5h30m-loop-direct-stdin.yml
           fi
