@@ -1,4 +1,4 @@
-name: Minecraft 5min Test Loop (graceful stop)
+name: Minecraft 2min Test Loop (SIGTERM stop)
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server 5min then graceful stop (one step)
+      - name: Run server 2min then SIGTERM stop (one step)
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -36,30 +36,23 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-          # تشغيل السيرفر فى الخلفية مع stdin مفتوح
-          {
-            java -Xmx16G -Xms12G \
-            -XX:+UseG1GC \
-            -XX:+ParallelRefProcEnabled \
-            -XX:MaxGCPauseMillis=200 \
-            -XX:+UnlockExperimentalVMOptions \
-            -XX:+DisableExplicitGC \
-            -XX:G1NewSizePercent=30 \
-            -XX:G1MaxNewSizePercent=40 \
-            -XX:G1HeapRegionSize=8M \
-            -XX:G1ReservePercent=20 \
-            -XX:G1HeapWastePercent=5 \
-            -jar server.jar --nogui
-          } &
-
+          java -Xmx16G -Xms12G \
+          -XX:+UseG1GC \
+          -XX:+ParallelRefProcEnabled \
+          -XX:MaxGCPauseMillis=200 \
+          -XX:+UnlockExperimentalVMOptions \
+          -XX:+DisableExplicitGC \
+          -XX:G1NewSizePercent=30 \
+          -XX:G1MaxNewSizePercent=40 \
+          -XX:G1HeapRegionSize=8M \
+          -XX:G1ReservePercent=20 \
+          -XX:G1HeapWastePercent=5 \
+          -jar server.jar --nogui &
           SERVER_PID=$!
-
-          # ننتظر 5 دقائق فقط
-          sleep 300
-
-          # إيقاف آمن بإرسال stop للسيرفر
-          echo "stop"
-          wait $SERVER_PID
+          sleep 120          # 2 دقيقتان
+          echo "Stopping server..."
+          kill -TERM $SERVER_PID
+          wait $SERVER_PID || true
 
       - name: Save only if changed
         id: changed
@@ -84,7 +77,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5min-test-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-2min-test-loop-sigterm-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5min-test-loop-graceful-stop.yml
+            gh workflow run minecraft-2min-test-loop-sigterm-stop.yml
           fi
