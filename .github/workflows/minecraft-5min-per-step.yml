@@ -1,4 +1,4 @@
-name: Minecraft 5min Test (first toml + final save)
+name: Minecraft 5min Per Step (each step 5min)
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20   # كافى لكل الخطوات
 
     steps:
       - name: Checkout repo (empty now)
@@ -15,38 +15,40 @@ jobs:
       - name: Set up Java 16
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '16'
+            distribution: 'temurin'
+            java-version: '16'
 
       - name: Download Paper 1.16.5
         run: |
           curl -L -o server.jar \
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: Download & verify playit binary
+      - name: Download playit binary
         run: |
           curl -L -o playit https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
           chmod +x playit
-          file playit | grep -q ELF || (echo "Download failed (got HTML)" && exit 1)
 
-      - name: Register playit (manual claim – run once)
+      - name: Step 1 – Register playit (5min)
         run: |
           echo ">>> 1. Go to https://playit.gg"
           echo ">>> 2. Click 'Add Agent' and copy the claim code"
           echo ">>> 3. Paste it here and press Enter:"
-          ./playit
-          # بعد ما يظهر "tunnels ready" اضغط Ctrl+C
-          cp ~/.playit.toml playit.toml
-          echo "✔ playit.toml created and saved."
+          timeout 300 ./playit || true   # 5د ثم يقفل بالtimeout
+          cp ~/.playit.toml playit.toml 2>/dev/null || true
+          echo "✔ Step 1 done (playit registered)."
 
-      - name: Run playit (background)
+      - name: Step 2 – Run playit agent (5min)
         run: |
           ./playit &
           PLAYIT_PID=$!
           echo $PLAYIT_PID > playit.pid
-          sleep 3   # يفتح الـ tunnels
+          sleep 300          # 5 دقائق
+          echo "Stopping playit..."
+          kill -TERM $PLAYIT_PID
+          wait $PLAYIT_PID || true
+          echo "✔ Step 2 done (playit stopped)."
 
-      - name: Run server 5min then graceful stop
+      - name: Step 3 – Run server (5min)
         run: |
           java -Xmx16G -Xms16G \
           -XX:+UseG1GC \
@@ -65,9 +67,7 @@ jobs:
           echo "Stopping server..."
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
-          # stop playit gently
-          kill $(cat playit.pid) 2>/dev/null || true
-          wait $(cat playit.pid) 2>/dev/null || true
+          echo "✔ Step 3 done (server stopped)."
 
       - name: Save only if changed (world+plugins)
         id: changed
@@ -88,12 +88,12 @@ jobs:
           git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
-      - name: Save playit.toml to repo (final step)
+      - name: save playit.toml to repo (final step)
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
           git add playit.toml
-          git commit -m "Add playit.toml (first registration)" || exit 0
+          git commit -m "Add playit.toml (after 5min steps)" || exit 0
           git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
@@ -101,7 +101,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5min-test-first-toml.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5min-per-step.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5min-test-first-toml.yml
+            gh workflow run minecraft-5min-per-step.yml
           fi
