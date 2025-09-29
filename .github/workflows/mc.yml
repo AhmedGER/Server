@@ -1,4 +1,4 @@
-name: Minecraft 5min Test (repo playit + save-if-changed)
+name: Minecraft 5min Test (first toml + final save)
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout repo (with tools/playit & world+plugins)
+      - name: Checkout repo (empty now)
         uses: actions/checkout@v4
 
       - name: Set up Java 16
@@ -23,30 +23,27 @@ jobs:
           curl -L -o server.jar \
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: First-time claim (run once only)
-        if: hashFiles('playit.toml') == ''
+      - name: Download & install playit (once)
         run: |
-          echo ">>> Go to https://playit.gg, Add Agent, copy code, then paste here:"
-          ./tools/playit
-          cp ~/.playit.toml playit.toml
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add playit.toml
-          git commit -m "Add playit config" && git push || true
+          curl -L -o playit https://github.com/playit-cloud/playit-agent/releases/download/v0.18.9/playit-0.18.9-linux-amd64
+          chmod +x playit
 
-      - name: Restore playit config
+      - name: Register playit (manual claim – run once)
         run: |
-          cp "$GITHUB_WORKSPACE/playit.toml" ~/.playit.toml
-          chmod 600 ~/.playit.toml
+          echo ">>> 1. Go to https://playit.gg"
+          echo ">>> 2. Click 'Add Agent' and copy the claim code"
+          echo ">>> 3. Paste it here and press Enter:"
+          ./playit
+          # بعد ما يظهر "tunnels ready" اضغط Ctrl+C
+          cp ~/.playit.toml playit.toml
+          echo "✔ playit.toml created and saved."
 
       - name: Run playit (background)
         run: |
-          cp "$GITHUB_WORKSPACE/tools/playit" ./playit
-          chmod +x ./playit
           ./playit &
           PLAYIT_PID=$!
           echo $PLAYIT_PID > playit.pid
-          sleep 5   # let it register tunnels
+          sleep 3   # يفتح الـ tunnels
 
       - name: Run server 5min then graceful stop
         run: |
@@ -71,7 +68,7 @@ jobs:
           kill $(cat playit.pid) 2>/dev/null || true
           wait $(cat playit.pid) 2>/dev/null || true
 
-      - name: Save only if changed (content or size)
+      - name: Save only if changed (world+plugins)
         id: changed
         run: |
           git add world/ plugins/
@@ -90,11 +87,20 @@ jobs:
           git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git push
 
+      - name: **Save playit.toml to repo (final step)**
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add playit.toml
+          git commit -m "Add playit.toml (first registration)" || exit 0
+          git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push
+
       - name: Retrigger if alone
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5min-test-repo-playit.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=mc.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5min-test-repo-playit.yml
+            gh workflow run mc.yml
           fi
