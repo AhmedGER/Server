@@ -1,4 +1,4 @@
-name: Minecraft 2min Test Loop (SIGTERM stop)
+name: Minecraft 5h30m Loop (graceful stop)
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 340
 
     steps:
       - name: Checkout repo
@@ -26,7 +26,7 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server 2min then SIGTERM stop (one step)
+      - name: Run server 5h30m then SIGTERM stop (one step)
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -49,7 +49,7 @@ jobs:
           -XX:G1HeapWastePercent=5 \
           -jar server.jar --nogui &
           SERVER_PID=$!
-          sleep 120          # 2 دقيقتان
+          sleep 19800          # 5h 30m
           echo "Stopping server..."
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
@@ -77,7 +77,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-2min-test-loop-sigterm-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5h30m-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-2min-test-loop-sigterm-stop.yml
+            gh workflow run minecraft-5h30m-loop-graceful-stop.yml
           fi
