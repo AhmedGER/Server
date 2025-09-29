@@ -1,4 +1,4 @@
-name: Minecraft 5h30m Loop (self-stop)
+name: Minecraft 5h30m Loop (graceful stop)
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server 5h30m then stop itself (one step)
+      - name: Run server 5h30m then graceful stop (one step)
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -58,7 +58,12 @@ jobs:
           sleep 19800
 
           # نكتب stop فى نفس الـ stdin بتاع السيرفر
-          echo "stop"
+          echo "stop" > /tmp/mc_stop_cmd || true
+          # إرسال stop: نستخدم screen/fifo/kill approach إذا لزم
+          # هنا سنقوم بقتل العملية بشكل لطيف (server يقوم بعمل save عند استقبال SIGTERM عادة)
+          kill $(cat /tmp/mc_pid) || true
+          sleep 5
+          cd ..
 
           # نستنى السيرفر يطفى تماماً
           wait $SERVER_PID
@@ -86,7 +91,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5h30m-loop-self-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5h30m-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5h30m-loop-self-stop.yml
+            gh workflow run minecraft-5h30m-loop-graceful-stop.yml
           fi
