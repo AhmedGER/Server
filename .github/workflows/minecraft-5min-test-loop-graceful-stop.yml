@@ -1,4 +1,4 @@
-name: Minecraft 5h30m Loop (graceful stop)
+name: Minecraft 5min Test Loop (graceful stop)
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 340
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repo
@@ -26,7 +26,7 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server 5h30m then graceful stop (one step)
+      - name: Run server 5min then graceful stop (one step)
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -36,7 +36,7 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-          # نفتح الـ Java process مع stdin متاح
+          # تشغيل السيرفر فى الخلفية مع stdin مفتوح
           {
             java -Xmx16G -Xms12G \
             -XX:+UseG1GC \
@@ -54,18 +54,11 @@ jobs:
 
           SERVER_PID=$!
 
-          # ننتظر 5 ساعات و 30 دقيقة
-          sleep 19800
+          # ننتظر 5 دقائق فقط
+          sleep 300
 
-          # نكتب stop فى نفس الـ stdin بتاع السيرفر
-          echo "stop" > /tmp/mc_stop_cmd || true
-          # إرسال stop: نستخدم screen/fifo/kill approach إذا لزم
-          # هنا سنقوم بقتل العملية بشكل لطيف (server يقوم بعمل save عند استقبال SIGTERM عادة)
-          kill $(cat /tmp/mc_pid) || true
-          sleep 5
-          cd ..
-
-          # نستنى السيرفر يطفى تماماً
+          # إيقاف آمن بإرسال stop للسيرفر
+          echo "stop"
           wait $SERVER_PID
 
       - name: Save only if changed
@@ -91,7 +84,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5h30m-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=minecraft-5min-test-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5h30m-loop-graceful-stop.yml
+            gh workflow run minecraft-5min-test-loop-graceful-stop.yml
           fi
