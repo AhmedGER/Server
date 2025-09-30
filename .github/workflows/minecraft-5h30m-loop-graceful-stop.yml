@@ -26,7 +26,7 @@ jobs:
       - name: Install deps
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
 
-      - name: One-step: claim → agent stays up → server → stop both
+      - name: One-step claim → agent stays up → server → stop both
         env:
           PLAYIT_CODE: ${{ secrets.PLAYIT_CODE }}
         run: |
