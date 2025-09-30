@@ -26,8 +26,20 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: Run server 5h30m then SIGTERM stop (one step)
+      - name: One step run playit server stop both gently
+        env:
+          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
         run: |
+          # 1) PlayIt agent
+          curl -L -o playit https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          chmod +x playit
+          echo "$PLAYIT_SECRET" > playit.toml
+          ./playit --config playit.toml > playit.log 2>&1 &
+          PLAYIT_PID=$!
+          echo "✔ PlayIt started (PID $PLAYIT_PID)"
+          sleep 5
+
+          # 2) Server JVM tuning
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
           export MALLOC_TRIM_THRESHOLD_=131072
@@ -36,6 +48,7 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
+          # 3) Start server
           java -Xmx16G -Xms12G \
           -XX:+UseG1GC \
           -XX:+ParallelRefProcEnabled \
@@ -49,10 +62,23 @@ jobs:
           -XX:G1HeapWastePercent=5 \
           -jar server.jar --nogui &
           SERVER_PID=$!
-          sleep 600          # 5h 30m
+          echo "✔ Server started (PID $SERVER_PID)"
+
+          # 4) Run for 5h 30m
+          sleep 19800    # 5h30m = 19800 ثانية
+
+          # 5) Graceful stop: server first
           echo "Stopping server..."
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
+
+          # 6) Stop playit
+          echo "Stopping playit..."
+          kill -TERM $PLAYIT_PID
+          wait $PLAYIT_PID || true
+
+          # 7) Save playit.toml
+          cp playit.toml playit-final.toml 2>/dev/null || true
 
       - name: Save only if changed
         id: changed
@@ -81,3 +107,4 @@ jobs:
           if [ "$runs" -le 1 ]; then
             gh workflow run minecraft-5h30m-loop-graceful-stop.yml
           fi
+          
