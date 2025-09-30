@@ -1,4 +1,4 @@
-name: Minecraft 15min Run (main.yml – 2 steps: claim URL + long run)
+name: Minecraft 15min Run (main.yml – 2 steps claim URL + long run)
 
 on:
   workflow_dispatch:
@@ -29,7 +29,7 @@ jobs:
           chmod +x playit
           file playit | grep -q ELF || (echo "Download failed (got HTML)" && exit 1)
 
-      - name: **Step 1 – Print claim URL (30s only)**
+      - name: Step 1 – Print claim URL (30s only)
         run: |
           echo ">>> 1. Copy this URL and open it:"
           echo "    https://playit.gg"
@@ -38,7 +38,7 @@ jobs:
           timeout 600 ./playit || true   # 30 ثانية فقط → يظهر الـ URL
           echo "✔ Step 1 done (URL shown)."
 
-      - name: **Step 2 – Claim + run both (15min) + gentle stop**
+      - name: Step 2 – Claim + run both (15min) + gentle stop
         run: |
           # ندخل الـ claim code مباشرة
           ./playit --claim YOUR_CODE_HERE > playit.log 2>&1 &
