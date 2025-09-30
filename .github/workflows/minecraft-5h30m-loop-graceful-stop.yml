@@ -1,4 +1,4 @@
-name: Minecraft 5h30m Loop (graceful stop)
+name: Minecraft 5h30m Loop (claim+tunnel+graceful stop)
 
 on:
   workflow_dispatch:
@@ -26,20 +26,38 @@ jobs:
       - name: Install libjemalloc
         run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
 
-      - name: One step run playit server stop both gently
-        env:
-          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
+      - name: Claim & Tunnel (interactive) → then run server
         run: |
-          # 1) PlayIt agent
+          # 1- نزل playit
           curl -L -o playit https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
           chmod +x playit
-          echo "$PLAYIT_SECRET" > playit.toml
-          ./playit --config playit.toml > playit.log 2>&1 &
-          PLAYIT_PID=$!
-          echo "✔ PlayIt started (PID $PLAYIT_PID)"
-          sleep 5
 
-          # 2) Server JVM tuning
+          # 2- نشغّله ونستنّى رابط الـ claim
+          ./playit > playit.log 2>&1 &
+          PLAYIT_PID=$!
+          sleep 4
+          CLAIM_URL=$(grep -oP 'https://playit\.gg/claim/\K[A-Za-z0-9-]+' playit.log | head -1 | xargs -I{} echo "https://playit.gg/claim/{}")
+
+          # 3- نطبع الرابط ونوقف تنفيذ الـ workflow 3 دقايق علشان تكمل أنت
+          echo "======================================"
+          echo "  اذهب للرابط التالى واعمل Claim:"
+          echo "  $CLAIM_URL"
+          echo "======================================"
+          echo "سأنتظر 3 دقائق (180 ثانية) ثم أكمل..."
+          sleep 180
+
+          # 4- بعد الانتظار نطفى الـ agent وناخد الـ toml الصحيح
+          kill -TERM $PLAYIT_PID
+          wait $PLAYIT_PID || true
+          cp ~/.playit.toml playit.toml 2>/dev/null || true
+
+          # 5- نعيد تشغيل الـ agent بالتكوين الجديد
+          ./playit --config playit.toml > tunnel.log 2>&1 &
+          PLAYIT_PID=$!
+          echo "✔ Tunnel re-started (PID $PLAYIT_PID)"
+          sleep 3
+
+          # 6- JVM tuning
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
           export MALLOC_TRIM_THRESHOLD_=131072
@@ -48,7 +66,7 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
 
-          # 3) Start server
+          # 7- نشتغل بالسيرفر
           java -Xmx16G -Xms12G \
           -XX:+UseG1GC \
           -XX:+ParallelRefProcEnabled \
@@ -64,47 +82,36 @@ jobs:
           SERVER_PID=$!
           echo "✔ Server started (PID $SERVER_PID)"
 
-          # 4) Run for 5h 30m
-          sleep 19800    # 5h30m = 19800 ثانية
+          # 8- نسيبهم يشتغلوا 5h30m
+          sleep 600    # 5h30m
 
-          # 5) Graceful stop: server first
+          # 9- إيقاف لطيف: السيرفر أولاً
           echo "Stopping server..."
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
 
-          # 6) Stop playit
-          echo "Stopping playit..."
+          # 10- إيقاف الـ tunnel
+          echo "Stopping tunnel..."
           kill -TERM $PLAYIT_PID
           wait $PLAYIT_PID || true
 
-          # 7) Save playit.toml
-          cp playit.toml playit-final.toml 2>/dev/null || true
-
-      - name: Save only if changed
-        id: changed
-        run: |
-          git add world/ plugins/
-          if git diff --staged --quiet; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit & push (if changed)
-        if: steps.changed.outputs.changed == 'true'
+      - name: Save world+plugins+toml if changed
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git commit -m "Save $(date -u)"
-          git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git push
+          git add world/ plugins/ playit.toml
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-save $(date -u)"
+            git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git push
+          fi
 
       - name: Retrigger if alone
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=minecraft-5h30m-loop-graceful-stop.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow="${{ github.workflow }}" --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
-            gh workflow run minecraft-5h30m-loop-graceful-stop.yml
+            gh workflow run "${{ github.workflow }}"
           fi
           
