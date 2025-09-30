@@ -1,4 +1,4 @@
-name: Minecraft 15min Run (main.yml – 2 steps claim URL + long run)
+name: Minecraft 15min Run (main.yml – claim+run one step, gentle stop)
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
 jobs:
   server:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repo
@@ -29,24 +29,16 @@ jobs:
           chmod +x playit
           file playit | grep -q ELF || (echo "Download failed (got HTML)" && exit 1)
 
-      - name: Step 1 – Print claim URL (30s only)
+      - name: One step: claim + run both (15min) + gentle stop
         run: |
-          echo ">>> 1. Copy this URL and open it:"
-          echo "    https://playit.gg"
-          echo ">>> 2. Click 'Add Agent' and copy the claim code"
-          echo ">>> 3. Paste the code in the next step"
-          timeout 600 ./playit || true   # 30 ثانية فقط → يظهر الـ URL
-          echo "✔ Step 1 done (URL shown)."
-
-      - name: Step 2 – Claim + run both (15min) + gentle stop
-        run: |
-          # ندخل الـ claim code مباشرة
+          # 1) نسجّل ونشتغّل مباشرة (بدون prompt)
           ./playit --claim YOUR_CODE_HERE > playit.log 2>&1 &
           PLAYIT_PID=$!
           echo "✔ Playit agent started (PID $PLAYIT_PID)"
 
           sleep 3   # يفتح الـ tunnels
 
+          # 2) السيرفر شغال 15د
           java -Xmx16G -Xms16G \
           -XX:+UseG1GC \
           -XX:+ParallelRefProcEnabled \
@@ -64,6 +56,7 @@ jobs:
 
           sleep 900          # 15 دقيقة كاملة
 
+          # 3) إيقاف لطيف لكل الـ process
           echo "Stopping server..."
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
@@ -72,6 +65,7 @@ jobs:
           kill $PLAYIT_PID
           wait $PLAYIT_PID || true
 
+          # 4) نحفظ الـ toml
           cp ~/.playit.toml playit.toml 2>/dev/null || true
           echo "✔ 15min done (both stopped gently)."
 
