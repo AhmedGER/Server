@@ -30,12 +30,11 @@ jobs:
 
       - name: Run playit + server (15min always-on)
         run: |
-          # agent شغال طول الوقت
-          ./playit > playit.log 2>&1 &
+          ./playit &
           PLAYIT_PID=$!
           echo "✔ Playit agent started (PID $PLAYIT_PID)"
 
-          sleep 3   # يفتح الـ tunnels
+          sleep 600   # يفتح الـ tunnels
 
           # السيرفر شغال 15د
           java -Xmx16G -Xms16G \
