@@ -1,4 +1,4 @@
-name: Minecraft 5h30m Loop (claim+tunnel+graceful stop)
+name: Minecraft 5h30m Loop (print everything)
 
 on:
   workflow_dispatch:
@@ -23,41 +23,42 @@ jobs:
           curl -L -o server.jar \
           https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
 
-      - name: Install libjemalloc
-        run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev
+      - name: Install deps
+        run: sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
 
-      - name: Claim & Tunnel (interactive) → then run server
+      - name: One-step: claim → agent stays up → server → stop both
+        env:
+          PLAYIT_CODE: ${{ secrets.PLAYIT_CODE }}
         run: |
-          # 1- نزل playit
+          echo "=== STEP 1: Download playit ==="
           curl -L -o playit https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
           chmod +x playit
+          echo "✔ playit-linux-amd64 downloaded"
 
-          # 2- نشغّله ونستنّى رابط الـ claim
-          ./playit > playit.log 2>&1 &
+          echo "=== STEP 2: Claim and start agent ==="
+          ./playit --claim "$PLAYIT_CODE" > playit.log 2>&1 &
           PLAYIT_PID=$!
-          sleep 4
-          CLAIM_URL=$(grep -oP 'https://playit\.gg/claim/\K[A-Za-z0-9-]+' playit.log | head -1 | xargs -I{} echo "https://playit.gg/claim/{}")
+          echo "✔ Agent started (PID: $PLAYIT_PID)"
+          sleep 6
 
-          # 3- نطبع الرابط ونوقف تنفيذ الـ workflow 3 دقايق علشان تكمل أنت
+          echo "=== STEP 3: Extract tunnel address ==="
+          TUNNEL=$(grep -oP 'tcp://\K[^\s]+' playit.log | head -1)
+          if [ -z "$TUNNEL" ]; then
+            echo "❌ Tunnel not found! playit.log content:"
+            cat playit.log
+            kill -9 $PLAYIT_PID
+            exit 1
+          fi
           echo "======================================"
-          echo "  اذهب للرابط التالى واعمل Claim:"
-          echo "  $CLAIM_URL"
+          echo "  SERVER ADDRESS (copy to Minecraft):"
+          echo "  $TUNNEL"
           echo "======================================"
-          echo "سأنتظر 3 دقائق (180 ثانية) ثم أكمل..."
-          sleep 180
 
-          # 4- بعد الانتظار نطفى الـ agent وناخد الـ toml الصحيح
-          kill -TERM $PLAYIT_PID
-          wait $PLAYIT_PID || true
-          cp ~/.playit.toml playit.toml 2>/dev/null || true
+          echo "=== STEP 4: Check eula ==="
+          [ -f eula.txt ] || echo "eula=true" > eula.txt
+          echo "✔ eula=true ensured"
 
-          # 5- نعيد تشغيل الـ agent بالتكوين الجديد
-          ./playit --config playit.toml > tunnel.log 2>&1 &
-          PLAYIT_PID=$!
-          echo "✔ Tunnel re-started (PID $PLAYIT_PID)"
-          sleep 3
-
-          # 6- JVM tuning
+          echo "=== STEP 5: JVM tuning ==="
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
           export MALLOC_TRIM_THRESHOLD_=131072
@@ -65,8 +66,9 @@ jobs:
           export MALLOC_TEMP_THRESHOLD_=0
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
+          echo "✔ JVM variables set"
 
-          # 7- نشتغل بالسيرفر
+          echo "=== STEP 6: Start Minecraft server ==="
           java -Xmx16G -Xms12G \
           -XX:+UseG1GC \
           -XX:+ParallelRefProcEnabled \
@@ -80,20 +82,24 @@ jobs:
           -XX:G1HeapWastePercent=5 \
           -jar server.jar --nogui &
           SERVER_PID=$!
-          echo "✔ Server started (PID $SERVER_PID)"
+          echo "✔ Server started (PID: $SERVER_PID)"
 
-          # 8- نسيبهم يشتغلوا 5h30m
-          sleep 600    # 5h30m
+          echo "=== STEP 7: Waiting 5h30m (19800 sec) ==="
+          sleep 600
 
-          # 9- إيقاف لطيف: السيرفر أولاً
-          echo "Stopping server..."
+          echo "=== STEP 8: Graceful stop server ==="
           kill -TERM $SERVER_PID
           wait $SERVER_PID || true
+          echo "✔ Server stopped"
 
-          # 10- إيقاف الـ tunnel
-          echo "Stopping tunnel..."
+          echo "=== STEP 9: Stop agent ==="
           kill -TERM $PLAYIT_PID
           wait $PLAYIT_PID || true
+          echo "✔ Agent stopped"
+
+          echo "=== STEP 10: Save playit.toml ==="
+          cp ~/.playit.toml playit.toml 2>/dev/null || true
+          echo "✔ playit.toml saved"
 
       - name: Save world+plugins+toml if changed
         run: |
