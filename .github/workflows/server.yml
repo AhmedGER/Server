@@ -37,7 +37,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
           echo "✔ deps installed"
 
-      - name: One-step: server (Java 16) → 10 min → graceful stop
+      - name: One-step server (Java 16) → 10 min → graceful stop
         run: |
           echo "=== STEP 1: JVM memory tuning ==="
           export MALLOC_ARENA_MAX=2
