@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # ---------- Java 21 (server runtime) ----------
+      # ---------- Java 21 (server + ViaVersion compatible) ----------
       - name: Set up Java 21
         uses: actions/setup-java@v3
         with:
@@ -37,7 +37,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
           echo "✔ deps installed"
 
-      - name: One-step server (Java 21) → 10 min → graceful stop
+      - name: One-step: server (Java 21) → 10 min → graceful stop
         run: |
           echo "=== STEP 1: JVM memory tuning ==="
           export MALLOC_ARENA_MAX=2
@@ -51,17 +51,20 @@ jobs:
           echo "=== STEP 2: Check / create eula ==="
           [ -f eula.txt ] || echo "eula=true" > eula.txt
 
-          echo "=== STEP 3: Start server (Java 21) ==="
-          $JAVA_HOME_21_X64/bin/java -Xmx16G -Xms12G \
+          echo "=== STEP 3: Start server (Java 21) with version skip ==="
+          $JAVA_HOME_21_X64/bin/java \
+            -DPaper.IgnoreJavaVersion=true \
+            -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
             -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
             -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
-            -XX:G1HeapWastePercent=5 -jar server.jar --nogui &
+            -XX:G1HeapWastePercent=5 \
+            -jar server.jar --nogui &
           SERVER_PID=$!
           echo "✔ Server started (PID: $SERVER_PID)"
 
-          echo "=== STEP 4 Java 16 availability check ==="
+          echo "=== STEP 4: Java 16 availability check ==="
           $JAVA_HOME_16_X64/bin/java -version
 
           echo "=== STEP 5: Waiting 10 minutes (600 sec) ==="
@@ -87,7 +90,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=server.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
+          runs=$(gh run list --workflow=server.yml --json status -q '.[] | select(..status=="queued" or ..status=="in_progress") | .status' | wc -l)
           if [ "$runs" -le 1 ]; then
             gh workflow run server.yml
           fi
