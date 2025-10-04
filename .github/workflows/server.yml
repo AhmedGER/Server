@@ -37,7 +37,7 @@ jobs:
           sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
           echo "✔ deps installed"
 
-      - name: One-step server (Java 16) → 10 min → graceful stop
+      - name: One-step: server (Java 16) → 10 min → graceful stop
         run: |
           echo "=== STEP 1: JVM memory tuning ==="
           export MALLOC_ARENA_MAX=2
@@ -52,7 +52,7 @@ jobs:
           [ -f eula.txt ] || echo "eula=true" > eula.txt
 
           echo "=== STEP 3: Start server (Java 16) ==="
-          /usr/lib/jvm/temurin-16-jdk-amd64/bin/java -Xmx16G -Xms12G \
+          $JAVA_HOME_16_X64/bin/java -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
             -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
@@ -62,7 +62,7 @@ jobs:
           echo "✔ Server started (PID: $SERVER_PID)"
 
           echo "=== STEP 4: Java 21 availability check ==="
-          /usr/lib/jvm/temurin-21-jdk-amd64/bin/java -version
+          $JAVA_HOME_21_X64/bin/java -version
 
           echo "=== STEP 5: Waiting 10 minutes (600 sec) ==="
           sleep 600   # غيّر إلى 19800 لاحقاً (5h30m)
