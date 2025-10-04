@@ -1,0 +1,103 @@
+name: server   # 1.16.5 core (Java 16)  +  plugins built with Java 21
+
+on:
+  workflow_dispatch:
+
+jobs:
+  minecraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      # ---------- 1. Java 16 (default for server) ----------
+      - name: Set up Java 16 (server runtime)
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '16'
+
+      # ---------- 2. Java 21 (extra, plugins compiler) ----------
+      - name: Add Java 21 side-by-side
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '21'
+          # NOT default ⇒ server still uses 16
+
+      # ---------- 3. Paper 1.16.5 ----------
+      - name: Download Paper 1.16.5
+        run: |
+          curl -L -o server.jar \
+          https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+
+      # ---------- 4. Cloudflare Tunnel (fixed IP) ----------
+      - name: Cloudflare Tunnel + Server (Java 16)
+        env:
+          CF_TUNNEL_TOKEN: ${{ secrets.CF_TUNNEL_TOKEN }}   # put token once
+        run: |
+          # 4.1  download cloudflared
+          curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o cloudflared
+          chmod +x cloudflared
+
+          # 4.2  start tunnel (TCP 25565)
+          ./cloudflared tunnel --no-autoupdate run --token "$CF_TUNNEL_TOKEN" \
+            --url tcp://localhost:25565 > tunnel.log 2>&1 &
+          TUN_PID=$!
+
+          # 4.3  wait for domain
+          for i in {1..15}; do
+            DOMAIN=$(grep -oP 'https://\K[^\s]+' tunnel.log | head -1)
+            if [ -n "$DOMAIN" ]; then
+              echo "======================================"
+              echo "  ✅ FIXED SERVER ADDRESS:"
+              echo "  $DOMAIN"
+              echo "======================================"
+              break
+            fi
+            echo "Waiting for tunnel... ($i/15)"
+            sleep 2
+          done
+          [ -z "$DOMAIN" ] && { echo "❌ Tunnel failed"; cat tunnel.log; exit 1; }
+
+          # 4.4  eula + memory flags
+          [ -f eula.txt ] || echo "eula=true" > eula.txt
+          export MALLOC_ARENA_MAX=2
+          export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
+
+          # 4.5  ----------  SERVER  (Java 16)  ----------
+          echo "Starting Paper 1.16.5 on Java 16..."
+          /usr/lib/jvm/temurin-16-jdk-amd64/bin/java -Xmx12G -Xms10G \
+            -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
+            -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
+            -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
+            -XX:G1HeapRegionSize=8M -jar server.jar --nogui &
+          SERVER_PID=$!
+
+          # 4.6  ----------  PLUGINS DEMO  (Java 21)  ----------
+          # example: compile a dummy plugin or reload
+          echo "=== Java 21 call example ==="
+          /usr/lib/jvm/temurin-21-jdk-amd64/bin/java -version
+          # here you can:  mvn package  /  gradle build  /  reload plugins  ...etc
+
+          # 4.7  wait 5h30m
+          sleep 19800
+
+          # 4.8  graceful stop
+          kill -TERM $SERVER_PID
+          wait $SERVER_PID || true
+          kill -TERM $TUN_PID
+          wait $TUN_PID || true
+
+      # ---------- 5. Save world / plugins ----------
+      - name: Save world+plugins if changed
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
+          git add world/ plugins/
+          if ! git diff --cached --quiet; then
+            git commit -m "Auto-save $(date -u)"
+            git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git push
+          fi
+          
