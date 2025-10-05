@@ -12,19 +12,22 @@ jobs:
       - name: Set up Java 21
         uses: actions/setup-java@v3
         with:
-          distribution: temurin
+          distribution: 'temurin'
           java-version: '21'
 
       - name: Download Paper 1.16.5
         run: |
+          echo "=== Downloading Paper 1.16.5 (build 794) ==="
           curl -L -o server.jar \
-          https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+          echo "✔ server.jar ready"
 
       - name: Install deps
         run: |
-          sudo apt-get update && sudo apt-get install -y libjemalloc2 net-tools
+          sudo apt-get update
+          sudo apt-get install -y libjemalloc2 net-tools
 
-      - name: 2-min server test with graceful stop
+      - name: One-step server (Java 21) → 2 min → graceful stop
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -34,23 +37,24 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
-          [ -f eula.txt ] || echo eula=true > eula.txt
-
-          PIPE=$(mktemp -u)
-          mkfifo "$PIPE"
+          test -f eula.txt || echo "eula=true" > eula.txt
 
           java -DPaper.IgnoreJavaVersion=true \
-            -Xmx4G -Xms2G \
+            -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
-            -jar server.jar --nogui < "$PIPE" &
+            -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
+            -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
+            -XX:G1HeapWastePercent=5 \
+            -jar server.jar --nogui &
           SERVER_PID=$!
+          echo "✔ Server started (PID: $SERVER_PID)"
 
-          sleep 120   # دقيقتين
-
-          echo stop > "$PIPE"
+          sleep 120        # دقيقتان
+          echo "=== Graceful stop ==="
+          kill -TERM $SERVER_PID
           wait $SERVER_PID || true
-          rm -f "$PIPE"
+          echo "✔ Server stopped"
 
       - name: Save world+plugins if changed
         run: |
@@ -59,7 +63,8 @@ jobs:
           git add world plugins || true
           if ! git diff --cached --quiet; then
             git commit -m "Auto-save $(date -u)"
-            git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git pull --rebase --autostash \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git push
           fi
 
@@ -67,7 +72,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list -w server.yml --json status -q '.[]|select(.status=="queued" or .status=="in_progress")|length')
-          if [ "$runs" -le 1 ]; then
+          runs=$(gh run list -w server.yml --json status -q \
+               '.[]|select(.status=="queued" or .status=="in_progress")|length')
+          if [ "$runs" -le 1 ] && [ "${{ github.run_attempt }}" -lt 3 ]; then
             gh workflow run server.yml
           fi
