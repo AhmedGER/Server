@@ -27,29 +27,43 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libjemalloc2
 
-      - name: Download, claim & setup playit
+      - name: Install & configure playit
         env:
           SECRET_KEY: ${{ secrets.PLAYIT_SECRET }}
         run: |
-          echo "=== Downloading playit ==="
-          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
-          chmod +x playit-linux-amd64
+          # 1. تحميل وتثبيت أحدث deb
+          curl -fsSL -o playit.deb \
+            https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          sudo dpkg -i playit.deb || sudo apt-get -f install -y
+          rm playit.deb
 
-          echo "=== Starting playit ==="
-          ./playit-linux-amd64 > playit.log 2>&1 &
-          PLAYIT_PID=$!
-          sleep 8
+          # 2. claim (مرة واحدة فقط)
+          if ! playit status | grep -q "claimed"; then
+            echo "=== Claiming agent ==="
+            playit claim
+            sleep 3
+          else
+            echo "✔ Agent already claimed"
+          fi
 
-          echo "=== Claiming (if needed) ==="
-          echo "$SECRET_KEY" | ./playit-linux-amd64 claim || true
+          # 3. إنشاء تونل TCP 25565 تلقائياً
+          echo "=== Creating tunnel ==="
+          playit setup --non-interactive \
+            --tunnel-type tcp \
+            --local-port 25565 \
+            --tunnel-name minecraft-java
 
-          echo "=== Setup tunnel TCP 25565 ==="
-          ./playit-linux-amd64 setup --tcp 25565 --name minecraft-java || true
+          # 4. تشغيل الخدمة
+          sudo systemctl start playit
+          sudo systemctl enable playit
+          sleep 5
+          systemctl status playit --no-pager
 
-          echo "✔ Playit ready"
-          tail -n 20 playit.log
+          # 5. طباعة العنوان الخارجي
+          echo "=== External address ==="
+          playit status | tee playit.log
 
-      - name: Accept EULA & start Minecraft
+      - name: Accept EULA & start server
         run: |
           test -f eula.txt || echo "eula=true" > eula.txt
           echo "=== Starting Minecraft Server ==="
@@ -77,7 +91,7 @@ jobs:
 
           echo "=== Stopping ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
-          pkill -TERM playit-linux-amd64 2>/dev/null || true
+          sudo systemctl stop playit
           wait $SERVER_PID 2>/dev/null || true
           echo "✔ Stopped"
 
