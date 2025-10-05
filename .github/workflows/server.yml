@@ -27,6 +27,32 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libjemalloc2 net-tools
 
+      - name: Setup Playit Tunnel (FIRST TIME - Check logs for claim URL!)
+        run: |
+          echo "=== Downloading Playit ==="
+          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          chmod +x playit-linux-amd64
+          
+          echo "=== Starting Playit - CHECK LOGS FOR CLAIM URL! ==="
+          ./playit-linux-amd64 > playit.log 2>&1 &
+          PLAYIT_PID=$!
+          
+          echo "⏳ Waiting 30 seconds for playit to start..."
+          sleep 30
+          
+          echo "=== PLAYIT LOGS (Contains claim URL) ==="
+          cat playit.log
+          echo "================================"
+          
+          echo "⏰ WAITING 8 MINUTES for you to claim the tunnel!"
+          echo "👆 Find the claim URL above and open it in browser"
+          sleep 480
+          
+          echo "=== Final Playit Logs ==="
+          cat playit.log
+          
+          kill $PLAYIT_PID 2>/dev/null || true
+
       - name: One-step server (Java 21) → 10 min → graceful stop
         run: |
           export MALLOC_ARENA_MAX=2
@@ -56,11 +82,29 @@ jobs:
           wait $SERVER_PID || true
           echo "✔ Server stopped"
 
+      - name: Save Playit configuration
+        run: |
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          
+          echo "=== Saving Playit files ==="
+          git add playit.toml playit-linux-amd64 playit.log 2>/dev/null || true
+          
+          if ! git diff --cached --quiet 2>/dev/null; then
+            git commit -m "Save Playit config $(date -u)"
+            git pull --rebase --autostash \
+              https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+            git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+            echo "✔ Playit config saved"
+          else
+            echo "ℹ No Playit changes to save"
+          fi
+
       - name: Save world+plugins if changed
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
-          git add world plugins || true
+          git add world plugins playit.toml playit-linux-amd64 playit.log || true
           if ! git diff --cached --quiet; then
             git commit -m "Auto-save $(date -u)"
             git pull --rebase --autostash \
