@@ -1,5 +1,4 @@
 name: server
-
 on:
   workflow_dispatch:
 
@@ -10,43 +9,37 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # ---------- Java 21 فقط (server + tools) ----------
-      - name: Set up Java 21
+      - name: Set up Java 17          # أو 16 بدل 21
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '17'           # أستقر أكثر مع 1.16.5
 
       - name: Download Paper 1.16.5
         run: |
           echo "=== Downloading Paper 1.16.5 (build 794) ==="
           curl -L -o server.jar \
-          https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
 
       - name: Install deps
         run: |
-          echo "=== Installing libjemalloc & net-tools ==="
-          sudo apt-get update && sudo apt-get install -y libjemalloc-dev net-tools
-          echo "✔ deps installed"
+          sudo apt-get update
+          sudo apt-get install -y libjemalloc2 net-tools
 
-      - name: One-step server (Java 21) → 10 min → graceful stop
+      - name: One-step server (Java 17) → 10 min → graceful stop
         run: |
-          echo "=== STEP 1: JVM memory tuning ==="
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
           export MALLOC_TRIM_THRESHOLD_=131072
           export MALLOC_TOP_PAD_=131072
           export MALLOC_TEMP_THRESHOLD_=0
           export MALLOC_ARENA_TESTRATE=4
-          export LD_PRELOAD=$(dpkg -L libjemalloc-dev | grep '\.so$' | head -n1)
+          export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
-          echo "=== STEP 2: Check / create eula ==="
-          [ -f eula.txt ] || echo "eula=true" > eula.txt
+          test -f eula.txt || echo "eula=true" > eula.txt
 
-          echo "=== STEP 3: Start server (Java 21) with version skip ==="
-          $JAVA_HOME_21_X64/bin/java \
-            -DPaper.IgnoreJavaVersion=true \
+          java -DPaper.IgnoreJavaVersion=false \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
@@ -57,22 +50,21 @@ jobs:
           SERVER_PID=$!
           echo "✔ Server started (PID: $SERVER_PID)"
 
-          echo "=== STEP 4: Waiting 10 minutes (600 sec) ==="
-          sleep 600   # غيّر إلى 19800 لاحقاً (5h30m)
-
-          echo "=== STEP 5: Graceful stop ==="
-          kill -TERM $SERVER_PID
+          sleep 600        # ارفعه لـ 19800 لاحقاً
+          echo "=== Graceful stop ==="
+          echo stop > /proc/$SERVER_PID/fd/0
           wait $SERVER_PID || true
           echo "✔ Server stopped"
 
       - name: Save world+plugins if changed
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "actions@github.com"
-          git add world/ plugins/
+          git config user.name  "github-actions"
+          git config user.email "actions@github.com"
+          git add world plugins || true
           if ! git diff --cached --quiet; then
             git commit -m "Auto-save $(date -u)"
-            git pull --rebase --autostash https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            git pull --rebase --autostash \
+              https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
             git push
           fi
 
@@ -80,8 +72,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list --workflow=server.yml --json status -q '.[] | select(.status=="queued" or .status=="in_progress") | .status' | wc -l)
-          if [ "$runs" -le 1 ]; then
+          runs=$(gh run list -w server.yml --json status -q \
+               '.[]|select(.status=="queued" or .status=="in_progress")|length')
+          if [ "$runs" -le 1 ] && [ "${{ github.run_attempt }}" -lt 3 ]; then
             gh workflow run server.yml
           fi
-          
