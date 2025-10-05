@@ -39,7 +39,7 @@ jobs:
 
           test -f eula.txt || echo "eula=true" > eula.txt
 
-          java -DPaper.IgnoreJavaVersion=false \
+          java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
