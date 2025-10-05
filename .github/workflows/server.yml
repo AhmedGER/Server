@@ -17,7 +17,7 @@ jobs:
 
       - name: Download Paper 1.16.5
         run: |
-          echo "=== Downloading Paper 1.16.5 (build 794) ==="
+          echo "=== Downloading Paper 1.16.5 ==="
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
@@ -25,60 +25,11 @@ jobs:
       - name: Install deps
         run: |
           sudo apt-get update
-          sudo apt-get install -y libjemalloc2 net-tools
-
-      - name: Setup Playit Tunnel
-        run: |
-          echo "=== Downloading Playit ==="
-          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
-          chmod +x playit-linux-amd64
-          
-          echo "=== Checking if config already exists ==="
-          if [ -f playit.toml ]; then
-            echo "✔ Found existing playit.toml - tunnel will connect automatically"
-          else
-            echo "⚠ No playit.toml found - first time setup needed"
-          fi
-          
-          echo "=== Starting Playit in background ==="
-          ./playit-linux-amd64 > playit.log 2>&1 &
-          PLAYIT_PID=$!
-          echo "Playit PID: $PLAYIT_PID"
-          
-          echo "⏳ Waiting 30 seconds for playit to initialize..."
-          sleep 30
-          
-          echo "================================"
-          echo "=== PLAYIT INITIAL LOGS ==="
-          echo "================================"
-          cat playit.log || echo "No logs yet"
-          echo "================================"
-          
-          echo ""
-          echo "⏰ WAITING 6 MINUTES for tunnel setup!"
-          echo "👆 If you see a claim URL above, open it NOW in your browser"
-          echo "If tunnel is already claimed, it should connect automatically"
-          echo ""
-          
-          for i in {1..6}; do
-            echo "⏱ Minute $i/6 - Playit still running..."
-            sleep 60
-          done
-          
-          echo "================================"
-          echo "=== PLAYIT COMPLETE LOGS ==="
-          echo "================================"
-          cat playit.log || echo "No logs"
-          echo "================================"
-          
-          echo "=== Checking all created files ==="
-          ls -lah
-          echo ""
-          find . -name "*playit*" -o -name "*.toml" 2>/dev/null || echo "No playit files found"
-          
-          echo "✔ Playit setup phase complete - keeping process running"
+          sudo apt-get install -y libjemalloc2
 
       - name: Run Minecraft Server with Playit
+        env:
+          SECRET_KEY: ${{ secrets.PLAYIT_SECRET }}
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -90,24 +41,12 @@ jobs:
 
           test -f eula.txt || echo "eula=true" > eula.txt
           
-          echo "=== Checking Playit status ==="
-          if ! pgrep -f playit-linux-amd64 > /dev/null; then
-            echo "⚠ Playit not running, restarting it..."
-            ./playit-linux-amd64 >> playit.log 2>&1 &
-            PLAYIT_PID=$!
-            echo "✔ Playit restarted (PID: $PLAYIT_PID)"
-            sleep 10
-          else
-            echo "✔ Playit already running"
-            PLAYIT_PID=$(pgrep -f playit-linux-amd64)
-            echo "Playit PID: $PLAYIT_PID"
-          fi
-          
-          echo "================================"
-          echo "=== ALL PLAYIT LOGS BEFORE SERVER START ==="
-          echo "================================"
-          cat playit.log
-          echo "================================"
+          echo "=== Downloading & Starting Playit ==="
+          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          chmod +x playit-linux-amd64
+          ./playit-linux-amd64 > playit.log 2>&1 &
+          echo "✔ Playit started"
+          sleep 5
 
           echo "=== Starting Minecraft Server ==="
           java -DPaper.IgnoreJavaVersion=true \
@@ -121,48 +60,30 @@ jobs:
           SERVER_PID=$!
           echo "✔ Server started (PID: $SERVER_PID)"
 
-          echo "⏰ Server will run for 6 minutes..."
-          sleep 360
+          echo "⏰ Server running for 5h 45m..."
+          sleep 20700
           
-          echo "=== Graceful shutdown ==="
+          echo "=== Stopping ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
-          wait $SERVER_PID 2>/dev/null || true
-          echo "✔ Server stopped"
-          
-          echo "=== Stopping Playit ==="
           pkill -TERM playit-linux-amd64 2>/dev/null || true
-          sleep 2
-          echo "✔ Playit stopped"
-          
-          echo "================================"
-          echo "=== FINAL PLAYIT LOGS ==="
-          echo "================================"
-          cat playit.log
-          echo "================================"
+          wait $SERVER_PID 2>/dev/null || true
+          echo "✔ Stopped"
 
-      - name: Save all files to repository
+      - name: Save to repository
         run: |
-          git config user.name  "github-actions"
+          git config user.name "github-actions"
           git config user.email "actions@github.com"
-          
-          echo "=== Listing ALL files including hidden ==="
-          ls -lah
-          
-          echo "=== Finding ALL playit files ==="
-          find . -type f -name "*playit*" -o -name "*.toml" 2>/dev/null || true
-          find $HOME -type f -name "*playit*" -o -name "*.toml" 2>/dev/null ||
+          git add -A
           
           if ! git diff --cached --quiet 2>/dev/null; then
-            git commit -m "Auto-save all files $(date -u)"
+            git commit -m "Auto-save $(date -u)"
             git pull --rebase --autostash \
               https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
             git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-            echo "✔ All files saved to repository"
-          else
-            echo "ℹ No changes to save"
+            echo "✔ Saved"
           fi
 
-      - name: Retrigger if alone
+      - name: Retrigger
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
