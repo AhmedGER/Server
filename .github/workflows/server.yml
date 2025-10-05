@@ -145,11 +145,12 @@ jobs:
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
           
-          echo "=== Listing ALL files in directory ==="
+          echo "=== Listing ALL files including hidden ==="
           ls -lah
           
-          echo "=== Adding ALL files to git ==="
-          git add -A
+          echo "=== Finding ALL playit files ==="
+          find . -type f -name "*playit*" -o -name "*.toml" 2>/dev/null || true
+          find $HOME -type f -name "*playit*" -o -name "*.toml" 2>/dev/null ||
           
           if ! git diff --cached --quiet 2>/dev/null; then
             git commit -m "Auto-save all files $(date -u)"
