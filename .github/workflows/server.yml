@@ -27,33 +27,58 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libjemalloc2 net-tools
 
-      - name: Setup Playit Tunnel (FIRST TIME - Check logs for claim URL!)
+      - name: Setup Playit Tunnel
         run: |
           echo "=== Downloading Playit ==="
           wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
           chmod +x playit-linux-amd64
           
-          echo "=== Starting Playit - CHECK LOGS FOR CLAIM URL! ==="
+          echo "=== Checking if config already exists ==="
+          if [ -f playit.toml ]; then
+            echo "✔ Found existing playit.toml - tunnel will connect automatically"
+          else
+            echo "⚠ No playit.toml found - first time setup needed"
+          fi
+          
+          echo "=== Starting Playit in background ==="
           ./playit-linux-amd64 > playit.log 2>&1 &
           PLAYIT_PID=$!
+          echo "Playit PID: $PLAYIT_PID"
           
-          echo "⏳ Waiting 30 seconds for playit to start..."
+          echo "⏳ Waiting 30 seconds for playit to initialize..."
           sleep 30
           
-          echo "=== PLAYIT LOGS (Contains claim URL) ==="
-          cat playit.log
+          echo "================================"
+          echo "=== PLAYIT INITIAL LOGS ==="
+          echo "================================"
+          cat playit.log || echo "No logs yet"
           echo "================================"
           
-          echo "⏰ WAITING 8 MINUTES for you to claim the tunnel!"
-          echo "👆 Find the claim URL above and open it in browser"
-          sleep 480
+          echo ""
+          echo "⏰ WAITING 6 MINUTES for tunnel setup!"
+          echo "👆 If you see a claim URL above, open it NOW in your browser"
+          echo "If tunnel is already claimed, it should connect automatically"
+          echo ""
           
-          echo "=== Final Playit Logs ==="
-          cat playit.log
+          for i in {1..6}; do
+            echo "⏱ Minute $i/6 - Playit still running..."
+            sleep 60
+          done
           
-          kill $PLAYIT_PID 2>/dev/null || true
+          echo "================================"
+          echo "=== PLAYIT COMPLETE LOGS ==="
+          echo "================================"
+          cat playit.log || echo "No logs"
+          echo "================================"
+          
+          echo "=== Checking all created files ==="
+          ls -lah
+          echo ""
+          find . -name "*playit*" -o -name "*.toml" 2>/dev/null || echo "No playit files found"
+          
+          echo "✔ Playit setup phase complete - keeping process running"
 
-      - name: One-step server (Java 21) → 10 min → graceful stop
+      - name: Run Minecraft Server with Playit
         run: |
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
@@ -64,7 +89,27 @@ jobs:
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
           test -f eula.txt || echo "eula=true" > eula.txt
+          
+          echo "=== Checking Playit status ==="
+          if ! pgrep -f playit-linux-amd64 > /dev/null; then
+            echo "⚠ Playit not running, restarting it..."
+            ./playit-linux-amd64 >> playit.log 2>&1 &
+            PLAYIT_PID=$!
+            echo "✔ Playit restarted (PID: $PLAYIT_PID)"
+            sleep 10
+          else
+            echo "✔ Playit already running"
+            PLAYIT_PID=$(pgrep -f playit-linux-amd64)
+            echo "Playit PID: $PLAYIT_PID"
+          fi
+          
+          echo "================================"
+          echo "=== ALL PLAYIT LOGS BEFORE SERVER START ==="
+          echo "================================"
+          cat playit.log
+          echo "================================"
 
+          echo "=== Starting Minecraft Server ==="
           java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
@@ -76,40 +121,44 @@ jobs:
           SERVER_PID=$!
           echo "✔ Server started (PID: $SERVER_PID)"
 
-          sleep 600        # 10 دقائق
-          echo "=== Graceful stop ==="
-          kill -TERM $SERVER_PID
-          wait $SERVER_PID || true
+          echo "⏰ Server will run for 6 minutes..."
+          sleep 360
+          
+          echo "=== Graceful shutdown ==="
+          kill -TERM $SERVER_PID 2>/dev/null || true
+          wait $SERVER_PID 2>/dev/null || true
           echo "✔ Server stopped"
+          
+          echo "=== Stopping Playit ==="
+          pkill -TERM playit-linux-amd64 2>/dev/null || true
+          sleep 2
+          echo "✔ Playit stopped"
+          
+          echo "================================"
+          echo "=== FINAL PLAYIT LOGS ==="
+          echo "================================"
+          cat playit.log
+          echo "================================"
 
-      - name: Save Playit configuration
+      - name: Save all files to repository
         run: |
           git config user.name  "github-actions"
           git config user.email "actions@github.com"
           
-          echo "=== Saving Playit files ==="
-          git add playit.toml playit-linux-amd64 playit.log 2>/dev/null || true
+          echo "=== Listing ALL files in directory ==="
+          ls -lah
+          
+          echo "=== Adding ALL files to git ==="
+          git add -A
           
           if ! git diff --cached --quiet 2>/dev/null; then
-            git commit -m "Save Playit config $(date -u)"
+            git commit -m "Auto-save all files $(date -u)"
             git pull --rebase --autostash \
               https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
             git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-            echo "✔ Playit config saved"
+            echo "✔ All files saved to repository"
           else
-            echo "ℹ No Playit changes to save"
-          fi
-
-      - name: Save world+plugins if changed
-        run: |
-          git config user.name  "github-actions"
-          git config user.email "actions@github.com"
-          git add world plugins playit.toml playit-linux-amd64 playit.log || true
-          if ! git diff --cached --quiet; then
-            git commit -m "Auto-save $(date -u)"
-            git pull --rebase --autostash \
-              https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-            git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+            echo "ℹ No changes to save"
           fi
 
       - name: Retrigger if alone
