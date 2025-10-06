@@ -1,17 +1,17 @@
-[15:26:32] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:26:32] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[15:26:33] [Worker-Main-1/INFO]: Loaded 7 recipes
-[15:26:33] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[15:26:33] [Server thread/INFO]: Loading properties
-[15:26:33] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[15:26:34] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[15:26:34] [Server thread/INFO]: Using 4 threads for Netty based IO
-[15:26:34] [Server thread/INFO]: Debug logging is disabled
-[15:26:34] [Server thread/INFO]: Default game type: SURVIVAL
-[15:26:34] [Server thread/INFO]: Generating keypair
-[15:26:34] [Server thread/INFO]: Starting Minecraft server on *:25565
-[15:26:34] [Server thread/INFO]: Using epoll channel type
-[15:26:35] [Server thread/ERROR]: Could not load 'plugins/playit-minecraft-plugin.jar' in folder 'plugins'
+[05:23:02] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[05:23:02] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[05:23:03] [Worker-Main-2/INFO]: Loaded 7 recipes
+[05:23:03] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[05:23:03] [Server thread/INFO]: Loading properties
+[05:23:04] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[05:23:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[05:23:04] [Server thread/INFO]: Debug logging is disabled
+[05:23:04] [Server thread/INFO]: Using 4 threads for Netty based IO
+[05:23:04] [Server thread/INFO]: Default game type: SURVIVAL
+[05:23:04] [Server thread/INFO]: Generating keypair
+[05:23:04] [Server thread/INFO]: Starting Minecraft server on *:25565
+[05:23:04] [Server thread/INFO]: Using epoll channel type
+[05:23:05] [Server thread/ERROR]: Could not load 'plugins/playit-minecraft-plugin.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.18
 	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:361) ~[patched_1.16.5.jar:git-Paper-794]
 	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[patched_1.16.5.jar:git-Paper-794]
@@ -22,95 +22,102 @@ org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.18
 	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
 	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
 	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[15:26:35] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[15:26:35] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
-[15:26:35] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
-[15:26:35] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[15:26:36] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[15:26:36] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[15:26:36] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[15:26:36] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[15:26:36] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[15:26:36] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[15:26:36] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[15:26:36] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
-[15:26:36] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[15:26:36] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
-[15:26:37] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[15:26:37] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[15:26:37] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[15:26:37] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[15:26:37] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[15:26:37] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[15:26:37] [Server thread/INFO]: Preparing level "world"
-[15:26:37] [Server thread/WARN]: Unable to find spawn biome
-[15:26:38] [Server thread/WARN]: Unable to find spawn biome
-[15:26:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[15:26:38] [Server thread/INFO]: Preparing spawn area: 0%
-[15:26:38] [Server thread/INFO]: Time elapsed: 176 ms
-[15:26:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[15:26:39] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[15:26:39] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[15:26:39] [Worker-Main-2/INFO]: Preparing spawn area: 0%
-[15:26:40] [Server thread/INFO]: Time elapsed: 1186 ms
-[15:26:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[15:26:40] [Worker-Main-1/INFO]: Preparing spawn area: 0%
-[15:26:40] [Server thread/INFO]: Time elapsed: 350 ms
-[15:26:40] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[15:26:40] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
-[15:26:40] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[15:26:40] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[15:26:40] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[15:26:40] [Server thread/INFO]: [TAB] Enabled in 212ms
-[15:26:40] [Server thread/INFO]: Running delayed init tasks
-[15:26:40] [Server thread/INFO]: Done (7.109s)! For help, type "help"
-[15:26:40] [Server thread/INFO]: Timings Reset
-[15:26:40] [Craft Scheduler Thread - 3/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[15:26:41] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[15:29:22] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[15:29:23] [Server thread/INFO]: SIGMAxox joined the game
-[15:29:23] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[15:29:23] [Server thread/INFO]: SIGMAxox[/127.124.243.212:36329] logged in with entity id 350 at ([world]69.90976605884646, 63.0, -88.43840996207808)
-[15:30:08] [Server thread/WARN]: SIGMAxox was kicked due to keepalive timeout!
-[15:30:08] [Server thread/INFO]: SIGMAxox lost connection: Timed out
-[15:30:08] [Server thread/INFO]: SIGMAxox left the game
-[15:31:42] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[15:31:42] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[15:31:42] [Server thread/INFO]: SIGMAxox joined the game
-[15:31:42] [Server thread/INFO]: SIGMAxox[/127.124.243.212:35867] logged in with entity id 1169 at ([world]69.90976605884646, 63.0, -88.43840996207808)
-[15:31:48] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[15:31:48] [Server thread/INFO]: SIGMAxox left the game
-[15:31:54] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[15:31:54] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[15:31:54] [Server thread/INFO]: SIGMAxox joined the game
-[15:31:54] [Server thread/INFO]: SIGMAxox[/127.124.243.212:44447] logged in with entity id 1184 at ([world]69.90976605884646, 63.0, -88.43840996207808)
-[15:32:18] [Server thread/INFO]: Stopping server
-[15:32:18] [Server thread/INFO]: [TAB] Disabled in 1ms
-[15:32:18] [Server thread/INFO]: Saving players
-[15:32:18] [Server thread/INFO]: SIGMAxox lost connection: Server closed
-[15:32:18] [Server thread/INFO]: SIGMAxox left the game
-[15:32:19] [Server thread/INFO]: Saving worlds
-[15:32:19] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[15:32:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:32:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[15:32:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:32:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[15:32:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:32:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[15:32:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:32:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:32:22] [Server thread/INFO]: Flushing Chunk IO
-[15:32:22] [Server thread/INFO]: Closing Thread Pool
-[15:32:22] [Server thread/INFO]: Closing Server
+[05:23:05] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[05:23:05] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
+[05:23:05] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
+[05:23:05] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[05:23:06] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[05:23:06] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[05:23:06] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[05:23:06] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[05:23:06] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[05:23:06] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[05:23:06] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[05:23:06] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
+[05:23:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[05:23:06] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[05:23:06] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
+[05:23:07] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[05:23:07] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[05:23:07] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[05:23:07] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[05:23:07] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[05:23:07] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[05:23:07] [Server thread/INFO]: Preparing level "world"
+[05:23:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[05:23:08] [Server thread/INFO]: Preparing spawn area: 0%
+[05:23:08] [Server thread/INFO]: Time elapsed: 500 ms
+[05:23:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[05:23:08] [Server thread/INFO]: Time elapsed: 292 ms
+[05:23:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[05:23:09] [Server thread/INFO]: Time elapsed: 335 ms
+[05:23:09] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[05:23:09] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
+[05:23:09] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[05:23:09] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[05:23:09] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[05:23:09] [Server thread/INFO]: [TAB] Enabled in 236ms
+[05:23:09] [Server thread/INFO]: Running delayed init tasks
+[05:23:09] [Server thread/INFO]: Done (5.773s)! For help, type "help"
+[05:23:09] [Server thread/INFO]: Timings Reset
+[05:23:09] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[05:23:12] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[05:24:37] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[05:24:37] [Server thread/INFO]: SIGMA joined the game
+[05:24:37] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[05:24:37] [Server thread/INFO]: SIGMA[/127.84.108.32:50613] logged in with entity id 354 at ([world]63.53514318458919, 63.0, -86.39720135587935)
+[05:27:09] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[05:27:09] [Server thread/INFO]: SIGMA left the game
+[07:00:31] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[07:00:31] [Server thread/INFO]: SIGMAxox joined the game
+[07:00:31] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:00:31] [Server thread/INFO]: SIGMAxox[/127.84.108.32:51107] logged in with entity id 1574 at ([world]69.90976605884646, 63.0, -88.43840996207808)
+[07:00:58] [Server thread/INFO]: SIGMAxox has made the advancement [Sweet Dreams]
+[07:03:38] [Server thread/INFO]: SIGMAxox issued server command: /plugins
+[07:05:41] [Server thread/INFO]: SIGMAxox has made the advancement [Getting an Upgrade]
+[07:05:47] [Server thread/INFO]: SIGMAxox has made the advancement [Stone Age]
+[07:13:32] [Server thread/INFO]: SIGMAxox lost connection: Timed out
+[07:13:32] [Server thread/INFO]: SIGMAxox left the game
+[07:17:36] [User Authenticator #3/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[07:17:36] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:17:36] [Server thread/INFO]: SIGMAxox joined the game
+[07:17:36] [Server thread/INFO]: SIGMAxox[/127.84.108.32:54235] logged in with entity id 4266 at ([world]45.37772340775524, 68.0, -85.25270734637411)
+[07:25:46] [Server thread/INFO]: SIGMAxox has made the advancement [A Seedy Place]
+[07:33:45] [Server thread/INFO]: SIGMAxox has made the advancement [Isn't It Iron Pick]
+[07:35:04] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[07:35:04] [Server thread/INFO]: SIGMAxox left the game
+[07:35:13] [User Authenticator #4/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[07:35:13] [Server thread/INFO]: SIGMAxox joined the game
+[07:35:13] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:35:13] [Server thread/INFO]: SIGMAxox[/127.84.108.32:38121] logged in with entity id 7880 at ([world]144.54843613993654, 64.0, 111.37621835907146)
+[07:36:27] [Server thread/INFO]: SIGMAxox has made the advancement [Monster Hunter]
+[07:44:26] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[07:44:26] [Server thread/INFO]: SIGMAxox left the game
+[11:07:53] [Server thread/INFO]: Stopping server
+[11:07:53] [Server thread/INFO]: [TAB] Disabled in 1ms
+[11:07:53] [Server thread/INFO]: Saving players
+[11:07:54] [Server thread/INFO]: Saving worlds
+[11:07:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:07:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:07:54] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:07:54] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:07:54] [Server thread/INFO]: Flushing Chunk IO
+[11:07:54] [Server thread/INFO]: Closing Thread Pool
+[11:07:54] [Server thread/INFO]: Closing Server
