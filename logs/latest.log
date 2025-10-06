@@ -1,161 +1,110 @@
-[11:09:30] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[11:09:30] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[11:09:31] [Worker-Main-2/INFO]: Loaded 7 recipes
-[11:09:32] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[11:09:32] [Server thread/INFO]: Loading properties
-[11:09:32] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[11:09:33] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[11:09:33] [Server thread/INFO]: Using 4 threads for Netty based IO
-[11:09:33] [Server thread/INFO]: Debug logging is disabled
-[11:09:33] [Server thread/INFO]: Default game type: SURVIVAL
-[11:09:33] [Server thread/INFO]: Generating keypair
-[11:09:33] [Server thread/INFO]: Starting Minecraft server on *:25565
-[11:09:33] [Server thread/INFO]: Using epoll channel type
-[11:09:34] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[11:09:34] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
-[11:09:34] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
-[11:09:34] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[11:09:34] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[11:09:35] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[11:09:35] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[11:09:35] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[11:09:35] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[11:09:36] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[11:09:36] [Server thread/INFO]: [floodgate] Took 736ms to boot Floodgate
-[11:09:36] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[11:09:36] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[11:09:36] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[11:09:36] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
-[11:09:36] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[11:09:36] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[11:09:36] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[11:09:36] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[11:09:36] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[11:09:36] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
-[11:09:37] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[11:09:37] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[11:09:37] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[11:09:37] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[11:09:37] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[11:09:37] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[11:09:37] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[11:09:37] [Server thread/INFO]: Preparing level "world"
-[11:09:37] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[11:09:38] [Server thread/INFO]: Preparing spawn area: 0%
-[11:09:38] [Server thread/INFO]: Preparing spawn area: 0%
-[11:09:38] [Server thread/INFO]: Time elapsed: 750 ms
-[11:09:38] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[11:09:38] [Server thread/INFO]: Preparing spawn area: 0%
-[11:09:39] [Worker-Main-2/INFO]: Preparing spawn area: 82%
-[11:09:39] [Server thread/INFO]: Time elapsed: 874 ms
-[11:09:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[11:09:39] [Server thread/INFO]: Preparing spawn area: 0%
-[11:09:40] [Server thread/INFO]: Time elapsed: 477 ms
-[11:09:40] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[11:09:40] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
-[11:09:40] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[11:09:40] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[11:09:40] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[11:09:40] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[11:09:40] [Server thread/INFO]: [TAB] Enabled in 233ms
-[11:09:40] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[11:09:41] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[11:09:41] [Server thread/INFO]: [Geyser-Spigot] 
-[11:09:41] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[11:09:41] [Server thread/INFO]: [Geyser-Spigot] 
-[11:09:41] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[11:09:44] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[11:09:44] [Server thread/INFO]: [Geyser-Spigot] Done (2.932s)! Run /geyser help for help!
-[11:09:44] [Server thread/INFO]: Running delayed init tasks
-[11:09:44] [Server thread/INFO]: Done (12.763s)! For help, type "help"
-[11:09:44] [ForkJoinPool.commonPool-worker-2/WARN]: [Geyser-Spigot] Missing MC locale file: en_us
-[11:09:44] [Server thread/INFO]: Timings Reset
-[11:09:44] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[11:09:44] [ForkJoinPool.commonPool-worker-2/INFO]: [Geyser-Spigot] Downloading Minecraft JAR to extract required files, please wait... (this may take some time depending on the speed of your internet connection)
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[11:09:45] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[11:09:46] [ForkJoinPool.commonPool-worker-2/INFO]: [Geyser-Spigot] Minecraft JAR has been successfully downloaded and loaded!
-[12:38:10] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[12:38:10] [Server thread/INFO]: SIGMA joined the game
-[12:38:10] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[12:38:10] [Server thread/INFO]: SIGMA[/127.146.132.130:36457] logged in with entity id 343 at ([world]45.55003847086334, 68.0, -83.52832749082597)
-[12:39:58] [Server thread/INFO]: SIGMA has made the advancement [A Seedy Place]
-[12:47:40] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[12:47:40] [Server thread/INFO]: SIGMA left the game
-[12:48:42] [User Authenticator #2/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[12:48:42] [Server thread/INFO]: SIGMA joined the game
-[12:48:42] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[12:48:42] [Server thread/INFO]: SIGMA[/127.146.132.130:51549] logged in with entity id 2311 at ([world]45.2241735404457, 68.0, -83.59937661775692)
-[12:48:59] [Server thread/INFO]: SIGMA issued server command: /plugins
-[12:49:31] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[12:49:31] [Server thread/INFO]: SIGMA left the game
-[13:50:10] [User Authenticator #3/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
-[13:50:10] [Server thread/INFO]: RGFVN joined the game
-[13:50:10] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:50:10] [Server thread/INFO]: RGFVN[/127.168.229.142:49387] logged in with entity id 2939 at ([world]35.2803745197293, 68.0, -83.00134486046746)
-[13:52:27] [Server thread/INFO]: RGFVN has made the advancement [A Seedy Place]
-[14:05:30] [Server thread/INFO]: RGFVN lost connection: Disconnected
-[14:05:30] [Server thread/INFO]: RGFVN left the game
-[14:06:48] [User Authenticator #4/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[14:06:48] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:06:48] [Server thread/INFO]: SIGMA joined the game
-[14:06:48] [Server thread/INFO]: SIGMA[/127.168.229.142:51559] logged in with entity id 5307 at ([world]45.5, 68.0, -86.5)
-[14:07:16] [User Authenticator #4/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
-[14:07:17] [Server thread/INFO]: RGFVN joined the game
-[14:07:17] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:07:17] [Server thread/INFO]: RGFVN[/127.168.229.142:60949] logged in with entity id 5581 at ([world]45.667419869116436, 67.0, -79.5207525275239)
-[14:08:19] [Server thread/INFO]: RGFVN lost connection: Disconnected
-[14:08:19] [Server thread/INFO]: RGFVN left the game
-[14:08:26] [User Authenticator #5/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
-[14:08:27] [Server thread/INFO]: RGFVN joined the game
-[14:08:27] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:08:27] [Server thread/INFO]: RGFVN[/127.168.229.142:39741] logged in with entity id 6031 at ([world]45.430655202049834, 67.0, -81.46355827830637)
-[14:08:28] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[14:08:28] [Server thread/INFO]: SIGMA left the game
-[14:08:33] [Server thread/INFO]: RGFVN lost connection: Disconnected
-[14:08:33] [Server thread/INFO]: RGFVN left the game
-[14:57:48] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Bedrock user with ip: /127.35.221.4 has disconnected for reason Outdated Bedrock client! This server supports the following Bedrock versions: 1.21.90, 1.21.91, 1.21.92, 1.21.93, 1.21.94, 1.21.100, 1.21.101, 1.21.111
-[14:58:59] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Bedrock user with ip: /127.35.221.4 has disconnected for reason Outdated Bedrock client! This server supports the following Bedrock versions: 1.21.90, 1.21.91, 1.21.92, 1.21.93, 1.21.94, 1.21.100, 1.21.101, 1.21.111
-[16:28:28] [User Authenticator #6/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[16:28:28] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[16:28:28] [Server thread/INFO]: SIGMAxox joined the game
-[16:28:28] [Server thread/INFO]: SIGMAxox[/127.224.132.75:38445] logged in with entity id 6066 at ([world]45.5, 68.0, -86.5)
-[16:28:40] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[16:28:40] [Server thread/INFO]: SIGMAxox left the game
-[16:28:53] [User Authenticator #6/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[16:28:53] [Server thread/INFO]: SIGMAxox joined the game
-[16:28:53] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[16:28:53] [Server thread/INFO]: SIGMAxox[/127.224.132.75:48877] logged in with entity id 6141 at ([world]45.5, 68.0, -86.5)
-[16:30:23] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[16:33:06] [Server thread/INFO]: SIGMAxox has made the advancement [Suit Up]
-[16:36:22] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[16:37:45] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[16:54:20] [Server thread/INFO]: Stopping server
-[16:54:20] [Server thread/INFO]: [TAB] Disabled in 3ms
-[16:54:20] [Server thread/INFO]: Saving players
-[16:54:20] [Server thread/INFO]: SIGMAxox lost connection: Server closed
-[16:54:21] [Server thread/INFO]: SIGMAxox left the game
-[16:54:21] [Server thread/INFO]: Saving worlds
-[16:54:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[16:54:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16:54:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[16:54:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[16:54:22] [Server thread/INFO]: Flushing Chunk IO
-[16:54:22] [Server thread/INFO]: Closing Thread Pool
-[16:54:22] [Server thread/INFO]: Closing Server
+[16:55:46] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:55:46] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[16:55:47] [Worker-Main-2/INFO]: Loaded 7 recipes
+[16:55:48] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[16:55:48] [Server thread/INFO]: Loading properties
+[16:55:48] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[16:55:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:55:49] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:55:49] [Server thread/INFO]: Debug logging is disabled
+[16:55:49] [Server thread/INFO]: Default game type: SURVIVAL
+[16:55:49] [Server thread/INFO]: Generating keypair
+[16:55:49] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:55:49] [Server thread/INFO]: Using epoll channel type
+[16:55:50] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[16:55:50] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
+[16:55:50] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
+[16:55:50] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[16:55:50] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[16:55:51] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[16:55:51] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[16:55:51] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[16:55:51] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[16:55:52] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[16:55:52] [Server thread/INFO]: [floodgate] Took 511ms to boot Floodgate
+[16:55:52] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[16:55:52] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[16:55:52] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[16:55:52] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
+[16:55:52] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[16:55:52] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[16:55:52] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[16:55:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:55:52] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[16:55:52] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
+[16:55:53] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[16:55:53] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[16:55:53] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[16:55:53] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:55:53] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:55:53] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:55:53] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:55:53] [Server thread/INFO]: Preparing level "world"
+[16:55:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:55:54] [Server thread/INFO]: Preparing spawn area: 0%
+[16:55:54] [Server thread/INFO]: Preparing spawn area: 0%
+[16:55:54] [Server thread/INFO]: Time elapsed: 633 ms
+[16:55:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:55:54] [Server thread/INFO]: Time elapsed: 310 ms
+[16:55:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:55:54] [Server thread/INFO]: Time elapsed: 253 ms
+[16:55:54] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[16:55:54] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
+[16:55:54] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[16:55:55] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[16:55:55] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[16:55:55] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[16:55:55] [Server thread/INFO]: [TAB] Enabled in 231ms
+[16:55:55] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[16:55:56] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:55:56] [Server thread/INFO]: [Geyser-Spigot] 
+[16:55:56] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[16:55:56] [Server thread/INFO]: [Geyser-Spigot] 
+[16:55:56] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:55:59] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[16:55:59] [Server thread/INFO]: [Geyser-Spigot] Done (2.725s)! Run /geyser help for help!
+[16:55:59] [Server thread/INFO]: Running delayed init tasks
+[16:55:59] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[16:55:59] [Server thread/INFO]: Done (11.458s)! For help, type "help"
+[16:55:59] [Server thread/INFO]: Timings Reset
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[16:55:59] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[20:28:42] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[20:28:43] [Server thread/INFO]: SIGMA joined the game
+[20:28:43] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[20:28:43] [Server thread/INFO]: SIGMA[/127.22.92.211:60587] logged in with entity id 368 at ([world]45.51249998807907, 68.0, -84.84697237614745)
+[20:29:18] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[20:29:18] [Server thread/INFO]: SIGMA left the game
+[20:29:27] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[20:29:27] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[20:29:27] [Server thread/INFO]: SIGMA joined the game
+[20:29:27] [Server thread/INFO]: SIGMA[/127.22.92.211:58747] logged in with entity id 443 at ([world]56.242996613765946, 67.0, -85.53764332554691)
+[20:29:57] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[20:29:57] [Server thread/INFO]: SIGMA left the game
+[22:40:37] [Server thread/INFO]: Stopping server
+[22:40:37] [Server thread/INFO]: [TAB] Disabled in 1ms
+[22:40:37] [Server thread/INFO]: Saving players
+[22:40:37] [Server thread/INFO]: Saving worlds
+[22:40:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:40:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:40:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:40:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:40:38] [Server thread/INFO]: Flushing Chunk IO
+[22:40:38] [Server thread/INFO]: Closing Thread Pool
+[22:40:38] [Server thread/INFO]: Closing Server
