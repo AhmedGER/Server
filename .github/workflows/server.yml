@@ -22,15 +22,54 @@ jobs:
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
 
-      - name: Install deps
+      - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libjemalloc2
+          sudo apt-get update -qq
+          sudo apt-get install -y libjemalloc2 -qq
 
-      - name: Run Minecraft Server with Playit
-        env:
-          SECRET_KEY: ${{ secrets.PLAYIT_SECRET }}
+      - name: Setup Playit Tunnel
         run: |
+          echo "=== Setting up Playit Tunnel ==="
+          
+          # Download playit agent
+          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          chmod +x playit-linux-amd64
+          
+          # Create playit.toml from secret
+          if [ -n "${{ secrets.PLAYIT_SECRET }}" ]; then
+            echo "✔ Using PLAYIT_SECRET from GitHub Secrets"
+            echo "${{ secrets.PLAYIT_SECRET }}" > playit.toml
+          elif [ -f playit.toml ]; then
+            echo "✔ Using existing playit.toml from repository"
+          else
+            echo "⚠️ WARNING: No PLAYIT_SECRET found and no playit.toml in repo!"
+            echo "Please add PLAYIT_SECRET to GitHub Secrets or commit playit.toml"
+            echo "Running playit without config (will need manual claim)..."
+          fi
+          
+          # Start playit in background
+          ./playit-linux-amd64 > playit.log 2>&1 &
+          PLAYIT_PID=$!
+          echo "Playit PID: $PLAYIT_PID"
+          
+          # Wait for playit to initialize
+          sleep 15
+          
+          # Show playit logs
+          echo "=== Playit Initialization Logs ==="
+          cat playit.log || echo "No logs yet"
+          echo "=================================="
+          
+          # Check if playit is running
+          if ps -p $PLAYIT_PID > /dev/null; then
+            echo "✔ Playit is running successfully"
+          else
+            echo "⚠️ Playit may have stopped, check logs above"
+          fi
+
+      - name: Run Minecraft Server
+        run: |
+          # Memory optimization
           export MALLOC_ARENA_MAX=2
           export MALLOC_MMAP_THRESHOLD_=131072
           export MALLOC_TRIM_THRESHOLD_=131072
@@ -39,14 +78,8 @@ jobs:
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
+          # Accept EULA
           test -f eula.txt || echo "eula=true" > eula.txt
-          
-          echo "=== Downloading & Starting Playit ==="
-          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
-          chmod +x playit-linux-amd64
-          ./playit-linux-amd64 > playit.log 2>&1 &
-          echo "✔ Playit started"
-          sleep 5
 
           echo "=== Starting Minecraft Server ==="
           java -DPaper.IgnoreJavaVersion=true \
@@ -58,37 +91,61 @@ jobs:
             -XX:G1HeapWastePercent=5 \
             -jar server.jar --nogui &
           SERVER_PID=$!
-          echo "✔ Server started (PID: $SERVER_PID)"
-
-          echo "⏰ Server running for 5h 45m..."
+          echo "✔ Minecraft Server started (PID: $SERVER_PID)"
+          
+          # Show final playit status
+          echo ""
+          echo "=== Playit Tunnel Info ==="
+          cat playit.log | grep -i "connect\|tunnel\|claim\|error" || cat playit.log | tail -20
+          echo "=========================="
+          echo ""
+          echo "⏰ Server will run for 5 hours and 45 minutes..."
+          echo "Players can connect using the playit tunnel address shown above"
+          
+          # Run for 5h 45m (20700 seconds)
           sleep 20700
           
-          echo "=== Stopping ==="
+          echo ""
+          echo "=== Graceful Shutdown ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
-          pkill -TERM playit-linux-amd64 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
-          echo "✔ Stopped"
+          
+          pkill -TERM playit-linux-amd64 2>/dev/null || true
+          sleep 3
+          
+          echo "✔ Server and Playit stopped"
 
-      - name: Save to repository
+      - name: Save world and config
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add all changes
           git add -A
           
           if ! git diff --cached --quiet 2>/dev/null; then
-            git commit -m "Auto-save $(date -u)"
+            git commit -m "Auto-save: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
             git pull --rebase --autostash \
               https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
             git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
-            echo "✔ Saved"
+            echo "✔ Changes saved to repository"
+          else
+            echo "ℹ️ No changes to save"
           fi
 
-      - name: Retrigger
+      - name: Auto-retrigger workflow
+        if: github.run_attempt < 3
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
+          # Check if there are other running workflows
           runs=$(gh run list -w server.yml --json status -q \
-               '.[]|select(.status=="queued" or .status=="in_progress")|length')
-          if [ "$runs" -le 1 ] && [ "${{ github.run_attempt }}" -lt 3 ]; then
+               '[.[] | select(.status=="queued" or .status=="in_progress")] | length')
+          
+          if [ "$runs" -le 1 ]; then
+            echo "No other workflows running, retriggering..."
             gh workflow run server.yml
+            echo "✔ Workflow retriggered"
+          else
+            echo "Other workflows are running, skipping retrigger"
           fi
