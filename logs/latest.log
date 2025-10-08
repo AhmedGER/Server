@@ -1,113 +1,177 @@
-[03:33:14] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[03:33:15] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[03:33:16] [Worker-Main-2/INFO]: Loaded 7 recipes
-[03:33:17] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[03:33:17] [Server thread/INFO]: Loading properties
-[03:33:17] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[03:33:18] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[03:33:18] [Server thread/INFO]: Using 4 threads for Netty based IO
-[03:33:18] [Server thread/INFO]: Debug logging is disabled
-[03:33:18] [Server thread/INFO]: Default game type: SURVIVAL
-[03:33:18] [Server thread/INFO]: Generating keypair
-[03:33:19] [Server thread/INFO]: Starting Minecraft server on *:25565
-[03:33:19] [Server thread/INFO]: Using epoll channel type
-[03:33:20] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[03:33:20] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
-[03:33:20] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
-[03:33:20] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[03:33:20] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[03:33:20] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[03:33:20] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[03:33:21] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[03:33:21] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[03:33:21] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[03:33:21] [Server thread/INFO]: [floodgate] Took 509ms to boot Floodgate
-[03:33:21] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[03:33:21] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[03:33:21] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[03:33:21] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
-[03:33:21] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[03:33:22] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[03:33:22] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[03:33:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[03:33:22] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[03:33:22] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
-[03:33:22] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[03:33:23] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[03:33:23] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[03:33:23] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[03:33:23] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[03:33:23] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[03:33:23] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[03:33:23] [Server thread/INFO]: Preparing level "world"
-[03:33:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[03:33:24] [Server thread/INFO]: Preparing spawn area: 0%
-[03:33:24] [Server thread/INFO]: Preparing spawn area: 0%
-[03:33:24] [Server thread/INFO]: Time elapsed: 757 ms
-[03:33:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[03:33:24] [Server thread/INFO]: Preparing spawn area: 0%
-[03:33:24] [Worker-Main-1/INFO]: Preparing spawn area: 58%
-[03:33:25] [Server thread/INFO]: Time elapsed: 884 ms
-[03:33:25] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[03:33:25] [Server thread/INFO]: Preparing spawn area: 0%
-[03:33:25] [Server thread/INFO]: Time elapsed: 439 ms
-[03:33:25] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[03:33:25] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
-[03:33:25] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[03:33:25] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[03:33:25] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[03:33:25] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[03:33:26] [Server thread/INFO]: [TAB] Enabled in 233ms
-[03:33:26] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[03:33:27] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[03:33:27] [Server thread/INFO]: [Geyser-Spigot] 
-[03:33:27] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[03:33:27] [Server thread/INFO]: [Geyser-Spigot] 
-[03:33:27] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[03:33:29] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[03:33:29] [Server thread/INFO]: [Geyser-Spigot] Done (2.625s)! Run /geyser help for help!
-[03:33:30] [Server thread/INFO]: Running delayed init tasks
-[03:33:30] [Server thread/INFO]: Done (12.837s)! For help, type "help"
-[03:33:30] [Server thread/INFO]: Timings Reset
-[03:33:30] [Craft Scheduler Thread - 3/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[03:33:30] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[07:30:58] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
-[07:30:58] [localSession-7-2/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
-[07:30:58] [Geyser Spigot connection thread-6-3/INFO]: UUID of player .AhmedGER0 is 00000000-0000-0000-0009-01fcf767c855
-[07:30:58] [Server thread/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 joined (UUID: 00000000-0000-0000-0009-01fcf767c855)
-[07:30:58] [Server thread/INFO]: .AhmedGER0 joined the game
-[07:30:58] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .AhmedGER0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:30:58] [Server thread/INFO]: .AhmedGER0[/127.91.15.85:0] logged in with entity id 321 at ([world]45.30001, 68.0, -86.725)
-[07:31:31] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Bedrock client disconnected
-[07:31:31] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
-[07:31:31] [Server thread/INFO]: .AhmedGER0 lost connection: Disconnected
-[07:31:31] [Server thread/INFO]: .AhmedGER0 left the game
-[07:51:40] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Bedrock user with ip: /127.91.15.85 has disconnected for reason Outdated Bedrock client! This server supports the following Bedrock versions: 1.21.90, 1.21.91, 1.21.92, 1.21.93, 1.21.94, 1.21.100, 1.21.101, 1.21.111
-[09:18:01] [Server thread/INFO]: Stopping server
-[09:18:01] [Server thread/INFO]: [TAB] Disabled in 0ms
-[09:18:01] [Server thread/INFO]: Saving players
-[09:18:01] [Server thread/INFO]: Saving worlds
-[09:18:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:18:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:18:01] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:18:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:18:01] [Server thread/INFO]: Flushing Chunk IO
-[09:18:01] [Server thread/INFO]: Closing Thread Pool
-[09:18:01] [Server thread/INFO]: Closing Server
+[09:44:46] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[09:44:47] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[09:44:48] [Worker-Main-2/INFO]: Loaded 7 recipes
+[09:44:49] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[09:44:49] [Server thread/INFO]: Loading properties
+[09:44:49] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[09:44:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[09:44:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[09:44:50] [Server thread/INFO]: Debug logging is disabled
+[09:44:50] [Server thread/INFO]: Default game type: SURVIVAL
+[09:44:50] [Server thread/INFO]: Generating keypair
+[09:44:50] [Server thread/INFO]: Starting Minecraft server on *:25565
+[09:44:50] [Server thread/INFO]: Using epoll channel type
+[09:44:51] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[09:44:51] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.0
+[09:44:51] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.0 is now loaded. Registering protocol transformers and injecting...
+[09:44:51] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[09:44:52] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[09:44:52] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[09:44:52] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[09:44:52] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[09:44:52] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[09:44:53] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[09:44:53] [Server thread/INFO]: [floodgate] Took 514ms to boot Floodgate
+[09:44:53] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[09:44:53] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[09:44:53] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[09:44:53] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.1
+[09:44:53] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[09:44:53] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[09:44:53] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[09:44:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[09:44:53] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[09:44:53] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.1
+[09:44:54] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[09:44:54] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[09:44:55] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[09:44:55] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[09:44:55] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[09:44:55] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[09:44:55] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[09:44:55] [Server thread/INFO]: Preparing level "world"
+[09:44:55] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[09:44:55] [Server thread/INFO]: Preparing spawn area: 0%
+[09:44:55] [Server thread/INFO]: Preparing spawn area: 0%
+[09:44:55] [Server thread/INFO]: Time elapsed: 797 ms
+[09:44:55] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[09:44:56] [Server thread/INFO]: Preparing spawn area: 0%
+[09:44:56] [Server thread/INFO]: Time elapsed: 239 ms
+[09:44:56] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[09:44:56] [Server thread/INFO]: Preparing spawn area: 0%
+[09:44:57] [Server thread/INFO]: Preparing spawn area: 24%
+[09:44:57] [Worker-Main-1/INFO]: Preparing spawn area: 100%
+[09:44:57] [Server thread/INFO]: Time elapsed: 1023 ms
+[09:44:57] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[09:44:57] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.0
+[09:44:57] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[09:44:57] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[09:44:57] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[09:44:57] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[09:44:57] [Server thread/INFO]: [TAB] Enabled in 180ms
+[09:44:57] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[09:44:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[09:44:58] [Server thread/INFO]: [Geyser-Spigot] 
+[09:44:58] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[09:44:58] [Server thread/INFO]: [Geyser-Spigot] 
+[09:44:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[09:45:01] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[09:45:01] [Server thread/INFO]: [Geyser-Spigot] Done (2.775s)! Run /geyser help for help!
+[09:45:01] [Server thread/INFO]: Running delayed init tasks
+[09:45:01] [Server thread/INFO]: Done (12.751s)! For help, type "help"
+[09:45:01] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[09:45:01] [Server thread/INFO]: Timings Reset
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.1[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mbd509cd[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[09:45:01] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[09:46:11] [User Authenticator #1/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
+[09:46:11] [Server thread/INFO]: RGFVN joined the game
+[09:46:11] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[09:46:11] [Server thread/INFO]: RGFVN[/127.91.15.85:54697] logged in with entity id 300 at ([world]46.10444490232073, 68.5625, -86.51442364577234)
+[09:46:20] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
+[09:46:20] [localSession-7-2/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
+[09:46:20] [Geyser Spigot connection thread-6-3/INFO]: UUID of player .AhmedGER0 is 00000000-0000-0000-0009-01fcf767c855
+[09:46:20] [Server thread/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 joined (UUID: 00000000-0000-0000-0009-01fcf767c855)
+[09:46:20] [Server thread/INFO]: .AhmedGER0 joined the game
+[09:46:20] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .AhmedGER0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[09:46:20] [Server thread/INFO]: .AhmedGER0[/127.91.15.85:0] logged in with entity id 328 at ([world]45.30001, 68.0, -84.93086)
+[09:48:38] [Async Chat Thread - #0/INFO]: <.AhmedGER0> ns
+[09:48:46] [Craft Scheduler Thread - 9/INFO]: .AhmedGER0 is sawing logs
+[09:49:31] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Bedrock client disconnected
+[09:49:31] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
+[09:49:31] [Server thread/INFO]: .AhmedGER0 lost connection: Disconnected
+[09:49:31] [Server thread/INFO]: .AhmedGER0 left the game
+[09:49:58] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
+[09:49:58] [localSession-7-3/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
+[09:49:59] [Geyser Spigot connection thread-6-4/INFO]: UUID of player .AhmedGER0 is 00000000-0000-0000-0009-01fcf767c855
+[09:49:59] [Server thread/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 joined (UUID: 00000000-0000-0000-0009-01fcf767c855)
+[09:49:59] [Server thread/INFO]: .AhmedGER0 joined the game
+[09:49:59] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .AhmedGER0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[09:49:59] [Server thread/INFO]: .AhmedGER0[/127.91.15.85:0] logged in with entity id 643 at ([world]52.663513, 67.0, -84.04571)
+[09:50:25] [Server thread/INFO]: .AhmedGER0 was slain by Enderman
+[09:59:52] [Craft Scheduler Thread - 14/INFO]: .AhmedGER0 has hit the hay
+[10:00:35] [Server thread/INFO]: RGFVN lost connection: Timed out
+[10:00:35] [Server thread/INFO]: RGFVN left the game
+[10:00:43] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Bedrock client disconnected
+[10:00:43] [Geyser Spigot connection thread-6-4/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
+[10:00:43] [Server thread/INFO]: .AhmedGER0 lost connection: Disconnected
+[10:00:43] [Server thread/INFO]: .AhmedGER0 left the game
+[10:00:51] [User Authenticator #2/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
+[10:00:51] [Server thread/INFO]: RGFVN joined the game
+[10:00:51] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[10:00:51] [Server thread/INFO]: RGFVN[/127.91.15.85:60457] logged in with entity id 1901 at ([world]45.1159594334635, 67.0, -81.77417938057496)
+[10:01:30] [Server thread/INFO]: RGFVN lost connection: Disconnected
+[10:01:30] [Server thread/INFO]: RGFVN left the game
+[10:01:36] [User Authenticator #2/INFO]: UUID of player RGFVN is f86e51e4-9457-3d19-a396-d93ed220e37e
+[10:01:36] [TAB Processing Thread/INFO]: [TAB] [WARN] Player RGFVN's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[10:01:36] [Server thread/INFO]: RGFVN joined the game
+[10:01:36] [Server thread/INFO]: RGFVN[/127.91.15.85:52453] logged in with entity id 1960 at ([world]45.30000001192093, 68.0, -85.56721363231351)
+[10:01:49] [GeyserServerChild-4-3/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
+[10:01:49] [localSession-7-4/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
+[10:01:50] [Geyser Spigot connection thread-6-1/INFO]: UUID of player .AhmedGER0 is 00000000-0000-0000-0009-01fcf767c855
+[10:01:50] [Server thread/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 joined (UUID: 00000000-0000-0000-0009-01fcf767c855)
+[10:01:50] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .AhmedGER0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[10:01:50] [Server thread/INFO]: .AhmedGER0 joined the game
+[10:01:50] [Server thread/INFO]: .AhmedGER0[/127.91.15.85:0] logged in with entity id 1998 at ([world]46.5, 68.0, -86.5)
+[10:02:12] [Craft Scheduler Thread - 21/INFO]: RGFVN dozed off
+[10:04:07] [Server thread/INFO]: RGFVN was blown up by Creeper
+[10:05:17] [Async Chat Thread - #1/INFO]: <.AhmedGER0> d
+[10:08:58] [GeyserServerChild-4-3/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Bedrock client disconnected
+[10:08:58] [Geyser Spigot connection thread-6-1/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
+[10:08:58] [Server thread/INFO]: .AhmedGER0 lost connection: Disconnected
+[10:08:58] [Server thread/INFO]: .AhmedGER0 left the game
+[10:09:18] [Server thread/INFO]: RGFVN lost connection: Disconnected
+[10:09:18] [Server thread/INFO]: RGFVN left the game
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [31;1m15.8.1[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [31;1mbd509cd[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    A new version ([32;1m15.8.2[36;1m) is available! Downloading update...[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] Downloading update...[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] Downloaded update in 65ms[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] Update saved as SkinsRestorer (1).jar[0;39m
+[14:53:01] [Craft Scheduler Thread - 24/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[GitHubUpdate] The update will be loaded on the next server restart[0;39m
+[15:29:35] [Server thread/INFO]: Stopping server
+[15:29:35] [Server thread/INFO]: [TAB] Disabled in 0ms
+[15:29:35] [Server thread/INFO]: Saving players
+[15:29:35] [Server thread/INFO]: Saving worlds
+[15:29:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:29:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:29:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:29:35] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:29:35] [Server thread/INFO]: Flushing Chunk IO
+[15:29:35] [Server thread/INFO]: Closing Thread Pool
+[15:29:35] [Server thread/INFO]: Closing Server
