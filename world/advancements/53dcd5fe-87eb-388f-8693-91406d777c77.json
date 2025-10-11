@@ -53,6 +53,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2025-10-11 16:31:24 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/white_bed": {
     "criteria": {
       "has_white_wool": "2025-10-06 07:20:43 +0000"
@@ -215,6 +221,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2025-10-11 16:31:24 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2025-10-06 07:11:18 +0000"
@@ -242,6 +254,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_mutton": "2025-10-06 16:40:50 +0000",
+      "baked_potato": "2025-10-11 16:51:27 +0000",
       "porkchop": "2025-10-06 07:26:52 +0000",
       "poisonous_potato": "2025-10-06 16:53:18 +0000",
       "mutton": "2025-10-06 07:21:21 +0000",
@@ -254,6 +267,12 @@
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2025-10-06 07:06:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2025-10-11 16:30:51 +0000"
     },
     "done": true
   },
@@ -371,6 +390,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-10-11 16:31:24 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lectern": {
+    "criteria": {
+      "has_book": "2025-10-11 16:31:24 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_stained_glass": {
     "criteria": {
       "has_glass": "2025-10-10 14:13:54 +0000"
@@ -449,15 +480,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_stained_glass": {
-    "criteria": {
-      "has_glass": "2025-10-10 14:13:54 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/sandstone": {
     "criteria": {
       "has_sand": "2025-10-10 14:13:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_stained_glass": {
+    "criteria": {
+      "has_glass": "2025-10-10 14:13:54 +0000"
     },
     "done": true
   },
@@ -590,6 +621,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2025-10-06 16:33:14 +0000",
+      "minecraft:skeleton": "2025-10-11 16:27:08 +0000",
       "minecraft:spider": "2025-10-06 16:44:41 +0000",
       "minecraft:zombie": "2025-10-06 07:36:27 +0000"
     },
@@ -670,6 +702,12 @@
   "minecraft:recipes/decorations/chain": {
     "criteria": {
       "has_iron_ingot": "2025-09-29 16:35:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2025-10-11 16:30:51 +0000"
     },
     "done": true
   },
@@ -823,6 +861,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_red_flower": "2025-10-11 16:30:51 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_feather": "2025-10-06 07:30:44 +0000"
@@ -838,6 +882,12 @@
   "minecraft:recipes/building_blocks/green_stained_glass": {
     "criteria": {
       "has_glass": "2025-10-10 14:13:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/deflect_arrow": {
+    "criteria": {
+      "deflected_projectile": "2025-10-11 16:27:05 +0000"
     },
     "done": true
   },
@@ -895,6 +945,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2025-10-11 16:31:24 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_axe": {
     "criteria": {
       "has_iron_ingot": "2025-09-29 16:35:44 +0000"
@@ -946,6 +1002,12 @@
   "minecraft:recipes/building_blocks/oak_wood": {
     "criteria": {
       "has_log": "2025-10-06 07:04:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2025-10-11 16:31:24 +0000"
     },
     "done": true
   },
@@ -1081,6 +1143,12 @@
   "minecraft:recipes/decorations/cobblestone_wall": {
     "criteria": {
       "has_cobblestone": "2025-10-06 07:05:47 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2025-10-11 16:27:22 +0000"
     },
     "done": true
   },
