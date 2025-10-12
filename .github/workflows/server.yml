@@ -21,12 +21,10 @@ jobs:
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
-
       - name: Install dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y libjemalloc2 -qq
-
       - name: Setup Playit Tunnel
         run: |
           echo "=== Setting up Playit Tunnel ==="
@@ -66,8 +64,8 @@ jobs:
           else
             echo "⚠️ Playit may have stopped, check logs above"
           fi
-
       - name: Run Minecraft Server
+        id: run_server
         run: |
           # Memory optimization
           export MALLOC_ARENA_MAX=2
@@ -77,11 +75,10 @@ jobs:
           export MALLOC_TEMP_THRESHOLD_=0
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-
           # Accept EULA
           test -f eula.txt || echo "eula=true" > eula.txt
-
           echo "=== Starting Minecraft Server ==="
+          # Run the server in the background and save its PID
           java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
@@ -90,20 +87,37 @@ jobs:
             -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
             -XX:G1HeapWastePercent=5 \
             -jar server.jar --nogui &
+          
           SERVER_PID=$!
+          echo "SERVER_PID=$SERVER_PID" >> $GITHUB_ENV
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           
-          # Show final playit status
+          # Note: The rest of the long sleep is now in the next step
+          
+          # Show final playit status (moved here for immediate feedback)
           echo ""
           echo "=== Playit Tunnel Info ==="
           cat playit.log | grep -i "connect\|tunnel\|claim\|error" || cat playit.log | tail -20
           echo "=========================="
           echo ""
-          echo "⏰ Server will run for 5 hours and 45 minutes..."
-          echo "Players can connect using the playit tunnel address shown above"
           
-          # Run for 5h 45m (20700 seconds)
-          sleep 20700
+      - name: Wait and OP Player
+        run: |
+          echo "⏰ Waiting 120 seconds for server to initialize..."
+          sleep 120 # Wait for 2 minutes
+          
+          # Send the 'op' command to the running server's console via stdin
+          echo "op SIGMAxox" > /proc/${{ env.SERVER_PID }}/fd/0
+          echo "✔ Command 'op SIGMAxox' sent to server console."
+          
+          echo "⏰ Main server loop will now run for 5 hours and 43 minutes..."
+          
+          # Run for the remaining time (20700 total seconds - 120 seconds initial wait)
+          sleep 20580
+          
+      - name: Graceful Shutdown
+        run: |
+          SERVER_PID=${{ env.SERVER_PID }}
           
           echo ""
           echo "=== Graceful Shutdown ==="
@@ -114,7 +128,6 @@ jobs:
           sleep 3
           
           echo "✔ Server and Playit stopped"
-
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
@@ -132,7 +145,6 @@ jobs:
           else
             echo "ℹ️ No changes to save"
           fi
-
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
