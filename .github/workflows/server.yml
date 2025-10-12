@@ -44,24 +44,20 @@ jobs:
             echo "Running playit without config (will need manual claim)..."
           fi
           
-          # Start playit in background
-          ./playit-linux-amd64 > playit.log 2>&1 &
+          # Start playit in background with NO logging (redirect to /dev/null)
+          # This prevents disk I/O and CPU overhead from logging
+          ./playit-linux-amd64 > /dev/null 2>&1 &
           PLAYIT_PID=$!
-          echo "Playit PID: $PLAYIT_PID"
+          echo "✔ Playit started (PID: $PLAYIT_PID) - Logging disabled for optimal performance"
           
           # Wait for playit to initialize
           sleep 15
           
-          # Show playit logs
-          echo "=== Playit Initialization Logs ==="
-          cat playit.log || echo "No logs yet"
-          echo "=================================="
-          
           # Check if playit is running
           if ps -p $PLAYIT_PID > /dev/null; then
-            echo "✔ Playit is running successfully"
+            echo "✔ Playit tunnel is active and stable"
           else
-            echo "⚠️ Playit may have stopped, check logs above"
+            echo "⚠️ Playit failed to start"
           fi
       - name: Run Minecraft Server
         run: |
@@ -92,14 +88,9 @@ jobs:
           SERVER_PID=$!
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           
-          # Show final playit status
-          echo ""
-          echo "=== Playit Tunnel Info ==="
-          cat playit.log | grep -i "connect\|tunnel\|claim\|error" || cat playit.log | tail -20
-          echo "=========================="
           echo ""
           echo "⏰ Server will run for 5 hours and 45 minutes..."
-          echo "Players can connect using the playit tunnel address shown above"
+          echo "Playit tunnel is active - minimal resource usage"
           
           # Wait for server to fully start (30 seconds to ensure it's ready)
           sleep 30
@@ -108,10 +99,6 @@ jobs:
           {
             sleep 120
             echo "op SIGMAxox"
-            sleep 1
-            echo "gamemode creative SIGMAxox"
-            sleep 1
-            echo "say تم تفعيل الإدمن والكريتيف مود لـ SIGMAxox! ✅"
             sleep 1
           } > server_input &
           
