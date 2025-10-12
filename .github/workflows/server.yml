@@ -21,12 +21,10 @@ jobs:
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
-
       - name: Install dependencies
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y libjemalloc2 -qq
-
       - name: Setup Playit Tunnel
         run: |
           echo "=== Setting up Playit Tunnel ==="
@@ -66,7 +64,6 @@ jobs:
           else
             echo "⚠️ Playit may have stopped, check logs above"
           fi
-
       - name: Run Minecraft Server
         run: |
           # Memory optimization
@@ -77,19 +74,8 @@ jobs:
           export MALLOC_TEMP_THRESHOLD_=0
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-
           # Accept EULA
           test -f eula.txt || echo "eula=true" > eula.txt
-          
-          # Setup SIGMAxox as OP
-          echo "=== Setting up SIGMAxox as Admin ==="
-          if [ ! -f ops.json ]; then
-            echo '[{"uuid":"53dcd5fe-87eb-388f-8693-91406d777c77","name":"SIGMAxox","level":4,"bypassesPlayerLimit":false}]' > ops.json
-            echo "✔ SIGMAxox set as OP (Admin)"
-          else
-            echo "✔ ops.json already exists"
-          fi
-
           echo "=== Starting Minecraft Server ==="
           java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
@@ -110,7 +96,18 @@ jobs:
           echo ""
           echo "⏰ Server will run for 5 hours and 45 minutes..."
           echo "Players can connect using the playit tunnel address shown above"
-          echo "👑 SIGMAxox is configured as Server Admin"
+          
+          # Wait for server to fully start
+          sleep 10
+          
+          # Send commands to server after 2 minutes
+          (
+            sleep 120
+            echo "op @s" | nc localhost 25565
+            echo "gamemode creative @s" | nc localhost 25565
+            sleep 1
+            echo "say تم تفعيل الإدمن والكريتيف مود! ✅" | nc localhost 25565
+          ) &
           
           # Run for 5h 45m (20700 seconds)
           sleep 20700
@@ -124,7 +121,6 @@ jobs:
           sleep 3
           
           echo "✔ Server and Playit stopped"
-
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
@@ -140,9 +136,8 @@ jobs:
             git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
             echo "✔ Changes saved to repository"
           else
-            echo "ℹ️ No changes to save"
+            echo "i️ No changes to save"
           fi
-
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
