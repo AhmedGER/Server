@@ -29,8 +29,7 @@ jobs:
         run: |
           echo "=== Setting up Playit Tunnel ==="
           
-          # Download playit agent
-          wget -q https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          # Make playit executable
           chmod +x playit-linux-amd64
           
           # Create playit.toml from secret
@@ -77,6 +76,11 @@ jobs:
           # Accept EULA
           test -f eula.txt || echo "eula=true" > eula.txt
           echo "=== Starting Minecraft Server ==="
+          
+          # Create a named pipe for server input
+          mkfifo server_input 2>/dev/null || true
+          
+          # Start Java server with stdin from the pipe
           java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
@@ -84,7 +88,7 @@ jobs:
             -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
             -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
             -XX:G1HeapWastePercent=5 \
-            -jar server.jar --nogui &
+            -jar server.jar --nogui < server_input &
           SERVER_PID=$!
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           
@@ -97,29 +101,39 @@ jobs:
           echo "⏰ Server will run for 5 hours and 45 minutes..."
           echo "Players can connect using the playit tunnel address shown above"
           
-          # Wait for server to fully start
-          sleep 10
+          # Wait for server to fully start (30 seconds to ensure it's ready)
+          sleep 30
           
           # Send commands to server after 2 minutes
-          (
+          {
             sleep 120
-            echo "op @s" | nc localhost 25565
-            echo "gamemode creative @s" | nc localhost 25565
+            echo "op SIGMAxox"
             sleep 1
-            echo "say تم تفعيل الإدمن والكريتيف مود! ✅" | nc localhost 25565
-          ) &
+            echo "gamemode creative SIGMAxox"
+            sleep 1
+            echo "say تم تفعيل الإدمن والكريتيف مود لـ SIGMAxox! ✅"
+            sleep 1
+          } > server_input &
+          
+          echo "✔ Admin commands scheduled for 2 minutes"
           
           # Run for 5h 45m (20700 seconds)
           sleep 20700
           
           echo ""
           echo "=== Graceful Shutdown ==="
+          echo "save-all" > server_input 2>/dev/null || true
+          sleep 5
+          echo "stop" > server_input 2>/dev/null || true
+          sleep 10
+          
           kill -TERM $SERVER_PID 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
           
           pkill -TERM playit-linux-amd64 2>/dev/null || true
           sleep 3
           
+          rm -f server_input 2>/dev/null || true
           echo "✔ Server and Playit stopped"
       - name: Save world and config
         run: |
