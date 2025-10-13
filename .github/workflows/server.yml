@@ -21,104 +21,69 @@ jobs:
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
-      - name: Install dependencies
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y libjemalloc2 screen -qq
+
       - name: Setup Playit Tunnel
         run: |
           echo "=== Setting up Playit Tunnel ==="
           
-          # Make playit executable
           chmod +x playit-linux-amd64
           
-          # Create playit.toml from secret
           if [ -n "${{ secrets.PLAYIT_SECRET }}" ]; then
-            echo "✔ Using PLAYIT_SECRET from GitHub Secrets"
             echo "${{ secrets.PLAYIT_SECRET }}" > playit.toml
+            echo "✔ Playit configured"
           elif [ -f playit.toml ]; then
-            echo "✔ Using existing playit.toml from repository"
+            echo "✔ Using existing playit.toml"
           else
-            echo "⚠️ WARNING: No PLAYIT_SECRET found and no playit.toml in repo!"
-            echo "Please add PLAYIT_SECRET to GitHub Secrets or commit playit.toml"
-            echo "Running playit without config (will need manual claim)..."
+            echo "⚠️ No playit config found"
           fi
           
-          # Start playit in background with NO logging
-          ./playit-linux-amd64 > /dev/null 2>&1 &
-          PLAYIT_PID=$!
-          echo "✔ Playit started (PID: $PLAYIT_PID) - Logging disabled for optimal performance"
-          
-          # Wait for playit to initialize
-          sleep 15
-          
-          # Check if playit is running
-          if ps -p $PLAYIT_PID > /dev/null; then
-            echo "✔ Playit tunnel is active and stable"
-          else
-            echo "⚠️ Playit failed to start"
-          fi
+          ./playit-linux-amd64 >/dev/null 2>&1 &
+          echo "✔ Playit tunnel active"
+
       - name: Run Minecraft Server
         run: |
-          # Memory optimization
-          export MALLOC_ARENA_MAX=2
-          export MALLOC_MMAP_THRESHOLD_=131072
-          export MALLOC_TRIM_THRESHOLD_=131072
-          export MALLOC_TOP_PAD_=131072
-          export MALLOC_TEMP_THRESHOLD_=0
-          export MALLOC_ARENA_TESTRATE=4
-          export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-          
-          # Accept EULA
-          test -f eula.txt || echo "eula=true" > eula.txt
           echo "=== Starting Minecraft Server ==="
           
-          # Start server in screen session
-          screen -dmS minecraft java -DPaper.IgnoreJavaVersion=true \
-            -Xmx16G -Xms12G \
-            -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
-            -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
-            -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
-            -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
+          java -DPaper.IgnoreJavaVersion=true \
+            -Xmx13500M -Xms9600M \
+            -XX:+UseG1GC \
+            -XX:MaxGCPauseMillis=130 \
+            -XX:+UnlockExperimentalVMOptions \
+            -XX:+DisableExplicitGC \
+            -XX:+AlwaysPreTouch \
+            -XX:G1NewSizePercent=28 \
+            -XX:G1MaxNewSizePercent=36 \
+            -XX:G1HeapRegionSize=16M \
+            -XX:G1ReservePercent=15 \
             -XX:G1HeapWastePercent=5 \
-            -jar server.jar --nogui
+            -XX:G1MixedGCCountTarget=4 \
+            -XX:InitiatingHeapOccupancyPercent=15 \
+            -XX:G1RSetUpdatingPauseTimePercent=5 \
+            -XX:MaxTenuringThreshold=1 \
+            -Dcom.mojang.eula.agree=true \
+            -jar server.jar --nogui &
+          SERVER_PID=$!
           
-          echo "✔ Minecraft Server started in screen session"
-          echo "⏰ Server will run for 5 minutes then stop..."
-          echo "Playit tunnel is active - minimal resource usage"
+          echo "✔ Minecraft Server started (PID: $SERVER_PID)"
+          echo "⏰ Server running for 5 minutes..."
           
-          # Wait for server to start
-          sleep 35
-          
-          # Send op command after 2 minutes
-          sleep 120
-          echo "Sending op command..."
-          screen -S minecraft -X stuff "op SIGMAxox^M"
-          
-          # Wait 3 minutes more (5 minutes total from start)
-          sleep 180
+          # Run for 5 minutes (300 seconds)
+          sleep 300
           
           echo ""
-          echo "=== Graceful Shutdown ==="
-          screen -S minecraft -X stuff "save-all^M"
-          sleep 5
-          screen -S minecraft -X stuff "stop^M"
+          echo "=== Stopping Server ==="
+          kill -TERM $SERVER_PID 2>/dev/null || true
+          wait $SERVER_PID 2>/dev/null || true
           
-          sleep 15
+          pkill -TERM playit-linux-amd64 2>/dev/null || true
           
-          # Kill screen session if still running
-          screen -S minecraft -X quit 2>/dev/null || true
-          sleep 2
-          
-          pkill -9 playit-linux-amd64 2>/dev/null || true
-          
-          echo "✔ Server and Playit stopped"
+          echo "✔ Server stopped"
+
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Add all changes
           git add -A
           
           if ! git diff --cached --quiet 2>/dev/null; then
@@ -130,12 +95,12 @@ jobs:
           else
             echo "i️ No changes to save"
           fi
+
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          # Check if there are other running workflows
           runs=$(gh run list -w server.yml --json status -q \
                '[.[] | select(.status=="queued" or .status=="in_progress")] | length')
           
