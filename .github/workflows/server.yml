@@ -100,12 +100,16 @@ jobs:
             sleep 120
             echo "op SIGMAxox"
             sleep 1
+            echo "gamemode creative SIGMAxox"
+            sleep 1
+            echo "say تم تفعيل الإدمن والكريتيف مود لـ SIGMAxox! ✅"
+            sleep 1
           } > server_input &
           
           echo "✔ Admin commands scheduled for 2 minutes"
           
           # Run for 5h 45m (20700 seconds)
-          sleep 20700
+          sleep 300
           
           echo ""
           echo "=== Graceful Shutdown ==="
