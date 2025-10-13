@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y libjemalloc2 -qq
+          sudo apt-get install -y libjemalloc2 screen -qq
       - name: Setup Playit Tunnel
         run: |
           echo "=== Setting up Playit Tunnel ==="
@@ -44,8 +44,7 @@ jobs:
             echo "Running playit without config (will need manual claim)..."
           fi
           
-          # Start playit in background with NO logging (redirect to /dev/null)
-          # This prevents disk I/O and CPU overhead from logging
+          # Start playit in background with NO logging
           ./playit-linux-amd64 > /dev/null 2>&1 &
           PLAYIT_PID=$!
           echo "✔ Playit started (PID: $PLAYIT_PID) - Logging disabled for optimal performance"
@@ -69,62 +68,50 @@ jobs:
           export MALLOC_TEMP_THRESHOLD_=0
           export MALLOC_ARENA_TESTRATE=4
           export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+          
           # Accept EULA
           test -f eula.txt || echo "eula=true" > eula.txt
           echo "=== Starting Minecraft Server ==="
           
-          # Create a named pipe for server input
-          mkfifo server_input 2>/dev/null || true
-          
-          # Start Java server with stdin from the pipe
-          java -DPaper.IgnoreJavaVersion=true \
+          # Start server in screen session
+          screen -dmS minecraft java -DPaper.IgnoreJavaVersion=true \
             -Xmx16G -Xms12G \
             -XX:+UseG1GC -XX:MaxGCPauseMillis=200 \
             -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC \
             -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 \
             -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 \
             -XX:G1HeapWastePercent=5 \
-            -jar server.jar --nogui < server_input &
-          SERVER_PID=$!
-          echo "✔ Minecraft Server started (PID: $SERVER_PID)"
+            -jar server.jar --nogui
           
-          echo ""
-          echo "⏰ Server will run for 5 hours and 45 minutes..."
+          echo "✔ Minecraft Server started in screen session"
+          echo "⏰ Server will run for 5 minutes then stop..."
           echo "Playit tunnel is active - minimal resource usage"
           
-          # Wait for server to fully start (30 seconds to ensure it's ready)
-          sleep 30
+          # Wait for server to start
+          sleep 35
           
-          # Send commands to server after 2 minutes
-          {
-            sleep 120
-            echo "op SIGMAxox"
-            sleep 1
-            echo "gamemode creative SIGMAxox"
-            sleep 1
-            echo "say تم تفعيل الإدمن والكريتيف مود لـ SIGMAxox! ✅"
-            sleep 1
-          } > server_input &
+          # Send op command after 2 minutes
+          sleep 120
+          echo "Sending op command..."
+          screen -S minecraft -X stuff "op SIGMAxox^M"
           
-          echo "✔ Admin commands scheduled for 2 minutes"
-          
-          # Run for 5h 45m (20700 seconds)
-          sleep 300
+          # Wait 3 minutes more (5 minutes total from start)
+          sleep 180
           
           echo ""
           echo "=== Graceful Shutdown ==="
-          echo "save-all" > server_input 2>/dev/null || true
+          screen -S minecraft -X stuff "save-all^M"
           sleep 5
-          echo "stop" > server_input 2>/dev/null || true
-          sleep 10
+          screen -S minecraft -X stuff "stop^M"
           
-          kill -TERM $SERVER_PID 2>/dev/null || true
-          wait $SERVER_PID 2>/dev/null || true
+          sleep 15
           
-          pkill -TERM playit-linux-amd64 2>/dev/null || true
-          sleep 3
+          # Kill screen session if still running
+          screen -S minecraft -X quit 2>/dev/null || true
+          sleep 2
           
-          rm -f server_input 2>/dev/null || true
+          pkill -9 playit-linux-amd64 2>/dev/null || true
+          
           echo "✔ Server and Playit stopped"
       - name: Save world and config
         run: |
