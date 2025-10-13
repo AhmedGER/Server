@@ -22,30 +22,30 @@ jobs:
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
 
-      - name: Install OpenVPN
+      - name: Setup Playit Tunnel
         run: |
-          echo "=== Installing OpenVPN ==="
-          sudo apt-get update && sudo apt-get install -y openvpn
-          echo "✔ OpenVPN installed"
-
-      - name: Start Portmap Tunnel
-        run: |
-          echo "=== Starting Portmap Tunnel ==="
-          if [ -f AhmedGER.Server.ovpn ]; then
-            sudo openvpn --config AhmedGER.Server.ovpn --daemon
-            echo "✔ OpenVPN tunnel started"
-            sleep 10
+          echo "=== Setting up Playit Tunnel ==="
+          
+          chmod +x playit-linux-amd64
+          
+          if [ -n "${{ secrets.PLAYIT_SECRET }}" ]; then
+            echo "${{ secrets.PLAYIT_SECRET }}" > playit.toml
+            echo "✔ Playit configured"
+          elif [ -f playit.toml ]; then
+            echo "✔ Using existing playit.toml"
           else
-            echo "❌ Missing AhmedGER.Server.ovpn file!"
-            exit 1
+            echo "⚠️ No playit config found"
           fi
+          
+          ./playit-linux-amd64 >/dev/null 2>&1 &
+          echo "✔ Playit tunnel active"
 
       - name: Run Minecraft Server
         run: |
           echo "=== Starting Minecraft Server ==="
           
           java -DPaper.IgnoreJavaVersion=true \
-            -Xmx13500M -Xms9600M \
+            -Xmx15360M -Xms10240M \
             -XX:+UseG1GC \
             -XX:MaxGCPauseMillis=130 \
             -XX:+UnlockExperimentalVMOptions \
@@ -67,14 +67,15 @@ jobs:
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           echo "⏰ Server running for 5 minutes..."
           
-          sleep 300
+          # Run for 5h 45m (300 seconds)
+          sleep 20700
           
           echo ""
           echo "=== Stopping Server ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
           
-          sudo pkill -TERM openvpn 2>/dev/null || true
+          pkill -TERM playit-linux-amd64 2>/dev/null || true
           
           echo "✔ Server stopped"
 
