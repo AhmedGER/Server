@@ -45,7 +45,7 @@ jobs:
           echo "=== Starting Minecraft Server ==="
           
           java -DPaper.IgnoreJavaVersion=true \
-            -Xmx15360M -Xms10240M \
+            -Xmx13500M -Xms9600M \
             -XX:+UseG1GC \
             -XX:MaxGCPauseMillis=130 \
             -XX:+UnlockExperimentalVMOptions \
@@ -65,11 +65,12 @@ jobs:
           SERVER_PID=$!
           
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
-          echo "⏰ Server running for 5h 45 minutes..."
+          echo "⏰ Server running for 5 minutes..."
           
-          # Run for 5h 45m
+          # Run for 5 minutes (300 seconds)
           sleep 20700
           
+          echo ""
           echo "=== Stopping Server ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
