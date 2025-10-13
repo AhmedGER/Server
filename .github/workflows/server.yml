@@ -22,23 +22,23 @@ jobs:
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
 
-      - name: Setup Playit Tunnel
+      - name: Install OpenVPN
         run: |
-          echo "=== Setting up Playit Tunnel ==="
-          
-          chmod +x playit-linux-amd64
-          
-          if [ -n "${{ secrets.PLAYIT_SECRET }}" ]; then
-            echo "${{ secrets.PLAYIT_SECRET }}" > playit.toml
-            echo "✔ Playit configured"
-          elif [ -f playit.toml ]; then
-            echo "✔ Using existing playit.toml"
+          echo "=== Installing OpenVPN ==="
+          sudo apt-get update && sudo apt-get install -y openvpn
+          echo "✔ OpenVPN installed"
+
+      - name: Start Portmap Tunnel
+        run: |
+          echo "=== Starting Portmap Tunnel ==="
+          if [ -f AhmedGER.Server.ovpn ]; then
+            sudo openvpn --config AhmedGER.Server.ovpn --daemon
+            echo "✔ OpenVPN tunnel started"
+            sleep 10
           else
-            echo "⚠️ No playit config found"
+            echo "❌ Missing AhmedGER.Server.ovpn file!"
+            exit 1
           fi
-          
-          ./playit-linux-amd64 >/dev/null 2>&1 &
-          echo "✔ Playit tunnel active"
 
       - name: Run Minecraft Server
         run: |
@@ -67,7 +67,6 @@ jobs:
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           echo "⏰ Server running for 5 minutes..."
           
-          # Run for 5 minutes (300 seconds)
           sleep 300
           
           echo ""
@@ -75,7 +74,7 @@ jobs:
           kill -TERM $SERVER_PID 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
           
-          pkill -TERM playit-linux-amd64 2>/dev/null || true
+          sudo pkill -TERM openvpn 2>/dev/null || true
           
           echo "✔ Server stopped"
 
