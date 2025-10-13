@@ -68,7 +68,7 @@ jobs:
           echo "⏰ Server running for 5 minutes..."
           
           # Run for 5h 45m (300 seconds)
-          sleep 20700
+          sleep 300
           
           echo ""
           echo "=== Stopping Server ==="
