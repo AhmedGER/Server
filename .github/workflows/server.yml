@@ -36,7 +36,7 @@ jobs:
           else
             echo "⚠️ No playit config found"
           fi
-          
+          ث
           ./playit-linux-amd64 >/dev/null 2>&1 &
           echo "✔ Playit tunnel active"
 
@@ -65,12 +65,11 @@ jobs:
           SERVER_PID=$!
           
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
-          echo "⏰ Server running for 5 minutes..."
+          echo "⏰ Server running for 5h 45 minutes..."
           
-          # Run for 5h 45m (300 seconds)
+          # Run for 5h 45m
           sleep 20700
           
-          echo ""
           echo "=== Stopping Server ==="
           kill -TERM $SERVER_PID 2>/dev/null || true
           wait $SERVER_PID 2>/dev/null || true
