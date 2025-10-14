@@ -1,274 +1,121 @@
 Unsupported Java detected (65.0). Only up to Java 16 is supported.
 System Info: Java 21 (OpenJDK 64-Bit Server VM 21.0.8+9-LTS) Host: Linux 6.11.0-1018-azure (amd64)
 Loading libraries, please wait...
-2025-10-13 19:14:10,991 main WARN Advanced terminal features are not available in this environment
-[19:14:15 INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[19:14:15 INFO]: Found new data pack file/bukkit, loading it automatically
-[19:14:15 INFO]: Reloading ResourceManager: Default, bukkit
-[19:14:16 INFO]: Loaded 7 recipes
-[19:14:17 INFO]: Starting minecraft server version 1.16.5
-[19:14:17 INFO]: Loading properties
-[19:14:17 INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[19:14:18 INFO]: Debug logging is disabled
-[19:14:18 INFO]: Server Ping Player Sample Count: 12
-[19:14:18 INFO]: Using 4 threads for Netty based IO
-[19:14:18 INFO]: Default game type: SURVIVAL
-[19:14:18 INFO]: Generating keypair
-[19:14:19 INFO]: Starting Minecraft server on *:25565
-[19:14:19 INFO]: Using epoll channel type
-[19:14:20 INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[19:14:20 INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[19:14:20 INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[19:14:20 INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[19:14:20 INFO]: [ViaVersion] Loading block connection mappings ...
-[19:14:20 INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[19:14:20 INFO]: [ViaBackwards] Loading translations...
-[19:14:20 INFO]: [ViaBackwards] Registering protocols...
-[19:14:21 INFO]: [ViaRewind] Registering protocols...
-[19:14:21 INFO]: [OpenInv] Loading OpenInv v4.1.8
-[19:14:21 INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[19:14:21 WARN]: [floodgate] en_ is not a supported Floodgate language.
-[19:14:22 INFO]: [floodgate] Took 518ms to boot Floodgate
-[19:14:22 INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[19:14:22 INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[19:14:22 INFO]: [TAB] Loading TAB v5.2.5
-[19:14:22 INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[19:14:22 INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[19:14:22 INFO]: [Geyser-Spigot] Loading extensions...
-[19:14:22 INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[19:14:22 INFO]: Server permissions file permissions.yml is empty, ignoring it
-[19:14:22 INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[19:14:22 INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[19:14:22 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[19:14:23 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[19:14:23 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[19:14:23 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[19:14:23 WARN]: The server will make no attempt to authenticate usernames. Beware.
-[19:14:23 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[19:14:23 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[19:14:23 INFO]: Preparing level "world"
-[19:14:26 WARN]: Unable to find spawn biome
-[19:14:27 WARN]: Unable to find spawn biome
-[19:14:27 INFO]: Preparing start region for dimension minecraft:overworld
-[19:14:27 INFO]: Preparing spawn area: 0%
-[19:14:27 INFO]: Time elapsed: 437 ms
-[19:14:27 INFO]: Preparing start region for dimension minecraft:the_nether
-[19:14:28 INFO]: Preparing spawn area: 0%
-[19:14:28 INFO]: Time elapsed: 206 ms
-[19:14:28 INFO]: Preparing start region for dimension minecraft:the_end
-[19:14:28 INFO]: Preparing spawn area: 0%
-[19:14:28 INFO]: Time elapsed: 432 ms
-[19:14:28 INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[19:14:28 INFO]: [AuthMe] SQLite Setup finished
-[19:14:28 INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[19:14:29 WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[19:14:29 INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[19:14:29 INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[19:14:29 INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[19:14:29 INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[19:14:29 INFO]: [OpenInv] Enabling OpenInv v4.1.8
-[19:14:29 INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[19:14:29 INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[19:14:29 INFO]: [TAB] Enabling TAB v5.2.5
-[19:14:29 INFO]: [TAB] Enabled in 160ms
-[19:14:29 INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[19:14:30 INFO]: [Geyser-Spigot] ******************************************
-[19:14:30 INFO]: [Geyser-Spigot] 
-[19:14:30 INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[19:14:30 INFO]: [Geyser-Spigot] 
-[19:14:30 INFO]: [Geyser-Spigot] ******************************************
-[19:14:33 INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[19:14:33 INFO]: [Geyser-Spigot] Done (2.373s)! Run /geyser help for help!
-[19:14:33 INFO]: Starting remote control listener
-[19:14:33 WARN]: No rcon password set in server.properties, rcon disabled!
-[19:14:33 INFO]: Running delayed init tasks
-[19:14:33 INFO]: Done (16.215s)! For help, type "help"
-[19:14:33 INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[19:14:33 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[19:14:33 INFO]: Timings Reset
-[19:14:33 WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[19:14:33 INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[19:14:33 WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[19:14:33 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[19:14:58 INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[19:14:58 INFO]: soonk joined the game
-[19:14:58 INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[19:14:58 INFO]: soonk[/127.60.232.228:60239] logged in with entity id 343 at ([world]-169.5, 63.0, -165.5)
-[19:15:05 INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[19:15:05 INFO]: SIGMAxox joined the game
-[19:15:05 INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[19:15:05 INFO]: SIGMAxox[/127.43.44.68:38065] logged in with entity id 464 at ([world]-168.5, 64.0, -182.5)
-[19:15:18 INFO]: [AuthMe] SIGMAxox logged in 127.43.44.68
-[19:15:28 INFO]: soonk lost connection: Login timeout exceeded, you have been kicked from the server, please try again!
-[19:15:28 INFO]: soonk left the game
-[19:15:31 INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[19:15:31 INFO]: SIGMAxox issued server command: /skins
-[19:15:31 INFO]: soonk joined the game
-[19:15:31 INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[19:15:31 INFO]: soonk[/127.60.232.228:46069] logged in with entity id 491 at ([world]-169.5, 63.0, -165.5)
-[19:15:41 INFO]: [AuthMe] soonk registered 127.60.232.228
-[19:15:41 INFO]: [AuthMe] soonk logged in 127.60.232.228
-[19:16:23 INFO]: <soonk> الجزيره دي بتنا
-[19:16:35 INFO]: <SIGMAxox> ok
-[19:17:33 INFO]: soonk has made the advancement [Stone Age]
-[19:18:18 INFO]: soonk has made the advancement [Getting an Upgrade]
-[19:18:27 INFO]: SIGMAxox lost connection: Timed out
-[19:18:27 INFO]: SIGMAxox left the game
-[19:18:49 INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[19:18:49 INFO]: SIGMAxox joined the game
-[19:18:49 INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[19:18:49 INFO]: SIGMAxox[/127.43.44.68:41391] logged in with entity id 950 at ([world]-175.80656627010134, 63.0, -133.84768079349152)
-[19:18:59 INFO]: [AuthMe] SIGMAxox logged in 127.43.44.68
-[19:19:21 INFO]: SIGMAxox has made the advancement [Stone Age]
-[19:20:01 INFO]: SIGMAxox has made the advancement [Getting an Upgrade]
-[19:22:44 INFO]: SIGMAxox has made the advancement [Acquire Hardware]
-[19:23:35 INFO]: <SIGMAxox> معاك صوف
-[19:23:39 INFO]: <soonk> لا
-[19:23:49 INFO]: <SIGMAxox> بسرعة دور
-[19:23:57 INFO]: <soonk> ولله منا رجت
-[19:24:06 INFO]: <soonk> مش لقيت خاروف
-[19:24:46 INFO]: <SIGMAxox> الجزيرة صغيرة
-[19:25:02 INFO]: <soonk> اصبر
-[19:25:17 INFO]: SIGMAxox has made the advancement [Suit Up]
-[19:25:30 INFO]: <soonk> معاك فحم
-[19:25:39 INFO]: <SIGMAxox> لا
-[19:25:55 INFO]: <soonk> احا
-[19:26:04 INFO]: soonk has made the advancement [Monster Hunter]
-[19:26:10 INFO]: <SIGMAxox> ارحع للبيت
-[19:26:33 INFO]: <soonk> معاك ديرت
-[19:26:38 INFO]: <SIGMAxox> لا
-[19:28:20 INFO]: <soonk> هات فرن
-[19:28:44 INFO]: SIGMAxox has made the advancement [Monster Hunter]
-[19:29:21 INFO]: soonk was slain by Drowned
-[19:29:41 INFO]: <SIGMAxox> هموت
-[19:29:52 INFO]: <soonk> يادين امي
-[19:30:22 INFO]: soonk has made the advancement [Not Today, Thank You]
-[19:30:27 INFO]: <SIGMAxox> يا لهوي
-[19:33:02 INFO]: <SIGMAxox> يا رب الصبح يجي
-[19:33:09 INFO]: <soonk> هيييي الصبحح
-[19:33:30 INFO]: soonk was impaled by Drowned
-[19:33:42 INFO]: SIGMAxox was blown up by Creeper
-[19:33:59 INFO]: soonk was impaled by Drowned
-[19:34:06 INFO]: SIGMAxox has made the advancement [Not Today, Thank You]
-[19:34:18 INFO]: SIGMAxox was impaled by Drowned
-[19:35:25 INFO]: SIGMAxox has made the advancement [Best Friends Forever]
-[19:36:21 INFO]: <SIGMAxox> انا عيان جامد
-[19:36:29 INFO]: <soonk> كل
-[19:36:41 INFO]: <soonk> موت مفسك
-[19:37:38 INFO]: SIGMAxox hit the ground too hard
-[19:37:51 INFO]: <soonk> جمع ديرتت
-[19:38:16 INFO]: <SIGMAxox> اين الصندوق
-[19:38:23 INFO]: <soonk> صندوق اي
-[19:38:52 INFO]: <SIGMAxox> لاقيته
-[19:39:20 INFO]: <SIGMAxox> كنت حطط فيه حاجتي
-[19:39:27 INFO]: <soonk> اووووووو
-[19:39:58 INFO]: <soonk> طلامه انت عارف اني شايف الصندوق امال بتخبي ليه هههه
-[19:40:14 INFO]: <SIGMAxox> ممممممم
-[19:40:20 INFO]: <soonk> هوا عبط وخلاص
-[19:40:37 INFO]: <SIGMAxox> :(
-[19:40:45 INFO]: <SIGMAxox> :)
-[19:41:07 INFO]: <SIGMAxox> هدور علي صوف الاول
-[19:45:04 INFO]: <SIGMAxox> انا لقيت كل حاجة ماعدا الخرفان
-[19:45:11 INFO]: <soonk> حصل
-[19:47:19 INFO]: <SIGMAxox> انا لقيت بقركتير
-[19:48:52 INFO]: <SIGMAxox> رجعت
-[19:51:04 INFO]: <SIGMAxox> عندك فحم
-[19:51:51 INFO]: <soonk> هات خشب
-[19:52:30 INFO]: <SIGMAxox> الخروف اصبح نادر
-[19:52:38 INFO]: <soonk> حصل
-[19:52:55 INFO]: <SIGMAxox> عباس انكسر :)
-[19:53:38 INFO]: <SIGMAxox> الصبح
-[19:54:26 INFO]: <soonk> عاوز خشب
-[19:54:47 INFO]: <SIGMAxox> انا هدور علي صوف
-[19:54:57 INFO]: <soonk> اك
-[19:59:45 INFO]: SIGMAxox has made the advancement [Isn't It Iron Pick]
-[20:04:02 INFO]: <SIGMAxox> وبعد سنوات من البحث
-[20:04:10 INFO]: <SIGMAxox> اخيرا
-[20:04:30 INFO]: <soonk> كنت ممكن اجيبه بي خيط عنكبوت عادي
-[20:05:30 INFO]: SIGMAxox has made the advancement [Sweet Dreams]
-[20:05:30 INFO]: SIGMAxox keeps hitting snooze...
-[20:05:55 INFO]: <SIGMAxox> ناا خلاص تعبت
-[20:06:08 INFO]: <SIGMAxox> هناام
-[20:06:18 INFO]: <SIGMAxox> البيت حلو
-[20:06:19 INFO]: <soonk> عملت البيت
-[20:07:12 INFO]: <SIGMAxox> متضلربش
-[20:07:27 INFO]: <SIGMAxox> انا معايا كلب هيعضك
-[20:08:15 INFO]: <SIGMAxox> اعمل شموع
-[20:09:26 INFO]: <soonk> جمع كابل ستون هعمل موب فارم
-[20:09:44 INFO]: <SIGMAxox> انا تعبت
-[20:09:48 INFO]: <soonk> جمعععععع
-[20:09:59 INFO]: <SIGMAxox> هنام يا م
-[20:10:47 INFO]: <SIGMAxox> انا بعمل ازاز
-[20:11:05 INFO]: <soonk> تعاله
-[20:13:08 INFO]: <soonk> هنا هتبقه موب فارم
-[20:14:04 INFO]: <SIGMAxox> انا هحط ازاز في البيت
-[20:14:16 INFO]: <SIGMAxox> ماشي
-[20:14:32 INFO]: <soonk> اعمل العوزو
-[20:15:15 INFO]: <soonk> احا انت كده هتبوظ شكله
-[20:15:33 INFO]: <SIGMAxox> لا متخفش
-[20:15:58 INFO]: <SIGMAxox> عملته
-[20:16:25 INFO]: SIGMAxox is sawing logs
-[20:17:50 INFO]: <SIGMAxox> حلو ظ
-[20:17:54 INFO]: <SIGMAxox> ؟
-[20:17:58 INFO]: <soonk> اه
-[20:18:15 INFO]: <soonk> يعم ساعدني
-[20:18:29 INFO]: <SIGMAxox> ماشي
-[20:18:30 INFO]: <soonk> شيل الرمر
-[20:18:44 INFO]: <soonk> رمل
-[20:19:03 INFO]: <SIGMAxox> خد
-[20:20:25 INFO]: <soonk> محتاج ديرت كتيييير
-[20:20:41 INFO]: <SIGMAxox> انا هجيب
-[20:20:46 INFO]: <soonk> اك
-[20:21:20 INFO]: soonk has made the advancement [Acquire Hardware]
-[20:22:57 WARN]: SIGMAxox moved wrongly!
-[20:25:26 INFO]: <SIGMAxox> انا هخرج خلاص
-[20:25:30 INFO]: <soonk> ليععع
-[20:25:33 INFO]: <SIGMAxox> هنام
-[20:25:34 INFO]: <soonk> طب خلص بس
-[20:25:44 INFO]: <soonk> علي سريع
-[20:25:53 INFO]: <SIGMAxox> bye :)
-[20:25:57 INFO]: <soonk> هجمع معاك
-[20:26:01 INFO]: <soonk> علي سريع يعم
-[20:26:09 INFO]: <SIGMAxox> يعم انت مش بتنام
-[20:26:17 INFO]: <soonk> وربنا مدرستي 10
-[20:26:55 INFO]: <SIGMAxox> السيرفر هيفضل مفتوح 24 ساعة
-[20:27:00 INFO]: <soonk> يسطا جمععع
-[20:27:03 INFO]: SIGMAxox crashed...hard...
-[20:27:04 INFO]: <soonk> هنطلع مع بعض
-[20:27:07 INFO]: <SIGMAxox> لا
-[20:27:10 INFO]: <SIGMAxox> خلاص
-[20:27:15 INFO]: <soonk> يسطا مش تبضنسي
-[20:27:20 INFO]: <soonk> تبضني
-[20:27:25 INFO]: <SIGMAxox> بس كفاية
-[20:27:27 INFO]: SIGMAxox lost connection: Disconnected
-[20:27:27 INFO]: SIGMAxox left the game
-[20:28:00 INFO]: soonk lost connection: Timed out
-[20:28:00 INFO]: soonk left the game
-[00:59:35 INFO]: Stopping server
-[00:59:35 INFO]: [TAB] Disabled in 1ms
-[00:59:35 INFO]: Saving players
-[00:59:35 INFO]: Saving worlds
-[00:59:35 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:59:35 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:59:35 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[00:59:35 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[00:59:35 INFO]: Flushing Chunk IO
-[00:59:35 INFO]: Closing Thread Pool
-[00:59:35 INFO]: Closing Server
+2025-10-14 01:00:21,949 main WARN Advanced terminal features are not available in this environment
+[01:00:26 INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[01:00:27 INFO]: Reloading ResourceManager: Default, bukkit
+[01:00:27 INFO]: Loaded 7 recipes
+[01:00:28 INFO]: Starting minecraft server version 1.16.5
+[01:00:28 INFO]: Loading properties
+[01:00:28 INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[01:00:30 INFO]: Debug logging is disabled
+[01:00:30 INFO]: Server Ping Player Sample Count: 12
+[01:00:30 INFO]: Using 4 threads for Netty based IO
+[01:00:30 INFO]: Default game type: SURVIVAL
+[01:00:30 INFO]: Generating keypair
+[01:00:31 INFO]: Starting Minecraft server on *:25565
+[01:00:31 INFO]: Using epoll channel type
+[01:00:32 INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[01:00:32 INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[01:00:32 INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[01:00:32 INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[01:00:32 INFO]: [ViaVersion] Loading block connection mappings ...
+[01:00:32 INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[01:00:32 INFO]: [ViaBackwards] Loading translations...
+[01:00:32 INFO]: [ViaBackwards] Registering protocols...
+[01:00:33 INFO]: [ViaRewind] Registering protocols...
+[01:00:33 INFO]: [OpenInv] Loading OpenInv v4.1.8
+[01:00:33 INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[01:00:33 WARN]: [floodgate] en_ is not a supported Floodgate language.
+[01:00:33 INFO]: [floodgate] Took 718ms to boot Floodgate
+[01:00:33 INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[01:00:33 INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[01:00:33 INFO]: [TAB] Loading TAB v5.2.5
+[01:00:33 INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[01:00:33 INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[01:00:34 INFO]: [Geyser-Spigot] Loading extensions...
+[01:00:34 INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[01:00:34 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[01:00:34 INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[01:00:34 INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[01:00:34 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[01:00:34 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[01:00:35 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[01:00:35 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[01:00:35 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[01:00:35 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[01:00:35 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[01:00:35 INFO]: Preparing level "world"
+[01:00:35 INFO]: Preparing start region for dimension minecraft:overworld
+[01:00:36 INFO]: Preparing spawn area: 0%
+[01:00:36 INFO]: Preparing spawn area: 0%
+[01:00:36 INFO]: Time elapsed: 625 ms
+[01:00:36 INFO]: Preparing start region for dimension minecraft:the_nether
+[01:00:36 INFO]: Preparing spawn area: 0%
+[01:00:36 INFO]: Preparing spawn area: 0%
+[01:00:37 INFO]: Preparing spawn area: 100%
+[01:00:37 INFO]: Time elapsed: 1398 ms
+[01:00:37 INFO]: Preparing start region for dimension minecraft:the_end
+[01:00:38 INFO]: Preparing spawn area: 0%
+[01:00:38 INFO]: Preparing spawn area: 33%
+[01:00:38 INFO]: Time elapsed: 645 ms
+[01:00:38 INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[01:00:38 INFO]: [AuthMe] SQLite Setup finished
+[01:00:38 INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[01:00:38 WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[01:00:39 INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[01:00:39 INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[01:00:39 INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[01:00:39 INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[01:00:39 INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[01:00:39 INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[01:00:39 INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[01:00:39 INFO]: [TAB] Enabling TAB v5.2.5
+[01:00:39 INFO]: [TAB] Enabled in 171ms
+[01:00:39 INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[01:00:40 INFO]: [Geyser-Spigot] ******************************************
+[01:00:40 INFO]: [Geyser-Spigot] 
+[01:00:40 INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[01:00:40 INFO]: [Geyser-Spigot] 
+[01:00:40 INFO]: [Geyser-Spigot] ******************************************
+[01:00:42 INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[01:00:42 INFO]: [Geyser-Spigot] Done (2.403s)! Run /geyser help for help!
+[01:00:43 INFO]: Starting remote control listener
+[01:00:43 WARN]: No rcon password set in server.properties, rcon disabled!
+[01:00:43 INFO]: Running delayed init tasks
+[01:00:43 INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[01:00:43 WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[01:00:43 INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[01:00:43 WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[01:00:43 INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[01:00:43 INFO]: Done (14.552s)! For help, type "help"
+[01:00:43 INFO]: Timings Reset
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[01:00:43 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[06:45:47 INFO]: Stopping server
+[06:45:47 INFO]: [TAB] Disabled in 1ms
+[06:45:47 INFO]: Saving players
+[06:45:47 INFO]: Saving worlds
+[06:45:47 INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:45:47 INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:45:47 INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[06:45:47 INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[06:45:47 INFO]: Flushing Chunk IO
+[06:45:47 INFO]: Closing Thread Pool
+[06:45:47 INFO]: Closing Server
