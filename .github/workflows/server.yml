@@ -22,9 +22,9 @@ jobs:
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
 
-      - name: Setup Playit Tunnel
+      - name: Setup Playit Tunnel with Auto-Restart
         run: |
-          echo "=== Setting up Playit Tunnel ==="
+          echo "=== Setting up Playit Tunnel with monitoring ==="
           
           chmod +x playit-linux-amd64
           
@@ -37,12 +37,13 @@ jobs:
             echo "⚠️ No playit config found"
           fi
           
-          # تشغيل playit بدون logs
-          nohup ./playit-linux-amd64 >/dev/null 2>&1 &
-          echo "✔ Playit tunnel started"
+          # تشغيل PlayIt مع إعادة تشغيل تلقائية
+          while true; do
+            ./playit-linux-amd64 >/dev/null 2>&1 || sleep 5
+          done &
           
-          # انتظار قصير للاتصال
-          sleep 5
+          echo "✔ Playit tunnel started with auto-restart"
+          sleep 10
 
       - name: Run Minecraft Server
         run: |
@@ -85,7 +86,6 @@ jobs:
           
           RCON_PASSWORD="ahmedger1"
           RCON_PORT="25575"
-          PLAYER_NAME="SIGMAxox"
           
           # تحميل وتثبيت mcrcon
           wget -q https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64.tar.gz
@@ -93,9 +93,9 @@ jobs:
           chmod +x mcrcon
           
           # تنفيذ الأوامر
-          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "op $PLAYER_NAME" >/dev/null 2>&1
+          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "op SIGMAxox" >/dev/null 2>&1
           sleep 1
-          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "gamemode creative $PLAYER_NAME" >/dev/null 2>&1
+          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "gamemode creative SIGMAxox" >/dev/null 2>&1
           
           echo "✔ Admin permissions granted to $PLAYER_NAME"
           echo "✔ Gamemode set to Creative"
@@ -108,15 +108,25 @@ jobs:
           
           echo ""
           echo "=== Stopping Server ==="
+          
+          # إيقاف السيرفر
           kill -TERM $SERVER_PID 2>/dev/null || true
           sleep 5
           kill -9 $SERVER_PID 2>/dev/null || true
           
+          # إيقاف playit monitor و playit
+          pkill -f "monitor_playit.sh" 2>/dev/null || true
           pkill -TERM playit-linux-amd64 2>/dev/null || true
           sleep 2
           pkill -9 playit-linux-amd64 2>/dev/null || true
           
           echo "✔ Server stopped"
+          
+          # عرض آخر سطور من playit monitor log
+          if [ -f playit_monitor.log ]; then
+            echo "=== PlayIt Monitor Log ==="
+            tail -n 10 playit_monitor.log
+          fi
 
       - name: Save world and config
         run: |
