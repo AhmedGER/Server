@@ -1,117 +1,129 @@
-[01:00:26] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[01:00:27] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[01:00:27] [Worker-Main-2/INFO]: Loaded 7 recipes
-[01:00:28] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[01:00:28] [Server thread/INFO]: Loading properties
-[01:00:28] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[01:00:30] [Server thread/INFO]: Debug logging is disabled
-[01:00:30] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:00:30] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:00:30] [Server thread/INFO]: Default game type: SURVIVAL
-[01:00:30] [Server thread/INFO]: Generating keypair
-[01:00:31] [Server thread/INFO]: Starting Minecraft server on *:25565
-[01:00:31] [Server thread/INFO]: Using epoll channel type
-[01:00:32] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[01:00:32] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[01:00:32] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[01:00:32] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[01:00:32] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[01:00:32] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[01:00:32] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[01:00:32] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[01:00:33] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[01:00:33] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
-[01:00:33] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[01:00:33] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[01:00:33] [Server thread/INFO]: [floodgate] Took 718ms to boot Floodgate
-[01:00:33] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[01:00:33] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[01:00:33] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[01:00:33] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[01:00:33] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[01:00:34] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[01:00:34] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[01:00:34] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[01:00:34] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[01:00:34] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[01:00:34] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[01:00:34] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[01:00:35] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[01:00:35] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[01:00:35] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[01:00:35] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[01:00:35] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[01:00:35] [Server thread/INFO]: Preparing level "world"
-[01:00:35] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[01:00:36] [Server thread/INFO]: Preparing spawn area: 0%
-[01:00:36] [Server thread/INFO]: Preparing spawn area: 0%
-[01:00:36] [Server thread/INFO]: Time elapsed: 625 ms
-[01:00:36] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[01:00:36] [Server thread/INFO]: Preparing spawn area: 0%
-[01:00:36] [Server thread/INFO]: Preparing spawn area: 0%
-[01:00:37] [Worker-Main-1/INFO]: Preparing spawn area: 100%
-[01:00:37] [Server thread/INFO]: Time elapsed: 1398 ms
-[01:00:37] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[01:00:38] [Server thread/INFO]: Preparing spawn area: 0%
-[01:00:38] [Server thread/INFO]: Preparing spawn area: 33%
-[01:00:38] [Server thread/INFO]: Time elapsed: 645 ms
-[01:00:38] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[01:00:38] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[01:00:38] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[01:00:38] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[01:00:39] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[01:00:39] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[01:00:39] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[01:00:39] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[01:00:39] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
-[01:00:39] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[01:00:39] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[01:00:39] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[01:00:39] [Server thread/INFO]: [TAB] Enabled in 171ms
-[01:00:39] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[01:00:40] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[01:00:40] [Server thread/INFO]: [Geyser-Spigot] 
-[01:00:40] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[01:00:40] [Server thread/INFO]: [Geyser-Spigot] 
-[01:00:40] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[01:00:42] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[01:00:42] [Server thread/INFO]: [Geyser-Spigot] Done (2.403s)! Run /geyser help for help!
-[01:00:43] [Server thread/INFO]: Starting remote control listener
-[01:00:43] [Server thread/WARN]: No rcon password set in server.properties, rcon disabled!
-[01:00:43] [Server thread/INFO]: Running delayed init tasks
-[01:00:43] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[01:00:43] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[01:00:43] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[01:00:43] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[01:00:43] [Craft Scheduler Thread - 3/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[01:00:43] [Server thread/INFO]: Done (14.552s)! For help, type "help"
-[01:00:43] [Server thread/INFO]: Timings Reset
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[01:00:43] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[06:45:47] [Server thread/INFO]: Stopping server
-[06:45:47] [Server thread/INFO]: [TAB] Disabled in 1ms
-[06:45:47] [Server thread/INFO]: Saving players
-[06:45:47] [Server thread/INFO]: Saving worlds
-[06:45:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[06:45:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[06:45:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[06:45:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[06:45:47] [Server thread/INFO]: Flushing Chunk IO
-[06:45:47] [Server thread/INFO]: Closing Thread Pool
-[06:45:47] [Server thread/INFO]: Closing Server
+[06:46:41] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[06:46:42] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[06:46:42] [Worker-Main-2/INFO]: Loaded 7 recipes
+[06:46:43] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[06:46:43] [Server thread/INFO]: Loading properties
+[06:46:43] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[06:46:44] [Server thread/INFO]: Debug logging is disabled
+[06:46:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:46:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:46:44] [Server thread/INFO]: Default game type: SURVIVAL
+[06:46:44] [Server thread/INFO]: Generating keypair
+[06:46:44] [Server thread/INFO]: Starting Minecraft server on *:25565
+[06:46:44] [Server thread/INFO]: Using epoll channel type
+[06:46:45] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[06:46:45] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[06:46:45] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[06:46:45] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[06:46:45] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[06:46:46] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[06:46:46] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[06:46:46] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[06:46:46] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[06:46:46] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
+[06:46:46] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[06:46:47] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[06:46:47] [Server thread/INFO]: [floodgate] Took 459ms to boot Floodgate
+[06:46:47] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[06:46:47] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[06:46:47] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[06:46:47] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[06:46:47] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[06:46:47] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[06:46:47] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[06:46:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:46:47] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[06:46:47] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[06:46:48] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[06:46:48] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[06:46:48] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[06:46:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[06:46:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[06:46:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[06:46:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[06:46:48] [Server thread/INFO]: Preparing level "world"
+[06:46:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[06:46:49] [Server thread/INFO]: Preparing spawn area: 0%
+[06:46:49] [Server thread/INFO]: Preparing spawn area: 0%
+[06:46:49] [Server thread/INFO]: Time elapsed: 766 ms
+[06:46:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[06:46:50] [Server thread/INFO]: Preparing spawn area: 0%
+[06:46:50] [Server thread/INFO]: Preparing spawn area: 34%
+[06:46:50] [Server thread/INFO]: Time elapsed: 968 ms
+[06:46:50] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[06:46:51] [Server thread/INFO]: Preparing spawn area: 0%
+[06:46:51] [Server thread/INFO]: Time elapsed: 457 ms
+[06:46:51] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[06:46:51] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[06:46:51] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[06:46:52] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[06:46:52] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[06:46:52] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[06:46:52] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[06:46:52] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[06:46:52] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[06:46:52] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[06:46:52] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[06:46:52] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[06:46:52] [Server thread/INFO]: [TAB] Enabled in 194ms
+[06:46:52] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[06:46:53] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[06:46:53] [Server thread/INFO]: [Geyser-Spigot] 
+[06:46:53] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[06:46:53] [Server thread/INFO]: [Geyser-Spigot] 
+[06:46:53] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[06:46:56] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[06:46:56] [Server thread/INFO]: [Geyser-Spigot] Done (2.414s)! Run /geyser help for help!
+[06:46:56] [Server thread/INFO]: Starting remote control listener
+[06:46:56] [Server thread/WARN]: No rcon password set in server.properties, rcon disabled!
+[06:46:56] [Server thread/INFO]: Running delayed init tasks
+[06:46:56] [Server thread/INFO]: Done (12.991s)! For help, type "help"
+[06:46:56] [Server thread/INFO]: Timings Reset
+[06:46:56] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[06:46:56] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[06:46:56] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[06:46:56] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[06:46:56] [Craft Scheduler Thread - 0/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[06:46:56] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[09:12:38] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[09:12:38] [Server thread/INFO]: SIGMAxox joined the game
+[09:12:38] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[09:12:38] [Server thread/INFO]: SIGMAxox[/127.92.67.199:50547] logged in with entity id 184 at ([world]-185.24149998193803, 63.0, -130.266322904692)
+[09:13:07] [Craft Scheduler Thread - 39/INFO]: [AuthMe] SIGMAxox logged in 127.92.67.199
+[09:20:13] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[09:20:13] [Server thread/INFO]: SIGMAxox left the game
+[09:20:17] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[09:20:17] [Server thread/INFO]: SIGMAxox joined the game
+[09:20:17] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[09:20:17] [Server thread/INFO]: SIGMAxox[/127.92.67.199:41525] logged in with entity id 947 at ([world]-157.3812155998602, 62.495200877005914, -160.41927669004627)
+[09:20:32] [Craft Scheduler Thread - 44/INFO]: [AuthMe] SIGMAxox logged in 127.92.67.199
+[09:47:34] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[09:47:34] [Server thread/INFO]: SIGMAxox left the game
+[12:32:03] [Server thread/INFO]: Stopping server
+[12:32:03] [Server thread/INFO]: [TAB] Disabled in 1ms
+[12:32:03] [Server thread/INFO]: Saving players
+[12:32:03] [Server thread/INFO]: Saving worlds
+[12:32:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:32:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:32:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[12:32:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[12:32:03] [Server thread/INFO]: Flushing Chunk IO
+[12:32:03] [Server thread/INFO]: Closing Thread Pool
+[12:32:03] [Server thread/INFO]: Closing Server
