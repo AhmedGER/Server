@@ -78,7 +78,7 @@ jobs:
           echo "=== Server is now ONLINE ==="
           
           # Run for 5 hours 45 minutes (20700 seconds)
-          sleep 120
+          sleep 20700
           
           echo ""
           echo "=== Stopping Server ==="
