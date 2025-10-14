@@ -75,6 +75,40 @@ jobs:
           
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           echo "⏰ Server will run for 5 hours 45 minutes..."
+          
+          # انتظار 3 دقائق للسيرفر يبدأ بالكامل
+          echo "⏳ Waiting 3 minutes for server to fully start..."
+          sleep 180
+          
+          # إضافة admin permissions وتحويل لـ creative
+          echo "=== Setting up admin permissions ==="
+          
+          # استخدام RCON للتواصل مع السيرفر
+          RCON_PASSWORD="ahmedger1"
+          RCON_PORT="25575"
+          PLAYER_NAME="SIGMAxox"
+          
+          # تثبيت mcrcon للتواصل مع السيرفر
+          apt-get update -qq && apt-get install -y -qq mcrcon >/dev/null 2>&1 || {
+            # لو mcrcon مش متاح، استخدم طريقة بديلة
+            echo "op $PLAYER_NAME" > /tmp/rcon_command.txt
+            echo "gamemode creative $PLAYER_NAME" >> /tmp/rcon_command.txt
+            
+            # إرسال الأوامر باستخدام netcat
+            (sleep 1; echo "$RCON_PASSWORD"; sleep 1; cat /tmp/rcon_command.txt) | nc localhost $RCON_PORT >/dev/null 2>&1
+          }
+          
+          # لو mcrcon اشتغل، استخدمه
+          if command -v mcrcon &> /dev/null; then
+            mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "op $PLAYER_NAME" >/dev/null 2>&1
+            sleep 1
+            mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "gamemode creative $PLAYER_NAME" >/dev/null 2>&1
+          fi
+          
+          echo "✔ Admin permissions granted to $PLAYER_NAME"
+          echo "✔ Gamemode set to Creative"
+          
+          echo ""
           echo "=== Server is now ONLINE ==="
           
           # Run for 5 hours 45 minutes (20700 seconds)
