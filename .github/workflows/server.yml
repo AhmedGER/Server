@@ -21,7 +21,6 @@ jobs:
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
-
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
           echo "=== Setting up Playit Tunnel with monitoring ==="
@@ -44,7 +43,6 @@ jobs:
           
           echo "✔ Playit tunnel started with auto-restart"
           sleep 10
-
       - name: Run Minecraft Server
         run: |
           echo "=== Starting Minecraft Server ==="
@@ -75,7 +73,7 @@ jobs:
           SERVER_PID=$!
           
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
-          echo "⏰ Server will run for 5 hours 45 minutes..."
+          echo "⏰ Server will run for max 5 hours 45 minutes..."
           
           # انتظار 3 دقائق للسيرفر يبدأ بالكامل
           echo "⏳ Waiting 3 minutes for server to fully start..."
@@ -97,24 +95,46 @@ jobs:
           sleep 1
           ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "gamemode creative SIGMAxox" >/dev/null 2>&1
           
-          echo "✔ Admin permissions granted to $PLAYER_NAME"
+          echo "✔ Admin permissions granted to SIGMAxox"
           echo "✔ Gamemode set to Creative"
           
           echo ""
           echo "=== Server is now ONLINE ==="
+          echo "ℹ️ Type 'stop' in-game to shutdown server immediately"
           
-          # Run for 5 hours 45 minutes (20700 seconds)
-          sleep 20700
+          # مراقبة السيرفر - يوقف لما السيرفر يقفل أو بعد 5 ساعات و45 دقيقة
+          MAX_TIME=20700  # 5 hours 45 minutes
+          ELAPSED=0
+          CHECK_INTERVAL=10
           
-          echo ""
-          echo "=== Stopping Server ==="
+          while [ $ELAPSED -lt $MAX_TIME ]; do
+            # فحص إذا السيرفر لسة شغال
+            if ! kill -0 $SERVER_PID 2>/dev/null; then
+              echo ""
+              echo "=== Server Stopped by User ==="
+              echo "⏱️ Server ran for approximately $((ELAPSED / 60)) minutes"
+              break
+            fi
+            
+            sleep $CHECK_INTERVAL
+            ELAPSED=$((ELAPSED + CHECK_INTERVAL))
+            
+            # عرض تحديث كل 30 دقيقة
+            if [ $((ELAPSED % 1800)) -eq 0 ]; then
+              echo "⏰ Server running... $((ELAPSED / 60)) minutes elapsed"
+            fi
+          done
           
-          # إيقاف السيرفر
-          kill -TERM $SERVER_PID 2>/dev/null || true
-          sleep 5
-          kill -9 $SERVER_PID 2>/dev/null || true
+          # إذا السيرفر لسة شغال، أوقفه
+          if kill -0 $SERVER_PID 2>/dev/null; then
+            echo ""
+            echo "=== Time Limit Reached - Stopping Server ==="
+            kill -TERM $SERVER_PID 2>/dev/null || true
+            sleep 5
+            kill -9 $SERVER_PID 2>/dev/null || true
+          fi
           
-          # إيقاف playit monitor و playit
+          # إيقاف playit
           pkill -f "monitor_playit.sh" 2>/dev/null || true
           pkill -TERM playit-linux-amd64 2>/dev/null || true
           sleep 2
@@ -127,7 +147,6 @@ jobs:
             echo "=== PlayIt Monitor Log ==="
             tail -n 10 playit_monitor.log
           fi
-
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
@@ -144,7 +163,6 @@ jobs:
           else
             echo "ℹ️ No changes to save"
           fi
-
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
