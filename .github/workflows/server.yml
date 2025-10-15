@@ -75,28 +75,9 @@ jobs:
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           echo "⏰ Server will run for max 5 hours 45 minutes..."
           
-          # انتظار 3 دقائق للسيرفر يبدأ بالكامل
-          echo "⏳ Waiting 3 minutes for server to fully start..."
-          sleep 180
-          
-          # إضافة admin permissions وتحويل لـ creative
-          echo "=== Setting up admin permissions ==="
-          
-          RCON_PASSWORD="ahmedger1"
-          RCON_PORT="25575"
-          
-          # تحميل وتثبيت mcrcon
-          wget -q https://github.com/Tiiffi/mcrcon/releases/download/v0.7.2/mcrcon-0.7.2-linux-x86-64.tar.gz
-          tar -xzf mcrcon-0.7.2-linux-x86-64.tar.gz
-          chmod +x mcrcon
-          
-          # تنفيذ الأوامر
-          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "op SIGMAxox" >/dev/null 2>&1
-          sleep 1
-          ./mcrcon -H localhost -P $RCON_PORT -p "$RCON_PASSWORD" "gamemode creative SIGMAxox" >/dev/null 2>&1
-          
-          echo "✔ Admin permissions granted to SIGMAxox"
-          echo "✔ Gamemode set to Creative"
+          # انتظار دقيقة للسيرفر يبدأ بالكامل
+          echo "⏳ Waiting 1 minute for server to fully start..."
+          sleep 60
           
           echo ""
           echo "=== Server is now ONLINE ==="
