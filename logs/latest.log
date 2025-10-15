@@ -1,433 +1,194 @@
-[05:56:41] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[05:56:42] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[05:56:42] [Worker-Main-2/INFO]: Loaded 7 recipes
-[05:56:43] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[05:56:43] [Server thread/INFO]: Loading properties
-[05:56:43] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[05:56:45] [Server thread/INFO]: Debug logging is disabled
-[05:56:45] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[05:56:45] [Server thread/INFO]: Using 4 threads for Netty based IO
-[05:56:45] [Server thread/INFO]: Default game type: SURVIVAL
-[05:56:45] [Server thread/INFO]: Generating keypair
-[05:56:45] [Server thread/INFO]: Starting Minecraft server on *:25565
-[05:56:46] [Server thread/INFO]: Using epoll channel type
-[05:56:47] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[05:56:47] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[05:56:47] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[05:56:47] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[05:56:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[05:56:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[05:56:48] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[05:56:48] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[05:56:48] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[05:56:48] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
-[05:56:48] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[05:56:49] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[05:56:49] [Server thread/INFO]: [floodgate] Took 538ms to boot Floodgate
-[05:56:49] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[05:56:49] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[05:56:49] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
-[05:56:49] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[05:56:49] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[05:56:49] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[05:56:49] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[05:56:49] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[05:56:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[05:56:49] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[05:56:49] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[05:56:50] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[05:56:50] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[05:56:50] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[05:56:51] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[05:56:51] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[05:56:51] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[05:56:51] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[05:56:51] [Server thread/INFO]: Preparing level "world"
-[05:56:52] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[05:56:52] [Server thread/INFO]: Preparing spawn area: 0%
-[05:56:52] [Server thread/INFO]: Preparing spawn area: 0%
-[05:56:52] [Server thread/INFO]: Time elapsed: 884 ms
-[05:56:52] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[05:56:53] [Server thread/INFO]: Preparing spawn area: 0%
-[05:56:53] [Server thread/INFO]: Time elapsed: 442 ms
-[05:56:53] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[05:56:53] [Server thread/INFO]: Preparing spawn area: 0%
-[05:56:54] [Server thread/INFO]: Preparing spawn area: 3%
-[05:56:54] [Server thread/INFO]: Preparing spawn area: 3%
-[05:56:55] [Server thread/INFO]: Preparing spawn area: 36%
-[05:56:55] [Server thread/INFO]: Time elapsed: 1724 ms
-[05:56:55] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[05:56:55] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[05:56:55] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[05:56:55] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[05:56:56] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[05:56:56] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[05:56:56] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[05:56:56] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[05:56:56] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
-[05:56:56] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[05:56:56] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[05:56:56] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
-[05:56:56] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
-[05:56:56] [Server thread/INFO]: [voicechat] Compatibility version 18
-[05:56:56] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[05:56:56] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[05:56:56] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[05:56:57] [Server thread/INFO]: [TAB] Enabled in 860ms
-[05:56:57] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[05:56:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[05:56:58] [Server thread/INFO]: [Geyser-Spigot] 
-[05:56:58] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[05:56:58] [Server thread/INFO]: [Geyser-Spigot] 
-[05:56:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[05:57:02] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[05:57:02] [Server thread/INFO]: [Geyser-Spigot] Done (3.61s)! Run /geyser help for help!
-[05:57:03] [Server thread/INFO]: Starting remote control listener
-[05:57:03] [Server thread/INFO]: Thread RCON Listener started
-[05:57:03] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[05:57:03] [Server thread/INFO]: Running delayed init tasks
-[05:57:03] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[05:57:03] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[05:57:03] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[05:57:03] [Server thread/INFO]: [voicechat] Loading plugins
-[05:57:03] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[05:57:03] [Server thread/INFO]: [voicechat] Initializing plugins
-[05:57:03] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[05:57:03] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[05:57:03] [Craft Scheduler Thread - 3/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[05:57:03] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[05:57:03] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[05:57:03] [Server thread/INFO]: Done (19.483s)! For help, type "help"
-[05:57:03] [Server thread/INFO]: Timings Reset
-[05:57:03] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[05:57:03] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[05:59:31] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
-[05:59:31] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
-[05:59:32] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
-[05:59:32] [RCON Client /0:0:0:0:0:0:0:1 #3/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
-[06:15:02] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:15:02] [Server thread/INFO]: SIGMAxox joined the game
-[06:15:02] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[06:15:02] [Server thread/INFO]: SIGMAxox[/127.28.143.69:54687] logged in with entity id 181 at ([world]-179.1985764917728, 63.0, -134.47929151447312)
-[06:15:08] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[06:15:08] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[06:15:11] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:15:12] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:15:12] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[06:15:55] [Craft Scheduler Thread - 14/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[06:21:39] [Server thread/INFO]: SIGMAxox issued server command: /gamemode creative
-[06:21:39] [Server thread/INFO]: [SIGMAxox: Set own game mode to Creative Mode]
-[06:22:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 53dcd5fe-87eb-388f-8693-91406d777c77 timed out
-[06:22:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player SIGMAxox
-[06:22:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to SIGMAxox
-[06:23:05] [Server thread/INFO]: SIGMAxox lost connection: Timed out
-[06:23:05] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[06:23:05] [Server thread/INFO]: SIGMAxox left the game
-[06:23:27] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:23:27] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[06:23:27] [Server thread/INFO]: SIGMAxox joined the game
-[06:23:27] [Server thread/INFO]: SIGMAxox[/127.28.143.69:42629] logged in with entity id 943 at ([world]-179.45277540905548, 62.9375, -130.05923832535987)
-[06:23:29] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[06:23:29] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[06:23:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:23:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[06:23:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[06:24:10] [Craft Scheduler Thread - 22/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[06:24:33] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival
-[06:24:33] [Server thread/INFO]: [SIGMAxox: Set own game mode to Survival Mode]
-[06:27:11] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[06:27:11] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[06:27:11] [Server thread/INFO]: SIGMAxox left the game
-[06:55:23] [User Authenticator #3/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[06:55:23] [Server thread/INFO]: SIGMA joined the game
-[06:55:23] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[06:55:23] [Server thread/INFO]: SIGMA[/127.28.143.69:60113] logged in with entity id 1321 at ([world]-172.5, 63.0, -178.5)
-[06:55:24] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[06:55:24] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[06:55:24] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[06:55:53] [Server thread/INFO]: [AuthMe] SIGMA registered 127.28.143.69
-[06:55:53] [Craft Scheduler Thread - 34/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[06:55:53] [Craft Scheduler Thread - 34/INFO]: [AuthMe] sigmaxox, SIGMA.
-[06:55:53] [Craft Scheduler Thread - 34/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[06:56:40] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[06:56:40] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[06:56:40] [Server thread/INFO]: SIGMA left the game
-[07:05:02] [User Authenticator #4/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:05:02] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:05:02] [Server thread/INFO]: SIGMA joined the game
-[07:05:02] [Server thread/INFO]: SIGMA[/127.28.143.69:49407] logged in with entity id 1439 at ([world]-184.57393910687193, 63.0, -127.09599012367173)
-[07:05:03] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:05:03] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:05:03] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[07:05:05] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[07:05:05] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[07:05:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:05:08] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:05:08] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[07:05:54] [Craft Scheduler Thread - 41/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[07:05:54] [Craft Scheduler Thread - 41/INFO]: [AuthMe] sigmaxox, SIGMA.
-[07:05:54] [Craft Scheduler Thread - 41/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[07:10:57] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[07:10:57] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[07:10:57] [Server thread/INFO]: SIGMA left the game
-[07:15:27] [User Authenticator #5/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:15:27] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:15:27] [Server thread/INFO]: SIGMA joined the game
-[07:15:27] [Server thread/INFO]: SIGMA[/127.28.143.69:50573] logged in with entity id 1986 at ([world]-185.7315680353156, 63.0, -128.00687955639063)
-[07:15:28] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:15:28] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:15:28] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[07:15:30] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[07:15:30] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[07:15:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:15:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:15:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[07:15:44] [Craft Scheduler Thread - 49/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[07:15:44] [Craft Scheduler Thread - 49/INFO]: [AuthMe] sigmaxox, SIGMA.
-[07:15:44] [Craft Scheduler Thread - 49/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[07:16:37] [Server thread/INFO]: SIGMA has made the advancement [Sweet Dreams]
-[07:17:16] [Server thread/INFO]: SIGMA has made the advancement [Monster Hunter]
-[07:22:32] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[07:22:32] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[07:22:32] [Server thread/INFO]: SIGMA left the game
-[07:24:06] [User Authenticator #6/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:24:06] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:24:06] [Server thread/INFO]: SIGMA joined the game
-[07:24:06] [Server thread/INFO]: SIGMA[/127.28.143.69:36547] logged in with entity id 2649 at ([world]-185.29544563137654, 63.0, -128.97855396500339)
-[07:24:06] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:24:06] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:24:06] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[07:24:09] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[07:24:09] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[07:24:10] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:24:11] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:24:11] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[07:24:21] [Craft Scheduler Thread - 57/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[07:24:21] [Craft Scheduler Thread - 57/INFO]: [AuthMe] sigmaxox, SIGMA.
-[07:24:21] [Craft Scheduler Thread - 57/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[07:27:57] [User Authenticator #7/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:27:57] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:27:57] [Server thread/INFO]: SIGMAxox joined the game
-[07:27:57] [Server thread/INFO]: SIGMAxox[/127.28.143.69:42439] logged in with entity id 3023 at ([world]-185.1222219117938, 63.0, -137.31534757492727)
-[07:28:06] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[07:28:06] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[07:28:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:28:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:28:14] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[07:28:45] [Craft Scheduler Thread - 63/INFO]: [AuthMe] The user SIGMAxox has 2 accounts:
-[07:28:45] [Craft Scheduler Thread - 63/INFO]: [AuthMe] SIGMAxox, SIGMA.
-[07:28:45] [Craft Scheduler Thread - 63/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[07:35:56] [Server thread/INFO]: SIGMA was slain by SIGMAxox
-[07:36:57] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[07:36:57] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[07:36:57] [Server thread/INFO]: SIGMA left the game
-[07:37:23] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[07:37:23] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[07:37:23] [Server thread/INFO]: SIGMAxox left the game
-[07:46:18] [User Authenticator #8/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:46:18] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:46:18] [Server thread/INFO]: SIGMA joined the game
-[07:46:18] [Server thread/INFO]: SIGMA[/127.28.143.69:36095] logged in with entity id 3968 at ([world]-182.5, 63.0, -127.5)
-[07:46:19] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:46:19] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[07:46:19] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[07:46:21] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[07:46:21] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[07:46:23] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:46:24] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[07:46:24] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[07:46:39] [Craft Scheduler Thread - 72/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[07:46:39] [Craft Scheduler Thread - 72/INFO]: [AuthMe] sigmaxox, SIGMA.
-[07:46:39] [Craft Scheduler Thread - 72/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[07:47:19] [User Authenticator #9/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:47:19] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[07:47:19] [Server thread/INFO]: SIGMAxox joined the game
-[07:47:19] [Server thread/INFO]: SIGMAxox[/127.28.143.69:48341] logged in with entity id 4062 at ([world]-184.80728121782553, 63.0, -127.35508629390527)
-[07:47:22] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[07:47:22] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[07:47:25] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:47:26] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[07:47:26] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[07:47:39] [Craft Scheduler Thread - 77/INFO]: [AuthMe] The user SIGMAxox has 2 accounts:
-[07:47:39] [Craft Scheduler Thread - 77/INFO]: [AuthMe] SIGMAxox, SIGMA.
-[07:47:39] [Craft Scheduler Thread - 77/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[07:50:26] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[07:50:26] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[07:50:26] [Server thread/INFO]: SIGMAxox left the game
-[07:50:28] [Server thread/INFO]: SIGMA lost connection: Disconnected
-[07:50:28] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[07:50:28] [Server thread/INFO]: SIGMA left the game
-[08:02:00] [User Authenticator #10/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:02:00] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[08:02:00] [Server thread/INFO]: SIGMAxox joined the game
-[08:02:00] [Server thread/INFO]: SIGMAxox[/127.28.143.69:57153] logged in with entity id 4358 at ([world]-182.5292798326671, 63.0, -126.97643281942761)
-[08:02:01] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[08:02:01] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FML
-[08:02:01] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: FORGE
-[08:02:04] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[08:02:04] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[08:02:06] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:02:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:02:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[08:02:14] [Craft Scheduler Thread - 85/INFO]: [AuthMe] The user SIGMAxox has 2 accounts:
-[08:02:14] [Craft Scheduler Thread - 85/INFO]: [AuthMe] SIGMAxox, sigma.
-[08:02:14] [Craft Scheduler Thread - 85/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[08:03:26] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[08:03:26] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[08:03:26] [Server thread/INFO]: SIGMAxox left the game
-[08:20:21] [User Authenticator #11/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:20:21] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[08:20:21] [Server thread/INFO]: SIGMAxox joined the game
-[08:20:21] [Server thread/INFO]: SIGMAxox[/127.28.143.69:59849] logged in with entity id 4495 at ([world]-183.3306695391985, 63.0, -127.46545093732861)
-[08:20:30] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (14)
-[08:20:30] [Server thread/WARN]: [voicechat] Connected client SIGMAxox has incompatible voice chat version (server=18, client=14)
-[08:21:05] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[08:21:05] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[08:21:05] [Server thread/INFO]: SIGMAxox left the game
-[08:40:22] [User Authenticator #12/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:40:22] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[08:40:22] [Server thread/INFO]: SIGMAxox joined the game
-[08:40:22] [Server thread/INFO]: SIGMAxox[/127.28.143.69:42501] logged in with entity id 4580 at ([world]-183.37729954505753, 63.0, -127.41682984602971)
-[08:40:33] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[08:40:33] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[08:40:41] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:40:42] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[08:40:42] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[08:41:02] [Craft Scheduler Thread - 103/INFO]: [AuthMe] The user SIGMAxox has 2 accounts:
-[08:41:02] [Craft Scheduler Thread - 103/INFO]: [AuthMe] SIGMAxox, sigma.
-[08:41:02] [Craft Scheduler Thread - 103/INFO]: [AuthMe] SIGMAxox logged in 127.28.143.69
-[08:47:39] [User Authenticator #13/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[08:47:39] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[08:47:39] [Server thread/INFO]: SIGMA joined the game
-[08:47:39] [Server thread/INFO]: SIGMA[/127.28.143.69:49373] logged in with entity id 5246 at ([world]-185.5404972151492, 63.0, -127.7163956511284)
-[08:47:47] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[08:47:47] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[08:47:54] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[08:47:54] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[08:47:54] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[08:48:02] [Craft Scheduler Thread - 110/INFO]: [AuthMe] The user SIGMA has 2 accounts:
-[08:48:02] [Craft Scheduler Thread - 110/INFO]: [AuthMe] SIGMAxox, SIGMA.
-[08:48:02] [Craft Scheduler Thread - 110/INFO]: [AuthMe] SIGMA logged in 127.28.143.69
-[08:49:53] [Server thread/INFO]: SIGMAxox was slain by SIGMA
-[08:49:54] [Server thread/INFO]: SIGMA has made the advancement [Acquire Hardware]
-[08:49:54] [Server thread/INFO]: SIGMA has made the advancement [Suit Up]
-[08:49:54] [Server thread/INFO]: SIGMA has made the advancement [Isn't It Iron Pick]
-[08:49:54] [Server thread/INFO]: SIGMA has made the advancement [Stone Age]
-[08:51:01] [Server thread/INFO]: SIGMA issued server command: /skins
-[08:51:38] [Server thread/INFO]: SIGMAxox issued server command: /skin
-[08:51:43] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[08:52:12] [Craft Scheduler Thread - 118/INFO]: SIGMA dozed off
-[08:52:36] [Server thread/INFO]: SIGMAxox was slain by SIGMA
-[08:53:30] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[08:53:30] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[08:53:30] [Server thread/INFO]: SIGMAxox left the game
-[08:55:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 507a4a0e-3895-3b69-b1f3-67a25932246d timed out
-[08:55:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player SIGMA
-[08:55:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to SIGMA
-[08:55:34] [Server thread/INFO]: SIGMA lost connection: Timed out
-[08:55:34] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[08:55:34] [Server thread/INFO]: SIGMA left the game
-[09:09:11] [RCON Listener #1/INFO]: Thread RCON Client /127.186.144.117 started
-[09:09:13] [RCON Listener #1/INFO]: Thread RCON Client /127.186.144.117 started
-[09:09:27] [RCON Client /127.186.144.117 #4/INFO]: Thread RCON Client /127.186.144.117 shutting down
-[09:09:27] [RCON Client /127.186.144.117 #5/INFO]: Thread RCON Client /127.186.144.117 shutting down
-[09:09:49] [RCON Listener #1/INFO]: Thread RCON Client /127.186.144.117 started
-[09:10:31] [User Authenticator #14/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:10:31] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[09:10:31] [Server thread/INFO]: SIGMA joined the game
-[09:10:31] [Server thread/INFO]: SIGMA[/127.186.144.117:56043] logged in with entity id 6049 at ([world]-186.11869686509638, 63.0, -128.38111074041217)
-[09:10:33] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[09:10:33] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[09:10:35] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:10:36] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:10:36] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[09:10:42] [Craft Scheduler Thread - 126/INFO]: [AuthMe] SIGMA logged in 127.186.144.117
-[09:10:55] [RCON Client /127.186.144.117 #6/INFO]: Thread RCON Client /127.186.144.117 shutting down
-[09:11:11] [Server thread/INFO]: SIGMA has made the advancement [Not Today, Thank You]
-[09:11:47] [RCON Listener #1/INFO]: Thread RCON Client /127.186.144.117 started
-[09:11:57] [Server thread/INFO]: [Rcon: Made SIGMA a server operator]
-[09:12:11] [RCON Client /127.186.144.117 #7/INFO]: Thread RCON Client /127.186.144.117 shutting down
-[09:12:21] [RCON Listener #1/INFO]: Thread RCON Client /127.186.144.117 started
-[09:12:26] [RCON Client /127.186.144.117 #8/INFO]: Thread RCON Client /127.186.144.117 shutting down
-[09:13:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 507a4a0e-3895-3b69-b1f3-67a25932246d timed out
-[09:13:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player SIGMA
-[09:13:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to SIGMA
-[09:13:52] [Server thread/INFO]: SIGMA lost connection: Timed out
-[09:13:52] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
-[09:13:52] [Server thread/INFO]: SIGMA left the game
-[09:19:55] [User Authenticator #15/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:19:55] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[09:19:55] [Server thread/INFO]: SIGMA joined the game
-[09:19:55] [Server thread/INFO]: SIGMA[/127.131.78.197:47279] logged in with entity id 6376 at ([world]-182.54213369777509, 63.0, -135.4055177844666)
-[09:19:56] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
-[09:19:56] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
-[09:20:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:20:03] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
-[09:20:03] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
-[09:20:08] [Craft Scheduler Thread - 134/INFO]: [AuthMe] SIGMA logged in 127.131.78.197
-[09:20:12] [RCON Listener #1/INFO]: Thread RCON Client /127.131.78.197 started
-[09:20:27] [Server thread/INFO]: [Rcon] hello
-[09:21:19] [Server thread/INFO]: SIGMA issued server command: /tell Rcon hello
-[09:21:40] [RCON Client /127.131.78.197 #9/INFO]: Thread RCON Client /127.131.78.197 shutting down
-[09:22:23] [Server thread/INFO]: SIGMA issued server command: /gamemode spectator
-[09:22:23] [Server thread/INFO]: [SIGMA: Set own game mode to Spectator Mode]
-[09:22:52] [Server thread/INFO]: SIGMA issued server command: /gamemode c
-[09:22:58] [Server thread/INFO]: SIGMA issued server command: /gamemode creative
-[09:22:58] [Server thread/INFO]: [SIGMA: Set own game mode to Creative Mode]
-[09:23:29] [Server thread/INFO]: SIGMA issued server command: /gamemode spectator
-[09:23:29] [Server thread/INFO]: [SIGMA: Set own game mode to Spectator Mode]
-[09:23:50] [Server thread/INFO]: SIGMA issued server command: /gamemode creative
-[09:23:50] [Server thread/INFO]: [SIGMA: Set own game mode to Creative Mode]
-[09:24:19] [Server thread/INFO]: SIGMA issued server command: /gamemode spectator
-[09:24:19] [Server thread/INFO]: [SIGMA: Set own game mode to Spectator Mode]
-[09:24:33] [Server thread/INFO]: SIGMA issued server command: /gamemode survival
-[09:24:33] [Server thread/INFO]: [SIGMA: Set own game mode to Survival Mode]
-[09:25:05] [RCON Listener #1/INFO]: Thread RCON Client /127.131.78.197 started
-[09:25:10] [Server thread/INFO]: [Rcon: Stopping the server]
-[09:25:10] [Server thread/INFO]: Stopping server
-[09:25:10] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.8.4-SNAPSHOT
-[09:25:10] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[09:25:10] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[09:25:10] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
-[09:25:10] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[09:25:10] [Server thread/INFO]: [TAB] Disabled in 3ms
-[09:25:10] [Server thread/INFO]: [voicechat] Disabling voicechat v2.5.35
-[09:25:10] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[09:25:10] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[09:25:10] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[09:25:10] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.1.8
-[09:25:10] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[09:25:10] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[09:25:10] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[09:25:10] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
-[09:25:10] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
-[09:25:10] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
-[09:25:10] [Server thread/INFO]: Saving players
-[09:25:10] [Server thread/INFO]: SIGMA lost connection: Server closed
-[09:25:10] [Server thread/INFO]: SIGMA left the game
-[09:25:10] [WebSocketConnectReadThread-420/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[09:25:10] [Server thread/INFO]: Saving worlds
-[09:25:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:25:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:25:10] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[09:25:10] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[09:25:10] [Server thread/INFO]: Flushing Chunk IO
-[09:25:10] [Server thread/INFO]: Closing Thread Pool
-[09:25:10] [Server thread/INFO]: Closing Server
+[16:39:57] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:39:57] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[16:39:57] [Worker-Main-2/INFO]: Loaded 7 recipes
+[16:39:58] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[16:39:58] [Server thread/INFO]: Loading properties
+[16:39:58] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[16:39:59] [Server thread/INFO]: Debug logging is disabled
+[16:39:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:39:59] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:39:59] [Server thread/INFO]: Default game type: SURVIVAL
+[16:39:59] [Server thread/INFO]: Generating keypair
+[16:39:59] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:39:59] [Server thread/INFO]: Using epoll channel type
+[16:40:00] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[16:40:00] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[16:40:00] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[16:40:00] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[16:40:01] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[16:40:01] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[16:40:01] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[16:40:01] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[16:40:02] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[16:40:02] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
+[16:40:02] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[16:40:02] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[16:40:02] [Server thread/INFO]: [floodgate] Took 440ms to boot Floodgate
+[16:40:02] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[16:40:02] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[16:40:02] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
+[16:40:02] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[16:40:02] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[16:40:02] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[16:40:02] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[16:40:02] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[16:40:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:40:02] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[16:40:02] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[16:40:03] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[16:40:03] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[16:40:03] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[16:40:03] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:40:03] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:40:03] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:40:03] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:40:03] [Server thread/INFO]: Preparing level "world"
+[16:40:04] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:40:04] [Server thread/INFO]: Preparing spawn area: 0%
+[16:40:04] [Server thread/INFO]: Preparing spawn area: 0%
+[16:40:04] [Server thread/INFO]: Time elapsed: 776 ms
+[16:40:04] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:40:05] [Server thread/INFO]: Preparing spawn area: 0%
+[16:40:05] [Server thread/INFO]: Preparing spawn area: 22%
+[16:40:05] [Worker-Main-1/INFO]: Preparing spawn area: 100%
+[16:40:05] [Server thread/INFO]: Time elapsed: 1074 ms
+[16:40:05] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:40:06] [Server thread/INFO]: Preparing spawn area: 0%
+[16:40:06] [Server thread/INFO]: Time elapsed: 488 ms
+[16:40:06] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[16:40:06] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[16:40:06] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[16:40:07] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[16:40:07] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[16:40:07] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[16:40:07] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[16:40:07] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[16:40:07] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[16:40:07] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[16:40:07] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[16:40:07] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
+[16:40:07] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
+[16:40:07] [Server thread/INFO]: [voicechat] Compatibility version 18
+[16:40:07] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[16:40:07] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[16:40:07] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[16:40:07] [Server thread/INFO]: [TAB] Enabled in 184ms
+[16:40:07] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[16:40:08] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:40:08] [Server thread/INFO]: [Geyser-Spigot] 
+[16:40:08] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[16:40:08] [Server thread/INFO]: [Geyser-Spigot] 
+[16:40:08] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:40:11] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[16:40:11] [Server thread/INFO]: [Geyser-Spigot] Done (2.584s)! Run /geyser help for help!
+[16:40:11] [Server thread/INFO]: Starting remote control listener
+[16:40:11] [Server thread/INFO]: Thread RCON Listener started
+[16:40:11] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[16:40:11] [Server thread/INFO]: Running delayed init tasks
+[16:40:11] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[16:40:11] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[16:40:11] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[16:40:11] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[16:40:11] [Server thread/INFO]: [voicechat] Loading plugins
+[16:40:11] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[16:40:11] [Server thread/INFO]: [voicechat] Initializing plugins
+[16:40:11] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[16:40:11] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[16:40:11] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[16:40:11] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[16:40:11] [Server thread/INFO]: Done (12.786s)! For help, type "help"
+[16:40:11] [Server thread/INFO]: Timings Reset
+[16:40:11] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[16:40:11] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[16:42:49] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[16:42:49] [RCON Client /0:0:0:0:0:0:0:1 #2/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[16:42:50] [RCON Listener #1/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 started
+[16:42:50] [RCON Client /0:0:0:0:0:0:0:1 #3/INFO]: Thread RCON Client /0:0:0:0:0:0:0:1 shutting down
+[16:45:20] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
+[16:45:20] [localSession-7-2/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
+[16:45:20] [Geyser Spigot connection thread-6-3/INFO]: Disconnecting com.mojang.authlib.GameProfile@62a4ddde[id=00000000-0000-0000-0009-01fcf767c855,name=.AhmedGER0,properties={},legacy=false] (/127.114.19.103:0): Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:45:20] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
+[16:45:20] [localSession-7-2/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:45:20] [Server thread/INFO]: com.mojang.authlib.GameProfile@62a4ddde[id=00000000-0000-0000-0009-01fcf767c855,name=.AhmedGER0,properties={},legacy=false] (/127.114.19.103:0) lost connection: Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:45:49] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Player connected with username AhmedGER0
+[16:45:49] [localSession-7-3/INFO]: [Geyser-Spigot] AhmedGER0 (logged in as: AhmedGER0) has connected to the Java server
+[16:45:49] [Geyser Spigot connection thread-6-4/INFO]: Disconnecting com.mojang.authlib.GameProfile@4794d711[id=00000000-0000-0000-0009-01fcf767c855,name=.AhmedGER0,properties={},legacy=false] (/127.114.19.103:0): Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:45:49] [localSession-7-3/INFO]: [Geyser-Spigot] AhmedGER0 has disconnected from the Java server because of Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:45:49] [Geyser Spigot connection thread-6-4/INFO]: [floodgate] Floodgate player logged in as .AhmedGER0 disconnected
+[16:45:49] [Server thread/INFO]: com.mojang.authlib.GameProfile@4794d711[id=00000000-0000-0000-0009-01fcf767c855,name=.AhmedGER0,properties={},legacy=false] (/127.114.19.103:0) lost connection: Your username contains illegal characters. Allowed chars: [a-zA-Z0-9_]*
+[16:46:21] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:46:21] [Server thread/INFO]: SIGMA joined the game
+[16:46:21] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[16:46:21] [Server thread/INFO]: SIGMA[/127.15.27.99:53493] logged in with entity id 181 at ([world]-179.06150626458285, 63.0, -132.03631896743616)
+[16:46:27] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[16:46:27] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[16:46:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:46:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:46:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[16:46:40] [Craft Scheduler Thread - 12/INFO]: [AuthMe] SIGMA logged in 127.15.27.99
+[16:47:33] [Async Chat Thread - #0/INFO]: <SIGMA> wwwwwwwwww
+[16:48:59] [Server thread/INFO]: SIGMA has made the advancement [A Seedy Place]
+[16:49:31] [Async Chat Thread - #1/INFO]: <SIGMA> o
+[16:50:01] [Async Chat Thread - #1/INFO]: <SIGMA> ooh
+[16:50:05] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[16:50:05] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[16:50:05] [Server thread/INFO]: SIGMA left the game
+[16:50:09] [User Authenticator #2/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:50:09] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[16:50:09] [Server thread/INFO]: SIGMA joined the game
+[16:50:09] [Server thread/INFO]: SIGMA[/127.15.27.99:53339] logged in with entity id 589 at ([world]-213.67205890044974, 63.0, -132.10363056260837)
+[16:50:10] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[16:50:10] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[16:50:12] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:50:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[16:50:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[16:50:19] [Craft Scheduler Thread - 16/INFO]: [AuthMe] SIGMA logged in 127.15.27.99
+[16:50:47] [Server thread/INFO]: SIGMA issued server command: /stop
+[16:50:47] [Server thread/INFO]: [SIGMA: Stopping the server]
+[16:50:47] [Server thread/INFO]: Stopping server
+[16:50:47] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.8.4-SNAPSHOT
+[16:50:47] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[16:50:47] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[16:50:47] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[16:50:47] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[16:50:47] [Server thread/INFO]: [TAB] Disabled in 2ms
+[16:50:47] [Server thread/INFO]: [voicechat] Disabling voicechat v2.5.35
+[16:50:47] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[16:50:47] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[16:50:47] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[16:50:47] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.1.8
+[16:50:47] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[16:50:47] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[16:50:47] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[16:50:47] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
+[16:50:47] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[16:50:47] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
+[16:50:47] [Server thread/INFO]: Saving players
+[16:50:47] [Server thread/INFO]: SIGMA lost connection: Server closed
+[16:50:47] [Server thread/INFO]: SIGMA left the game
+[16:50:47] [WebSocketConnectReadThread-91/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[16:50:47] [Server thread/INFO]: Saving worlds
+[16:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:50:47] [Server thread/INFO]: Flushing Chunk IO
+[16:50:47] [Server thread/INFO]: Closing Thread Pool
+[16:50:47] [Server thread/INFO]: Closing Server
