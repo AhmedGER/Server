@@ -269,6 +269,12 @@
     },
     "done": true
   },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "bread": "2025-10-15 16:55:41 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/tools/wooden_hoe": {
     "criteria": {
       "has_stick": "2025-10-15 08:49:54 +0000"
@@ -473,6 +479,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2025-10-15 17:55:49 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2025-10-15 08:49:54 +0000"
@@ -605,6 +617,12 @@
   "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
     "criteria": {
       "has_cobblestone": "2025-10-15 08:49:54 +0000"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2025-10-15 16:55:41 +0000"
     },
     "done": true
   },
@@ -786,6 +804,8 @@
     "criteria": {
       "minecraft:skeleton": "2025-10-15 07:17:16 +0000",
       "minecraft:spider": "2025-10-15 09:23:06 +0000",
+      "minecraft:witch": "2025-10-15 17:55:48 +0000",
+      "minecraft:enderman": "2025-10-15 17:58:13 +0000",
       "minecraft:zombie": "2025-10-15 09:24:05 +0000"
     },
     "done": false
