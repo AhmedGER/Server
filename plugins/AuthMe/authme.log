@@ -488,3 +488,37 @@
 [10-15 17:56:41]: [FINE] SIGMA logged in 127.86.138.97
 [10-15 18:03:36]: [FINE] SIGMA logged in 127.86.138.97
 [10-15 18:08:20]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[10-15 18:11:09]: [INFO] SQLite Setup finished
+[10-15 18:11:09]: [INFO] No supported permissions system found! Permissions are disabled!
+[10-15 18:11:10]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[10-15 18:11:10]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[10-15 18:11:14]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[10-15 18:11:14]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[10-15 18:11:14]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[10-15 18:11:14]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[10-15 18:11:14]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:179)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:54)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[10-15 18:12:08]: [FINE] SIGMA logged in 127.86.138.97
+[10-15 18:14:54]: [FINE] .AhmedGER0 registered 127.49.64.170
+[10-15 18:14:54]: [FINE] .AhmedGER0 logged in 127.49.64.170
+[10-15 18:17:47]: [FINE] SIGMA logged in 127.86.138.97
+[10-15 18:30:56]: [FINE] SIGMA logged in 127.86.138.97
+[10-15 18:49:53]: [FINE] SIGMAxox logged in 127.22.54.61
+[10-15 19:44:04]: [FINE] .AhmedGER0 logged in 127.113.9.114
+[10-15 19:49:27]: [FINE] soonk logged in 127.31.126.20
+[10-15 19:54:11]: [FINE] SIGMA logged in 127.88.85.193
+[10-15 23:56:52]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
