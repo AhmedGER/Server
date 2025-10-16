@@ -15,12 +15,21 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Download Paper 1.16.5
+      - name: Download Paper 1.16.5 and Setup World
         run: |
           echo "=== Downloading Paper 1.16.5 ==="
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
+          
+          # فك ضغط world.zip لو موجود
+          if [ -f world.zip ]; then
+            echo "=== Extracting world.zip ==="
+            unzip -q world.zip
+            echo "✔ World extracted successfully"
+          else
+            echo "ℹ️ No world.zip found, using existing world"
+          fi needed"
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
           echo "=== Setting up Playit Tunnel with monitoring ==="
@@ -42,6 +51,7 @@ jobs:
           done &
           
           echo "✔ Playit tunnel started with auto-restart"
+          echo "ℹ️ Minecraft port (25565) and RCON port (25575) will be tunneled"
           sleep 10
       - name: Run Minecraft Server
         run: |
