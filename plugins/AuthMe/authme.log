@@ -653,3 +653,7 @@
 [10-16 19:39:10]: [FINE] SIGMA logged in 127.199.15.94
 [10-16 19:45:08]: [FINE] soonk logged in 127.96.217.68
 [10-16 19:45:54]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[10-17 12:17:15]: [INFO] SQLite Setup finished
+[10-17 12:17:15]: [INFO] No supported permissions system found! Permissions are disabled!
+[10-17 12:17:15]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[10-17 12:17:15]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
