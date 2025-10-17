@@ -1,93 +1,525 @@
-[12:17:06] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[12:17:06] [main/WARN]: Missing data pack fabric
-[12:17:06] [main/WARN]: Missing data pack fabric-convention-tags-v2
-[12:17:06] [main/WARN]: Missing data pack lucky
-[12:17:06] [main/WARN]: Missing data pack file/oneblock_lucky_block_1.21.3
-[12:17:06] [main/WARN]: Missing data pack file/oneblock_lucky_block_1.21.3.zip
-[12:17:06] [main/INFO]: Found new data pack file/bukkit, loading it automatically
-[12:17:06] [main/INFO]: Found new data pack file/oneblock_lucky_block_1.20.6, loading it automatically
-[12:17:07] [main/INFO]: Reloading ResourceManager: Default, bukkit, oneblock_lucky_block_1.20.6
-[12:17:07] [Worker-Main-2/INFO]: Loaded 7 recipes
-[12:17:08] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[12:17:08] [Server thread/INFO]: Loading properties
-[12:17:08] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[12:17:09] [Server thread/INFO]: Debug logging is disabled
-[12:17:09] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:17:09] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:17:09] [Server thread/INFO]: Default game type: SURVIVAL
-[12:17:09] [Server thread/INFO]: Generating keypair
-[12:17:10] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:17:10] [Server thread/INFO]: Using epoll channel type
-[12:17:11] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[12:17:11] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[12:17:11] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[12:17:11] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[12:17:11] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[12:17:11] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[12:17:11] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[12:17:11] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[12:17:12] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[12:17:12] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
-[12:17:12] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[12:17:12] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[12:17:12] [Server thread/INFO]: [floodgate] Took 520ms to boot Floodgate
-[12:17:12] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[12:17:12] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[12:17:12] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
-[12:17:12] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[12:17:12] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[12:17:12] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[12:17:13] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[12:17:13] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[12:17:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:17:13] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[12:17:13] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[12:17:13] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[12:17:13] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[12:17:14] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[12:17:14] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[12:17:14] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[12:17:14] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[12:17:14] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[12:17:14] [Server thread/INFO]: Preparing level "world"
-[12:17:14] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key structures in MapLike[{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:flat",settings:{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
-[12:17:14] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key structures in MapLike[{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:flat",settings:{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
-[12:17:14] [Server thread/INFO]: ---- Migration of old nether folder required ----
-[12:17:14] [Server thread/INFO]: Unfortunately due to the way that Minecraft implemented multiworld support in 1.6, Bukkit requires that you move your nether folder to a new location in order to operate correctly.
-[12:17:14] [Server thread/INFO]: We will move this folder for you, but it will mean that you need to move it back should you wish to stop using Bukkit in the future.
-[12:17:14] [Server thread/INFO]: Attempting to move world/DIM-1 to world_nether/DIM-1...
-[12:17:14] [Server thread/INFO]: Success! To restore nether in the future, simply move world_nether/DIM-1 to world/DIM-1
-[12:17:14] [Server thread/INFO]: ---- Migration of old nether folder complete ----
-[12:17:14] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key structures in MapLike[{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:flat",settings:{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
-[12:17:14] [Server thread/INFO]: ---- Migration of old the_end folder required ----
-[12:17:14] [Server thread/INFO]: Unfortunately due to the way that Minecraft implemented multiworld support in 1.6, Bukkit requires that you move your the_end folder to a new location in order to operate correctly.
-[12:17:14] [Server thread/INFO]: We will move this folder for you, but it will mean that you need to move it back should you wish to stop using Bukkit in the future.
-[12:17:14] [Server thread/INFO]: Attempting to move world/DIM1 to world_the_end/DIM1...
-[12:17:14] [Server thread/INFO]: Success! To restore the_end in the future, simply move world_the_end/DIM1 to world/DIM1
-[12:17:14] [Server thread/INFO]: ---- Migration of old the_end folder complete ----
-[12:17:14] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key structures in MapLike[{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:flat",settings:{layers:[{block:"minecraft:air",height:1}],features:0b,lakes:0b,biome:"minecraft:plains"}}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
-[12:17:14] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 4082 > 2586
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
-[12:17:14] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 4082 > 2586
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
-[12:17:14] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 4082 > 2586
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
-[12:17:14] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
-[12:17:14] [Server thread/INFO]: Time elapsed: 352 ms
-[12:17:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[12:17:14] [Server thread/INFO]: Time elapsed: 112 ms
-[12:17:14] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[12:17:15] [Server thread/INFO]: Time elapsed: 81 ms
-[12:17:15] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PAPER)
+[12:33:01] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[12:33:02] [main/INFO]: Found new data pack file/bukkit, loading it automatically
+[12:33:02] [main/INFO]: Found new data pack file/ija-one-block.zip, loading it automatically
+[12:33:02] [main/INFO]: Reloading ResourceManager: Default, bukkit, ija-one-block.zip
+[12:33:03] [Worker-Main-2/INFO]: Loaded 7 recipes
+[12:33:03] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/phase7
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 21: Unknown entity: minecraft:zombie_pigman
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 21: Unknown entity: minecraft:zombie_pigman
+	at net.minecraft.server.v1_16_R3.CustomFunction.a(CustomFunction.java:71) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[12:33:03] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/spawnmob7
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 8: Unknown entity: minecraft:zombie_pigman
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 8: Unknown entity: minecraft:zombie_pigman
+	at net.minecraft.server.v1_16_R3.CustomFunction.a(CustomFunction.java:71) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[12:33:03] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/spawnmob
+java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 80: Unknown entity: minecraft:zombie_pigman
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1770) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 80: Unknown entity: minecraft:zombie_pigman
+	at net.minecraft.server.v1_16_R3.CustomFunction.a(CustomFunction.java:71) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	... 3 more
+[12:33:04] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[12:33:04] [Server thread/INFO]: Loading properties
+[12:33:04] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[12:33:05] [Server thread/INFO]: Debug logging is disabled
+[12:33:05] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[12:33:05] [Server thread/INFO]: Using 4 threads for Netty based IO
+[12:33:05] [Server thread/INFO]: Default game type: SURVIVAL
+[12:33:05] [Server thread/INFO]: Generating keypair
+[12:33:05] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:33:05] [Server thread/INFO]: Using epoll channel type
+[12:33:06] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[12:33:06] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[12:33:06] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[12:33:06] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[12:33:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[12:33:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[12:33:07] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[12:33:07] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[12:33:07] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[12:33:08] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
+[12:33:08] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[12:33:08] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[12:33:08] [Server thread/INFO]: [floodgate] Took 497ms to boot Floodgate
+[12:33:08] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[12:33:08] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[12:33:08] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
+[12:33:08] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[12:33:08] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[12:33:08] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[12:33:08] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[12:33:08] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[12:33:08] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[12:33:08] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[12:33:08] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[12:33:09] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[12:33:09] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[12:33:09] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[12:33:09] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[12:33:09] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[12:33:09] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[12:33:09] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[12:33:09] [Server thread/INFO]: Preparing level "world"
+[12:33:10] [Server thread/WARN]: Unable to find spawn biome
+[12:33:11] [Server thread/WARN]: Unable to find spawn biome
+[12:33:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[12:33:11] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[12:33:11] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[12:33:11] [Server thread/INFO]: Time elapsed: 537 ms
+[12:33:11] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[12:33:11] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[12:33:12] [Server thread/INFO]: Time elapsed: 469 ms
+[12:33:12] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[12:33:12] [Worker-Main-1/INFO]: Preparing spawn area: 0%
+[12:33:12] [Server thread/INFO]: Time elapsed: 350 ms
+[12:33:12] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[12:33:12] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[12:33:13] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[12:33:13] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[12:33:13] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[12:33:13] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[12:33:13] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[12:33:13] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[12:33:13] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[12:33:13] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[12:33:13] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[12:33:13] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
+[12:33:13] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
+[12:33:13] [Server thread/INFO]: [voicechat] Compatibility version 18
+[12:33:13] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[12:33:13] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[12:33:13] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[12:33:14] [Server thread/INFO]: [TAB] Enabled in 177ms
+[12:33:14] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[12:33:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[12:33:15] [Server thread/INFO]: [Geyser-Spigot] 
+[12:33:15] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[12:33:15] [Server thread/INFO]: [Geyser-Spigot] 
+[12:33:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[12:33:17] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[12:33:17] [Server thread/INFO]: [Geyser-Spigot] Done (2.796s)! Run /geyser help for help!
+[12:33:18] [Server thread/INFO]: Starting remote control listener
+[12:33:18] [Server thread/INFO]: Thread RCON Listener started
+[12:33:18] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[12:33:18] [Server thread/INFO]: Running delayed init tasks
+[12:33:18] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[12:33:18] [Craft Scheduler Thread - 7/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[12:33:18] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[12:33:18] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[12:33:18] [Server thread/INFO]: [voicechat] Loading plugins
+[12:33:18] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[12:33:18] [Server thread/INFO]: [voicechat] Initializing plugins
+[12:33:18] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[12:33:18] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[12:33:18] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[12:33:18] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[12:33:18] [Server thread/INFO]: Done (14.069s)! For help, type "help"
+[12:33:18] [Server thread/INFO]: Timings Reset
+[12:33:18] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[12:33:18] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[12:33:34] [User Authenticator #1/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:33:35] [Server thread/INFO]: SIGMA joined the game
+[12:33:35] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[12:33:35] [Server thread/INFO]: SIGMA[/127.171.79.190:54983] logged in with entity id 78 at ([world]0.5, 61.0, 0.5)
+[12:33:36] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[12:33:36] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[12:33:38] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:33:39] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:33:39] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[12:33:43] [Craft Scheduler Thread - 5/INFO]: [AuthMe] SIGMA logged in 127.171.79.190
+[12:33:55] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[12:33:55] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[12:33:55] [Server thread/INFO]: soonk joined the game
+[12:33:55] [Server thread/INFO]: soonk[/127.130.246.160:47527] logged in with entity id 81 at ([world]0.5, 61.0, 0.5)
+[12:33:56] [Server thread/INFO]: [voicechat] Received secret request of soonk (18)
+[12:33:56] [Server thread/INFO]: [voicechat] Sent secret to soonk
+[12:33:58] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[12:33:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[12:33:59] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player soonk (4f745b20-dadc-361b-9ade-2660b67b7c53) successfully connected to voice chat
+[12:34:07] [Craft Scheduler Thread - 9/INFO]: [AuthMe] soonk logged in 127.130.246.160
+[12:34:24] [Server thread/INFO]: SIGMA fell out of the world
+[12:37:44] [Server thread/INFO]: SIGMA issued server command: /skins
+[12:38:02] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[12:38:02] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[12:38:02] [Server thread/INFO]: SIGMA left the game
+[12:38:04] [User Authenticator #2/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:38:04] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[12:38:04] [Server thread/INFO]: SIGMA joined the game
+[12:38:04] [Server thread/INFO]: SIGMA[/127.171.79.190:54981] logged in with entity id 152 at ([world]1.1093275599579142, 61.0, 0.8888741103644966)
+[12:38:05] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[12:38:05] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[12:38:06] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:38:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[12:38:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[12:38:10] [Craft Scheduler Thread - 13/INFO]: [AuthMe] SIGMA logged in 127.171.79.190
+[12:40:45] [RCON Listener #1/INFO]: Thread RCON Client /127.167.233.76 started
+[12:40:46] [RCON Client /127.167.233.76 #2/INFO]: Thread RCON Client /127.167.233.76 shutting down
+[12:42:57] [RCON Listener #1/INFO]: Thread RCON Client /127.171.79.190 started
+[12:43:12] [RCON Client /127.171.79.190 #3/INFO]: Thread RCON Client /127.171.79.190 shutting down
+[12:48:14] [RCON Listener #1/INFO]: Thread RCON Client /127.106.173.201 started
+[12:48:14] [RCON Client /127.106.173.201 #4/INFO]: Thread RCON Client /127.106.173.201 shutting down
+[12:48:17] [RCON Listener #1/INFO]: Thread RCON Client /127.106.173.201 started
+[12:48:17] [RCON Client /127.106.173.201 #5/INFO]: Thread RCON Client /127.106.173.201 shutting down
+[12:52:49] [Server thread/INFO]: soonk has made the advancement [Stone Age]
+[12:54:09] [Server thread/INFO]: SIGMA has made the advancement [Stone Age]
+[12:54:26] [Server thread/INFO]: SIGMA has made the advancement [Getting an Upgrade]
+[12:59:37] [Async Chat Thread - #0/INFO]: <SIGMA> HG,
+[13:00:06] [Server thread/INFO]: SIGMA has made the advancement [Monster Hunter]
+[13:00:16] [Async Chat Thread - #0/INFO]: <SIGMA> HKJ SHLUKD
+[13:00:21] [Async Chat Thread - #0/INFO]: <SIGMA> سمعني
+[13:00:27] [Async Chat Thread - #0/INFO]: <SIGMA> اتكلم
+[13:00:31] [Async Chat Thread - #0/INFO]: <soonk> منا بتكلم
+[13:01:25] [Server thread/INFO]: SIGMA has made the advancement [Acquire Hardware]
+[13:03:42] [Server thread/INFO]: soonk has made the advancement [Monster Hunter]
+[13:08:14] [Server thread/INFO]: SIGMA has made the advancement [Isn't It Iron Pick]
+[13:09:54] [Server thread/INFO]: soonk lost connection: Disconnected
+[13:09:54] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:09:54] [Server thread/INFO]: soonk left the game
+[13:09:54] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[13:09:54] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[13:09:54] [Server thread/INFO]: SIGMA left the game
+[13:23:36] [User Authenticator #3/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:23:37] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:23:37] [Server thread/INFO]: soonk joined the game
+[13:23:37] [Server thread/INFO]: soonk[/127.130.246.160:57513] logged in with entity id 801 at ([world]0.7850881696752396, 61.0, -1.9648078756820841)
+[13:23:40] [Server thread/INFO]: [voicechat] Received secret request of soonk (18)
+[13:23:40] [Server thread/INFO]: [voicechat] Sent secret to soonk
+[13:23:56] [Craft Scheduler Thread - 30/INFO]: [AuthMe] soonk logged in 127.130.246.160
+[13:24:10] [User Authenticator #3/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:24:10] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:24:10] [Server thread/INFO]: SIGMA joined the game
+[13:24:10] [Server thread/INFO]: SIGMA[/127.118.148.123:59773] logged in with entity id 802 at ([world]3.7876733344047175, 61.0, -1.2313678914207673)
+[13:24:11] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[13:24:11] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[13:24:12] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:24:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:24:13] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[13:24:14] [Server thread/INFO]: soonk lost connection: Disconnected
+[13:24:14] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:24:14] [Server thread/INFO]: soonk left the game
+[13:24:23] [Craft Scheduler Thread - 32/INFO]: [AuthMe] SIGMA logged in 127.118.148.123
+[13:27:53] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[13:27:53] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[13:27:53] [Server thread/INFO]: SIGMA left the game
+[13:27:57] [User Authenticator #4/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:27:57] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:27:57] [Server thread/INFO]: soonk joined the game
+[13:27:57] [Server thread/INFO]: soonk[/127.130.246.160:50801] logged in with entity id 844 at ([world]-0.9299505267093395, 61.0, -2.2276635100850504)
+[13:28:00] [Server thread/INFO]: [voicechat] Received secret request of soonk (18)
+[13:28:00] [Server thread/INFO]: [voicechat] Sent secret to soonk
+[13:28:06] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:28:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:28:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player soonk (4f745b20-dadc-361b-9ade-2660b67b7c53) successfully connected to voice chat
+[13:28:22] [Craft Scheduler Thread - 37/INFO]: [AuthMe] soonk logged in 127.130.246.160
+[13:29:24] [Server thread/INFO]: soonk fell out of the world
+[13:29:32] [User Authenticator #5/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:29:32] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:29:32] [Server thread/INFO]: SIGMA joined the game
+[13:29:32] [Server thread/INFO]: SIGMA[/127.43.80.166:33535] logged in with entity id 850 at ([world]-0.8086679071980072, 61.0, -1.3625043978268847)
+[13:29:32] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[13:29:32] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[13:29:34] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:29:35] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:29:35] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[13:29:43] [Craft Scheduler Thread - 41/INFO]: [AuthMe] SIGMA logged in 127.43.80.166
+[13:31:33] [Server thread/INFO]: soonk lost connection: Disconnected
+[13:31:33] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:31:33] [Server thread/INFO]: soonk left the game
+[13:32:20] [Server thread/INFO]: SIGMA issued server command: /op soonk
+[13:32:53] [Server thread/INFO]: SIGMA has made the advancement [Sweet Dreams]
+[13:33:19] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[13:33:19] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[13:33:19] [Server thread/INFO]: SIGMA left the game
+[13:39:38] [User Authenticator #6/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:39:38] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:39:38] [Server thread/INFO]: soonk joined the game
+[13:39:38] [Server thread/INFO]: soonk[/127.130.246.160:39491] logged in with entity id 853 at ([world]2.2312725139443215, 62.0, -1.0117396229602411)
+[13:39:42] [Server thread/INFO]: [voicechat] Received secret request of soonk (18)
+[13:39:42] [Server thread/INFO]: [voicechat] Sent secret to soonk
+[13:39:47] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:39:48] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:39:48] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player soonk (4f745b20-dadc-361b-9ade-2660b67b7c53) successfully connected to voice chat
+[13:40:02] [Craft Scheduler Thread - 49/INFO]: [AuthMe] soonk logged in 127.130.246.160
+[13:40:05] [User Authenticator #6/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:40:05] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:40:05] [Server thread/INFO]: SIGMA joined the game
+[13:40:05] [Server thread/INFO]: SIGMA[/127.43.80.166:48329] logged in with entity id 854 at ([world]6.5, 61.0, -2.5)
+[13:40:05] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[13:40:05] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[13:40:07] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:40:08] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[13:40:08] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[13:40:13] [Craft Scheduler Thread - 51/INFO]: [AuthMe] SIGMA logged in 127.43.80.166
+[13:42:00] [Server thread/INFO]: soonk fell out of the world
+[13:42:23] [Server thread/INFO]: soonk was slain by SIGMA
+[13:43:48] [Craft Scheduler Thread - 54/INFO]: SIGMA needs a beauty rest
+[13:43:58] [Craft Scheduler Thread - 55/INFO]: SIGMA is cat napping
+[13:44:13] [Craft Scheduler Thread - 56/INFO]: SIGMA is asleep at the wheel
+[13:47:57] [RCON Listener #1/INFO]: Thread RCON Client /127.43.80.166 started
+[13:48:47] [RCON Client /127.43.80.166 #6/INFO]: Thread RCON Client /127.43.80.166 shutting down
+[13:49:11] [Server thread/INFO]: SIGMA issued server command: /weather clear
+[13:51:45] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 4f745b20-dadc-361b-9ade-2660b67b7c53 timed out
+[13:51:45] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player soonk
+[13:51:45] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to soonk
+[13:52:04] [Server thread/INFO]: soonk lost connection: Timed out
+[13:52:04] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:52:04] [Server thread/INFO]: soonk left the game
+[13:54:51] [Async Chat Thread - #1/INFO]: <SIGMA> wwwwwwww
+[13:54:55] [User Authenticator #7/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:54:55] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:54:55] [Server thread/INFO]: soonk joined the game
+[13:54:55] [Server thread/INFO]: soonk[/127.130.246.160:46183] logged in with entity id 1136 at ([world]-1.2661515665775402, 61.0, -3.839156229184203)
+[13:55:24] [Server thread/INFO]: soonk lost connection: Disconnected
+[13:55:24] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:55:24] [Server thread/INFO]: soonk left the game
+[13:55:29] [User Authenticator #7/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:55:29] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:55:29] [Server thread/INFO]: soonk joined the game
+[13:55:29] [Server thread/INFO]: soonk[/127.130.246.160:52137] logged in with entity id 1138 at ([world]-1.2661515665775402, 61.0, -3.839156229184203)
+[13:55:33] [Server thread/INFO]: [voicechat] Received secret request of soonk (18)
+[13:55:33] [Server thread/INFO]: [voicechat] Sent secret to soonk
+[13:55:38] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:55:39] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:55:39] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player soonk (4f745b20-dadc-361b-9ade-2660b67b7c53) successfully connected to voice chat
+[13:55:53] [Craft Scheduler Thread - 66/INFO]: [AuthMe] soonk logged in 127.130.246.160
+[14:02:25] [Server thread/INFO]: soonk has made the advancement [Getting an Upgrade]
+[14:04:07] [Server thread/INFO]: soonk was slain by SIGMA
+[14:04:28] [Server thread/INFO]: SIGMA was slain by soonk
+[14:04:37] [RCON Listener #1/INFO]: Thread RCON Client /127.66.140.104 started
+[14:04:37] [RCON Client /127.66.140.104 #7/INFO]: Thread RCON Client /127.66.140.104 shutting down
+[14:06:20] [Server thread/INFO]: soonk was slain by SIGMA
+[14:06:49] [Server thread/INFO]: SIGMA was shot by Skeleton
+[14:07:32] [Craft Scheduler Thread - 71/INFO]: SIGMA has hit the hay
+[14:08:17] [Server thread/INFO]: soonk was slain by SIGMA
+[14:08:34] [Server thread/INFO]: soonk was slain by SIGMA
+[14:09:19] [Server thread/INFO]: SIGMA was slain by soonk
+[14:11:56] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[14:11:56] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[14:11:56] [Server thread/INFO]: SIGMA left the game
+[14:12:51] [User Authenticator #8/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:12:51] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:12:51] [Server thread/INFO]: SIGMA joined the game
+[14:12:51] [Server thread/INFO]: SIGMA[/127.43.80.166:44899] logged in with entity id 1761 at ([world]-0.7676710787634734, 61.0, 18.795208034044254)
+[14:12:52] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[14:12:52] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[14:12:54] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:12:55] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:12:55] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[14:13:01] [Craft Scheduler Thread - 79/INFO]: [AuthMe] SIGMA logged in 127.43.80.166
+[14:13:05] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[14:13:05] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[14:13:05] [Server thread/INFO]: SIGMA left the game
+[14:14:36] [RCON Listener #1/INFO]: Thread RCON Client /127.43.80.166 started
+[14:14:48] [User Authenticator #9/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:14:48] [Server thread/INFO]: SIGMA joined the game
+[14:14:48] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:14:48] [Server thread/INFO]: SIGMA[/127.43.80.166:49311] logged in with entity id 1765 at ([world]-1.4297841153549276, 12.807053503192082, 26.92619434662311)
+[14:14:48] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[14:14:48] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[14:14:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:14:50] [RCON Client /127.43.80.166 #8/INFO]: Thread RCON Client /127.43.80.166 shutting down
+[14:14:51] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:14:51] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[14:14:54] [Server thread/WARN]: SIGMA moved too quickly! 0.0,-12.267877057997268,0.0
+[14:14:56] [Craft Scheduler Thread - 83/INFO]: [AuthMe] SIGMA logged in 127.43.80.166
+[14:14:57] [Server thread/INFO]: SIGMA fell out of the world
+[14:16:37] [RCON Listener #1/INFO]: Thread RCON Client /127.110.116.177 started
+[14:16:37] [RCON Client /127.110.116.177 #9/INFO]: Thread RCON Client /127.110.116.177 shutting down
+[14:16:47] [Server thread/INFO]: SIGMA has made the advancement [Best Friends Forever]
+[14:17:12] [Server thread/INFO]: SIGMA was slain by soonk
+[14:17:22] [Server thread/INFO]: SIGMA was slain by soonk
+[14:17:32] [Server thread/INFO]: soonk was slain by SIGMA
+[14:18:21] [Server thread/INFO]: SIGMA lost connection: Disconnected
+[14:18:21] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[14:18:21] [Server thread/INFO]: SIGMA left the game
+[14:18:50] [User Authenticator #10/INFO]: UUID of player SIGMA is 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:18:50] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMA's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:18:50] [Server thread/INFO]: SIGMA joined the game
+[14:18:50] [Server thread/INFO]: SIGMA[/127.43.80.166:58483] logged in with entity id 1861 at ([world]0.17625940249535066, 61.0, -4.328279602589863)
+[14:18:51] [Server thread/INFO]: [voicechat] Received secret request of SIGMA (18)
+[14:18:51] [Server thread/INFO]: [voicechat] Sent secret to SIGMA
+[14:18:52] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:18:53] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 507a4a0e-3895-3b69-b1f3-67a25932246d
+[14:18:53] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMA (507a4a0e-3895-3b69-b1f3-67a25932246d) successfully connected to voice chat
+[14:19:03] [Craft Scheduler Thread - 89/INFO]: [AuthMe] SIGMA logged in 127.43.80.166
+[14:19:05] [Craft Scheduler Thread - 89/INFO]: SIGMA is catching Z's
+[14:20:02] [Server thread/INFO]: soonk was slain by SIGMA
+[14:20:06] [Server thread/INFO]: SIGMA didn't want to live in the same world as soonk
+[14:21:49] [Server thread/INFO]: soonk was slain by SIGMA
+[14:21:54] [Server thread/INFO]: SIGMA was slain by soonk
+[14:27:52] [Server thread/INFO]: soonk was slain by SIGMA
+[14:28:02] [Server thread/INFO]: SIGMA was slain by soonk
+[14:29:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 507a4a0e-3895-3b69-b1f3-67a25932246d timed out
+[14:29:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player SIGMA
+[14:29:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to SIGMA
+[14:29:53] [Server thread/INFO]: SIGMA was slain by soonk
+[14:30:10] [Server thread/INFO]: SIGMA lost connection: Timed out
+[14:30:10] [Server thread/INFO]: [voicechat] Disconnecting client SIGMA
+[14:30:10] [Server thread/INFO]: SIGMA left the game
+[14:31:17] [Server thread/INFO]: soonk has made the advancement [Sweet Dreams]
+[14:31:23] [RCON Listener #1/INFO]: Thread RCON Client /127.103.37.108 started
+[14:32:15] [RCON Client /127.103.37.108 #10/INFO]: Thread RCON Client /127.103.37.108 shutting down
+[14:32:33] [RCON Listener #1/INFO]: Thread RCON Client /127.103.37.108 started
+[14:32:55] [RCON Listener #1/INFO]: Thread RCON Client /127.66.140.104 started
+[14:32:56] [RCON Client /127.66.140.104 #12/INFO]: Thread RCON Client /127.66.140.104 shutting down
+[14:33:09] [RCON Client /127.103.37.108 #11/INFO]: Thread RCON Client /127.103.37.108 shutting down
+[14:34:35] [Server thread/INFO]: soonk has made the advancement [Acquire Hardware]
+[14:40:06] [Server thread/INFO]: soonk fell out of the world
+[14:45:21] [Async Chat Thread - #2/INFO]: <soonk> T
+[14:45:51] [Server thread/INFO]: soonk fell out of the world
+[14:47:44] [Server thread/INFO]: soonk fell out of the world
+[14:48:37] [Server thread/INFO]: soonk has made the advancement [Isn't It Iron Pick]
+[14:55:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 4f745b20-dadc-361b-9ade-2660b67b7c53 timed out
+[14:55:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player soonk
+[14:55:09] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to soonk
+[14:55:28] [Server thread/INFO]: soonk lost connection: Timed out
+[14:55:28] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[14:55:28] [Server thread/INFO]: soonk left the game
+[15:17:45] [RCON Listener #1/INFO]: Thread RCON Client /127.224.229.59 started
+[15:17:45] [RCON Client /127.224.229.59 #13/INFO]: Thread RCON Client /127.224.229.59 shutting down
+[15:18:55] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[15:18:57] [RCON Client /127.24.108.86 #14/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[15:20:09] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[15:20:09] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[15:20:11] [RCON Client /127.16.231.133 #15/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[15:20:11] [RCON Client /127.61.127.132 #16/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[15:20:48] [RCON Listener #1/INFO]: Thread RCON Client /127.71.183.137 started
+[15:20:48] [RCON Client /127.71.183.137 #17/INFO]: Thread RCON Client /127.71.183.137 shutting down
+[15:37:15] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[15:37:15] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[15:37:17] [RCON Client /127.16.231.133 #18/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[15:37:17] [RCON Client /127.61.127.132 #19/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[15:39:31] [RCON Listener #1/INFO]: Thread RCON Client /127.106.173.201 started
+[15:39:31] [RCON Client /127.106.173.201 #20/INFO]: Thread RCON Client /127.106.173.201 shutting down
+[15:39:34] [RCON Listener #1/INFO]: Thread RCON Client /127.106.173.201 started
+[15:39:35] [RCON Client /127.106.173.201 #21/INFO]: Thread RCON Client /127.106.173.201 shutting down
+[15:44:30] [RCON Listener #1/INFO]: Thread RCON Client /127.240.118.99 started
+[15:44:30] [RCON Client /127.240.118.99 #22/INFO]: Thread RCON Client /127.240.118.99 shutting down
+[15:56:26] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[15:56:27] [RCON Client /127.24.108.86 #23/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[16:07:59] [RCON Listener #1/INFO]: Thread RCON Client /127.224.229.59 started
+[16:08:00] [RCON Client /127.224.229.59 #24/INFO]: Thread RCON Client /127.224.229.59 shutting down
+[16:08:36] [RCON Listener #1/INFO]: Thread RCON Client /127.142.29.162 started
+[16:08:36] [RCON Client /127.142.29.162 #25/INFO]: Thread RCON Client /127.142.29.162 shutting down
+[16:16:17] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[16:16:17] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[16:16:23] [RCON Client /127.16.231.133 #26/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[16:16:23] [RCON Client /127.61.127.132 #27/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[16:19:31] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[16:19:33] [RCON Client /127.24.108.86 #28/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[16:25:24] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[16:25:26] [RCON Client /127.24.108.86 #29/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[16:27:30] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[16:27:30] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[16:27:35] [RCON Client /127.16.231.133 #30/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[16:27:35] [RCON Client /127.61.127.132 #31/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[16:35:17] [RCON Listener #1/INFO]: Thread RCON Client /127.128.26.241 started
+[16:35:17] [RCON Client /127.128.26.241 #32/INFO]: Thread RCON Client /127.128.26.241 shutting down
+[16:36:52] [RCON Listener #1/INFO]: Thread RCON Client /127.218.250.199 started
+[16:36:52] [RCON Client /127.218.250.199 #33/INFO]: Thread RCON Client /127.218.250.199 shutting down
+[16:41:25] [RCON Listener #1/INFO]: Thread RCON Client /127.18.225.214 started
+[16:41:26] [RCON Client /127.18.225.214 #34/INFO]: Thread RCON Client /127.18.225.214 shutting down
+[16:50:41] [RCON Listener #1/INFO]: Thread RCON Client /127.210.82.162 started
+[16:50:41] [RCON Client /127.210.82.162 #35/INFO]: Thread RCON Client /127.210.82.162 shutting down
+[17:05:21] [RCON Listener #1/INFO]: Thread RCON Client /127.208.224.114 started
+[17:05:22] [RCON Client /127.208.224.114 #36/INFO]: Thread RCON Client /127.208.224.114 shutting down
+[17:12:40] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[17:12:41] [RCON Client /127.24.108.86 #37/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[17:17:06] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[17:17:07] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[17:17:13] [RCON Client /127.16.231.133 #38/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[17:17:13] [RCON Client /127.61.127.132 #39/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[17:18:13] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:18:14] [RCON Client /127.121.170.56 #40/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:24:02] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:24:03] [RCON Client /127.121.170.56 #41/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:25:39] [RCON Listener #1/INFO]: Thread RCON Client /127.170.5.183 started
+[17:25:40] [RCON Client /127.170.5.183 #42/INFO]: Thread RCON Client /127.170.5.183 shutting down
+[17:26:53] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[17:26:54] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[17:26:55] [RCON Client /127.16.231.133 #43/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[17:26:55] [RCON Client /127.61.127.132 #44/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[17:29:12] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:29:13] [RCON Client /127.121.170.56 #45/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:32:35] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[17:32:38] [RCON Client /127.24.108.86 #46/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[17:33:53] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[17:33:53] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[17:33:58] [RCON Client /127.16.231.133 #47/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[17:33:59] [RCON Client /127.61.127.132 #48/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[17:43:18] [RCON Listener #1/INFO]: Thread RCON Client /127.16.231.133 started
+[17:43:18] [RCON Listener #1/INFO]: Thread RCON Client /127.61.127.132 started
+[17:43:23] [RCON Client /127.16.231.133 #49/INFO]: Thread RCON Client /127.16.231.133 shutting down
+[17:43:23] [RCON Client /127.61.127.132 #50/INFO]: Thread RCON Client /127.61.127.132 shutting down
+[17:44:24] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:44:24] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:44:24] [RCON Client /127.121.170.56 #51/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:44:24] [RCON Client /127.121.170.56 #52/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:45:44] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[17:45:45] [RCON Client /127.24.108.86 #53/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[17:50:05] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:50:06] [RCON Client /127.121.170.56 #54/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:50:35] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[17:50:35] [RCON Client /127.24.108.86 #55/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[17:56:46] [RCON Listener #1/INFO]: Thread RCON Client /127.121.170.56 started
+[17:56:46] [RCON Client /127.121.170.56 #56/INFO]: Thread RCON Client /127.121.170.56 shutting down
+[17:58:04] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[17:58:05] [RCON Client /127.24.108.86 #57/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[18:02:53] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[18:02:53] [RCON Client /127.24.108.86 #58/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[18:11:33] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[18:11:34] [RCON Client /127.24.108.86 #59/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[18:18:19] [RCON Listener #1/INFO]: Thread RCON Client /127.175.26.22 started
+[18:18:19] [RCON Client /127.175.26.22 #60/INFO]: Thread RCON Client /127.175.26.22 shutting down
+[18:18:56] [Server thread/INFO]: Stopping server
+[18:18:56] [Server thread/INFO]: [TAB] Disabled in 0ms
+[18:18:56] [Server thread/INFO]: Saving players
+[18:18:56] [Server thread/INFO]: Saving worlds
+[18:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:18:56] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:18:56] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:18:56] [Server thread/INFO]: Flushing Chunk IO
+[18:18:56] [Server thread/INFO]: Closing Thread Pool
+[18:18:56] [Server thread/INFO]: Closing Server
