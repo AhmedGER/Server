@@ -29,23 +29,7 @@ jobs:
           else
             echo "ℹ️ No world.zip found, using existing world"
           fi
-
-      - name: Download and Setup ngrok
-        run: |
-          echo "=== Downloading ngrok ==="
-          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
-          echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
-          sudo apt update && sudo apt install ngrok
-          echo "✔ ngrok installed"
           
-          # Configure ngrok if authtoken exists
-          if [ -n "${{ secrets.NGROK_AUTH_TOKEN }}" ]; then
-            ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
-            echo "✔ ngrok authenticated"
-          else
-            echo "⚠️ No NGROK_AUTH_TOKEN found - using free tier"
-          fi
-
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
           echo "=== Setting up Playit Tunnel with monitoring ==="
@@ -61,78 +45,14 @@ jobs:
             echo "⚠️ No playit config found"
           fi
           
-          # Start Playit with output capture
-          ./playit-linux-amd64 > playit_output.log 2>&1 &
-          PLAYIT_PID=$!
+          while true; do
+            ./playit-linux-amd64 >/dev/null 2>&1 || sleep 5
+          done &
           
-          echo "✔ Playit tunnel started (PID: $PLAYIT_PID)"
-          echo "⏳ Waiting for Playit tunnel to initialize..."
+          echo "✔ Playit tunnel started with auto-restart"
+          echo "ℹ️ Minecraft port (25565) and RCON port (25575) will be tunneled"
+          sleep 10
           
-          # Wait for Playit with timeout
-          MAX_WAIT=45
-          WAITED=0
-          PLAYIT_ADDR=""
-          
-          while [ $WAITED -lt $MAX_WAIT ]; do
-            if [ -f playit_output.log ]; then
-              PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
-              if [ -n "$PLAYIT_ADDR" ]; then
-                break
-              fi
-            fi
-            sleep 3
-            WAITED=$((WAITED + 3))
-          done
-          
-          # Show Playit connection info
-          echo ""
-          echo "╔════════════════════════════════════════════════════════╗"
-          echo "║          🎮 PLAYIT TUNNEL CONNECTION INFO             ║"
-          echo "╚════════════════════════════════════════════════════════╝"
-          
-          if [ -n "$PLAYIT_ADDR" ]; then
-            # Extract IP and Port
-            PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
-            PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
-            
-            echo ""
-            echo "  ✅ Playit Tunnel Active!"
-            echo ""
-            echo "  📍 MINECRAFT SERVER ADDRESS:"
-            echo "     $PLAYIT_ADDR"
-            echo ""
-            echo "  🔢 IP/Host: $PLAYIT_IP"
-            echo "  🔌 Port: $PLAYIT_PORT"
-            echo "  🎮 Copy the address above to Minecraft"
-            echo ""
-          else
-            echo ""
-            echo "  ⚠️ Playit address not detected yet!"
-            echo "  📋 Last 20 lines of Playit log:"
-            echo ""
-            tail -n 20 playit_output.log 2>/dev/null || echo "No logs yet"
-            echo ""
-            echo "  ℹ️ Continuing anyway - Playit might initialize later"
-            echo ""
-          fi
-          echo "════════════════════════════════════════════════════════"
-          echo ""
-          
-          # Keep Playit alive
-          (
-            while true; do
-              if ! kill -0 $PLAYIT_PID 2>/dev/null; then
-                ./playit-linux-amd64 >> playit_output.log 2>&1 &
-                PLAYIT_PID=$!
-                sleep 5
-              fi
-              sleep 10
-            done
-          ) &
-          
-          echo "✔ Playit auto-restart monitor enabled"
-          echo "✔ Proceeding to Minecraft server startup..."
-
       - name: Run Minecraft Server
         run: |
           echo "=== Starting Minecraft Server ==="
@@ -165,73 +85,16 @@ jobs:
           echo "✔ Minecraft Server started (PID: $SERVER_PID)"
           echo "⏰ Server will run for max 5 hours 45 minutes..."
           
-          echo "⏳ Waiting 90 seconds for server to fully start..."
-          sleep 90
+          echo "⏳ Waiting 1 minute for server to fully start..."
+          sleep 60
           
-          # Display connection info again after server is ready
           echo ""
-          echo "╔════════════════════════════════════════════════════════╗"
-          echo "║           🎮 MINECRAFT SERVER IS ONLINE! 🎮           ║"
-          echo "╠════════════════════════════════════════════════════════╣"
-          
-          # Playit Info
-          if [ -f playit_output.log ]; then
-            PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
-            if [ -n "$PLAYIT_ADDR" ]; then
-              PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
-              PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
-              
-              echo "║  🎯 PLAYIT SERVER ADDRESS:                           ║"
-              echo "║     Full Address: $PLAYIT_ADDR"
-              echo "║     IP/Host: $PLAYIT_IP"
-              echo "║     Port: $PLAYIT_PORT"
-              echo "╠════════════════════════════════════════════════════════╣"
-            else
-              echo "║  🎯 PLAYIT: Still initializing... check logs below   ║"
-              echo "╠════════════════════════════════════════════════════════╣"
-            fi
-          fi
-          
-          echo "║  💡 Tips:                                              ║"
-          echo "║     • Copy the full address to Minecraft              ║"
-          echo "║     • Type 'stop' in-game to shutdown early           ║"
-          echo "║     • Server auto-saves periodically                  ║"
-          echo "╚════════════════════════════════════════════════════════╝"
-          echo ""Fast - Recommended):                 ║"
-              echo "║     Address: $CF_HOST"
-              echo "║     IP: $CF_IP | Port: $CF_PORT"
-              echo "╠════════════════════════════════════════════════════════╣"
-            fi
-          fi
-          
-          # Playit Info
-          if [ -f playit_output.log ]; then
-            PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
-            if [ -n "$PLAYIT_ADDR" ]; then
-              PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
-              PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
-              
-              echo "║  🎯 PLAYIT (Alternative):                            ║"
-              echo "║     Address: $PLAYIT_ADDR"
-              echo "║     IP: $PLAYIT_IP | Port: $PLAYIT_PORT"
-              echo "╠════════════════════════════════════════════════════════╣"
-            else
-              echo "║  🎯 PLAYIT: Still initializing...                    ║"
-              echo "╠════════════════════════════════════════════════════════╣"
-            fi
-          fi
-          
-          echo "║  💡 Tips:                                              ║"
-          echo "║     • Try Cloudflare first (fastest)                  ║"
-          echo "║     • Use Playit if Cloudflare doesn't work           ║"
-          echo "║     • Type 'stop' in-game to shutdown early           ║"
-          echo "║     • Server auto-saves periodically                  ║"
-          echo "╚════════════════════════════════════════════════════════╝"
-          echo ""
+          echo "=== Server is now ONLINE ==="
+          echo "ℹ️ Type 'stop' in-game to shutdown server immediately"
           
           MAX_TIME=20700
           ELAPSED=0
-          CHECK_INTERVAL=30
+          CHECK_INTERVAL=10
           
           while [ $ELAPSED -lt $MAX_TIME ]; do
             if ! kill -0 $SERVER_PID 2>/dev/null; then
@@ -244,34 +107,8 @@ jobs:
             sleep $CHECK_INTERVAL
             ELAPSED=$((ELAPSED + CHECK_INTERVAL))
             
-            # Show status every 30 minutes
             if [ $((ELAPSED % 1800)) -eq 0 ]; then
               echo "⏰ Server running... $((ELAPSED / 60)) minutes elapsed"
-              
-              # Refresh connection info
-              echo ""
-              echo "═══════════════════ CONNECTION INFO ═══════════════════"
-              
-              if [ -f cloudflare_output.log ]; then
-                CF_URL=$(grep -oP 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' cloudflare_output.log | tail -1)
-                if [ -n "$CF_URL" ]; then
-                  CF_HOST=$(echo $CF_URL | sed 's|https://||')
-                  CF_IP=$(grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' cloudflare_output.log | tail -1 || echo "N/A")
-                  echo "🌐 Cloudflare: $CF_HOST (IP: $CF_IP)"
-                fi
-              fi
-              
-              if [ -f playit_output.log ]; then
-                PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | tail -1)
-                if [ -n "$PLAYIT_ADDR" ]; then
-                  PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
-                  PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
-                  echo "🎯 Playit: $PLAYIT_ADDR (IP: $PLAYIT_IP | Port: $PLAYIT_PORT)"
-                fi
-              fi
-              
-              echo "═══════════════════════════════════════════════════════"
-              echo ""
             fi
           done
           
@@ -279,32 +116,22 @@ jobs:
             echo ""
             echo "=== Time Limit Reached - Stopping Server ==="
             kill -TERM $SERVER_PID 2>/dev/null || true
-            sleep 10
+            sleep 5
             kill -9 $SERVER_PID 2>/dev/null || true
           fi
           
-          # Cleanup
+          pkill -f "monitor_playit.sh" 2>/dev/null || true
           pkill -TERM playit-linux-amd64 2>/dev/null || true
-          pkill -TERM cloudflared 2>/dev/null || true
-          sleep 3
+          sleep 2
           pkill -9 playit-linux-amd64 2>/dev/null || true
-          pkill -9 cloudflared 2>/dev/null || true
           
-          echo "✔ Server and tunnels stopped"
+          echo "✔ Server stopped"
           
-          # Show final logs
-          if [ -f playit_output.log ]; then
-            echo ""
-            echo "=== Playit Final Log ==="
-            tail -n 15 playit_output.log
+          if [ -f playit_monitor.log ]; then
+            echo "=== PlayIt Monitor Log ==="
+            tail -n 10 playit_monitor.log
           fi
           
-          if [ -f cloudflare_output.log ]; then
-            echo ""
-            echo "=== Cloudflare Final Log ==="
-            tail -n 15 cloudflare_output.log
-          fi
-
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
@@ -321,7 +148,7 @@ jobs:
           else
             echo "ℹ️ No changes to save"
           fi
-
+          
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
