@@ -57,7 +57,18 @@ jobs:
         run: |
           echo "=== Setting up Ngrok Tunnel ==="
           
-          # استخدام الملف الموجود في الريبو
+          # تحميل النسخة الصحيحة لـ Linux
+          if [ ! -f ngrok-linux-amd64 ] || ! file ngrok-linux-amd64 | grep -q "ELF 64-bit"; then
+            echo "⚠️ Downloading correct ngrok binary for Linux..."
+            wget -q https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+            tar -xzf ngrok-v3-stable-linux-amd64.tgz
+            mv ngrok ngrok-linux-amd64
+            rm ngrok-v3-stable-linux-amd64.tgz
+            echo "✔ Ngrok downloaded"
+          else
+            echo "✔ Using existing ngrok binary"
+          fi
+          
           chmod +x ngrok-linux-amd64
           
           # إعداد Auth Token من Secrets
@@ -185,7 +196,7 @@ jobs:
           pkill -f "monitor_playit.sh" 2>/dev/null || true
           pkill -TERM playit-linux-amd64 2>/dev/null || true
           pkill -9 playit-linux-amd64 2>/dev/null || true
-          pkill -9 ngrok 2>/dev/null || true
+          pkill -9 ngrok-linux-amd64 2>/dev/null || true
           
           echo "✔ Server stopped"
           
