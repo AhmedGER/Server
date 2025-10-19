@@ -30,12 +30,21 @@ jobs:
             echo "ℹ️ No world.zip found, using existing world"
           fi
 
-      - name: Download and Setup Cloudflare Tunnel
+      - name: Download and Setup ngrok
         run: |
-          echo "=== Downloading Cloudflare Tunnel ==="
-          curl -L -o cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
-          chmod +x cloudflared
-          echo "✔ Cloudflare tunnel downloaded"
+          echo "=== Downloading ngrok ==="
+          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
+          echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
+          sudo apt update && sudo apt install ngrok
+          echo "✔ ngrok installed"
+          
+          # Configure ngrok if authtoken exists
+          if [ -n "${{ secrets.NGROK_AUTH_TOKEN }}" ]; then
+            ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
+            echo "✔ ngrok authenticated"
+          else
+            echo "⚠️ No NGROK_AUTH_TOKEN found - using free tier"
+          fi
 
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
@@ -58,23 +67,62 @@ jobs:
           
           echo "✔ Playit tunnel started (PID: $PLAYIT_PID)"
           echo "⏳ Waiting for Playit tunnel to initialize..."
-          sleep 15
+          
+          # Wait for Playit with timeout
+          MAX_WAIT=45
+          WAITED=0
+          PLAYIT_ADDR=""
+          
+          while [ $WAITED -lt $MAX_WAIT ]; do
+            if [ -f playit_output.log ]; then
+              PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
+              if [ -n "$PLAYIT_ADDR" ]; then
+                break
+              fi
+            fi
+            sleep 3
+            WAITED=$((WAITED + 3))
+          done
           
           # Show Playit connection info
-          if [ -f playit_output.log ]; then
+          echo ""
+          echo "╔════════════════════════════════════════════════════════╗"
+          echo "║          🎮 PLAYIT TUNNEL CONNECTION INFO             ║"
+          echo "╚════════════════════════════════════════════════════════╝"
+          
+          if [ -n "$PLAYIT_ADDR" ]; then
+            # Extract IP and Port
+            PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
+            PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
+            
             echo ""
-            echo "╔════════════════════════════════════════════════════════╗"
-            echo "║          🎮 PLAYIT TUNNEL CONNECTION INFO             ║"
-            echo "╚════════════════════════════════════════════════════════╝"
-            grep -i "tunnel\|claim\|address\|connect" playit_output.log | head -20 || echo "Playit logs available in background"
+            echo "  ✅ Playit Tunnel Active!"
+            echo ""
+            echo "  📍 MINECRAFT SERVER ADDRESS:"
+            echo "     $PLAYIT_ADDR"
+            echo ""
+            echo "  🔢 IP/Host: $PLAYIT_IP"
+            echo "  🔌 Port: $PLAYIT_PORT"
+            echo "  🎮 Copy the address above to Minecraft"
+            echo ""
+          else
+            echo ""
+            echo "  ⚠️ Playit address not detected yet!"
+            echo "  📋 Last 20 lines of Playit log:"
+            echo ""
+            tail -n 20 playit_output.log 2>/dev/null || echo "No logs yet"
+            echo ""
+            echo "  ℹ️ Continuing anyway - Playit might initialize later"
             echo ""
           fi
+          echo "════════════════════════════════════════════════════════"
+          echo ""
           
           # Keep Playit alive
           (
             while true; do
               if ! kill -0 $PLAYIT_PID 2>/dev/null; then
-                ./playit-linux-amd64 > playit_output.log 2>&1 &
+                ./playit-linux-amd64 >> playit_output.log 2>&1 &
                 PLAYIT_PID=$!
                 sleep 5
               fi
@@ -83,86 +131,7 @@ jobs:
           ) &
           
           echo "✔ Playit auto-restart monitor enabled"
-
-      - name: Start Cloudflare Tunnel
-        run: |
-          echo "=== Starting Cloudflare Tunnel ==="
-          
-          # Start Cloudflare tunnel for Minecraft port
-          ./cloudflared tunnel --url tcp://localhost:25565 > cloudflare_output.log 2>&1 &
-          CF_PID=$!
-          
-          echo "✔ Cloudflare tunnel started (PID: $CF_PID)"
-          echo "⏳ Waiting for Cloudflare tunnel to initialize..."
-          
-          # Wait and extract URL with timeout
-          MAX_WAIT=60
-          WAITED=0
-          CF_URL=""
-          
-          while [ $WAITED -lt $MAX_WAIT ]; do
-            if [ -f cloudflare_output.log ]; then
-              CF_URL=$(grep -oP 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' cloudflare_output.log | head -1)
-              if [ -n "$CF_URL" ]; then
-                break
-              fi
-            fi
-            sleep 2
-            WAITED=$((WAITED + 2))
-          done
-          
-          # Extract and display Cloudflare URL
-          echo ""
-          echo "╔════════════════════════════════════════════════════════╗"
-          echo "║       🚀 CLOUDFLARE TUNNEL CONNECTION INFO            ║"
-          echo "╚════════════════════════════════════════════════════════╝"
-          
-          if [ -n "$CF_URL" ]; then
-            # Remove https:// and extract hostname
-            CF_HOST=$(echo $CF_URL | sed 's|https://||')
-            
-            # Extract IP and Port from logs
-            CF_IP=$(grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' cloudflare_output.log | head -1 || echo "N/A")
-            CF_PORT=$(grep -oP ':\d{4,5}' cloudflare_output.log | head -1 | sed 's/://' || echo "N/A")
-            
-            echo ""
-            echo "  ✅ Cloudflare Tunnel Active!"
-            echo ""
-            echo "  📍 MINECRAFT SERVER ADDRESS:"
-            echo "     $CF_HOST"
-            echo ""
-            echo "  🌐 Full URL: $CF_URL"
-            echo "  🔢 IP: $CF_IP"
-            echo "  🔌 Port: $CF_PORT (if needed)"
-            echo "  🎮 Copy the address above to Minecraft"
-            echo ""
-          else
-            echo ""
-            echo "  ⚠️ Cloudflare URL extraction timeout!"
-            echo "  📋 Full Cloudflare Log:"
-            echo ""
-            cat cloudflare_output.log
-            echo ""
-            echo "  ℹ️ Continuing anyway - check Playit tunnel below"
-            echo ""
-          fi
-          echo "════════════════════════════════════════════════════════"
-          echo ""
-          
-          # Keep Cloudflare tunnel alive in background
-          (
-            while true; do
-              if ! kill -0 $CF_PID 2>/dev/null; then
-                ./cloudflared tunnel --url tcp://localhost:25565 >> cloudflare_output.log 2>&1 &
-                CF_PID=$!
-                sleep 5
-              fi
-              sleep 10
-            done
-          ) &
-          
-          echo "✔ Cloudflare auto-restart monitor enabled"
-          echo "✔ Proceeding to next step..."
+          echo "✔ Proceeding to Minecraft server startup..."
 
       - name: Run Minecraft Server
         run: |
@@ -205,31 +174,58 @@ jobs:
           echo "║           🎮 MINECRAFT SERVER IS ONLINE! 🎮           ║"
           echo "╠════════════════════════════════════════════════════════╣"
           
-          if [ -f cloudflare_output.log ]; then
-            CF_URL=$(grep -oP 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' cloudflare_output.log | head -1)
-            if [ -n "$CF_URL" ]; then
-              CF_HOST=$(echo $CF_URL | sed 's|https://||')
-              echo "║  🌐 CLOUDFLARE ADDRESS (Fast Global Access):         ║"
-              echo "║     $CF_HOST"
+          # Playit Info
+          if [ -f playit_output.log ]; then
+            PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
+            if [ -n "$PLAYIT_ADDR" ]; then
+              PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
+              PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
+              
+              echo "║  🎯 PLAYIT SERVER ADDRESS:                           ║"
+              echo "║     Full Address: $PLAYIT_ADDR"
+              echo "║     IP/Host: $PLAYIT_IP"
+              echo "║     Port: $PLAYIT_PORT"
+              echo "╠════════════════════════════════════════════════════════╣"
+            else
+              echo "║  🎯 PLAYIT: Still initializing... check logs below   ║"
               echo "╠════════════════════════════════════════════════════════╣"
             fi
           fi
           
-          if [ -f playit_output.log ]; then
-            echo "║  🎯 PLAYIT ADDRESS (Alternative):                     ║"
-            PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
-            if [ -n "$PLAYIT_ADDR" ]; then
-              echo "║     $PLAYIT_ADDR"
-            else
-              echo "║     Check playit logs below                           ║"
+          echo "║  💡 Tips:                                              ║"
+          echo "║     • Copy the full address to Minecraft              ║"
+          echo "║     • Type 'stop' in-game to shutdown early           ║"
+          echo "║     • Server auto-saves periodically                  ║"
+          echo "╚════════════════════════════════════════════════════════╝"
+          echo ""Fast - Recommended):                 ║"
+              echo "║     Address: $CF_HOST"
+              echo "║     IP: $CF_IP | Port: $CF_PORT"
+              echo "╠════════════════════════════════════════════════════════╣"
             fi
           fi
           
-          echo "╠════════════════════════════════════════════════════════╣"
+          # Playit Info
+          if [ -f playit_output.log ]; then
+            PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | head -1)
+            if [ -n "$PLAYIT_ADDR" ]; then
+              PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
+              PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
+              
+              echo "║  🎯 PLAYIT (Alternative):                            ║"
+              echo "║     Address: $PLAYIT_ADDR"
+              echo "║     IP: $PLAYIT_IP | Port: $PLAYIT_PORT"
+              echo "╠════════════════════════════════════════════════════════╣"
+            else
+              echo "║  🎯 PLAYIT: Still initializing...                    ║"
+              echo "╠════════════════════════════════════════════════════════╣"
+            fi
+          fi
+          
           echo "║  💡 Tips:                                              ║"
-          echo "║     • Use Cloudflare for fastest connection           ║"
+          echo "║     • Try Cloudflare first (fastest)                  ║"
+          echo "║     • Use Playit if Cloudflare doesn't work           ║"
           echo "║     • Type 'stop' in-game to shutdown early           ║"
-          echo "║     • Server auto-saves every 30 minutes              ║"
+          echo "║     • Server auto-saves periodically                  ║"
           echo "╚════════════════════════════════════════════════════════╝"
           echo ""
           
@@ -253,13 +249,29 @@ jobs:
               echo "⏰ Server running... $((ELAPSED / 60)) minutes elapsed"
               
               # Refresh connection info
+              echo ""
+              echo "═══════════════════ CONNECTION INFO ═══════════════════"
+              
               if [ -f cloudflare_output.log ]; then
                 CF_URL=$(grep -oP 'https://[a-zA-Z0-9-]+\.trycloudflare\.com' cloudflare_output.log | tail -1)
                 if [ -n "$CF_URL" ]; then
                   CF_HOST=$(echo $CF_URL | sed 's|https://||')
-                  echo "   🌐 Cloudflare: $CF_HOST"
+                  CF_IP=$(grep -oP '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}' cloudflare_output.log | tail -1 || echo "N/A")
+                  echo "🌐 Cloudflare: $CF_HOST (IP: $CF_IP)"
                 fi
               fi
+              
+              if [ -f playit_output.log ]; then
+                PLAYIT_ADDR=$(grep -oP '[a-z0-9-]+\.at\.ply\.gg:[0-9]+|[a-z0-9-]+\.joinmc\.link|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+' playit_output.log | tail -1)
+                if [ -n "$PLAYIT_ADDR" ]; then
+                  PLAYIT_IP=$(echo $PLAYIT_ADDR | cut -d':' -f1)
+                  PLAYIT_PORT=$(echo $PLAYIT_ADDR | cut -d':' -f2)
+                  echo "🎯 Playit: $PLAYIT_ADDR (IP: $PLAYIT_IP | Port: $PLAYIT_PORT)"
+                fi
+              fi
+              
+              echo "═══════════════════════════════════════════════════════"
+              echo ""
             fi
           done
           
