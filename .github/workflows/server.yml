@@ -29,7 +29,7 @@ jobs:
           else
             echo "ℹ️ No world.zip found, using existing world"
           fi
-          
+
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
           echo "=== Setting up Playit Tunnel with monitoring ==="
@@ -52,7 +52,68 @@ jobs:
           echo "✔ Playit tunnel started with auto-restart"
           echo "ℹ️ Minecraft port (25565) and RCON port (25575) will be tunneled"
           sleep 10
+
+      - name: Setup Ngrok Tunnel
+        run: |
+          echo "=== Setting up Ngrok Tunnel ==="
           
+          # استخدام الملف الموجود في الريبو
+          chmod +x ngrok-linux-amd64
+          
+          # إعداد Auth Token من Secrets
+          ./ngrok-linux-amd64 config add-authtoken ${{ secrets.NGROK_AUTH }}
+          echo "✔ Ngrok configured"
+          
+          # إنشاء config file
+          mkdir -p ~/.config/ngrok
+          cat > ~/.config/ngrok/ngrok.yml << 'EOF'
+          version: "2"
+          authtoken: ${{ secrets.NGROK_AUTH }}
+          region: eu
+          web_addr: localhost:4040
+          tunnels:
+            minecraft:
+              proto: tcp
+              addr: 25565
+            rcon:
+              proto: tcp
+              addr: 25575
+            dynmap:
+              proto: http
+              addr: 8123
+          EOF
+          
+          # تشغيل Ngrok مع auto-restart
+          while true; do
+            pkill -9 ngrok-linux-amd64 2>/dev/null || true
+            sleep 2
+            ./ngrok-linux-amd64 start --all --log=stdout > ngrok.log 2>&1 &
+            sleep 15
+            
+            # عرض معلومات الاتصال
+            if curl -s http://localhost:4040/api/tunnels > /dev/null 2>&1; then
+              TUNNELS_JSON=$(curl -s http://localhost:4040/api/tunnels)
+              
+              MINECRAFT_URL=$(echo $TUNNELS_JSON | grep -o '"name":"minecraft"[^}]*"public_url":"tcp://[^"]*' | grep -o 'tcp://[^"]*' | head -1)
+              RCON_URL=$(echo $TUNNELS_JSON | grep -o '"name":"rcon"[^}]*"public_url":"tcp://[^"]*' | grep -o 'tcp://[^"]*' | head -1)
+              DYNMAP_URL=$(echo $TUNNELS_JSON | grep -o '"name":"dynmap"[^}]*"public_url":"http[^"]*' | grep -o 'http[^"]*' | head -1)
+              
+              if [ ! -z "$MINECRAFT_URL" ]; then
+                echo "════════════════════════════════════════════"
+                echo "🎮 Ngrok Minecraft: $MINECRAFT_URL"
+                echo "🎛️  Ngrok RCON: $RCON_URL"
+                echo "🗺️  Ngrok Dynmap: $DYNMAP_URL"
+                echo "════════════════════════════════════════════"
+                break
+              fi
+            fi
+            
+            sleep 30
+          done &
+          
+          echo "✔ Ngrok tunnel started"
+          sleep 5
+
       - name: Run Minecraft Server
         run: |
           echo "=== Starting Minecraft Server ==="
@@ -120,10 +181,11 @@ jobs:
             kill -9 $SERVER_PID 2>/dev/null || true
           fi
           
+          # إيقاف PlayIt و Ngrok
           pkill -f "monitor_playit.sh" 2>/dev/null || true
           pkill -TERM playit-linux-amd64 2>/dev/null || true
-          sleep 2
           pkill -9 playit-linux-amd64 2>/dev/null || true
+          pkill -9 ngrok 2>/dev/null || true
           
           echo "✔ Server stopped"
           
@@ -131,7 +193,7 @@ jobs:
             echo "=== PlayIt Monitor Log ==="
             tail -n 10 playit_monitor.log
           fi
-          
+
       - name: Save world and config
         run: |
           git config user.name "github-actions[bot]"
@@ -148,7 +210,7 @@ jobs:
           else
             echo "ℹ️ No changes to save"
           fi
-          
+
       - name: Auto-retrigger workflow
         if: github.run_attempt < 3
         env:
