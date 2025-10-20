@@ -24,7 +24,7 @@ remote:
   # ✅ مهم جداً! floodgate يسمح للاعبين Bedrock بالدخول بدون حساب Java
   # لو عندك Floodgate plugin: استخدم floodgate
   # لو معندكش Floodgate: استخدم offline
-  auth-type: offline
+  auth-type: floodgate
   
   use-proxy-protocol: false
   forward-hostname: false
