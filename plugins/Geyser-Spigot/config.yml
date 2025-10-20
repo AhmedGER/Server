@@ -21,8 +21,10 @@ remote:
   address: 127.0.0.1
   port: 25565
   
-  # ✅ لو عندك Floodgate غيرها لـ floodgate
-  auth-type: online
+  # ✅ مهم جداً! floodgate يسمح للاعبين Bedrock بالدخول بدون حساب Java
+  # لو عندك Floodgate plugin: استخدم floodgate
+  # لو معندكش Floodgate: استخدم offline
+  auth-type: offline
   
   use-proxy-protocol: false
   forward-hostname: false
