@@ -3,6 +3,8 @@
 '127_185_180_144':
 - .AhmedGER0
 - SIGMAxox
+'127_195_151_60':
+- SmartAI_Bot
 '127_9_138_21':
 - SIGMAxox
 - .AhmedGER0
