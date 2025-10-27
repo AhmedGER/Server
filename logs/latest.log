@@ -1,7 +1,7 @@
-[12:01:37] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[12:01:37] [main/INFO]: Reloading ResourceManager: Default, bukkit, ija-one-block.zip
-[12:01:38] [Worker-Main-1/INFO]: Loaded 7 recipes
-[12:01:38] [Worker-Main-1/ERROR]: Failed to load function ija-one-block:block/phase7
+[17:48:29] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:48:29] [main/INFO]: Reloading ResourceManager: Default, bukkit, ija-one-block.zip
+[17:48:30] [Worker-Main-2/INFO]: Loaded 7 recipes
+[17:48:30] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/phase7
 java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 21: Unknown entity: minecraft:zombie_pigman
 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
@@ -14,7 +14,7 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 21
 	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	... 3 more
-[12:01:38] [Worker-Main-1/ERROR]: Failed to load function ija-one-block:block/spawnmob7
+[17:48:30] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/spawnmob7
 java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 8: Unknown entity: minecraft:zombie_pigman
 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
@@ -27,7 +27,7 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 8:
 	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	... 3 more
-[12:01:38] [Worker-Main-1/ERROR]: Failed to load function ija-one-block:block/spawnmob
+[17:48:30] [Worker-Main-2/ERROR]: Failed to load function ija-one-block:block/spawnmob
 java.util.concurrent.CompletionException: java.lang.IllegalArgumentException: Whilst parsing command on line 80: Unknown entity: minecraft:zombie_pigman
 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:315) ~[?:?]
 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:320) ~[?:?]
@@ -40,297 +40,322 @@ Caused by: java.lang.IllegalArgumentException: Whilst parsing command on line 80
 	at net.minecraft.server.v1_16_R3.CustomFunctionManager.a(SourceFile:86) ~[patched_1.16.5.jar:git-Paper-794]
 	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
 	... 3 more
-[12:01:39] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[12:01:39] [Server thread/INFO]: Loading properties
-[12:01:39] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[12:01:40] [Server thread/INFO]: Debug logging is disabled
-[12:01:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[12:01:40] [Server thread/INFO]: Using 4 threads for Netty based IO
-[12:01:40] [Server thread/INFO]: Default game type: SURVIVAL
-[12:01:40] [Server thread/INFO]: Generating keypair
-[12:01:41] [Server thread/INFO]: Starting Minecraft server on *:25565
-[12:01:41] [Server thread/INFO]: Using epoll channel type
-[12:01:41] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[12:01:44] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
-[12:01:44] [Server thread/INFO]: [CraftControl-RCON] Loading CraftControl-RCON v1.4.0
-[12:01:44] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
-[12:01:44] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[12:01:44] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[12:01:44] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[12:01:44] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[12:01:45] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[12:01:45] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[12:01:45] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[12:01:45] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[12:01:45] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[12:01:45] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[12:01:46] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[12:01:46] [Server thread/INFO]: [floodgate] Took 465ms to boot Floodgate
-[12:01:46] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[12:01:46] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[12:01:46] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
-[12:01:46] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[12:01:46] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[12:01:46] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
-[12:01:46] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[12:01:46] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[12:01:46] [Server thread/INFO]: [dynmap] Loading dynmap v3.6-899
-[12:01:46] [Server thread/INFO]: [dynmap] version=git-Paper-794 (MC: 1.16.5)
-[12:01:47] [Server thread/INFO]: [dynmap] Mod Support API available
-[12:01:47] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[12:01:47] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[12:01:47] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[12:01:47] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[12:01:47] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[12:01:48] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[12:01:48] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[12:01:48] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[12:01:48] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[12:01:48] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[12:01:48] [Server thread/INFO]: Preparing level "world"
-[12:01:48] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[12:01:48] [Server thread/INFO]: Preparing spawn area: 0%
-[12:01:49] [Worker-Main-1/INFO]: Preparing spawn area: 43%
-[12:01:49] [Server thread/INFO]: Time elapsed: 669 ms
-[12:01:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[12:01:49] [Server thread/INFO]: Preparing spawn area: 0%
-[12:01:49] [Worker-Main-1/INFO]: Preparing spawn area: 100%
-[12:01:49] [Server thread/INFO]: Time elapsed: 723 ms
-[12:01:49] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[12:01:49] [Server thread/INFO]: Preparing spawn area: 0%
-[12:01:50] [Server thread/INFO]: Time elapsed: 394 ms
-[12:01:50] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
-[12:01:50] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
-[12:01:50] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[12:01:50] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[12:01:50] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[12:01:50] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[12:01:50] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[12:01:50] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[12:01:50] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[12:01:50] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[12:01:50] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
-[12:01:51] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[12:01:51] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
-[12:01:51] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
-[12:01:51] [Server thread/INFO]: [voicechat] Compatibility version 18
-[12:01:51] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[12:01:51] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[12:01:51] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[12:01:51] [Server thread/INFO]: [TAB] Enabled in 147ms
-[12:01:51] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
-[12:01:52] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
-[12:01:52] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[12:01:52] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[12:01:52] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[12:01:54] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[12:01:54] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[12:01:54] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[12:01:54] [Server thread/INFO]: [dynmap] version 3.6-899 is enabled - core version 3.6-899
-[12:01:54] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[12:01:54] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[12:01:54] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[12:01:54] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[12:01:54] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[12:01:54] [Server thread/INFO]: [dynmap] Enabled
-[12:01:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[12:01:54] [Server thread/INFO]: [Geyser-Spigot] 
-[12:01:54] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
-[12:01:54] [Server thread/INFO]: [Geyser-Spigot] 
-[12:01:54] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[12:01:57] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[12:01:57] [Server thread/INFO]: [Geyser-Spigot] Done (2.777s)! Run /geyser help for help!
-[12:01:57] [Server thread/INFO]: Starting remote control listener
-[12:01:57] [Server thread/INFO]: Thread RCON Listener started
-[12:01:57] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[12:01:57] [Server thread/INFO]: Running delayed init tasks
-[12:01:57] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[12:01:57] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[12:01:57] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[12:01:57] [Craft Scheduler Thread - 0/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[12:01:57] [Server thread/INFO]: [voicechat] Loading plugins
-[12:01:57] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[12:01:57] [Server thread/INFO]: [voicechat] Initializing plugins
-[12:01:57] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[12:01:57] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[12:01:57] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[12:01:57] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[12:01:57] [Server thread/INFO]: Done (18.108s)! For help, type "help"
-[12:01:57] [Server thread/INFO]: Timings Reset
-[12:01:57] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[12:01:57] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[12:38:31] [RCON Listener #1/INFO]: Thread RCON Client /127.163.196.156 started
-[12:38:31] [RCON Client /127.163.196.156 #2/INFO]: Thread RCON Client /127.163.196.156 shutting down
-[13:08:41] [RCON Listener #1/INFO]: Thread RCON Client /127.52.185.105 started
-[13:08:41] [RCON Client /127.52.185.105 #3/INFO]: Thread RCON Client /127.52.185.105 shutting down
-[13:25:31] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[13:25:33] [RCON Client /127.174.165.178 #4/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[13:25:34] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[13:25:34] [RCON Client /127.174.165.178 #5/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[13:35:00] [RCON Listener #1/INFO]: Thread RCON Client /127.90.101.124 started
-[13:35:00] [RCON Client /127.90.101.124 #6/INFO]: Thread RCON Client /127.90.101.124 shutting down
-[13:37:35] [RCON Listener #1/INFO]: Thread RCON Client /127.148.80.126 started
-[13:37:36] [RCON Client /127.148.80.126 #7/INFO]: Thread RCON Client /127.148.80.126 shutting down
-[13:40:02] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[13:40:02] [RCON Client /127.174.165.178 #8/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[13:40:09] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[13:40:12] [RCON Client /127.174.165.178 #9/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[13:45:36] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[13:45:36] [Server thread/INFO]: SIGMAxox joined the game
-[13:45:36] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:45:36] [Server thread/INFO]: SIGMAxox[/127.111.1.148:56501] logged in with entity id 49 at ([world]7.5, 61.0, -5.5)
-[13:45:54] [Craft Scheduler Thread - 31/INFO]: [AuthMe] SIGMAxox logged in 127.111.1.148
-[13:49:10] [RCON Listener #1/INFO]: Thread RCON Client /127.188.85.60 started
-[13:49:10] [RCON Client /127.188.85.60 #10/INFO]: Thread RCON Client /127.188.85.60 shutting down
-[13:49:25] [User Authenticator #2/INFO]: UUID of player BotMC is 114bce14-2022-3db5-806f-a1cf4a62ffd4
-[13:49:25] [TAB Processing Thread/INFO]: [TAB] [WARN] Player BotMC's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:49:25] [Server thread/INFO]: BotMC joined the game
-[13:49:25] [Server thread/INFO]: BotMC[/127.137.251.5:46531] logged in with entity id 50 at ([world]0.5, 61.0, 0.5)
-[13:49:28] [Server thread/INFO]: [AuthMe] BotMC registered 127.137.251.5
-[13:49:28] [Craft Scheduler Thread - 36/INFO]: [AuthMe] BotMC logged in 127.137.251.5
-[13:50:08] [Craft Scheduler Thread - 38/INFO]: SIGMAxox is cat napping
-[13:50:35] [Server thread/INFO]: BotMC didn't want to live in the same world as SIGMAxox
-[13:55:36] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[13:55:39] [RCON Client /127.111.1.148 #11/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[13:55:40] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[13:55:41] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[13:55:41] [RCON Client /127.111.1.148 #12/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[13:56:01] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[13:56:01] [RCON Client /127.111.1.148 #13/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[13:56:03] [RCON Client /127.111.1.148 #14/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[13:56:04] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[13:56:06] [RCON Listener #1/INFO]: Thread RCON Client /127.200.240.168 started
-[13:56:06] [RCON Client /127.200.240.168 #16/INFO]: Thread RCON Client /127.200.240.168 shutting down
-[13:56:22] [Server thread/INFO]: [Rcon] AIzaSyCMRCQ_HJ_s-KV0XgdkSoLbanHtw3J9NE4
-[13:57:33] [RCON Client /127.111.1.148 #15/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[13:58:43] [Server thread/INFO]: BotMC lost connection: Disconnected
-[13:58:43] [Server thread/INFO]: [voicechat] Disconnecting client BotMC
-[13:58:43] [Server thread/INFO]: BotMC left the game
-[14:01:42] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[14:01:44] [RCON Client /127.111.1.148 #17/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[14:01:44] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[14:02:30] [User Authenticator #3/INFO]: UUID of player BotMC is 114bce14-2022-3db5-806f-a1cf4a62ffd4
-[14:02:30] [TAB Processing Thread/INFO]: [TAB] [WARN] Player BotMC's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:02:30] [Server thread/INFO]: BotMC joined the game
-[14:02:30] [Server thread/INFO]: BotMC[/127.137.251.5:45435] logged in with entity id 65 at ([world]0.9885878319995343, 61.0, -7.9953157569037065)
-[14:02:31] [RCON Client /127.111.1.148 #18/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[14:02:32] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[14:04:59] [Server thread/INFO]: BotMC lost connection: Disconnected
-[14:04:59] [Server thread/INFO]: [voicechat] Disconnecting client BotMC
-[14:04:59] [Server thread/INFO]: BotMC left the game
-[14:05:00] [RCON Client /127.111.1.148 #19/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[14:05:01] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[14:06:22] [User Authenticator #4/INFO]: UUID of player BotMC is 114bce14-2022-3db5-806f-a1cf4a62ffd4
-[14:06:22] [TAB Processing Thread/INFO]: [TAB] [WARN] Player BotMC's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:06:22] [Server thread/INFO]: BotMC joined the game
-[14:06:22] [Server thread/INFO]: BotMC[/127.137.251.5:43547] logged in with entity id 66 at ([world]0.9885878319995343, 61.0, -7.9953157569037065)
-[14:06:23] [RCON Client /127.111.1.148 #20/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[14:06:24] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
-[14:06:25] [Craft Scheduler Thread - 54/INFO]: [AuthMe] BotMC logged in 127.137.251.5
-[14:06:27] [Async Chat Thread - #1/INFO]: <BotMC> عذراً، لم أستطع فهم ما قلته 😅
-[14:06:28] [RCON Client /127.111.1.148 #21/INFO]: Thread RCON Client /127.111.1.148 shutting down
-[14:06:47] [Async Chat Thread - #1/INFO]: <BotMC> عذراً، لم أستطع فهم ما قلته 😅
-[14:06:48] [Async Chat Thread - #1/INFO]: <SIGMAxox> لا
-[14:08:31] [Server thread/INFO]: BotMC lost connection: Disconnected
-[14:08:31] [Server thread/INFO]: [voicechat] Disconnecting client BotMC
-[14:08:31] [Server thread/INFO]: BotMC left the game
-[14:08:54] [User Authenticator #5/INFO]: UUID of player BotMC is 114bce14-2022-3db5-806f-a1cf4a62ffd4
-[14:08:54] [TAB Processing Thread/INFO]: [TAB] [WARN] Player BotMC's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[14:08:54] [Server thread/INFO]: BotMC joined the game
-[14:08:54] [Server thread/INFO]: BotMC[/127.137.251.5:48187] logged in with entity id 77 at ([world]-0.9842058060700098, 61.0, -9.483145317683142)
-[14:08:57] [Craft Scheduler Thread - 59/INFO]: [AuthMe] BotMC logged in 127.137.251.5
-[14:08:58] [Async Chat Thread - #2/INFO]: <BotMC> عذراً، لم أستطع فهم ما قلته 😅
-[14:09:04] [Async Chat Thread - #2/INFO]: <BotMC> تمام SIGMAxox، سأرحب به! أهلًا باللاعب الجديد، أتمنى لك وقتًا ممتعًا في السيرفر!
-[14:09:18] [Async Chat Thread - #2/INFO]: <SIGMAxox> hello
-[14:09:57] [Async Chat Thread - #2/INFO]: <SIGMAxox> انت تحدث
-[14:10:42] [Async Chat Thread - #2/INFO]: <SIGMAxox> مرحبا يا Mybot
-[14:11:44] [Server thread/INFO]: BotMC was slain by SIGMAxox
-[14:11:58] [Craft Scheduler Thread - 62/INFO]: SIGMAxox is catching Z's
-[14:12:41] [Async Chat Thread - #3/INFO]: <SIGMAxox> الو
-[14:15:04] [Server thread/INFO]: SIGMAxox issued server command: /tell Hello
-[14:15:28] [Server thread/INFO]: SIGMAxox issued server command: /tell BotMC Hello
-[14:17:02] [Server thread/INFO]: SIGMAxox lost connection: Timed out
-[14:17:02] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[14:17:02] [Server thread/INFO]: SIGMAxox left the game
-[14:19:25] [RCON Listener #1/INFO]: Thread RCON Client /127.111.237.92 started
-[14:19:26] [RCON Client /127.111.237.92 #22/INFO]: Thread RCON Client /127.111.237.92 shutting down
-[14:25:16] [RCON Listener #1/INFO]: Thread RCON Client /127.69.196.64 started
-[14:25:16] [RCON Client /127.69.196.64 #23/INFO]: Thread RCON Client /127.69.196.64 shutting down
-[14:26:42] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[14:26:43] [RCON Client /127.174.165.178 #24/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[14:26:46] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[14:26:46] [RCON Client /127.174.165.178 #25/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[14:45:40] [Server thread/INFO]: BotMC lost connection: Disconnected
-[14:45:40] [Server thread/INFO]: [voicechat] Disconnecting client BotMC
-[14:45:40] [Server thread/INFO]: BotMC left the game
-[14:48:35] [RCON Listener #1/INFO]: Thread RCON Client /127.1.23.172 started
-[14:48:35] [RCON Client /127.1.23.172 #26/INFO]: Thread RCON Client /127.1.23.172 shutting down
-[14:56:29] [RCON Listener #1/INFO]: Thread RCON Client /127.71.183.137 started
-[14:56:30] [RCON Client /127.71.183.137 #27/INFO]: Thread RCON Client /127.71.183.137 shutting down
-[15:31:19] [RCON Listener #1/INFO]: Thread RCON Client /127.235.15.212 started
-[15:31:19] [RCON Client /127.235.15.212 #28/INFO]: Thread RCON Client /127.235.15.212 shutting down
-[15:34:57] [RCON Listener #1/INFO]: Thread RCON Client /127.23.130.128 started
-[15:34:57] [RCON Client /127.23.130.128 #29/INFO]: Thread RCON Client /127.23.130.128 shutting down
-[16:23:00] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:23:00] [RCON Client /127.174.165.178 #30/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[16:23:02] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:23:02] [RCON Client /127.174.165.178 #31/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[16:42:12] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:42:13] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:42:13] [RCON Client /127.174.165.178 #32/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[16:42:13] [RCON Client /127.174.165.178 #33/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[16:58:38] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:58:41] [RCON Client /127.174.165.178 #34/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[16:58:42] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[16:58:42] [RCON Client /127.174.165.178 #35/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[17:05:44] [RCON Listener #1/INFO]: Thread RCON Client /127.107.228.1 started
-[17:05:44] [RCON Client /127.107.228.1 #36/INFO]: Thread RCON Client /127.107.228.1 shutting down
-[17:07:16] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[17:07:17] [RCON Client /127.174.165.178 #37/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[17:07:25] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
-[17:07:26] [RCON Client /127.174.165.178 #38/INFO]: Thread RCON Client /127.174.165.178 shutting down
-[17:14:46] [RCON Listener #1/INFO]: Thread RCON Client /127.222.33.217 started
-[17:14:46] [RCON Client /127.222.33.217 #39/INFO]: Thread RCON Client /127.222.33.217 shutting down
-[17:15:23] [RCON Listener #1/INFO]: Thread RCON Client /127.224.229.59 started
-[17:15:23] [RCON Client /127.224.229.59 #40/INFO]: Thread RCON Client /127.224.229.59 shutting down
-[17:18:06] [RCON Listener #1/INFO]: Thread RCON Client /127.224.229.59 started
-[17:18:07] [RCON Client /127.224.229.59 #41/INFO]: Thread RCON Client /127.224.229.59 shutting down
-[17:34:40] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
-[17:34:41] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
-[17:34:41] [RCON Client /127.146.114.135 #42/INFO]: Thread RCON Client /127.146.114.135 shutting down
-[17:34:41] [RCON Client /127.146.114.135 #43/INFO]: Thread RCON Client /127.146.114.135 shutting down
-[17:40:32] [RCON Listener #1/INFO]: Thread RCON Client /127.66.140.104 started
-[17:40:32] [RCON Client /127.66.140.104 #44/INFO]: Thread RCON Client /127.66.140.104 shutting down
-[17:47:31] [Server thread/INFO]: Stopping server
-[17:47:33] [Server thread/INFO]: [TAB] Disabled in 0ms
-[17:47:33] [Server thread/INFO]: Saving players
-[17:47:33] [Server thread/INFO]: Saving worlds
-[17:47:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:47:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:47:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:47:33] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:47:33] [Server thread/INFO]: Flushing Chunk IO
-[17:47:33] [Server thread/INFO]: Closing Thread Pool
-[17:47:33] [Server thread/INFO]: Closing Server
+[17:48:31] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[17:48:31] [Server thread/INFO]: Loading properties
+[17:48:31] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[17:48:32] [Server thread/INFO]: Debug logging is disabled
+[17:48:32] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:48:32] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:48:32] [Server thread/INFO]: Default game type: SURVIVAL
+[17:48:32] [Server thread/INFO]: Generating keypair
+[17:48:32] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:48:32] [Server thread/INFO]: Using epoll channel type
+[17:48:33] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[17:48:35] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[17:48:35] [Server thread/INFO]: [CraftControl-RCON] Loading CraftControl-RCON v1.4.0
+[17:48:35] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
+[17:48:35] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[17:48:35] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[17:48:35] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[17:48:35] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[17:48:36] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[17:48:36] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[17:48:36] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[17:48:36] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[17:48:37] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[17:48:37] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[17:48:37] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[17:48:37] [Server thread/INFO]: [floodgate] Took 508ms to boot Floodgate
+[17:48:37] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[17:48:37] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[17:48:37] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
+[17:48:37] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[17:48:37] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[17:48:37] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.8.4-SNAPSHOT
+[17:48:38] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[17:48:38] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[17:48:38] [Server thread/INFO]: [dynmap] Loading dynmap v3.6-899
+[17:48:38] [Server thread/INFO]: [dynmap] version=git-Paper-794 (MC: 1.16.5)
+[17:48:38] [Server thread/INFO]: [dynmap] Mod Support API available
+[17:48:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:48:38] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[17:48:38] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[17:48:38] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[17:48:39] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[17:48:39] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[17:48:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:48:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:48:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:48:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:48:39] [Server thread/INFO]: Preparing level "world"
+[17:48:39] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:48:40] [Server thread/INFO]: Preparing spawn area: 0%
+[17:48:40] [Server thread/INFO]: Preparing spawn area: 44%
+[17:48:40] [Server thread/INFO]: Time elapsed: 680 ms
+[17:48:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:48:40] [Server thread/INFO]: Preparing spawn area: 0%
+[17:48:40] [Server thread/INFO]: Time elapsed: 302 ms
+[17:48:40] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:48:40] [Server thread/INFO]: Preparing spawn area: 0%
+[17:48:41] [Worker-Main-1/INFO]: Preparing spawn area: 100%
+[17:48:41] [Server thread/INFO]: Time elapsed: 638 ms
+[17:48:41] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
+[17:48:41] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[17:48:41] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[17:48:41] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[17:48:41] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[17:48:41] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[17:48:41] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[17:48:41] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[17:48:42] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[17:48:42] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[17:48:42] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[17:48:42] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[17:48:42] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
+[17:48:42] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
+[17:48:42] [Server thread/INFO]: [voicechat] Compatibility version 18
+[17:48:42] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[17:48:42] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[17:48:42] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[17:48:42] [Server thread/INFO]: [TAB] Enabled in 155ms
+[17:48:42] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.8.4-SNAPSHOT
+[17:48:43] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
+[17:48:43] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[17:48:43] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[17:48:43] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[17:48:45] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[17:48:45] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[17:48:45] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[17:48:45] [Server thread/INFO]: [dynmap] version 3.6-899 is enabled - core version 3.6-899
+[17:48:45] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[17:48:45] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[17:48:45] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[17:48:45] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[17:48:45] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[17:48:45] [Server thread/INFO]: [dynmap] Enabled
+[17:48:45] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:48:45] [Server thread/INFO]: [Geyser-Spigot] 
+[17:48:45] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.8.4-b947 (git-master-82fb2e4)
+[17:48:45] [Server thread/INFO]: [Geyser-Spigot] 
+[17:48:45] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[17:48:48] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[17:48:48] [Server thread/INFO]: [Geyser-Spigot] Done (2.704s)! Run /geyser help for help!
+[17:48:48] [Server thread/INFO]: Starting remote control listener
+[17:48:48] [Server thread/INFO]: Thread RCON Listener started
+[17:48:48] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[17:48:48] [Server thread/INFO]: Running delayed init tasks
+[17:48:48] [Server thread/INFO]: [voicechat] Loading plugins
+[17:48:48] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[17:48:48] [Server thread/INFO]: [voicechat] Initializing plugins
+[17:48:48] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[17:48:48] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[17:48:48] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[17:48:48] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[17:48:48] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[17:48:48] [Craft Scheduler Thread - 5/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[17:48:48] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[17:48:48] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[17:48:48] [Server thread/INFO]: Done (17.475s)! For help, type "help"
+[17:48:48] [Server thread/INFO]: Timings Reset
+[17:48:48] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[17:48:49] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[17:49:48] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[17:49:48] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[17:49:49] [RCON Client /127.146.114.135 #2/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[17:49:49] [RCON Client /127.146.114.135 #3/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[17:52:43] [RCON Listener #1/INFO]: Thread RCON Client /127.174.165.178 started
+[17:52:43] [RCON Client /127.174.165.178 #4/INFO]: Thread RCON Client /127.174.165.178 shutting down
+[18:03:13] [RCON Listener #1/INFO]: Thread RCON Client /127.203.244.48 started
+[18:03:13] [RCON Client /127.203.244.48 #5/INFO]: Thread RCON Client /127.203.244.48 shutting down
+[18:24:34] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Bedrock user with ip: /127.111.1.148 has disconnected for reason Outdated Bedrock client! This server supports the following Bedrock versions: 1.21.90, 1.21.91, 1.21.92, 1.21.93, 1.21.94, 1.21.100, 1.21.101, 1.21.111
+[18:31:19] [RCON Listener #1/INFO]: Thread RCON Client /127.2.173.25 started
+[18:31:19] [RCON Client /127.2.173.25 #6/INFO]: Thread RCON Client /127.2.173.25 shutting down
+[18:36:17] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[18:36:18] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[18:36:18] [RCON Client /127.146.114.135 #7/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[18:36:18] [RCON Client /127.146.114.135 #8/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[18:37:03] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[18:37:10] [RCON Client /127.111.1.148 #9/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[18:37:14] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[18:37:18] [RCON Client /127.111.1.148 #10/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[18:37:18] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[18:37:45] [RCON Client /127.111.1.148 #11/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[18:57:22] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[18:57:22] [Server thread/INFO]: SIGMAxox joined the game
+[18:57:23] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[18:57:23] [Server thread/INFO]: SIGMAxox[/127.111.1.148:37871] logged in with entity id 52 at ([world]0.53199672694999, 61.0, -0.925000011920929)
+[18:57:34] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[18:57:34] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[18:57:34] [Server thread/INFO]: SIGMAxox left the game
+[19:07:01] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[19:07:04] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[19:07:04] [RCON Client /127.111.1.148 #12/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[19:07:07] [RCON Client /127.111.1.148 #13/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[19:08:04] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[19:08:04] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[19:08:05] [RCON Client /127.146.114.135 #14/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[19:08:05] [RCON Client /127.146.114.135 #15/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[19:27:21] [RCON Listener #1/INFO]: Thread RCON Client /127.23.130.128 started
+[19:27:21] [RCON Client /127.23.130.128 #16/INFO]: Thread RCON Client /127.23.130.128 shutting down
+[19:31:44] [RCON Listener #1/INFO]: Thread RCON Client /127.163.196.156 started
+[19:31:45] [RCON Client /127.163.196.156 #17/INFO]: Thread RCON Client /127.163.196.156 shutting down
+[19:33:19] [RCON Listener #1/INFO]: Thread RCON Client /127.155.180.164 started
+[19:33:19] [RCON Client /127.155.180.164 #18/INFO]: Thread RCON Client /127.155.180.164 shutting down
+[19:40:30] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[19:40:31] [RCON Client /127.111.1.148 #19/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[19:40:37] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[19:40:39] [RCON Client /127.111.1.148 #20/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[19:40:39] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[19:40:55] [RCON Client /127.111.1.148 #21/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[20:03:42] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[20:03:52] [RCON Client /127.111.1.148 #22/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[20:05:15] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[20:05:15] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[20:05:15] [RCON Client /127.146.114.135 #23/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[20:05:16] [RCON Client /127.146.114.135 #24/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[20:17:20] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:20] [RCON Client /127.107.177.224 #25/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:20] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:21] [RCON Client /127.107.177.224 #26/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:21] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:21] [RCON Client /127.107.177.224 #27/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:22] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:22] [RCON Client /127.107.177.224 #28/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:31] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:32] [RCON Client /127.107.177.224 #29/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:33] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:33] [RCON Client /127.107.177.224 #30/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:36] [RCON Client /127.107.177.224 #31/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:37] [RCON Client /127.107.177.224 #32/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:37] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:38] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:38] [RCON Client /127.107.177.224 #33/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:38] [RCON Client /127.107.177.224 #34/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:41] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:41] [RCON Client /127.107.177.224 #35/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:41] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:42] [RCON Client /127.107.177.224 #36/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:42] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:42] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[20:17:42] [RCON Client /127.107.177.224 #38/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:17:42] [RCON Client /127.107.177.224 #37/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[20:56:34] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[20:56:34] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[20:56:34] [RCON Client /127.146.114.135 #39/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[20:56:34] [RCON Client /127.146.114.135 #40/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[21:33:54] [RCON Listener #1/INFO]: Thread RCON Client /127.207.74.129 started
+[21:33:54] [RCON Client /127.207.74.129 #41/INFO]: Thread RCON Client /127.207.74.129 shutting down
+[22:06:34] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:35] [RCON Client /127.107.177.224 #42/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:35] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:35] [RCON Client /127.107.177.224 #43/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:35] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:35] [RCON Client /127.107.177.224 #44/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:36] [RCON Client /127.107.177.224 #46/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:36] [RCON Client /127.107.177.224 #45/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:36] [RCON Client /127.107.177.224 #47/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:36] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:37] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:37] [RCON Client /127.107.177.224 #48/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:37] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:37] [RCON Client /127.107.177.224 #49/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:37] [RCON Client /127.107.177.224 #50/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:37] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:37] [RCON Client /127.107.177.224 #51/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:38] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:38] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:38] [RCON Client /127.107.177.224 #52/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:38] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:38] [RCON Client /127.107.177.224 #53/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:38] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[22:06:38] [RCON Client /127.107.177.224 #54/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:06:39] [RCON Client /127.107.177.224 #55/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[22:40:33] [RCON Listener #1/INFO]: Thread RCON Client /127.235.15.212 started
+[22:40:33] [RCON Client /127.235.15.212 #56/INFO]: Thread RCON Client /127.235.15.212 shutting down
+[23:03:45] [RCON Listener #1/INFO]: Thread RCON Client /127.128.26.241 started
+[23:03:46] [RCON Client /127.128.26.241 #57/INFO]: Thread RCON Client /127.128.26.241 shutting down
+[23:15:22] [RCON Listener #1/INFO]: Thread RCON Client /127.24.108.86 started
+[23:15:23] [RCON Client /127.24.108.86 #58/INFO]: Thread RCON Client /127.24.108.86 shutting down
+[23:20:22] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[23:20:22] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
+[23:20:23] [RCON Client /127.146.114.135 #59/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[23:20:23] [RCON Client /127.146.114.135 #60/INFO]: Thread RCON Client /127.146.114.135 shutting down
+[23:26:31] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[23:26:32] [RCON Client /127.111.1.148 #61/INFO]: Thread RCON Client /127.111.1.148 shutting down
+[23:26:33] [RCON Listener #1/INFO]: Thread RCON Client /127.111.1.148 started
+[23:26:41] [Server thread/INFO]: Stopping server
+[23:26:41] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
+[23:26:41] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[23:26:41] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[23:26:42] [RCON Client /127.111.1.148 #62/WARN]: Unexpected exception while parsing console command "craftcontrolrcon console 307"
+java.lang.IllegalStateException: Asynchronous command dispatch!
+	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:15) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:801) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.lambda$executeRemoteCommand$3(DedicatedServer.java:733) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.lambda$executeFuture$0(IAsyncTaskHandler.java:48) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.execute(IAsyncTaskHandler.java:89) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
+	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeFuture(IAsyncTaskHandler.java:47) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeSync(IAsyncTaskHandler.java:64) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.executeRemoteCommand(DedicatedServer.java:712) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.RemoteControlSession.run(SourceFile:81) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[23:26:42] [Server thread/INFO]: [dynmap] Disabled
+[23:26:42] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.8.4-SNAPSHOT
+[23:26:42] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[23:26:42] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[23:26:42] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[23:26:42] [Server thread/INFO]: [TAB] Disabled in 0ms
+[23:26:42] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[23:26:42] [Server thread/INFO]: [voicechat] Disabling voicechat v2.5.35
+[23:26:42] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[23:26:42] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[23:26:42] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b120-0a8cba0)
+[23:26:42] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[23:26:42] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[23:26:42] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[23:26:42] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
+[23:26:42] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[23:26:42] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
+[23:26:42] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.1.8
+[23:26:42] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
+[23:26:42] [Server thread/INFO]: Saving players
+[23:26:43] [Server thread/INFO]: Saving worlds
+[23:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[23:26:43] [WebSocketConnectReadThread-293/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:26:43] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[23:26:43] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[23:26:43] [Server thread/INFO]: Flushing Chunk IO
+[23:26:43] [Server thread/INFO]: Closing Thread Pool
+[23:26:43] [Server thread/INFO]: Closing Server
