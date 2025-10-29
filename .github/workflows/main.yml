@@ -107,17 +107,24 @@ jobs:
           echo "=== Both Servers are now ONLINE ==="
           echo "📍 Paper (Java players): port 25565"
           echo "📍 Velocity (Eaglercraft): port 25577"
-          echo "ℹ️ Type 'stop' in-game to shutdown"
+          echo "ℹ️ Type 'stop' in Paper to shutdown everything"
           
           MAX_TIME=20700
           ELAPSED=0
           CHECK_INTERVAL=10
           
           while [ $ELAPSED -lt $MAX_TIME ]; do
-            if ! kill -0 $PAPER_PID 2>/dev/null && ! kill -0 $VELOCITY_PID 2>/dev/null; then
+            # Check if Paper stopped
+            if ! kill -0 $PAPER_PID 2>/dev/null; then
               echo ""
-              echo "=== Servers Stopped ==="
+              echo "=== Paper Server Stopped - Shutting down everything ==="
               break
+            fi
+            
+            # Check if Velocity stopped unexpectedly
+            if ! kill -0 $VELOCITY_PID 2>/dev/null; then
+              echo ""
+              echo "⚠️ Velocity stopped unexpectedly - Continuing Paper server"
             fi
             
             sleep $CHECK_INTERVAL
@@ -128,6 +135,7 @@ jobs:
             fi
           done
           
+          echo "⏹️ Stopping all processes..."
           kill -TERM $PAPER_PID 2>/dev/null || true
           kill -TERM $VELOCITY_PID 2>/dev/null || true
           sleep 5
@@ -138,7 +146,7 @@ jobs:
           sleep 2
           pkill -9 playit-linux-amd64 2>/dev/null || true
           
-          echo "✔ Servers stopped"
+          echo "✔ All servers and tunnels stopped"
           
       - name: Save world and config
         run: |
