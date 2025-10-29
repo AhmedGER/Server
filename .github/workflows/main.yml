@@ -1,4 +1,4 @@
-name: server
+name: server proxy
 on:
   workflow_dispatch:
 
@@ -192,12 +192,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.PAT }}
         run: |
-          runs=$(gh run list -w server.yml --json status -q \
+          runs=$(gh run list -w main.yml --json status -q \
                '[.[] | select(.status=="queued" or .status=="in_progress")] | length')
           
           if [ "$runs" -le 1 ]; then
             echo "No other workflows running, retriggering..."
-            gh workflow run server.yml
+            gh workflow run main.yml
             echo "✔ Workflow retriggered"
           else
             echo "Other workflows are running, skipping retrigger"
