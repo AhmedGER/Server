@@ -1,0 +1,204 @@
+name: server
+on:
+  workflow_dispatch:
+
+jobs:
+  minecraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Download Paper 1.16.5 and Velocity
+        run: |
+          echo "=== Downloading Paper 1.16.5 ==="
+          curl -L -o server.jar \
+            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+          echo "✔ server.jar ready"
+          
+          echo "=== Downloading Velocity ==="
+          curl -L -o velocity.jar \
+            https://api.papermc.io/v2/projects/velocity/versions/3.3.0-SNAPSHOT/builds/460/downloads/velocity-3.3.0-SNAPSHOT-460.jar
+          echo "✔ velocity.jar ready"
+          
+          if [ -f world.zip ]; then
+            echo "=== Extracting world.zip ==="
+            unzip -q world.zip
+            echo "✔ World extracted successfully"
+          else
+            echo "ℹ️ No world.zip found, using existing world"
+          fi
+
+      - name: Setup Velocity Config
+        run: |
+          mkdir -p velocity
+          cat > velocity/velocity.toml << 'EOF'
+          bind = "0.0.0.0:25577"
+          motd = "A Velocity Server"
+          show-max-players = 500
+          
+          [servers]
+          lobby = "127.0.0.1:25565"
+          try = ["lobby"]
+          
+          [forced-hosts]
+          
+          [advanced]
+          compression-threshold = 256
+          compression-level = -1
+          login-ratelimit = 3000
+          
+          [query]
+          enabled = false
+          EOF
+          
+          mkdir -p velocity/plugins
+          echo "✔ Velocity config created"
+          
+      - name: Setup Playit Tunnel with Auto-Restart
+        run: |
+          echo "=== Setting up Playit Tunnel with monitoring ==="
+          
+          chmod +x playit-linux-amd64
+          
+          if [ -n "${{ secrets.PLAYIT_SECRET }}" ]; then
+            echo "${{ secrets.PLAYIT_SECRET }}" > playit.toml
+            echo "✔ Playit configured from secrets"
+          elif [ -f playit.toml ]; then
+            echo "✔ Using existing playit.toml"
+          else
+            echo "⚠️ No playit config found"
+          fi
+          
+          while true; do
+            ./playit-linux-amd64 >/dev/null 2>&1 || sleep 5
+          done &
+          
+          echo "✔ Playit tunnel started with auto-restart"
+          echo "ℹ️ Paper port (25565) and Velocity port (25577) will be tunneled"
+          sleep 10
+          
+      - name: Run Paper Server
+        run: |
+          echo "=== Starting Paper Server on port 25565 ==="
+          
+          java -DPaper.IgnoreJavaVersion=true \
+            -Xmx14848M -Xms10240M \
+            -XX:+UseG1GC \
+            -XX:+ParallelRefProcEnabled \
+            -XX:MaxGCPauseMillis=200 \
+            -XX:+UnlockExperimentalVMOptions \
+            -XX:+DisableExplicitGC \
+            -XX:+AlwaysPreTouch \
+            -XX:G1NewSizePercent=30 \
+            -XX:G1MaxNewSizePercent=40 \
+            -XX:G1HeapRegionSize=16M \
+            -XX:G1ReservePercent=20 \
+            -XX:G1HeapWastePercent=5 \
+            -XX:G1MixedGCCountTarget=4 \
+            -XX:InitiatingHeapOccupancyPercent=15 \
+            -XX:G1MixedGCLiveThresholdPercent=90 \
+            -XX:G1RSetUpdatingPauseTimePercent=5 \
+            -XX:SurvivorRatio=32 \
+            -XX:+PerfDisableSharedMem \
+            -XX:MaxTenuringThreshold=1 \
+            -Dusing.aikars.flags=https://mcflags.emc.gs \
+            -Daikars.new.flags=true \
+            -jar server.jar --nogui &
+          PAPER_PID=$!
+          
+          echo "✔ Paper Server started (PID: $PAPER_PID)"
+          echo "⏳ Waiting 60 seconds for Paper to start..."
+          sleep 60
+
+      - name: Run Velocity Proxy
+        run: |
+          echo "=== Starting Velocity Proxy on port 25577 ==="
+          
+          cd velocity
+          java -Xmx512M -Xms512M \
+            -XX:+UseG1GC \
+            -XX:G1HeapRegionSize=4M \
+            -XX:+UnlockExperimentalVMOptions \
+            -XX:+ParallelRefProcEnabled \
+            -XX:+DisableExplicitGC \
+            -XX:+AlwaysPreTouch \
+            -jar ../velocity.jar &
+          VELOCITY_PID=$!
+          
+          echo "✔ Velocity Proxy started (PID: $VELOCITY_PID)"
+          echo ""
+          echo "=== Both Servers are now ONLINE ==="
+          echo "📍 Paper (Java players): port 25565"
+          echo "📍 Velocity (Eaglercraft): port 25577"
+          echo "ℹ️ Type 'stop' in-game to shutdown"
+          
+          MAX_TIME=20700
+          ELAPSED=0
+          CHECK_INTERVAL=10
+          
+          while [ $ELAPSED -lt $MAX_TIME ]; do
+            if ! kill -0 $PAPER_PID 2>/dev/null && ! kill -0 $VELOCITY_PID 2>/dev/null; then
+              echo ""
+              echo "=== Servers Stopped ==="
+              break
+            fi
+            
+            sleep $CHECK_INTERVAL
+            ELAPSED=$((ELAPSED + CHECK_INTERVAL))
+            
+            if [ $((ELAPSED % 1800)) -eq 0 ]; then
+              echo "⏰ Servers running... $((ELAPSED / 60)) minutes elapsed"
+            fi
+          done
+          
+          kill -TERM $PAPER_PID 2>/dev/null || true
+          kill -TERM $VELOCITY_PID 2>/dev/null || true
+          sleep 5
+          kill -9 $PAPER_PID 2>/dev/null || true
+          kill -9 $VELOCITY_PID 2>/dev/null || true
+          
+          pkill -TERM playit-linux-amd64 2>/dev/null || true
+          sleep 2
+          pkill -9 playit-linux-amd64 2>/dev/null || true
+          
+          echo "✔ Servers stopped"
+          
+      - name: Save world and config
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          git add -A
+          
+          if ! git diff --cached --quiet 2>/dev/null; then
+            git commit -m "Auto-save: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git pull --rebase --autostash \
+              https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+            git push https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+            echo "✔ Changes saved to repository"
+          else
+            echo "ℹ️ No changes to save"
+          fi
+          
+      - name: Auto-retrigger workflow
+        if: github.run_attempt < 3
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          runs=$(gh run list -w server.yml --json status -q \
+               '[.[] | select(.status=="queued" or .status=="in_progress")] | length')
+          
+          if [ "$runs" -le 1 ]; then
+            echo "No other workflows running, retriggering..."
+            gh workflow run server.yml
+            echo "✔ Workflow retriggered"
+          else
+            echo "Other workflows are running, skipping retrigger"
+          fi
