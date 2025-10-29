@@ -23,7 +23,8 @@ jobs:
           echo "✔ server.jar ready"
           
           echo "=== Downloading Velocity ==="
-          curl -L -o velocity.jar \
+          mkdir -p velocity_server
+          curl -L -o velocity_server/velocity.jar \
             https://api.papermc.io/v2/projects/velocity/versions/3.3.0-SNAPSHOT/builds/460/downloads/velocity-3.3.0-SNAPSHOT-460.jar
           echo "✔ velocity.jar ready"
           
@@ -35,31 +36,37 @@ jobs:
             echo "ℹ️ No world.zip found, using existing world"
           fi
 
-      - name: Setup Velocity Config
+      - name: First-time Velocity Setup (if needed)
         run: |
-          mkdir -p velocity
-          cat > velocity/velocity.toml << 'EOF'
-          bind = "0.0.0.0:25577"
-          motd = "A Velocity Server"
-          show-max-players = 500
+          cd velocity_server
           
-          [servers]
-          lobby = "127.0.0.1:25565"
-          try = ["lobby"]
+          if [ ! -f velocity.toml ]; then
+            echo "=== Running Velocity first-time setup ==="
+            echo "ℹ️ Velocity will generate default config files..."
+            
+            timeout 30s java -Xmx512M -Xms512M -jar velocity.jar || true
+            
+            echo "✔ Velocity generated its files"
+            echo ""
+            echo "⚠️ IMPORTANT: You need to manually edit velocity.toml in the repo!"
+            echo "   Add your Paper server to the [servers] section:"
+            echo "   lobby = \"127.0.0.1:25565\""
+            echo ""
+            echo "⏸️ Workflow will pause now. Copy the generated files, edit them, and re-run."
+            exit 1
+          else
+            echo "✔ velocity.toml already exists, skipping first-time setup"
+          fi
           
-          [forced-hosts]
+          cd ..
           
-          [advanced]
-          compression-threshold = 256
-          compression-level = -1
-          login-ratelimit = 3000
-          
-          [query]
-          enabled = false
-          EOF
-          
-          mkdir -p velocity/plugins
-          echo "✔ Velocity config created"
+      - name: Copy Velocity plugins from repo
+        run: |
+          if [ -d velocity/plugins ]; then
+            mkdir -p velocity_server/plugins
+            cp -r velocity/plugins/* velocity_server/plugins/ 2>/dev/null || true
+            echo "✔ Velocity plugins copied from repo"
+          fi
           
       - name: Setup Playit Tunnel with Auto-Restart
         run: |
@@ -121,7 +128,7 @@ jobs:
         run: |
           echo "=== Starting Velocity Proxy on port 25577 ==="
           
-          cd velocity
+          cd velocity_server
           java -Xmx512M -Xms512M \
             -XX:+UseG1GC \
             -XX:G1HeapRegionSize=4M \
@@ -129,8 +136,9 @@ jobs:
             -XX:+ParallelRefProcEnabled \
             -XX:+DisableExplicitGC \
             -XX:+AlwaysPreTouch \
-            -jar ../velocity.jar &
+            -jar velocity.jar &
           VELOCITY_PID=$!
+          cd ..
           
           echo "✔ Velocity Proxy started (PID: $VELOCITY_PID)"
           echo ""
