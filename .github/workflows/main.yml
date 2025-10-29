@@ -15,18 +15,12 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Download Paper 1.16.5 and Velocity
+      - name: Download Paper 1.16.5
         run: |
           echo "=== Downloading Paper 1.16.5 ==="
           curl -L -o server.jar \
             https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
           echo "✔ server.jar ready"
-          
-          echo "=== Downloading Velocity ==="
-          mkdir -p velocity_server
-          curl -L -o velocity_server/velocity.jar \
-            https://api.papermc.io/v2/projects/velocity/versions/3.3.0-SNAPSHOT/builds/460/downloads/velocity-3.3.0-SNAPSHOT-460.jar
-          echo "✔ velocity.jar ready"
           
           if [ -f world.zip ]; then
             echo "=== Extracting world.zip ==="
@@ -34,38 +28,6 @@ jobs:
             echo "✔ World extracted successfully"
           else
             echo "ℹ️ No world.zip found, using existing world"
-          fi
-
-      - name: First-time Velocity Setup (if needed)
-        run: |
-          cd velocity_server
-          
-          if [ ! -f velocity.toml ]; then
-            echo "=== Running Velocity first-time setup ==="
-            echo "ℹ️ Velocity will generate default config files..."
-            
-            timeout 30s java -Xmx512M -Xms512M -jar velocity.jar || true
-            
-            echo "✔ Velocity generated its files"
-            echo ""
-            echo "⚠️ IMPORTANT: You need to manually edit velocity.toml in the repo!"
-            echo "   Add your Paper server to the [servers] section:"
-            echo "   lobby = \"127.0.0.1:25565\""
-            echo ""
-            echo "⏸️ Workflow will pause now. Copy the generated files, edit them, and re-run."
-            exit 1
-          else
-            echo "✔ velocity.toml already exists, skipping first-time setup"
-          fi
-          
-          cd ..
-          
-      - name: Copy Velocity plugins from repo
-        run: |
-          if [ -d velocity/plugins ]; then
-            mkdir -p velocity_server/plugins
-            cp -r velocity/plugins/* velocity_server/plugins/ 2>/dev/null || true
-            echo "✔ Velocity plugins copied from repo"
           fi
           
       - name: Setup Playit Tunnel with Auto-Restart
