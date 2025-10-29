@@ -229,6 +229,7 @@ settings:
         # - 'npcPlayer2'
         UnrestrictedName:
          - 'gemini'
+         - 'LLama
         # Below you can list all inventories names that AuthMe will ignore
         # for registration or login. Configure it at your own risk!!
         # This option adds compatibility with some mods.
