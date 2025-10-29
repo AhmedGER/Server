@@ -53,7 +53,7 @@ jobs:
           echo "ℹ️ Paper port (25565) and Velocity port (25577) will be tunneled"
           sleep 10
           
-      - name: Run Paper Server
+      - name: Run Both Servers
         run: |
           echo "=== Starting Paper Server on port 25565 ==="
           
@@ -85,9 +85,7 @@ jobs:
           echo "✔ Paper Server started (PID: $PAPER_PID)"
           echo "⏳ Waiting 60 seconds for Paper to start..."
           sleep 60
-
-      - name: Run Velocity Proxy
-        run: |
+          
           echo "=== Starting Velocity Proxy on port 25577 ==="
           
           cd velocity_server
