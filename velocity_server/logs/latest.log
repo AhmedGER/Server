@@ -1,36 +1,71 @@
-[13:47:29] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[13:47:30] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[13:47:30] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>      EAGLERCRAFTXVELOCITY WARNING:
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  This plugin wasn't tested to be 'working'
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  with ANY version of Velocity (and forks)
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  apart from the versions listed below:
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  - Velocity: 3.4.0-SNAPSHOT:6995f415:b464
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  - https://api.papermc.io/v2/projects/velocity/versions/3.4.0-SNAPSHOT/builds/464/downloads/velocity-3.4.0-SNAPSHOT-464.jar
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  This is not a Bukkit/Spigot plugin!
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  Use "-Deaglerxvelocity.stfu=true" to hide
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>  
-[13:47:30] [main/ERROR] [com.velocitypowered.proxy.console.VelocityConsole]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxvelocity 1.1.7 by lax1dude, ayunami2000
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 2 plugins
-[13:47:30] [EaglercraftXVelocity - Task Executor #0/WARN] [eaglerxvelocity]: This plugin is still in development, certain features may not be functional!
-[13:47:30] [EaglercraftXVelocity - Task Executor #0/WARN] [eaglerxvelocity]: Not recommended for public servers yet, please check for updates
-[13:47:30] [EaglercraftXVelocity - Task Executor #0/ERROR] [eaglerxvelocity]: Online mode is set to false! Authentication system has been disabled
-[13:47:30] [Netty epoll Boss #0/INFO] [eaglerxvelocity]: Eaglercraft is listening on: /0.0.0.0:8081
-[13:47:30] [EaglercraftXVelocity - Task Executor #0/INFO] [eaglerxvelocity]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[13:47:30] [EaglercraftXVelocity - Task Executor #0/INFO] [eaglerxvelocity]: Voice chat disabled, add "allow_voice: true" to your listeners to enable
-[13:47:30] [Netty epoll Boss #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[13:47:30] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.13s)!
-[18:20:21] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
-[18:20:21] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
-[18:20:21] [EaglercraftXVelocity - Task Executor #1/INFO] [eaglerxvelocity]: Eaglercraft listener closed: /0.0.0.0:8081
-[18:20:21] [EaglercraftXVelocity - Task Executor #1/INFO] [eaglerxvelocity]: Successfully disconnected from database 'jdbc:sqlite:eaglercraft_skins_cache.db'
+[18:22:09] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[18:22:10] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[18:22:10] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[18:22:10] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.7...
+[18:22:10] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/settings.toml
+[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/listeners.toml
+[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/supervisor.toml
+[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/ice_servers.toml
+[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/pause_menu.toml
+[18:22:10] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[18:22:10] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1308) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader$1.loadServerIcon(ServerIconLoader.java:51) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:90) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerListener.<init>(EaglerListener.java:58) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.loadProxying(EaglerXServer.java:355) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.base.EaglerXServer.load(EaglerXServer.java:339) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity.<init>(PlatformPluginVelocity.java:255) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$2ed38.GUICE$TRAMPOLINE(<generated>) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.server.velocity.PlatformPluginVelocity$$FastClassByGuice$$2ed38.apply(<generated>) ~[?:?]
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:82) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1148) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1186) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.plugin.loader.java.JavaPluginLoader.createPlugin(JavaPluginLoader.java:131) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.plugin.VelocityPluginManager.loadPlugins(VelocityPluginManager.java:173) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:437) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:308) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.7 by lax1dude
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.0 by lax1dude
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
+[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
+[18:22:10] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[18:22:10] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.7...
+[18:22:10] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Writing default config: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/settings.json
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Writing default config: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/mimetypes.json
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexed 0 pages total!
+[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
+[18:22:11] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[18:22:11] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.55s)!
+[18:22:11] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[18:25:40] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] SIGMAxox (/127.175.65.20:34489) has connected
+[18:25:40] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has connected
+[18:27:45] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] SIGMAxox (/127.175.65.20:34489) has disconnected
+[18:27:45] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has disconnected
+[18:32:29] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[18:32:29] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
+[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.7...
+[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
+[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Shutting down, please wait...
+[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been unregistered
