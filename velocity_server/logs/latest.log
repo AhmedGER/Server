@@ -1,18 +1,13 @@
-[18:22:09] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[18:22:10] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[18:22:10] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[18:22:10] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.7...
-[18:22:10] [main/INFO] [eaglerxserver]: (Platform: Velocity)
-[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/settings.toml
-[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/listeners.toml
-[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/supervisor.toml
-[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/ice_servers.toml
-[18:22:10] [main/INFO] [eaglerxserver]: Config file was updated: /home/runner/work/Server/Server/velocity_server/plugins/eaglerxserver/pause_menu.toml
-[18:22:10] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
-[18:22:10] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+[18:34:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
+[18:34:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[18:34:20] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[18:34:20] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[18:34:20] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[18:34:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[18:34:20] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.7...
+[18:34:20] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[18:34:21] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[18:34:21] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
 javax.imageio.IIOException: Can't read input file!
 	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1308) ~[?:?]
 	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112) ~[?:?]
@@ -38,34 +33,51 @@ javax.imageio.IIOException: Can't read input file!
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:437) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:308) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.7 by lax1dude
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.0 by lax1dude
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
-[18:22:10] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
-[18:22:10] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[18:22:10] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.7...
-[18:22:10] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Writing default config: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/settings.json
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Writing default config: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/mimetypes.json
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexed 0 pages total!
-[18:22:11] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
-[18:22:11] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[18:22:11] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.55s)!
-[18:22:11] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
-[18:25:40] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] SIGMAxox (/127.175.65.20:34489) has connected
-[18:25:40] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has connected
-[18:27:45] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] SIGMAxox (/127.175.65.20:34489) has disconnected
-[18:27:45] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has disconnected
-[18:32:29] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
-[18:32:29] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
-[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.7...
-[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
-[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
-[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Shutting down, please wait...
-[18:32:29] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been unregistered
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.7 by lax1dude
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.0 by lax1dude
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
+[18:34:21] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.7...
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
+[18:34:21] [EaglercraftXServer - Task Executor #0/ERROR] [eaglerweb]: Failed to index pages!
+java.io.IOException: Could not list directory: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/web
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.indexDir(EaglerWebHandler.java:134) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.index(EaglerWebHandler.java:124) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.buildContext(EaglerWebHandler.java:108) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.build(EaglerWebHandler.java:92) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWeb.handleRefreshIndex(EaglerWeb.java:132) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWeb.onEnable(EaglerWeb.java:59) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.velocity.PlatformPluginVelocity.onProxyInit(PlatformPluginVelocity.java:82) ~[?:?]
+	at net.lax1dude.eaglercraft.backend.eaglerweb.velocity.Lmbda$6.execute(Unknown Source) ~[?:?]
+	at com.velocitypowered.proxy.event.UntargetedEventHandler$VoidHandler.lambda$buildHandler$0(UntargetedEventHandler.java:56) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.fire(VelocityEventManager.java:677) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at com.velocitypowered.proxy.event.VelocityEventManager.lambda$fire$5(VelocityEventManager.java:542) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+[18:34:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
+[18:34:21] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[18:34:21] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.51s)!
+[18:34:22] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[19:27:49] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] SIGMAxox (/127.175.65.20:40125) has connected
+[19:27:49] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has connected
+[19:31:14] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] SIGMAxox (/127.175.65.20:40125) has disconnected
+[19:31:14] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has disconnected
+[19:59:10] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] SIGMAxox (/127.175.65.20:40939) has connected
+[19:59:10] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has connected
+[19:59:42] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] SIGMAxox (/127.175.65.20:40939) has disconnected
+[19:59:42] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] SIGMAxox -> lobby has disconnected
+[21:03:50] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[21:03:50] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
+[21:03:50] [EaglercraftXServer - Task Executor #5/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.7...
+[21:03:50] [EaglercraftXServer - Task Executor #5/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[21:03:50] [EaglercraftXServer - Task Executor #5/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
+[21:03:50] [EaglercraftXServer - Task Executor #5/INFO] [eaglerweb]: Shutting down, please wait...
+[21:03:50] [EaglercraftXServer - Task Executor #5/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been unregistered
