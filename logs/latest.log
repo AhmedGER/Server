@@ -1,52 +1,361 @@
-[00:27:02] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:02] [RCON Client /127.107.177.224 #77/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:02] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:02] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:02] [RCON Client /127.107.177.224 #78/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:02] [RCON Client /127.107.177.224 #79/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:02] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:02] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:03] [RCON Client /127.107.177.224 #81/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:03] [RCON Client /127.107.177.224 #80/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:03] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:03] [RCON Client /127.107.177.224 #82/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:03] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:03] [RCON Client /127.107.177.224 #83/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:03] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:03] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:03] [RCON Client /127.107.177.224 #84/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:04] [RCON Client /127.107.177.224 #85/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:04] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:04] [RCON Client /127.107.177.224 #86/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:04] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:04] [RCON Client /127.107.177.224 #87/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:04] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:04] [RCON Client /127.107.177.224 #88/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:05] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:05] [RCON Client /127.107.177.224 #89/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:27:05] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[00:27:05] [RCON Client /127.107.177.224 #90/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[00:57:49] [RCON Listener #1/INFO]: Thread RCON Client /127.128.26.241 started
-[00:57:49] [RCON Client /127.128.26.241 #91/INFO]: Thread RCON Client /127.128.26.241 shutting down
-[01:32:26] [RCON Listener #1/INFO]: Thread RCON Client /127.93.210.164 started
-[01:32:26] [RCON Listener #1/INFO]: Thread RCON Client /127.93.210.164 started
-[01:32:26] [RCON Client /127.93.210.164 #92/INFO]: Thread RCON Client /127.93.210.164 shutting down
-[01:32:26] [RCON Client /127.93.210.164 #93/INFO]: Thread RCON Client /127.93.210.164 shutting down
-[02:24:39] [RCON Listener #1/INFO]: Thread RCON Client /127.69.253.235 started
-[02:24:40] [RCON Client /127.69.253.235 #94/INFO]: Thread RCON Client /127.69.253.235 shutting down
-[02:50:46] [Server thread/INFO]: Stopping server
-[02:50:47] [Server thread/INFO]: [TAB] Disabled in 0ms
-[02:50:47] [Server thread/INFO]: Saving players
-[02:50:47] [Server thread/INFO]: Saving worlds
-[02:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[02:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[02:50:47] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[02:50:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[02:50:47] [Server thread/INFO]: Flushing Chunk IO
-[02:50:47] [Server thread/INFO]: Closing Thread Pool
-[02:50:47] [Server thread/INFO]: Closing Server
+[02:51:41] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:51:42] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[02:51:42] [Worker-Main-1/INFO]: Loaded 7 recipes
+[02:51:43] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[02:51:43] [Server thread/INFO]: Loading properties
+[02:51:43] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[02:51:44] [Server thread/INFO]: Debug logging is disabled
+[02:51:44] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[02:51:44] [Server thread/INFO]: Using 4 threads for Netty based IO
+[02:51:44] [Server thread/INFO]: Default game type: SURVIVAL
+[02:51:44] [Server thread/INFO]: Generating keypair
+[02:51:44] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:51:44] [Server thread/INFO]: Using epoll channel type
+[02:51:45] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[02:51:48] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[02:51:48] [Server thread/INFO]: [CraftControl-RCON] Loading CraftControl-RCON v1.4.0
+[02:51:48] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
+[02:51:48] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
+[02:51:48] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[02:51:48] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[02:51:48] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[02:51:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[02:51:48] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[02:51:49] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[02:51:49] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[02:51:49] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[02:51:49] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[02:51:49] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[02:51:50] [Server thread/INFO]: [floodgate] Took 481ms to boot Floodgate
+[02:51:50] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[02:51:50] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[02:51:50] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
+[02:51:50] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
+[02:51:50] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[02:51:50] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.9.0-SNAPSHOT
+[02:51:50] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[02:51:50] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[02:51:50] [Server thread/INFO]: [dynmap] Loading dynmap v3.6-899
+[02:51:50] [Server thread/INFO]: [dynmap] version=git-Paper-794 (MC: 1.16.5)
+[02:51:50] [Server thread/INFO]: [dynmap] Mod Support API available
+[02:51:50] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[02:51:50] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[02:51:50] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[02:51:51] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[02:51:51] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[02:51:51] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[02:51:51] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[02:51:51] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[02:51:51] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[02:51:51] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[02:51:51] [Server thread/INFO]: Preparing level "world"
+[02:51:51] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:51:52] [Server thread/INFO]: Preparing spawn area: 0%
+[02:51:52] [Server thread/INFO]: Preparing spawn area: 0%
+[02:51:52] [Server thread/INFO]: Time elapsed: 796 ms
+[02:51:52] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[02:51:52] [Server thread/INFO]: Preparing spawn area: 0%
+[02:51:53] [Server thread/INFO]: Preparing spawn area: 0%
+[02:51:53] [Server thread/INFO]: Time elapsed: 770 ms
+[02:51:53] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[02:51:53] [Server thread/INFO]: Preparing spawn area: 0%
+[02:51:53] [Server thread/INFO]: Preparing spawn area: 64%
+[02:51:54] [Server thread/INFO]: Time elapsed: 680 ms
+[02:51:54] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
+[02:51:54] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
+[02:51:54] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
+[02:51:54] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[02:51:54] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
+[02:51:54] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[02:51:54] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[02:51:54] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[02:51:54] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[02:51:54] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
+[02:51:54] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[02:51:55] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[02:51:55] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
+[02:51:55] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
+[02:51:55] [Server thread/INFO]: [voicechat] Compatibility version 18
+[02:51:55] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[02:51:55] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[02:51:55] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[02:51:55] [Server thread/INFO]: [TAB] Enabled in 226ms
+[02:51:55] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
+[02:51:56] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
+[02:51:56] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[02:51:56] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[02:51:56] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[02:51:58] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[02:51:58] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[02:51:58] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[02:51:58] [Server thread/INFO]: [dynmap] version 3.6-899 is enabled - core version 3.6-899
+[02:51:58] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[02:51:58] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[02:51:58] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[02:51:58] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[02:51:58] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[02:51:58] [Server thread/INFO]: [dynmap] Enabled
+[02:51:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[02:51:58] [Server thread/INFO]: [Geyser-Spigot] 
+[02:51:58] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
+[02:51:58] [Server thread/INFO]: [Geyser-Spigot] 
+[02:51:58] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[02:52:01] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[02:52:01] [Server thread/INFO]: [Geyser-Spigot] Done (2.831s)! Run /geyser help for help!
+[02:52:01] [Server thread/INFO]: Starting remote control listener
+[02:52:01] [Server thread/INFO]: Thread RCON Listener started
+[02:52:01] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[02:52:01] [Server thread/INFO]: Running delayed init tasks
+[02:52:01] [Craft Scheduler Thread - 4/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[02:52:01] [Craft Scheduler Thread - 4/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[02:52:01] [Craft Scheduler Thread - 4/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[02:52:01] [Craft Scheduler Thread - 6/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[02:52:01] [Server thread/INFO]: [voicechat] Loading plugins
+[02:52:01] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[02:52:01] [Server thread/INFO]: [voicechat] Initializing plugins
+[02:52:01] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[02:52:01] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[02:52:01] [Craft Scheduler Thread - 4/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[02:52:01] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[02:52:01] [Server thread/INFO]: Done (18.535s)! For help, type "help"
+[02:52:01] [Server thread/INFO]: Timings Reset
+[02:52:01] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[02:52:02] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[05:35:39] [RCON Listener #1/INFO]: Thread RCON Client /127.69.130.65 started
+[05:35:40] [RCON Client /127.69.130.65 #2/INFO]: Thread RCON Client /127.69.130.65 shutting down
+[05:58:43] [RCON Listener #1/INFO]: Thread RCON Client /127.155.180.164 started
+[05:58:44] [RCON Client /127.155.180.164 #3/INFO]: Thread RCON Client /127.155.180.164 shutting down
+[06:00:43] [RCON Listener #1/INFO]: Thread RCON Client /127.47.53.148 started
+[06:00:44] [RCON Client /127.47.53.148 #4/INFO]: Thread RCON Client /127.47.53.148 shutting down
+[06:15:29] [User Authenticator #1/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[06:15:29] [Server thread/INFO]: Fode joined the game
+[06:15:29] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[06:15:29] [Server thread/INFO]: Fode[/127.0.0.1:44624] logged in with entity id 269 at ([world]223.5, 65.0, -138.5)
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[06:15:30] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[06:16:25] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
+[06:16:30] [Server thread/INFO]: [AuthMe] Fode registered 127.0.0.1
+[06:16:30] [Craft Scheduler Thread - 55/INFO]: [AuthMe] Fode logged in 127.0.0.1
+[06:16:48] [Server thread/INFO]: Fode was slain by Zombie
+[06:17:16] [Server thread/INFO]: Fode was slain by Zombie
+[06:17:28] [Server thread/INFO]: Villager EntityVillager['Villager'/51, uuid='351fbaf7-19cf-4296-ab21-edb362d13997', l='ServerLevel[world]', x=241.30, y=64.00, z=-100.24, cx=15, cz=-7, tl=2888459, v=true, d=false] died, message: 'Villager was slain by Zombie'
+[06:17:43] [Server thread/INFO]: Fode lost connection: Disconnected
+[06:17:43] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[06:17:43] [Server thread/INFO]: Fode left the game
+[06:20:00] [User Authenticator #2/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[06:20:00] [Server thread/INFO]: Fode joined the game
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[06:20:00] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[06:20:00] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[06:20:00] [Server thread/INFO]: Fode[/127.0.0.1:56238] logged in with entity id 411 at ([world]208.30000001192093, 61.0, -140.69999998807907)
+[06:20:48] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[06:20:50] [RCON Client /127.144.106.13 #5/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[06:20:50] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[06:21:01] [Server thread/INFO]: [Rcon: Set the time to 1000]
+[06:21:33] [RCON Listener #1/INFO]: Thread RCON Client /127.83.191.134 started
+[06:21:33] [RCON Client /127.83.191.134 #7/INFO]: Thread RCON Client /127.83.191.134 shutting down
+[06:21:34] [RCON Client /127.144.106.13 #6/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[06:21:35] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[06:22:12] [Craft Scheduler Thread - 62/INFO]: [AuthMe] Fode logged in 127.0.0.1
+[06:22:28] [Server thread/INFO]: Fode was blown up by Creeper
+[06:22:28] [RCON Client /127.144.106.13 #8/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[06:22:29] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[06:22:45] [Server thread/INFO]: Fode lost connection: Disconnected
+[06:22:45] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[06:22:45] [Server thread/INFO]: Fode left the game
+[06:22:46] [RCON Client /127.144.106.13 #9/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[06:22:47] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[06:23:00] [User Authenticator #3/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[06:23:00] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[06:23:00] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[06:23:00] [Server thread/INFO]: Fode joined the game
+[06:23:00] [Server thread/INFO]: Fode[/127.0.0.1:44262] logged in with entity id 610 at ([world]215.5, 63.0, -143.5)
+[06:23:09] [RCON Client /127.144.106.13 #10/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[06:23:21] [Craft Scheduler Thread - 67/INFO]: [AuthMe] Fode logged in 127.0.0.1
+[06:24:56] [User Authenticator #4/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[06:24:56] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[06:24:56] [Server thread/INFO]: SIGMAxox joined the game
+[06:24:56] [Server thread/INFO]: SIGMAxox[/127.144.106.13:58241] logged in with entity id 774 at ([world]240.2437701309164, 64.0, -158.49040075307238)
+[06:25:25] [Craft Scheduler Thread - 71/INFO]: [AuthMe] SIGMAxox logged in 127.144.106.13
+[06:26:29] [Server thread/INFO]: Fode was slain by SIGMAxox
+[06:27:43] [Server thread/INFO]: Fode lost connection: Disconnected
+[06:27:43] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[06:27:43] [Server thread/INFO]: Fode left the game
+[06:31:31] [Server thread/INFO]: Villager EntityVillager['Villager'/12, uuid='62769fa5-557b-4ebb-966f-a8a5e83243f4', l='ServerLevel[world]', x=191.29, y=63.00, z=-193.74, cx=11, cz=-13, tl=2905293, v=true, d=false] died, message: 'Villager was slain by Zombie'
+[06:32:04] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[06:32:04] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[06:32:04] [Server thread/INFO]: SIGMAxox left the game
+[06:38:08] [User Authenticator #5/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[06:38:08] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[06:38:08] [Server thread/INFO]: SIGMAxox joined the game
+[06:38:08] [Server thread/INFO]: SIGMAxox[/127.144.106.13:37137] logged in with entity id 1327 at ([world]196.82629878401173, 64.0, -162.77780610851238)
+[06:38:15] [Craft Scheduler Thread - 80/INFO]: [AuthMe] SIGMAxox logged in 127.144.106.13
+[06:38:37] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[06:38:37] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[06:38:37] [Server thread/INFO]: SIGMAxox left the game
+[07:04:37] [User Authenticator #6/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[07:04:37] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[07:04:37] [Server thread/INFO]: Fode joined the game
+[07:04:37] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:04:37] [Server thread/INFO]: Fode[/127.0.0.1:44138] logged in with entity id 1386 at ([world]214.5, 64.0, -136.5)
+[07:04:44] [Craft Scheduler Thread - 89/INFO]: [AuthMe] Fode logged in 127.0.0.1
+[07:06:03] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[07:06:04] [RCON Client /127.144.106.13 #11/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[07:06:04] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[07:06:35] [Server thread/INFO]: [Rcon: Set the weather to clear]
+[07:06:36] [RCON Client /127.144.106.13 #12/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[07:06:36] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[07:06:45] [Server thread/INFO]: [Rcon] hello
+[07:06:55] [Server thread/INFO]: [Rcon: Set the time to 1000]
+[07:07:02] [User Authenticator #7/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[07:07:02] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:07:02] [Server thread/INFO]: SIGMAxox joined the game
+[07:07:02] [Server thread/INFO]: SIGMAxox[/127.144.106.13:33253] logged in with entity id 1566 at ([world]195.01493382723913, 67.0, -162.53079479983236)
+[07:07:03] [RCON Client /127.144.106.13 #13/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[07:07:03] [RCON Listener #1/INFO]: Thread RCON Client /127.144.106.13 started
+[07:07:04] [RCON Client /127.144.106.13 #14/INFO]: Thread RCON Client /127.144.106.13 shutting down
+[07:07:12] [Server thread/INFO]: SIGMAxox issued server command: / ahmedger
+[07:07:19] [Server thread/INFO]: SIGMAxox issued server command: / ahmedger
+[07:07:25] [Craft Scheduler Thread - 92/INFO]: [AuthMe] SIGMAxox logged in 127.144.106.13
+[07:07:44] [Server thread/INFO]: SIGMAxox hit the ground too hard
+[07:08:49] [Server thread/INFO]: Fode issued server command: /skins
+[07:09:41] [Server thread/INFO]: Fode lost connection: Disconnected
+[07:09:41] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[07:09:41] [Server thread/INFO]: Fode left the game
+[07:09:45] [User Authenticator #8/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[07:09:46] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[07:09:46] [Server thread/INFO]: Fode joined the game
+[07:09:46] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:09:46] [Server thread/INFO]: Fode[/127.0.0.1:51044] logged in with entity id 1761 at ([world]207.42351448328512, 63.0, -185.98267284928536)
+[07:09:56] [Craft Scheduler Thread - 100/INFO]: [AuthMe] Fode logged in 127.0.0.1
+[07:10:22] [RCON Listener #1/INFO]: Thread RCON Client /127.210.82.162 started
+[07:10:22] [RCON Client /127.210.82.162 #15/INFO]: Thread RCON Client /127.210.82.162 shutting down
+[07:10:46] [Server thread/INFO]: SIGMAxox was slain by Fode
+[07:11:14] [Server thread/INFO]: Fode lost connection: Disconnected
+[07:11:14] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[07:11:14] [Server thread/INFO]: Fode left the game
+[07:11:45] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[07:11:45] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[07:11:45] [Server thread/INFO]: SIGMAxox left the game
+[07:12:24] [RCON Listener #1/INFO]: Thread RCON Client /127.217.188.211 started
+[07:12:24] [RCON Client /127.217.188.211 #16/INFO]: Thread RCON Client /127.217.188.211 shutting down
+[07:22:57] [RCON Listener #1/INFO]: Thread RCON Client /127.111.237.92 started
+[07:22:57] [RCON Client /127.111.237.92 #17/INFO]: Thread RCON Client /127.111.237.92 shutting down
+[07:32:16] [RCON Listener #1/INFO]: Thread RCON Client /127.69.253.235 started
+[07:32:16] [RCON Client /127.69.253.235 #18/INFO]: Thread RCON Client /127.69.253.235 shutting down
+[07:58:38] [User Authenticator #9/INFO]: UUID of player YeeYeeish1213 is 4d8d460c-43ce-3cb2-9db0-2c9e27be1535
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[07:58:38] [Netty Epoll Server IO #3/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[07:58:38] [TAB Processing Thread/INFO]: [TAB] [WARN] Player YeeYeeish1213's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[07:58:38] [Server thread/INFO]: YeeYeeish1213 joined the game
+[07:58:38] [Server thread/INFO]: YeeYeeish1213[/127.0.0.1:59902] logged in with entity id 1910 at ([world]219.5, 64.0, -138.5)
+[07:59:07] [Server thread/INFO]: [AuthMe] YeeYeeish1213 registered 127.0.0.1
+[07:59:07] [Craft Scheduler Thread - 116/INFO]: [AuthMe] The user YeeYeeish1213 has 2 accounts:
+[07:59:07] [Craft Scheduler Thread - 116/INFO]: [AuthMe] fode, YeeYeeish1213.
+[07:59:07] [Craft Scheduler Thread - 116/INFO]: [AuthMe] YeeYeeish1213 logged in 127.0.0.1
+[07:59:50] [Server thread/INFO]: YeeYeeish1213 was shot by Stray
+[08:00:06] [Server thread/INFO]: YeeYeeish1213 lost connection: Disconnected
+[08:00:06] [Server thread/INFO]: [voicechat] Disconnecting client YeeYeeish1213
+[08:00:06] [Server thread/INFO]: YeeYeeish1213 left the game
+[08:11:59] [RCON Listener #1/INFO]: Thread RCON Client /127.22.233.145 started
+[08:12:00] [RCON Client /127.22.233.145 #19/INFO]: Thread RCON Client /127.22.233.145 shutting down
+[08:24:09] [RCON Listener #1/INFO]: Thread RCON Client /127.224.229.59 started
+[08:24:10] [RCON Client /127.224.229.59 #20/INFO]: Thread RCON Client /127.224.229.59 shutting down
+[08:25:53] [RCON Listener #1/INFO]: Thread RCON Client /127.4.94.33 started
+[08:25:53] [RCON Client /127.4.94.33 #21/INFO]: Thread RCON Client /127.4.94.33 shutting down
+[08:32:08] [RCON Listener #1/INFO]: Thread RCON Client /127.186.130.183 started
+[08:32:09] [RCON Client /127.186.130.183 #22/INFO]: Thread RCON Client /127.186.130.183 shutting down
+[08:33:08] [User Authenticator #10/INFO]: UUID of player Fode is 374229e0-6d3f-3639-93e9-a0a327f69eef
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Voice-1.8
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Ready
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-Voice-RPC
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8-RPC
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|1.8
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Skins-1.8
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|UpdateCert-1.8
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|FNAWSEn-1.8
+[08:33:08] [Netty Epoll Server IO #0/WARN]: [ViaBackwards] (1.13->1.12.2) Ignoring plugin channel in serverbound REGISTER: EAG|Capes-1.8
+[08:33:08] [TAB Processing Thread/INFO]: [TAB] [WARN] Player Fode's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[08:33:08] [Server thread/INFO]: Fode joined the game
+[08:33:08] [Server thread/INFO]: Fode[/127.0.0.1:37196] logged in with entity id 2029 at ([world]206.56660784149196, 62.9375, -186.53386592393346)
+[08:33:44] [Server thread/INFO]: Fode lost connection: Timed out
+[08:33:44] [Server thread/INFO]: [voicechat] Disconnecting client Fode
+[08:33:44] [Server thread/INFO]: Fode left the game
+[08:37:35] [Server thread/INFO]: Stopping server
+[08:37:37] [Server thread/INFO]: [TAB] Disabled in 0ms
+[08:37:37] [Server thread/INFO]: Saving players
+[08:37:37] [Server thread/INFO]: Saving worlds
+[08:37:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08:37:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08:37:37] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[08:37:37] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[08:37:37] [Server thread/INFO]: Flushing Chunk IO
+[08:37:37] [Server thread/INFO]: Closing Thread Pool
+[08:37:37] [Server thread/INFO]: Closing Server
