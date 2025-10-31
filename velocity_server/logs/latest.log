@@ -1,13 +1,13 @@
-[02:52:33] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
-[02:52:33] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
-[02:52:34] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
-[02:52:34] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
-[02:52:34] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.7...
-[02:52:34] [main/INFO] [eaglerxserver]: (Platform: Velocity)
-[02:52:34] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
-[02:52:34] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.4.0-SNAPSHOT (git-b6b6b20f-b555)...
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use epoll channels, libdeflate (Linux x86_64) compression, OpenSSL 3.x.x (Linux x86_64) ciphers
+[08:39:20] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: The proxy is running in offline mode! This is a security risk and you will NOT receive any support!
+[08:39:20] [main/WARN] [com.velocitypowered.proxy.config.VelocityConfiguration]: Player info forwarding is disabled! All players will appear to be connecting from the proxy and will have offline-mode UUIDs.
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[08:39:20] [main/INFO] [eaglerxserver]: Loading EaglercraftXServer 1.0.7...
+[08:39:20] [main/INFO] [eaglerxserver]: (Platform: Velocity)
+[08:39:20] [main/INFO] [eaglerxserver]: Server Name: "EaglercraftXServer"
+[08:39:20] [main/ERROR] [eaglerxserver]: Could not load server icon: server-icon.png
 javax.imageio.IIOException: Can't read input file!
 	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1308) ~[?:?]
 	at net.lax1dude.eaglercraft.backend.server.base.ServerIconLoader.loadServerIcon(ServerIconLoader.java:112) ~[?:?]
@@ -33,20 +33,20 @@ javax.imageio.IIOException: Can't read input file!
 	at com.velocitypowered.proxy.VelocityServer.loadPlugins(VelocityServer.java:437) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
 	at com.velocitypowered.proxy.VelocityServer.start(VelocityServer.java:308) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
 	at com.velocitypowered.proxy.Velocity.main(Velocity.java:71) ~[velocity.jar:3.4.0-SNAPSHOT (git-b6b6b20f-b555)]
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.7 by lax1dude
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.0 by lax1dude
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
-[02:52:34] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.7...
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
-[02:52:34] [EaglercraftXServer - Task Executor #0/ERROR] [eaglerweb]: Failed to index pages!
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxserver 1.0.7 by lax1dude
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglermotd-reborn 1.0.0 by lax1dude
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerweb 1.0.0 by lax1dude
+[08:39:20] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin eaglerxrewind-1-5 1.0.2 by lax1dude, ayunami2000
+[08:39:21] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 5 plugins
+[08:39:21] [EaglercraftXServer - Task Executor #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Enabling EaglercraftXServer 1.0.7...
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connecting to skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: Connected to skin cache database successfully!
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 1 messages for listener0
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglermotd-reborn]: Loaded 6 query types
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Loading config files...
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerweb]: Indexing pages, please wait...
+[08:39:21] [EaglercraftXServer - Task Executor #0/ERROR] [eaglerweb]: Failed to index pages!
 java.io.IOException: Could not list directory: /home/runner/work/Server/Server/velocity_server/plugins/eaglerweb/web
 	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.indexDir(EaglerWebHandler.java:134) ~[?:?]
 	at net.lax1dude.eaglercraft.backend.eaglerweb.base.EaglerWebHandler.index(EaglerWebHandler.java:124) ~[?:?]
@@ -62,47 +62,23 @@ java.io.IOException: Could not list directory: /home/runner/work/Server/Server/v
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
 	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
-[02:52:34] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: EaglerXServer is attempting to clone listener for: /0.0.0.0:8081
-[02:52:34] [Netty epoll Boss #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
-[02:52:34] [Netty epoll Boss #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0x9a29fac4, L:/[0:0:0:0:0:0:0:0]:8081] successfully (Velocity method)
-[02:52:34] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:8081
-[02:52:34] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.51s)!
-[02:52:35] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
-[06:15:28] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:55133) has connected
-[06:15:29] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[06:17:43] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:55133) has disconnected
-[06:17:43] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[06:20:00] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:44397) has connected
-[06:20:00] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[06:22:45] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:44397) has disconnected
-[06:22:45] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[06:23:00] [Netty epoll Worker #4/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:39493) has connected
-[06:23:00] [Netty epoll Worker #4/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[06:27:43] [Netty epoll Worker #4/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:39493) has disconnected
-[06:27:43] [Netty epoll Worker #4/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[07:04:36] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:36161) has connected
-[07:04:36] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[07:09:41] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:36161) has disconnected
-[07:09:41] [Netty epoll Worker #7/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[07:09:45] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:52553) has connected
-[07:09:45] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[07:11:14] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:52553) has disconnected
-[07:11:14] [Netty epoll Worker #3/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[07:58:38] [Netty epoll Worker #5/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] YeeYeeish1213 (/127.144.106.13:45631) has connected
-[07:58:38] [Netty epoll Worker #5/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] YeeYeeish1213 -> lobby has connected
-[08:00:06] [Netty epoll Worker #5/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] YeeYeeish1213 (/127.144.106.13:45631) has disconnected
-[08:00:06] [Netty epoll Worker #5/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] YeeYeeish1213 -> lobby has disconnected
-[08:33:07] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:33779) has connected
-[08:33:08] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
-[08:33:44] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Fode (/127.144.106.13:33779) has disconnected: An internal error occurred in your connection.
-[08:33:44] [Netty epoll Worker #6/ERROR] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:33779): read timed out
-[08:33:44] [Netty epoll Worker #6/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
-[08:37:35] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
-[08:37:35] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
-[08:37:35] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:8081
-[08:37:35] [EaglercraftXServer - Task Executor #9/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.7...
-[08:37:35] [EaglercraftXServer - Task Executor #9/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
-[08:37:35] [EaglercraftXServer - Task Executor #9/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
-[08:37:35] [EaglercraftXServer - Task Executor #9/INFO] [eaglerweb]: Shutting down, please wait...
-[08:37:35] [EaglercraftXServer - Task Executor #9/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been unregistered
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been registered
+[08:39:21] [EaglercraftXServer - Task Executor #0/INFO] [eaglerxserver]: EaglerXServer is attempting to clone listener for: /0.0.0.0:8081
+[08:39:21] [Netty epoll Boss #1/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25577
+[08:39:21] [Netty epoll Boss #0/INFO] [eaglerxserver]: Listener "listener0" injected into channel [id: 0xb5ca95fa, L:/[0:0:0:0:0:0:0:0]:8081] successfully (Velocity method)
+[08:39:21] [Netty epoll Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:8081
+[08:39:21] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1.61s)!
+[08:39:22] [Netty epoll Worker #0/INFO] [eaglerxserver]: You are running the latest version of EaglerXServer
+[08:42:55] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] Fode (/127.144.106.13:41577) has connected
+[08:42:55] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has connected
+[08:43:32] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] Fode (/127.144.106.13:41577) has disconnected: An internal error occurred in your connection.
+[08:43:32] [Netty epoll Worker #2/ERROR] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] Fode (/127.144.106.13:41577): read timed out
+[08:43:32] [Netty epoll Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] Fode -> lobby has disconnected
+[09:10:49] [Shutdown thread/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[09:10:49] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25577
+[09:10:49] [Shutdown thread/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:8081
+[09:10:49] [EaglercraftXServer - Task Executor #4/INFO] [eaglerxserver]: Disabling EaglercraftXServer 1.0.7...
+[09:10:49] [EaglercraftXServer - Task Executor #4/INFO] [eaglerxserver]: Disconnecting from skin cache database "jdbc:sqlite:eagler_skins_cache.db"...
+[09:10:49] [EaglercraftXServer - Task Executor #4/INFO] [eaglerxserver]: Disconnected from skin cache database successfully!
+[09:10:49] [EaglercraftXServer - Task Executor #4/INFO] [eaglerweb]: Shutting down, please wait...
+[09:10:49] [EaglercraftXServer - Task Executor #4/INFO] [eaglerxrewind-1-5]: EaglerXRewind protocol for Eaglercraft 1.5.2 has been unregistered
