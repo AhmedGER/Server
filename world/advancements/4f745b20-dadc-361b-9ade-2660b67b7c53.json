@@ -41,6 +41,19 @@
     },
     "done": true
   },
+  "minecraft:adventure/kill_a_mob": {
+    "criteria": {
+      "minecraft:skeleton": "2025-11-04 20:17:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:skeleton": "2025-11-04 20:17:31 +0000",
+      "minecraft:zombie": "2025-11-04 20:18:09 +0000"
+    },
+    "done": false
+  },
   "minecraft:recipes/redstone/warped_fence_gate": {
     "criteria": {
       "has_planks": "2025-11-02 19:41:46 +0000"

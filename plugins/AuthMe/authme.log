@@ -3056,3 +3056,42 @@
 [11-04 19:14:05]: [FINE] §7§asoonk§7, §a.abdoofive§7.
 [11-04 19:14:05]: [FINE] soonk logged in 127.89.139.49
 [11-04 19:15:27]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
+[11-04 19:16:34]: [INFO] SQLite Setup finished
+[11-04 19:16:34]: [INFO] No supported permissions system found! Permissions are disabled!
+[11-04 19:16:34]: [WARN] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
+[11-04 19:16:35]: [INFO] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
+[11-04 19:16:41]: [INFO] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[11-04 19:16:41]: [WARN] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[11-04 19:16:41]: [INFO] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[11-04 19:16:42]: [WARN] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[11-04 19:16:42]: java.io.FileNotFoundException: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)
+	at fr.xephi.authme.libs.com.maxmind.db.BufferHolder.<init>(BufferHolder.java:20)
+	at fr.xephi.authme.libs.com.maxmind.db.Reader.<init>(Reader.java:121)
+	at fr.xephi.authme.service.GeoIpService.startReading(GeoIpService.java:179)
+	at fr.xephi.authme.service.GeoIpService.updateDatabase(GeoIpService.java:150)
+	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftTask.run(CraftTask.java:101)
+	at org.bukkit.craftbukkit.v1_16_R3.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:54)
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[11-04 19:17:45]: [FINE] The user soonk has 2 accounts:
+[11-04 19:17:45]: [FINE] §7§asoonk§7, §a.abdoofive§7.
+[11-04 19:17:45]: [FINE] soonk logged in 127.89.139.49
+[11-04 19:18:36]: [FINE] The user .abdoofive has 2 accounts:
+[11-04 19:18:36]: [FINE] §7§asoonk§7, §a.abdoofive§7.
+[11-04 19:18:36]: [FINE] .abdoofive logged in 127.89.139.49
+[11-04 19:18:41]: [FINE] SIGMAxox logged in 127.105.247.58
+[11-04 20:03:56]: [FINE] The user soonk has 2 accounts:
+[11-04 20:03:56]: [FINE] §7§asoonk§7, .abdoofive.
+[11-04 20:03:56]: [FINE] soonk logged in 127.89.139.49
+[11-04 20:12:13]: [FINE] SIGMAxox logged in 127.212.224.137
+[11-04 20:22:52]: [FINE] The user .abdoofive has 2 accounts:
+[11-04 20:22:52]: [FINE] §7§asoonk§7, §a.abdoofive§7.
+[11-04 20:22:52]: [FINE] .abdoofive logged in 127.89.139.49
+[11-04 20:25:18]: [INFO] AuthMe 5.6.0-bCUSTOM disabled!
