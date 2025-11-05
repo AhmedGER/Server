@@ -1,55 +1,16 @@
 {
-  "minecraft:adventure/sleep_in_bed": {
+  "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "slept_in_bed": "2025-10-31 09:21:06 +0000"
+      "minecraft:frozen_river": "2025-10-31 06:17:07 +0000",
+      "minecraft:river": "2025-10-31 06:17:06 +0000",
+      "minecraft:snowy_plains": "2025-10-31 06:22:20 +0000",
+      "minecraft:plains": "2025-10-31 06:15:29 +0000"
     },
-    "done": true
-  },
-  "minecraft:recipes/decorations/item_frame": {
-    "criteria": {
-      "has_leather": "2025-10-31 07:10:48 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/leather_chestplate": {
-    "criteria": {
-      "has_leather": "2025-10-31 07:10:48 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/dark_oak_boat": {
-    "criteria": {
-      "in_water": "2025-10-31 06:17:06 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/birch_boat": {
-    "criteria": {
-      "in_water": "2025-10-31 06:17:06 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/acacia_boat": {
-    "criteria": {
-      "in_water": "2025-10-31 06:17:06 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/oak_boat": {
-    "criteria": {
-      "in_water": "2025-10-31 06:17:06 +0000"
-    },
-    "done": true
+    "done": false
   },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_by_something": "2025-10-31 06:16:48 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/leather_boots": {
-    "criteria": {
-      "has_leather": "2025-10-31 07:10:48 +0000"
     },
     "done": true
   },
@@ -65,9 +26,33 @@
     },
     "done": true
   },
-  "minecraft:recipes/combat/leather_helmet": {
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
-      "has_leather": "2025-10-31 07:10:48 +0000"
+      "in_water": "2025-10-31 06:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-31 06:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2025-10-31 06:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2025-10-31 06:17:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2025-10-31 07:10:47 +0000"
     },
     "done": true
   },
@@ -77,18 +62,9 @@
     },
     "done": true
   },
-  "minecraft:adventure/adventuring_time": {
+  "minecraft:recipes/decorations/item_frame": {
     "criteria": {
-      "minecraft:snowy_tundra": "2025-10-31 06:22:20 +0000",
-      "minecraft:frozen_river": "2025-10-31 06:17:07 +0000",
-      "minecraft:river": "2025-10-31 06:17:06 +0000",
-      "minecraft:plains": "2025-10-31 06:15:29 +0000"
-    },
-    "done": false
-  },
-  "minecraft:recipes/misc/bone_meal": {
-    "criteria": {
-      "has_bone": "2025-10-31 07:10:47 +0000"
+      "has_leather": "2025-10-31 07:10:48 +0000"
     },
     "done": true
   },
@@ -98,5 +74,35 @@
     },
     "done": true
   },
-  "DataVersion": 2586
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2025-10-31 07:10:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2025-10-31 07:10:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2025-10-31 07:10:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2025-10-31 09:21:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2025-11-05 10:46:12 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
 }
