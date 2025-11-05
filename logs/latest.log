@@ -1,625 +1,105 @@
-[20:26:19] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[20:26:19] [main/INFO]: Reloading ResourceManager: Default, bukkit
-[20:26:19] [Worker-Main-2/INFO]: Loaded 7 recipes
-[20:26:20] [Server thread/INFO]: Starting minecraft server version 1.16.5
-[20:26:20] [Server thread/INFO]: Loading properties
-[20:26:20] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
-[20:26:21] [Server thread/INFO]: Debug logging is disabled
-[20:26:21] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:26:21] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:26:21] [Server thread/INFO]: Default game type: SURVIVAL
-[20:26:21] [Server thread/INFO]: Generating keypair
-[20:26:21] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:26:21] [Server thread/INFO]: Using epoll channel type
-[20:26:22] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[20:26:24] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
-[20:26:24] [Server thread/ERROR]: Could not load 'plugins/TreeChop-1.2.07.jar' in folder 'plugins'
-org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.17
-	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:361) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[20:26:25] [Server thread/ERROR]: Fatal error trying to convert OneHitOre v1.0:me/bebo/oneHitOre/OneHitOre.class
-java.lang.IllegalArgumentException: Unsupported class file major version 65
-	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:196) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:177) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:163) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.util.Commodore.convert(Commodore.java:171) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:384) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:119) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
-	at java.lang.Class.forName0(Native Method) ~[?:?]
-	at java.lang.Class.forName(Class.java:536) ~[?:?]
-	at java.lang.Class.forName(Class.java:515) ~[?:?]
-	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[20:26:25] [Server thread/INFO]: [InstantRestock] Loading InstantRestock v2.5.3
-[20:26:25] [Server thread/INFO]: [CraftControl-RCON] Loading CraftControl-RCON v1.4.0
-[20:26:25] [Server thread/INFO]: [OpenInv] Loading OpenInv v4.1.8
-[20:26:25] [Server thread/INFO]: [TrollV4] Loading TrollV4 v4.5.30
-[20:26:25] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-bCUSTOM
-[20:26:25] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
-[20:26:25] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
-[20:26:25] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[20:26:25] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[20:26:25] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[20:26:26] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[20:26:26] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[20:26:26] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[20:26:26] [Server thread/INFO]: [OneHitOre] Loading OneHitOre v1.0
-[20:26:26] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[20:26:26] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[20:26:27] [Server thread/INFO]: [floodgate] Took 451ms to boot Floodgate
-[20:26:27] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
-[20:26:27] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
-[20:26:27] [Server thread/INFO]: [voicechat] Loading voicechat v2.5.35
-[20:26:27] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.8.2
-[20:26:27] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
-[20:26:27] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.9.0-SNAPSHOT
-[20:26:27] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[20:26:27] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[20:26:27] [Server thread/INFO]: [dynmap] Loading dynmap v3.6-899
-[20:26:27] [Server thread/INFO]: [dynmap] version=git-Paper-794 (MC: 1.16.5)
-[20:26:27] [Server thread/INFO]: [dynmap] Mod Support API available
-[20:26:27] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:26:27] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[20:26:27] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[20:26:28] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
-[20:26:28] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
-[20:26:28] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
-[20:26:28] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:26:28] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:26:28] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:26:28] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:26:28] [Server thread/INFO]: Preparing level "world"
-[20:26:28] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[20:26:29] [Server thread/INFO]: Preparing spawn area: 0%
-[20:26:29] [Server thread/INFO]: Preparing spawn area: 0%
-[20:26:29] [Server thread/INFO]: Time elapsed: 634 ms
-[20:26:29] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[20:26:29] [Server thread/INFO]: Preparing spawn area: 0%
-[20:26:29] [Server thread/INFO]: Preparing spawn area: 58%
-[20:26:30] [Server thread/INFO]: Time elapsed: 617 ms
-[20:26:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[20:26:30] [Server thread/INFO]: Preparing spawn area: 0%
-[20:26:30] [Server thread/INFO]: Time elapsed: 435 ms
-[20:26:30] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.5.3
-[20:26:30] [Server thread/INFO]: [InfiniteVillagerTrades] Enabled InstantRestock!
-[20:26:30] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
-[20:26:30] [Server thread/INFO]: [OpenInv] Enabling OpenInv v4.1.8
-[20:26:30] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
-[20:26:30] [Server thread/INFO]: [TrollV4] We have detected that there is at least one missing needed File, we will now start to download it.
-[20:26:30] [Server thread/INFO]: [TrollV4] Downloading rick.nbs!
-[20:26:30] [Server thread/INFO]: [TrollV4] Downloading giorno.nbs!
-[20:26:30] [Server thread/INFO]: [TrollV4]  
-[20:26:30] [Server thread/INFO]: [TrollV4] LibsDisguises is not installed or not enabled,
-[20:26:30] [Server thread/INFO]: [TrollV4] please install it and restart the server.
-[20:26:30] [Server thread/INFO]: [TrollV4]  
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Created the language folder!
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: de_de
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: en_us
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: es_es
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: id_id
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: it_it
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: ru_ru
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
-[20:26:31] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloaded Language: zh_cn
-[20:26:31] [Server thread/INFO]: [TrollV4] -----------------------------------
-[20:26:31] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
-[20:26:31] [Server thread/INFO]: [TrollV4] In case of errors please report:
-[20:26:31] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
-[20:26:31] [Server thread/INFO]: [TrollV4] Otherwise have fun!
-[20:26:31] [Server thread/INFO]: [TrollV4] ------------------------------------
-[20:26:31] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
-[20:26:31] [Server thread/INFO]: [TrollV4] Server Version: 1.16.5
-[20:26:31] [Server thread/INFO]: [TrollV4] Server Software: PAPER
-[20:26:31] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
-[20:26:31] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-bCUSTOM
-[20:26:31] [Server thread/INFO]: [AuthMe] SQLite Setup finished
-[20:26:31] [Server thread/INFO]: [AuthMe] No supported permissions system found! Permissions are disabled!
-[20:26:32] [Server thread/WARN]: [AuthMe] WARNING! The protectInventory feature requires ProtocolLib! Disabling it...
-[20:26:32] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0 build n.CUSTOM successfully enabled!
-[20:26:32] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[20:26:32] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[20:26:32] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.16.4-1.16.5 (754)
-[20:26:32] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
-[20:26:32] [Server thread/ERROR]: Error occurred while enabling OneHitOre v1.0 (Is it up to date?)
-java.lang.NoSuchFieldError: Class org.bukkit.Material does not have member field 'org.bukkit.Material DEEPSLATE_COAL_ORE'
-	at me.bebo.oneHitOre.OneHitOre.registerOres(OneHitOre.java:35) ~[?:?]
-	at me.bebo.oneHitOre.OneHitOre.onEnable(OneHitOre.java:20) ~[?:?]
-	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:263) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:370) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:500) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugin(CraftServer.java:518) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.enablePlugins(CraftServer.java:432) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.loadWorld(MinecraftServer.java:599) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:298) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[20:26:32] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
-[20:26:32] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
-[20:26:32] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[20:26:32] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[20:26:32] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.35
-[20:26:32] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.16.5-R0.1
-[20:26:32] [Server thread/INFO]: [voicechat] Compatibility version 18
-[20:26:32] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[20:26:32] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[20:26:32] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[20:26:32] [Server thread/INFO]: [TAB] Enabled in 123ms
-[20:26:32] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
-[20:26:33] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
-[20:26:33] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[20:26:33] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[20:26:33] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[20:26:34] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[20:26:34] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[20:26:34] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[20:26:34] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[20:26:35] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[20:26:35] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[20:26:35] [Server thread/INFO]: [dynmap] version 3.6-899 is enabled - core version 3.6-899
-[20:26:35] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[20:26:35] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[20:26:35] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[20:26:35] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[20:26:35] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[20:26:35] [Server thread/INFO]: [dynmap] Loaded 470 pending tile renders for world 'world'
-[20:26:35] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[20:26:35] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[20:26:35] [Server thread/INFO]: [dynmap] Enabled
-[20:26:35] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[20:26:35] [Server thread/INFO]: [Geyser-Spigot] 
-[20:26:35] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
-[20:26:35] [Server thread/INFO]: [Geyser-Spigot] 
-[20:26:35] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[20:26:38] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[20:26:38] [Server thread/INFO]: [Geyser-Spigot] Done (2.843s)! Run /geyser help for help!
-[20:26:38] [Server thread/INFO]: Starting remote control listener
-[20:26:38] [Server thread/INFO]: Thread RCON Listener started
-[20:26:38] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[20:26:38] [Server thread/INFO]: Running delayed init tasks
-[20:26:38] [Craft Scheduler Thread - 3/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
-[20:26:38] [Craft Scheduler Thread - 3/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
-[20:26:38] [Craft Scheduler Thread - 3/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
-[20:26:38] [Craft Scheduler Thread - 6/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[20:26:38] [Server thread/INFO]: [voicechat] Loading plugins
-[20:26:38] [Craft Scheduler Thread - 3/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
-[20:26:38] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[20:26:38] [Server thread/INFO]: [voicechat] Initializing plugins
-[20:26:38] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[20:26:38] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[20:26:38] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[20:26:38] [Server thread/INFO]: Done (18.082s)! For help, type "help"
-[20:26:38] [Server thread/INFO]: Timings Reset
-[20:26:38] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.8.2[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mcf773a3[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
-[20:26:38] [Craft Scheduler Thread - 2/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
-[20:26:39] [Dynmap Render Thread/INFO]: [dynmap] Loading default resource pack
-[20:26:39] [Craft Scheduler Thread - 1/INFO]: [TrollV4] TrollV4 has no update
-[20:36:39] [Craft Scheduler Thread - 11/INFO]: [TrollV4] TrollV4 has no update
-[20:43:08] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[20:43:08] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[20:43:08] [Server thread/INFO]: soonk joined the game
-[20:43:08] [Server thread/INFO]: soonk[/127.89.139.49:54843] logged in with entity id 137 at ([world]249.78504053951562, 87.0, -293.78172195658357)
-[20:43:23] [Server thread/INFO]: soonk issued server command: /login
-[20:43:27] [Craft Scheduler Thread - 14/INFO]: [AuthMe] The user soonk has 2 accounts:
-[20:43:27] [Craft Scheduler Thread - 14/INFO]: [AuthMe] soonk, .abdoofive.
-[20:43:27] [Craft Scheduler Thread - 14/INFO]: [AuthMe] soonk logged in 127.89.139.49
-[20:44:46] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:44:46] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[20:44:46] [Server thread/INFO]: SIGMAxox joined the game
-[20:44:46] [Server thread/INFO]: SIGMAxox[/127.212.224.137:33383] logged in with entity id 347 at ([world]247.77463878651488, 84.0, -301.6219479880697)
-[20:44:47] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[20:44:47] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[20:44:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:44:51] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:44:51] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[20:45:15] [Craft Scheduler Thread - 17/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[20:45:23] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[20:45:23] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[20:46:39] [Craft Scheduler Thread - 22/INFO]: [TrollV4] TrollV4 has no update
-[20:46:53] [Async Chat Thread - #0/INFO]: <soonk> مود الكريبر
-[20:47:01] [Async Chat Thread - #0/INFO]: <SIGMAxox> مش شغال
-[20:47:06] [Async Chat Thread - #0/INFO]: <soonk> عالاف
-[20:47:08] [Async Chat Thread - #0/INFO]: <SIGMAxox> فيه مشكلة
-[20:47:10] [Async Chat Thread - #0/INFO]: <soonk> عارف
-[20:47:24] [Async Chat Thread - #0/INFO]: <SIGMAxox> دحل الناس
-[20:47:31] [Server thread/INFO]: soonk issued server command: /gamemode survival
-[20:47:31] [Server thread/INFO]: [soonk: Set own game mode to Survival Mode]
-[20:47:42] [Async Chat Thread - #0/INFO]: <SIGMAxox> المايك شغال
-[20:47:56] [Server thread/INFO]: soonk issued server command: /gamemode creative
-[20:47:56] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
-[20:48:40] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[20:48:40] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[20:48:40] [Server thread/INFO]: SIGMAxox left the game
-[20:48:43] [User Authenticator #3/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:48:43] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[20:48:43] [Server thread/INFO]: SIGMAxox joined the game
-[20:48:43] [Server thread/INFO]: SIGMAxox[/127.212.224.137:57497] logged in with entity id 615 at ([world]243.46136487116814, 84.0, -301.0184944713564)
-[20:48:43] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[20:48:43] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[20:48:51] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:48:52] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[20:48:52] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[20:49:02] [Craft Scheduler Thread - 24/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[20:49:25] [Server thread/INFO]: soonk has made the advancement [Diamonds!]
-[20:49:39] [Async Chat Thread - #1/INFO]: <soonk> اول واحد يدخل ياخد شلد ودايمونده
-[20:54:54] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[20:54:54] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[20:56:05] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival
-[20:56:05] [Server thread/INFO]: [SIGMAxox: Set own game mode to Survival Mode]
-[20:56:19] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival soonk
-[20:56:19] [Server thread/INFO]: [SIGMAxox: Set soonk's game mode to Survival Mode]
-[20:56:39] [Craft Scheduler Thread - 29/INFO]: [TrollV4] TrollV4 has no update
-[20:57:37] [Server thread/INFO]: SIGMAxox was shot by Skeleton
-[20:57:53] [User Authenticator #4/INFO]: UUID of player hssin11 is b3dc74e0-d71a-31e8-8d25-23d63a2d7b22
-[20:57:53] [TAB Processing Thread/INFO]: [TAB] [WARN] Player hssin11's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[20:57:53] [Server thread/INFO]: hssin11 joined the game
-[20:57:53] [Server thread/INFO]: hssin11[/127.161.60.88:40555] logged in with entity id 1160 at ([world]23.5, 63.0, -302.5)
-[20:58:17] [Server thread/INFO]: SIGMAxox issued server command: /gamemode creative
-[20:58:17] [Server thread/INFO]: [SIGMAxox: Set own game mode to Creative Mode]
-[20:58:18] [Server thread/INFO]: soonk issued server command: /spawnpoint hssin11
-[20:58:18] [Server thread/INFO]: [soonk: Set spawn point to 250, 87, -295 [0.0] in minecraft:overworld for hssin11]
-[20:58:37] [Server thread/INFO]: soonk issued server command: /tps hssin11 soonk
-[20:58:59] [Server thread/INFO]: soonk issued server command: /tp hssin11 soonk
-[20:58:59] [Server thread/INFO]: [soonk: Teleported hssin11 to soonk]
-[20:58:59] [Server thread/INFO]: SIGMAxox issued server command: /tp hssin11 SIGMAxox
-[20:58:59] [Server thread/INFO]: [SIGMAxox: Teleported hssin11 to SIGMAxox]
-[20:59:11] [Async Chat Thread - #2/INFO]: <soonk> يسوي لوجن
-[20:59:31] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival
-[20:59:31] [Server thread/INFO]: [SIGMAxox: Set own game mode to Survival Mode]
-[20:59:40] [Async Chat Thread - #2/INFO]: <SIGMAxox> هلا
-[21:00:54] [Server thread/INFO]: soonk was shot by Stray
-[21:02:24] [Server thread/INFO]: soonk issued server command: /gamemode survival hssin11
-[21:03:50] [Server thread/INFO]: SIGMAxox was blown up by Creeper
-[21:03:56] [Async Chat Thread - #3/INFO]: <soonk> ههههههههه
-[21:03:59] [Server thread/INFO]: [AuthMe] hssin11 registered 127.161.60.88
-[21:03:59] [Craft Scheduler Thread - 37/INFO]: [AuthMe] hssin11 logged in 127.161.60.88
-[21:04:05] [Async Chat Thread - #3/INFO]: <SIGMAxox> اخير
-[21:04:33] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[21:04:33] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[21:04:58] [Async Chat Thread - #3/INFO]: <soonk> هلاا
-[21:05:17] [Server thread/INFO]: SIGMAxox has made the advancement [Best Friends Forever]
-[21:06:22] [Server thread/INFO]: hssin11 has made the advancement [Diamonds!]
-[21:06:39] [Craft Scheduler Thread - 39/INFO]: [TrollV4] TrollV4 has no update
-[21:06:40] [Async Chat Thread - #4/INFO]: <soonk> روح ظبط حالك
-[21:06:41] [Server thread/INFO]: SIGMAxox issued server command: /plugins
-[21:06:59] [Server thread/INFO]: soonk issued server command: /spawnpoint hssin11
-[21:06:59] [Server thread/INFO]: [soonk: Set spawn point to 250, 87, -295 [0.0] in minecraft:overworld for hssin11]
-[21:08:51] [Server thread/INFO]: hssin11 lost connection: Disconnected
-[21:08:51] [Server thread/INFO]: [voicechat] Disconnecting client hssin11
-[21:08:51] [Server thread/INFO]: hssin11 left the game
-[21:10:24] [Async Chat Thread - #5/INFO]: <SIGMAxox> كلمني فويس
-[21:10:41] [Async Chat Thread - #5/INFO]: <soonk> لسا مش حملتو
-[21:10:46] [Async Chat Thread - #5/INFO]: <soonk> هحمله
-[21:11:19] [Server thread/INFO]: soonk lost connection: Timed out
-[21:11:19] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[21:11:19] [Server thread/INFO]: soonk left the game
-[21:11:42] [Server thread/INFO]: SIGMAxox issued server command: /troll SIGMAxox
-[21:11:42] [Server thread/WARN]: [TrollV4] Loaded class org.objectweb.asm.ClassWriter from floodgate v2.2.5-SNAPSHOT (b121-55a85ec) which is not a depend, softdepend or loadbefore of this plugin.
-[21:11:57] [Server thread/INFO]: SIGMAxox was struck by lightning
-[21:12:04] [Server thread/INFO]: SIGMAxox was struck by lightning
-[21:12:09] [Server thread/INFO]: SIGMAxox was struck by lightning
-[21:12:16] [Server thread/INFO]: SIGMAxox was struck by lightning
-[21:12:22] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:12:22] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:12:22] [Server thread/INFO]: SIGMAxox left the game
-[21:12:24] [User Authenticator #5/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:12:24] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:12:24] [Server thread/INFO]: SIGMAxox joined the game
-[21:12:24] [Server thread/INFO]: SIGMAxox[/127.212.224.137:58763] logged in with entity id 2355 at ([world]247.0558118675719, 85.0, -291.1639332589416)
-[21:12:25] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[21:12:25] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[21:12:27] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:12:28] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:12:28] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[21:12:39] [Craft Scheduler Thread - 46/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[21:14:25] [Server thread/INFO]: SIGMAxox issued server command: /kill SIGMAxox
-[21:14:25] [Server thread/INFO]: SIGMAxox fell out of the world
-[21:14:25] [Server thread/INFO]: [SIGMAxox: Killed SIGMAxox]
-[21:14:30] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:30] [RCON Client /127.107.177.224 #2/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:30] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:30] [RCON Client /127.107.177.224 #3/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:30] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:30] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:30] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:30] [RCON Client /127.107.177.224 #5/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Client /127.107.177.224 #6/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:31] [RCON Client /127.107.177.224 #4/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Client /127.107.177.224 #7/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:31] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:31] [RCON Client /127.107.177.224 #8/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Client /127.107.177.224 #9/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:31] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:31] [RCON Client /127.107.177.224 #10/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:32] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:32] [RCON Client /127.107.177.224 #11/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:32] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:32] [RCON Client /127.107.177.224 #12/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:32] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:32] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:32] [RCON Client /127.107.177.224 #13/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:32] [RCON Client /127.107.177.224 #14/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:14:32] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
-[21:14:32] [RCON Client /127.107.177.224 #15/INFO]: Thread RCON Client /127.107.177.224 shutting down
-[21:15:39] [User Authenticator #6/INFO]: UUID of player hssin11 is b3dc74e0-d71a-31e8-8d25-23d63a2d7b22
-[21:15:39] [TAB Processing Thread/INFO]: [TAB] [WARN] Player hssin11's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:15:39] [Server thread/INFO]: hssin11 joined the game
-[21:15:39] [Server thread/INFO]: hssin11[/127.161.60.88:48235] logged in with entity id 2747 at ([world]255.9438513847498, 84.0, -293.7834023415873)
-[21:15:40] [Server thread/INFO]: [voicechat] Received secret request of hssin11 (18)
-[21:15:40] [Server thread/INFO]: [voicechat] Sent secret to hssin11
-[21:15:49] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player b3dc74e0-d71a-31e8-8d25-23d63a2d7b22
-[21:15:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player b3dc74e0-d71a-31e8-8d25-23d63a2d7b22
-[21:15:50] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player hssin11 (b3dc74e0-d71a-31e8-8d25-23d63a2d7b22) successfully connected to voice chat
-[21:16:00] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[21:16:00] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[21:16:39] [Craft Scheduler Thread - 51/INFO]: [TrollV4] TrollV4 has no update
-[21:17:23] [Async Chat Thread - #6/INFO]: <SIGMAxox> حطيط فويس
-[21:17:55] [Server thread/INFO]: SIGMAxox issued server command: /gamemode c
-[21:18:01] [Server thread/INFO]: SIGMAxox issued server command: /gamemode creative
-[21:18:01] [Server thread/INFO]: [SIGMAxox: Set own game mode to Creative Mode]
-[21:18:27] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival
-[21:18:27] [Server thread/INFO]: [SIGMAxox: Set own game mode to Survival Mode]
-[21:19:27] [Async Chat Thread - #7/INFO]: <SIGMAxox> افتح المسنجر
-[21:19:57] [Async Chat Thread - #7/INFO]: <SIGMAxox> بعتلك رابط
-[21:20:57] [Server thread/INFO]: hssin11 lost connection: Disconnected
-[21:20:57] [Server thread/INFO]: [voicechat] Disconnecting client hssin11
-[21:20:57] [Server thread/INFO]: hssin11 left the game
-[21:21:09] [Server thread/INFO]: SIGMAxox hit the ground too hard
-[21:21:21] [Server thread/INFO]: SIGMAxox issued server command: /troll
-[21:21:29] [User Authenticator #7/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[21:21:29] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:21:29] [Server thread/INFO]: soonk joined the game
-[21:21:29] [Server thread/INFO]: soonk[/127.89.139.49:49305] logged in with entity id 3152 at ([world]261.57640352821124, 84.0, -291.30167793957537)
-[21:21:42] [Server thread/INFO]: SIGMAxox fell from a high place
-[21:21:48] [Craft Scheduler Thread - 56/INFO]: [AuthMe] The user soonk has 2 accounts:
-[21:21:48] [Craft Scheduler Thread - 56/INFO]: [AuthMe] soonk, .abdoofive.
-[21:21:48] [Craft Scheduler Thread - 56/INFO]: [AuthMe] soonk logged in 127.89.139.49
-[21:22:07] [Server thread/INFO]: soonk lost connection: Disconnected
-[21:22:07] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[21:22:07] [Server thread/INFO]: soonk left the game
-[21:26:39] [Craft Scheduler Thread - 61/INFO]: [TrollV4] TrollV4 has no update
-[21:27:07] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[21:27:07] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[21:27:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player 53dcd5fe-87eb-388f-8693-91406d777c77 timed out
-[21:27:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Reconnecting player SIGMAxox
-[21:27:30] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Sent secret to SIGMAxox
-[21:27:32] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:27:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:27:33] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[21:34:24] [Server thread/INFO]: SIGMAxox issued server command: /skin url https://www.minecraftskins.com/uploads/skins/2025/08/19/sigma-23479435.png?v936
-[21:34:51] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:34:51] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:34:51] [Server thread/INFO]: SIGMAxox left the game
-[21:35:01] [User Authenticator #8/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:35:01] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:35:01] [Server thread/INFO]: SIGMAxox joined the game
-[21:35:01] [Server thread/INFO]: SIGMAxox[/127.212.224.137:43987] logged in with entity id 4132 at ([world]250.81606371754395, 80.0, -316.3961242979368)
-[21:35:10] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[21:35:10] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[21:35:15] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:35:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:35:16] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[21:35:28] [Craft Scheduler Thread - 68/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[21:35:58] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:35:58] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:35:58] [Server thread/INFO]: SIGMAxox left the game
-[21:36:01] [User Authenticator #8/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:36:01] [Server thread/INFO]: SIGMAxox joined the game
-[21:36:01] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:36:01] [Server thread/INFO]: SIGMAxox[/127.212.224.137:36453] logged in with entity id 4188 at ([world]261.90028811635636, 81.0, -319.6788464722882)
-[21:36:34] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:36:34] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:36:34] [Server thread/INFO]: SIGMAxox left the game
-[21:36:38] [User Authenticator #8/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:36:38] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:36:38] [Server thread/INFO]: SIGMAxox joined the game
-[21:36:38] [Server thread/INFO]: SIGMAxox[/127.212.224.137:36579] logged in with entity id 4234 at ([world]261.90028811635636, 81.0, -319.6788464722882)
-[21:36:39] [Craft Scheduler Thread - 75/INFO]: [TrollV4] TrollV4 has no update
-[21:36:39] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[21:36:39] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[21:36:43] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:36:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:36:44] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[21:36:50] [Craft Scheduler Thread - 75/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[21:37:00] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[21:37:16] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[21:37:27] [User Authenticator #8/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:37:27] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@fe90e66[id=53dcd5fe-87eb-388f-8693-91406d777c77,name=SIGMAxox,properties={textures=[com.mojang.authlib.properties.Property@48b024bb]},legacy=false] (/127.212.224.137:44757): The same username is already playing on the server!
-[21:37:27] [Server thread/INFO]: com.mojang.authlib.GameProfile@fe90e66[id=53dcd5fe-87eb-388f-8693-91406d777c77,name=SIGMAxox,properties={textures=[com.mojang.authlib.properties.Property@48b024bb]},legacy=false] (/127.212.224.137:44757) lost connection: The same username is already playing on the server!
-[21:37:31] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:37:31] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:37:31] [Server thread/INFO]: SIGMAxox left the game
-[21:37:33] [User Authenticator #8/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:37:33] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:37:33] [Server thread/INFO]: SIGMAxox joined the game
-[21:37:33] [Server thread/INFO]: SIGMAxox[/127.212.224.137:46629] logged in with entity id 4291 at ([world]255.67330790646625, 80.0, -324.4012250876735)
-[21:37:42] [Craft Scheduler Thread - 79/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[21:37:55] [Server thread/INFO]: SIGMAxox issued server command: /skins
-[21:38:26] [Server thread/INFO]: SIGMAxox issued server command: /skins url https://www.minecraftskins.com/uploads/skins/2025/08/19/sigma-23479435.png?v936
-[21:38:49] [Server thread/INFO]: SIGMAxox issued server command: /skin url https://www.minecraftskins.com/uploads/skins/2025/08/19/sigma-23479435.png?v936
-[21:38:53] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:38:53] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:38:53] [Server thread/INFO]: SIGMAxox left the game
-[21:38:58] [User Authenticator #9/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:38:58] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:38:58] [Server thread/INFO]: SIGMAxox joined the game
-[21:38:58] [Server thread/INFO]: SIGMAxox[/127.212.224.137:59729] logged in with entity id 4381 at ([world]257.53930568583615, 80.0, -323.9657067640258)
-[21:38:59] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[21:38:59] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[21:39:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:39:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[21:39:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[21:39:08] [Craft Scheduler Thread - 85/INFO]: [AuthMe] SIGMAxox logged in 127.212.224.137
-[21:39:22] [User Authenticator #9/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[21:39:22] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[21:39:22] [Server thread/INFO]: soonk joined the game
-[21:39:22] [Server thread/INFO]: soonk[/127.89.139.49:54695] logged in with entity id 4406 at ([world]254.9910474376771, 84.0, -292.09897148268703)
-[21:39:41] [Craft Scheduler Thread - 84/INFO]: [AuthMe] The user soonk has 2 accounts:
-[21:39:41] [Craft Scheduler Thread - 84/INFO]: [AuthMe] soonk, .abdoofive.
-[21:39:41] [Craft Scheduler Thread - 84/INFO]: [AuthMe] soonk logged in 127.89.139.49
-[21:40:02] [Async Chat Thread - #8/INFO]: <soonk> اصددار السيرفر كام
-[21:40:10] [Async Chat Thread - #8/INFO]: <SIGMAxox> 1.16.5
-[21:40:19] [Async Chat Thread - #8/INFO]: <soonk> اخره 1.16.5
-[21:40:24] [Async Chat Thread - #8/INFO]: <SIGMAxox> عايزني احدثه
-[21:40:28] [Async Chat Thread - #8/INFO]: <soonk> لااا
-[21:40:29] [Server thread/INFO]: soonk was shot by Skeleton
-[21:40:39] [Async Chat Thread - #8/INFO]: <soonk> يعني اخره 1.16.5
-[21:40:42] [Server thread/INFO]: SIGMAxox was shot by Skeleton
-[21:40:47] [Async Chat Thread - #8/INFO]: <SIGMAxox> لا
-[21:40:57] [Server thread/INFO]: soonk issued server command: /gamemode creative SIGMAxox
-[21:40:57] [Server thread/INFO]: [soonk: Set SIGMAxox's game mode to Creative Mode]
-[21:41:00] [Server thread/INFO]: soonk was shot by Skeleton
-[21:41:05] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[21:41:05] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[21:41:09] [Server thread/INFO]: soonk issued server command: /gamemode creative soonk
-[21:41:09] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
-[21:41:46] [Async Chat Thread - #8/INFO]: <soonk> امال اخره كام
-[21:42:03] [Async Chat Thread - #8/INFO]: <SIGMAxox> اخر اي حاجة انت عايزها
-[21:42:16] [Async Chat Thread - #8/INFO]: <soonk> يعني اصدار السيرفر ده الرسمي اي
-[21:42:35] [Async Chat Thread - #8/INFO]: <SIGMAxox> لا
-[21:42:44] [Async Chat Thread - #8/INFO]: <SIGMAxox> دا احسن اصدار ثابت
-[21:42:45] [Async Chat Thread - #8/INFO]: <soonk> اصداره الرسمي كام
-[21:43:02] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[21:43:02] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[21:43:02] [Server thread/INFO]: SIGMAxox left the game
-[21:43:37] [Server thread/INFO]: soonk lost connection: Disconnected
-[21:43:37] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[21:43:37] [Server thread/INFO]: soonk left the game
-[21:46:39] [Craft Scheduler Thread - 91/INFO]: [TrollV4] TrollV4 has no update
-[21:56:39] [Craft Scheduler Thread - 94/INFO]: [TrollV4] TrollV4 has no update
-[21:59:01] [RCON Listener #1/INFO]: Thread RCON Client /127.212.224.137 started
-[21:59:03] [RCON Client /127.212.224.137 #16/INFO]: Thread RCON Client /127.212.224.137 shutting down
-[21:59:03] [RCON Listener #1/INFO]: Thread RCON Client /127.212.224.137 started
-[21:59:11] [RCON Listener #1/INFO]: Thread RCON Client /127.212.224.137 started
-[21:59:12] [RCON Client /127.212.224.137 #17/INFO]: Thread RCON Client /127.212.224.137 shutting down
-[21:59:14] [RCON Client /127.212.224.137 #18/INFO]: Thread RCON Client /127.212.224.137 shutting down
-[21:59:15] [RCON Listener #1/INFO]: Thread RCON Client /127.212.224.137 started
-[21:59:16] [RCON Client /127.212.224.137 #19/INFO]: Thread RCON Client /127.212.224.137 shutting down
-[21:59:17] [RCON Listener #1/INFO]: Thread RCON Client /127.212.224.137 started
-[21:59:21] [Server thread/INFO]: [Rcon: Stopping the server]
-[21:59:21] [Server thread/INFO]: Stopping server
-[21:59:21] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
-[21:59:21] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[21:59:21] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[21:59:21] [RCON Client /127.212.224.137 #20/WARN]: Unexpected exception while parsing console command "craftcontrolrcon console 536"
-java.lang.IllegalStateException: Asynchronous command dispatch!
-	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:15) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:801) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.lambda$executeRemoteCommand$3(DedicatedServer.java:733) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.lambda$executeFuture$0(IAsyncTaskHandler.java:48) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.execute(IAsyncTaskHandler.java:89) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
-	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeFuture(IAsyncTaskHandler.java:47) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeSync(IAsyncTaskHandler.java:64) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.executeRemoteCommand(DedicatedServer.java:712) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.RemoteControlSession.run(SourceFile:81) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[21:59:22] [RCON Client /127.212.224.137 #20/WARN]: Unexpected exception while parsing console command "craftcontrolrcon console 536"
-java.lang.IllegalStateException: Asynchronous command dispatch!
-	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:15) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:801) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.lambda$executeRemoteCommand$3(DedicatedServer.java:733) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.lambda$executeFuture$0(IAsyncTaskHandler.java:48) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.execute(IAsyncTaskHandler.java:89) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
-	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeFuture(IAsyncTaskHandler.java:47) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeSync(IAsyncTaskHandler.java:64) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.executeRemoteCommand(DedicatedServer.java:712) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.RemoteControlSession.run(SourceFile:81) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[21:59:22] [Server thread/INFO]: [dynmap] Disabled
-[21:59:22] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
-[21:59:22] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[21:59:22] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[21:59:22] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[21:59:22] [Server thread/INFO]: [TAB] Disabled in 0ms
-[21:59:22] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
-[21:59:22] [Server thread/INFO]: [voicechat] Disabling voicechat v2.5.35
-[21:59:22] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[21:59:22] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[21:59:22] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[21:59:22] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[21:59:22] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[21:59:22] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[21:59:22] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
-[21:59:22] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
-[21:59:22] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
-[21:59:22] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
-[21:59:22] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.1.8
-[21:59:22] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
-[21:59:22] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
-[21:59:22] [Server thread/INFO]: Saving players
-[21:59:22] [RCON Client /127.212.224.137 #20/WARN]: Unexpected exception while parsing console command "craftcontrolrcon console 536"
-java.lang.IllegalStateException: Asynchronous command dispatch!
-	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:15) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchCommand(CraftServer.java:801) ~[patched_1.16.5.jar:git-Paper-794]
-	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.dispatchServerCommand(CraftServer.java:788) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.lambda$executeRemoteCommand$3(DedicatedServer.java:733) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.lambda$executeFuture$0(IAsyncTaskHandler.java:48) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.execute(IAsyncTaskHandler.java:89) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
-	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeFuture(IAsyncTaskHandler.java:47) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.IAsyncTaskHandler.executeSync(IAsyncTaskHandler.java:64) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.DedicatedServer.executeRemoteCommand(DedicatedServer.java:712) ~[patched_1.16.5.jar:git-Paper-794]
-	at net.minecraft.server.v1_16_R3.RemoteControlSession.run(SourceFile:81) ~[patched_1.16.5.jar:git-Paper-794]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[21:59:22] [WebSocketConnectReadThread-283/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[21:59:22] [Server thread/INFO]: Saving worlds
-[21:59:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:59:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:59:22] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:59:22] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:59:22] [Server thread/INFO]: Flushing Chunk IO
-[21:59:22] [Server thread/INFO]: Closing Thread Pool
-[21:59:22] [Server thread/INFO]: Closing Server
+[00:00:54] [Craft Scheduler Thread - 61 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:10:54] [Craft Scheduler Thread - 64 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:20:54] [Craft Scheduler Thread - 67 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:30:54] [Craft Scheduler Thread - 70 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:40:54] [Craft Scheduler Thread - 73 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:50:54] [Craft Scheduler Thread - 76 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[00:52:49] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:52] [RCON Client /127.107.177.224 #33/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:52] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:52] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:53] [RCON Client /127.107.177.224 #34/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:54] [RCON Client /127.107.177.224 #35/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:54] [RCON Client /127.107.177.224 #36/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:54] [RCON Client /127.107.177.224 #37/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:55] [RCON Client /127.107.177.224 #38/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:55] [RCON Client /127.107.177.224 #39/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:55] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:56] [RCON Listener #1/INFO]: Thread RCON Client /127.107.177.224 started
+[00:52:57] [RCON Client /127.107.177.224 #40/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:58] [RCON Client /127.107.177.224 #41/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:58] [RCON Client /127.107.177.224 #42/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:58] [RCON Client /127.107.177.224 #43/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:58] [RCON Client /127.107.177.224 #44/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:58] [RCON Client /127.107.177.224 #45/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[00:52:59] [RCON Client /127.107.177.224 #46/INFO]: Thread RCON Client /127.107.177.224 shutting down
+[01:00:54] [Craft Scheduler Thread - 79 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[01:10:54] [Craft Scheduler Thread - 82 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[01:20:54] [Craft Scheduler Thread - 85 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[01:30:54] [Craft Scheduler Thread - 88 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[01:40:54] [Craft Scheduler Thread - 91 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[01:50:54] [Craft Scheduler Thread - 94 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:00:54] [Craft Scheduler Thread - 97 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:10:54] [Craft Scheduler Thread - 100 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:20:54] [Craft Scheduler Thread - 103 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:30:54] [Craft Scheduler Thread - 106 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:40:54] [Craft Scheduler Thread - 109 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[02:50:54] [Craft Scheduler Thread - 112 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:00:54] [Craft Scheduler Thread - 115 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:10:54] [Craft Scheduler Thread - 118 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:20:54] [Craft Scheduler Thread - 121 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:30:54] [Craft Scheduler Thread - 124 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:40:54] [Craft Scheduler Thread - 127 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[03:46:17] [Server thread/INFO]: Stopping server
+[03:46:17] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
+[03:46:17] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
+[03:46:17] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
+[03:46:17] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[03:46:17] [Server thread/WARN]: [AuthMe] ProtocolLib has been disabled, unhooking packet adapters!
+[03:46:17] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
+[03:46:17] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[03:46:17] [Server thread/INFO]: [TAB] Disabled in 1ms
+[03:46:17] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
+[03:46:17] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
+[03:46:17] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
+[03:46:17] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
+[03:46:17] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-bCUSTOM
+[03:46:17] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[03:46:17] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-bCUSTOM disabled!
+[03:46:17] [Server thread/INFO]: [TreeChop] Disabling TreeChop v1.2.07
+[03:46:17] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
+[03:46:17] [Server thread/INFO]: [OpenInv] Disabling OpenInv v4.1.8
+[03:46:17] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[03:46:17] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
+[03:46:17] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[03:46:17] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[03:46:17] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[03:46:17] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[03:46:17] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[03:46:17] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[03:46:17] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[03:46:17] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[03:46:17] [Server thread/INFO]: Saving players
+[03:46:17] [Server thread/INFO]: Saving worlds
+[03:46:17] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[03:46:17] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[03:46:17] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[03:46:17] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[03:46:18] [WebSocketConnectReadThread-11574/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Saved 1325 block chunks, 163 entity chunks, 0 poi chunks in world 'world' in 0.65s
+[03:46:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[03:46:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 13 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[03:46:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[03:46:18] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[03:46:18] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[03:46:18] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[03:46:18] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[03:46:18] [Server thread/INFO]: Flushing Chunk IO
+[03:46:18] [Server thread/INFO]: Closing Thread Pool
+[03:46:18] [Server thread/INFO]: Closing Server
