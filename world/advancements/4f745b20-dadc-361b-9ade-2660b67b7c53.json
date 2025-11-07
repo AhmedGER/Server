@@ -1,11 +1,13 @@
 {
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:snowy_slopes": "2025-11-07 13:25:13 +0000",
       "minecraft:frozen_river": "2025-11-02 19:27:25 +0000",
       "minecraft:forest": "2025-11-05 18:00:29 +0000",
       "minecraft:windswept_forest": "2025-11-04 21:43:19 +0000",
       "minecraft:river": "2025-11-02 19:24:23 +0000",
       "minecraft:swamp": "2025-11-05 17:54:21 +0000",
+      "minecraft:meadow": "2025-11-07 13:25:11 +0000",
       "minecraft:snowy_plains": "2025-11-02 19:27:26 +0000",
       "minecraft:windswept_gravelly_hills": "2025-11-05 14:59:35 +0000",
       "minecraft:windswept_hills": "2025-11-02 19:35:52 +0000",
@@ -904,6 +906,24 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2025-11-05 23:37:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2025-11-05 23:55:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2025-11-05 23:55:26 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_deepslate": {
     "criteria": {
       "has_cobbled_deepslate": "2025-11-05 23:56:59 +0000"
@@ -931,24 +951,6 @@
   "minecraft:recipes/building_blocks/polished_deepslate_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-11-05 23:56:59 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
-    "criteria": {
-      "has_deepslate_diamond_ore": "2025-11-05 23:55:26 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/birch_planks": {
-    "criteria": {
-      "has_logs": "2025-11-06 00:13:22 +0000"
-    },
-    "done": true
-  },
-  "minecraft:story/iron_tools": {
-    "criteria": {
-      "iron_pickaxe": "2025-11-05 23:37:16 +0000"
     },
     "done": true
   },
@@ -1000,12 +1002,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/birch_wood": {
-    "criteria": {
-      "has_log": "2025-11-06 00:13:22 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/deepslate_tile_wall_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-11-05 23:56:59 +0000"
@@ -1048,21 +1044,63 @@
     },
     "done": true
   },
-  "minecraft:adventure/throw_trident": {
-    "criteria": {
-      "shot_trident": "2025-11-06 00:07:22 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2025-11-05 23:56:59 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+  "minecraft:adventure/throw_trident": {
     "criteria": {
-      "has_deepslate_diamond_ore": "2025-11-05 23:55:26 +0000"
+      "shot_trident": "2025-11-06 00:07:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2025-11-06 00:13:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2025-11-06 00:13:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2025-11-07 15:07:10 +0000"
     },
     "done": true
   },
