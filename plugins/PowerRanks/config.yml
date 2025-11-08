@@ -20,10 +20,10 @@ storage:
     verbose: false
 chat:
   enabled: true
-  format: '&a[world]&r [usertag] [prefix] [player] [suffix]&r: [msg]'
+  format: '&r [usertag] [prefix] [player] [suffix]&r: [msg]'
 tablist_modification:
   enabled: true
-  format: '&a[world]&r [usertag] [prefix] [player] [suffix]'
+  format: '&r [usertag] [prefix] [player] [suffix]'
 nametagedit:
   prefix: '[usertag] [prefix]'
   suffix: '[suffix]'
