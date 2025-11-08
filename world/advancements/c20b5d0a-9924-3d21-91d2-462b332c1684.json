@@ -7,6 +7,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:cold_ocean": "2025-11-08 14:06:52 +0000",
       "minecraft:beach": "2025-11-05 15:20:19 +0000",
       "minecraft:old_growth_pine_taiga": "2025-11-05 16:09:06 +0000",
       "minecraft:forest": "2025-11-05 15:24:08 +0000",
@@ -230,6 +231,7 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "cooked_porkchop": "2025-11-08 06:25:53 +0000",
+      "apple": "2025-11-08 14:15:25 +0000",
       "bread": "2025-11-05 15:11:22 +0000",
       "cooked_chicken": "2025-11-08 08:01:08 +0000",
       "enchanted_golden_apple": "2025-11-06 00:00:43 +0000",
@@ -2182,6 +2184,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
+    "criteria": {
+      "has_basalt": "2025-11-08 08:19:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_basalt": {
+    "criteria": {
+      "has_basalt": "2025-11-08 08:19:44 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blackstone_stairs": {
     "criteria": {
       "has_blackstone": "2025-11-08 08:19:55 +0000"
@@ -2236,12 +2250,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
-    "criteria": {
-      "has_basalt": "2025-11-08 08:19:44 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2025-11-08 08:19:55 +0000"
@@ -2272,12 +2280,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/polished_basalt": {
-    "criteria": {
-      "has_basalt": "2025-11-08 08:19:44 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2025-11-08 08:19:55 +0000"
@@ -2287,6 +2289,12 @@
   "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2025-11-08 08:19:55 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2025-11-08 14:37:35 +0000"
     },
     "done": true
   },

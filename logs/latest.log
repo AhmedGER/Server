@@ -1,131 +1,157 @@
-[11:06:31] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[11:06:33] [ServerMain/INFO]: Loaded 1174 recipes
-[11:06:34] [ServerMain/INFO]: Loaded 1271 advancements
-[11:06:34] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[11:06:34] [Server thread/INFO]: Loading properties
-[11:06:34] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
-[11:06:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[11:06:35] [Server thread/INFO]: Using 4 threads for Netty based IO
-[11:06:35] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[13:21:52] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[13:21:55] [ServerMain/INFO]: Loaded 1174 recipes
+[13:21:55] [ServerMain/INFO]: Loaded 1271 advancements
+[13:21:55] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[13:21:55] [Server thread/INFO]: Loading properties
+[13:21:55] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
+[13:21:57] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[13:21:57] [Server thread/INFO]: Using 4 threads for Netty based IO
+[13:21:57] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[11:06:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[11:06:36] [Server thread/INFO]: Default game type: SURVIVAL
-[11:06:36] [Server thread/INFO]: Generating keypair
-[11:06:36] [Server thread/INFO]: Starting Minecraft server on *:25565
-[11:06:36] [Server thread/INFO]: Using epoll channel type
-[11:06:36] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[11:06:36] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[11:06:36] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[11:06:38] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
-[11:06:38] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
-[11:06:38] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[11:06:39] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[11:06:39] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[11:06:40] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[11:06:40] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[11:06:40] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[11:06:40] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[11:06:41] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[11:06:41] [Server thread/INFO]: [floodgate] Took 419ms to boot Floodgate
-[11:06:41] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
-[11:06:41] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
-[11:06:41] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[11:06:41] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[11:06:41] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
-[11:06:41] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
-[11:06:41] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
-[11:06:42] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.8.2
-[11:06:42] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
-[11:06:43] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
-[11:06:43] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
-[11:06:43] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
-[11:06:43] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
-[11:06:43] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
-[11:06:43] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
-[11:06:43] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.6-899
-[11:06:43] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
-[11:06:43] [Server thread/INFO]: [dynmap] Mod Support API available
-[11:06:43] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
-[11:06:43] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
-[11:06:43] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.5.3
-[11:06:43] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
-[11:06:43] [Server thread/INFO]: [CreeperRefund] Loading server plugin CreeperRefund v1.0
-[11:06:43] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
-[11:06:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[11:06:43] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
-[11:06:43] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[11:06:43] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
-[11:06:44] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
-[11:06:44] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[11:06:44] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[11:06:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[11:06:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[11:06:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[11:06:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[11:06:44] [Server thread/INFO]: Preparing level "world"
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.8.2
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: cf773a3
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[11:06:44] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[11:06:44] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[11:06:45] [Server thread/INFO]: Time elapsed: 262 ms
-[11:06:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[11:06:45] [Server thread/INFO]: Time elapsed: 151 ms
-[11:06:45] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[11:06:45] [Server thread/INFO]: Time elapsed: 50 ms
-[11:06:45] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[11:06:45] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
-[11:06:45] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[11:06:46] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[11:06:46] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
-[11:06:47] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
-[11:06:47] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
-[11:06:47] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
-[11:06:47] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
-[11:06:47] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
-[11:06:47] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
-[11:06:47] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
-[11:06:48] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
-[11:06:48] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 416.32951ms
-[11:06:49] [Server thread/INFO]: [LibsDisguises] Config is up to date!
-[11:06:49] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
-[11:06:49] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
-[11:06:49] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
-[11:06:49] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
-[11:06:49] [Server thread/INFO]: 
-[11:06:49] [Server thread/INFO]: TreeCuter by Norbit4!
-[11:06:49] [Server thread/INFO]: 
-[11:06:49] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[11:06:50] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
-[11:06:50] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[11:06:50] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
-[11:06:50] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[11:06:50] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
-[11:06:50] [Server thread/INFO]: [OpenInv] Configuration update found! Performing update...
-[11:06:50] [Server thread/INFO]: [OpenInv] Backed up config.yml to config_old.yml before updating.
-[11:06:50] [Server thread/INFO]: [OpenInv] Configuration update complete!
-[11:06:50] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
-[11:06:50] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
-[11:06:50] [Server thread/INFO]: [voicechat] Compatibility version 20
-[11:06:50] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[11:06:50] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[11:06:50] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
-[11:06:50] [Server thread/ERROR]: Error occurred while enabling dynmap v3.6-899 (Is it up to date?)
+[13:21:57] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[13:21:57] [Server thread/INFO]: Default game type: SURVIVAL
+[13:21:57] [Server thread/INFO]: Generating keypair
+[13:21:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[13:21:58] [Server thread/INFO]: Using epoll channel type
+[13:21:58] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[13:21:58] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[13:21:58] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[13:22:01] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[13:22:01] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
+[13:22:01] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[13:22:01] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[13:22:01] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[13:22:02] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[13:22:02] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[13:22:02] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[13:22:02] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[13:22:03] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[13:22:03] [Server thread/INFO]: [floodgate] Took 532ms to boot Floodgate
+[13:22:03] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
+[13:22:03] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
+[13:22:03] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[13:22:03] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[13:22:03] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[13:22:03] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
+[13:22:03] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
+[13:22:04] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
+[13:22:05] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.8.2
+[13:22:05] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
+[13:22:05] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
+[13:22:05] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
+[13:22:05] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
+[13:22:05] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
+[13:22:05] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
+[13:22:05] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
+[13:22:05] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.6-899
+[13:22:05] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
+[13:22:05] [Server thread/INFO]: [dynmap] Mod Support API available
+[13:22:05] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
+[13:22:05] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
+[13:22:05] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
+[13:22:05] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.5.3
+[13:22:05] [Server thread/INFO]: [CreeperRefund] Loading server plugin CreeperRefund v1.0
+[13:22:05] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
+[13:22:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[13:22:05] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[13:22:05] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[13:22:05] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.8.2
+[13:22:06] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
+[13:22:06] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[13:22:06] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[13:22:06] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loading config file
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.8.2
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: cf773a3
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[13:22:06] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loading language file
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loading usertags file
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loading tablist file
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
+[13:22:06] [Server thread/INFO]: [PowerRanks] Loading player & rank data
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
+[13:22:06] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
+[13:22:06] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
+[13:22:06] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on Paper v499
+[13:22:06] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 366ms
+[13:22:06] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 4 ranks and 0 players (YAML) 
+[13:22:06] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
+[13:22:06] [Server thread/INFO]: [PowerRanks] 
+[13:22:06] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
+[13:22:06] [Server thread/INFO]: [PowerRanks] Checking for updates...
+[13:22:07] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[13:22:07] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[13:22:07] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[13:22:07] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[13:22:07] [Server thread/INFO]: Preparing level "world"
+[13:22:07] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[13:22:07] [Server thread/INFO]: Time elapsed: 395 ms
+[13:22:07] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[13:22:08] [Server thread/INFO]: Time elapsed: 68 ms
+[13:22:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[13:22:08] [Server thread/INFO]: Time elapsed: 48 ms
+[13:22:08] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[13:22:08] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[13:22:08] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[13:22:08] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[13:22:08] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
+[13:22:10] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
+[13:22:10] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
+[13:22:10] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
+[13:22:10] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[13:22:10] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[13:22:10] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[13:22:10] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
+[13:22:11] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
+[13:22:12] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 499.531106ms
+[13:22:13] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[13:22:13] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[13:22:13] [Server thread/INFO]: [TAB] Enabled in 210ms
+[13:22:13] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
+[13:22:13] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
+[13:22:13] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
+[13:22:13] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
+[13:22:13] [Server thread/INFO]: 
+[13:22:13] [Server thread/INFO]: TreeCuter by Norbit4!
+[13:22:13] [Server thread/INFO]: 
+[13:22:13] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[13:22:13] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
+[13:22:13] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[13:22:13] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
+[13:22:13] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[13:22:13] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
+[13:22:13] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
+[13:22:13] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
+[13:22:13] [Server thread/INFO]: [voicechat] Compatibility version 20
+[13:22:13] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[13:22:13] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[13:22:13] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
+[13:22:13] [Server thread/ERROR]: Error occurred while enabling dynmap v3.6-899 (Is it up to date?)
 java.lang.NoSuchFieldError: Class net.minecraft.world.level.block.Block does not have member field 'net.minecraft.core.RegistryBlockID o'
 	at org.dynmap.bukkit.helper.v120.BukkitVersionHelperSpigot120.initializeBlockStates(BukkitVersionHelperSpigot120.java:159) ~[Dynmap-3.6-spigot.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:933) ~[Dynmap-3.6-spigot.jar:?]
@@ -141,8 +167,8 @@ java.lang.NoSuchFieldError: Class net.minecraft.world.level.block.Block does not
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-499]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-499]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[11:06:50] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
-[11:06:50] [Server thread/ERROR]: Error occurred while disabling dynmap v3.6-899
+[13:22:13] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
+[13:22:13] [Server thread/ERROR]: Error occurred while disabling dynmap v3.6-899
 java.lang.NullPointerException: Cannot invoke "org.dynmap.DynmapCore.disableCore()" because "this.core" is null
 	at org.dynmap.bukkit.DynmapPlugin.onDisable(DynmapPlugin.java:1094) ~[Dynmap-3.6-spigot.jar:?]
 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:290) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
@@ -160,431 +186,1253 @@ java.lang.NullPointerException: Cannot invoke "org.dynmap.DynmapCore.disableCore
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-499]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-499]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[11:06:50] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
-[11:06:50] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
-[11:06:50] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
-[11:06:50] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.5.3
-[11:06:50] [Server thread/INFO]: [InfiniteVillagerTrades] Enabled InstantRestock!
-[11:06:50] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[11:06:50] [Folia Async Scheduler Thread #3/INFO]: [InfiniteVillagerTrades] A new update is available!
-[11:06:50] [Folia Async Scheduler Thread #3/INFO]: [https://modrinth.com/plugin/infinite-villager-trading]
-[11:06:51] [Server thread/INFO]: [TAB] Enabled in 410ms
-[11:06:51] [Server thread/INFO]: [CreeperRefund] Enabling CreeperRefund v1.0
-[11:06:51] [Server thread/INFO]: [CreeperRefund] Thanks for using CreeperRefund!
-[11:06:51] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
-[11:06:51] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
-[11:06:51] [Server thread/INFO]: [TrollV4] -----------------------------------
-[11:06:51] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
-[11:06:51] [Server thread/INFO]: [TrollV4] In case of errors please report:
-[11:06:51] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
-[11:06:51] [Server thread/INFO]: [TrollV4] Otherwise have fun!
-[11:06:51] [Server thread/INFO]: [TrollV4] ------------------------------------
-[11:06:51] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
-[11:06:51] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
-[11:06:51] [Server thread/INFO]: [TrollV4] Server Software: PAPER
-[11:06:51] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
-[11:06:52] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[11:06:52] [Server thread/INFO]: [Geyser-Spigot] 
-[11:06:52] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
-[11:06:52] [Server thread/INFO]: [Geyser-Spigot] 
-[11:06:52] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[11:06:55] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[11:06:55] [Server thread/INFO]: [Geyser-Spigot] Done (3.254s)! Run /geyser help for help!
-[11:06:55] [Server thread/INFO]: Starting remote control listener
-[11:06:55] [Server thread/INFO]: Thread RCON Listener started
-[11:06:55] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[11:06:55] [Server thread/INFO]: Running delayed init tasks
-[11:06:55] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[11:06:55] [Server thread/INFO]: Done (21.320s)! For help, type "help"
-[11:06:55] [Server thread/INFO]: Timings Reset
-[11:06:55] [Server thread/INFO]: [voicechat] Loading plugins
-[11:06:55] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[11:06:55] [Server thread/INFO]: [voicechat] Initializing plugins
-[11:06:55] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[11:06:55] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[11:06:55] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[11:06:55] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[11:06:56] [Craft Scheduler Thread - 5 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:08:44] [User Authenticator #0/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:08:45] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.17->1.16.4) Increased world height is NOT SUPPORTED for 1.16 players and below. They will see a void below y 0 and above 256. You can enable the `bedrock-at-y-0` config option to replace the air with a bedrock layer.
-[11:08:45] [Server thread/INFO]: SIGMAxox joined the game
-[11:08:45] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[11:08:45] [Server thread/INFO]: SIGMAxox[/127.27.95.123:33861] logged in with entity id 558 at ([world]243.04294160274145, 105.1519358232828, -302.0805255179572)
-[11:08:56] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (20)
-[11:08:56] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[11:09:01] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:09:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:09:02] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[11:09:19] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[11:09:19] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[11:09:34] [User Authenticator #0/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[11:09:35] [Server thread/INFO]: soonk joined the game
-[11:09:35] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[11:09:35] [Server thread/INFO]: soonk[/127.64.211.7:38867] logged in with entity id 663 at ([world]268.48643317422915, 72.48051820389324, 822.0007992494893)
-[11:09:37] [Server thread/INFO]: SIGMAxox issued server command: /openinv soonk
-[11:10:04] [Async Chat Thread - #0/INFO]: [Not Secure] <soonk> سيجما
-[11:10:14] [Async Chat Thread - #1/INFO]: [Not Secure] <SIGMAxox> نعم
-[11:10:34] [Async Chat Thread - #1/INFO]: [Not Secure] <soonk> انا جعان
-[11:10:48] [Server thread/INFO]: SIGMAxox issued server command: /tp SIGMAxox soonk
-[11:10:48] [Server thread/INFO]: [SIGMAxox: Teleported SIGMAxox to soonk]
-[11:11:07] [Async Chat Thread - #1/INFO]: [Not Secure] <SIGMAxox> مود تشوف اغراض الالعبين اشتغل
-[11:11:18] [Server thread/INFO]: soonk issued server command: /inv SIGMAxox
-[11:11:34] [Server thread/INFO]: soonk issued server command: /troll
-[11:11:34] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[11:11:40] [Async Chat Thread - #1/INFO]: [Not Secure] <SIGMAxox> تعال
-[11:12:02] [Server thread/INFO]: SIGMAxox issued server command: /tp sooonk SIGMAxox
-[11:12:11] [Server thread/INFO]: soonk issued server command: /troll
-[11:12:17] [Server thread/INFO]: SIGMAxox issued server command: /gamemode survival soonk
-[11:12:17] [Server thread/INFO]: [SIGMAxox: Set soonk's game mode to Survival Mode]
-[11:12:45] [Async Chat Thread - #2/INFO]: [Not Secure] <SIGMAxox> جامد؟
-[11:12:50] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> pwg
-[11:12:53] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> حصل
-[11:13:02] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> املجيييي
-[11:13:21] [Server thread/INFO]: SIGMAxox issued server command: /trollv4 soonk
-[11:13:28] [Server thread/INFO]: soonk fell from a high place
-[11:13:35] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> تانمب
-[11:13:41] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> تاني عشان الخشبه
-[11:13:57] [Server thread/INFO]: SIGMAxox issued server command: /tp soonk SIGMAxox
-[11:13:57] [Server thread/INFO]: [SIGMAxox: Teleported soonk to SIGMAxox]
-[11:14:09] [Async Chat Thread - #2/INFO]: [Not Secure] <SIGMAxox> جرب tpa
-[11:14:19] [Server thread/INFO]: soonk issued server command: /tpa SIGMAxox
-[11:14:21] [Server thread/INFO]: SIGMAxox issued server command: /troll soonk
-[11:14:25] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:25] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:25] [RCON Client /127.142.175.20 #2/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:14:26] [RCON Client /127.142.175.20 #3/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:14:27] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:27] [RCON Client /127.142.175.20 #4/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:14:27] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:27] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:28] [RCON Listener #1/INFO]: Thread RCON Client /127.142.175.20 started
-[11:14:28] [RCON Client /127.142.175.20 #6/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:14:28] [RCON Client /127.142.175.20 #5/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:14:28] [Server thread/INFO]: SIGMAxox issued server command: /tpaccept
-[11:14:39] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> عملتهاا
-[11:14:43] [Async Chat Thread - #2/INFO]: [Not Secure] <soonk> تاني
-[11:14:48] [Async Chat Thread - #2/INFO]: [Not Secure] <SIGMAxox> هروح بعيد
-[11:14:58] [Server thread/INFO]: soonk issued server command: /tpa SIGMAxox
-[11:15:12] [Server thread/INFO]: SIGMAxox issued server command: /tpaccept
-[11:15:27] [Async Chat Thread - #2/INFO]: [Not Secure] <SIGMAxox> نفعت
-[11:15:28] [RCON Client /127.142.175.20 #7/INFO]: Thread RCON Client /127.142.175.20 shutting down
-[11:16:29] [Server thread/INFO]: SIGMAxox issued server command: /openinv soonk
-[11:16:56] [Craft Scheduler Thread - 22 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:17:27] [Server thread/INFO]: soonk issued server command: /tpa SIGMAxox
-[11:17:33] [Server thread/INFO]: SIGMAxox issued server command: /tpaccept
-[11:19:05] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> خد ايرون
-[11:19:23] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> اعمل ايه بيها
-[11:19:27] [User Authenticator #1/INFO]: UUID of player yayayayayay is 7a7a612f-e594-3535-959c-66f6657ffa24
-[11:19:29] [TAB Processing Thread/INFO]: [TAB] [WARN] Player yayayayayay's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[11:19:29] [Server thread/INFO]: yayayayayay joined the game
-[11:19:29] [Server thread/INFO]: yayayayayay[/127.151.231.18:40661] logged in with entity id 2581 at ([world]259.5, 84.0, -296.5)
-[11:19:29] [Server thread/INFO]: [voicechat] Received secret request of yayayayayay (20)
-[11:19:29] [Server thread/INFO]: [voicechat] Sent secret to yayayayayay
-[11:19:29] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> ده كوبر هههه
-[11:19:37] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> مين انت
-[11:19:37] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 7a7a612f-e594-3535-959c-66f6657ffa24
-[11:19:38] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 7a7a612f-e594-3535-959c-66f6657ffa24
-[11:19:38] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player yayayayayay (7a7a612f-e594-3535-959c-66f6657ffa24) successfully connected to voice chat
-[11:19:38] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> اااههههه
-[11:19:46] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> ضحكت عليا
-[11:19:47] [Server thread/INFO]: soonk issued server command: /gamemode creative
-[11:19:47] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
-[11:19:54] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> سلام عليكم
-[11:19:56] [Server thread/INFO]: soonk issued server command: /tp yayayayayay
-[11:19:56] [Server thread/INFO]: [soonk: Teleported soonk to yayayayayay]
-[11:20:05] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> مين
-[11:20:09] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> ناتتت
-[11:20:21] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> مين انت
-[11:20:22] [Server thread/INFO]: SIGMAxox issued server command: /tp SIGMAxox yayayayayay
-[11:20:22] [Server thread/INFO]: [SIGMAxox: Teleported SIGMAxox to yayayayayay]
-[11:20:29] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> عرف نفسك
-[11:20:32] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[11:20:32] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[11:20:53] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> انا مش في غروب واحد ثاحبي عطاني سرفرم
-[11:21:02] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> اسمو شو
-[11:21:03] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[11:21:06] [RCON Client /127.13.102.116 #8/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[11:21:09] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> gojo?
-[11:21:31] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> قول
-[11:21:35] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> مين دخلك
-[11:21:45] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> غوجو
-[11:21:46] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> مين دخلك
-[11:21:49] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[11:21:49] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[11:21:49] [Server thread/INFO]: SIGMAxox left the game
-[11:21:49] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> الكلب
-[11:21:53] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:21:53] [Server thread/INFO]: SIGMAxox joined the game
-[11:21:53] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[11:21:53] [Server thread/INFO]: SIGMAxox[/127.27.95.123:54335] logged in with entity id 2934 at ([world]230.94488198208128, 72.0, -282.0307486179619)
-[11:21:54] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (20)
-[11:21:54] [Server thread/INFO]: [voicechat] Sent secret to SIGMAxox
-[11:21:56] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:21:57] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player 53dcd5fe-87eb-388f-8693-91406d777c77
-[11:21:57] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player SIGMAxox (53dcd5fe-87eb-388f-8693-91406d777c77) successfully connected to voice chat
-[11:22:12] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> نعملك تحدي
-[11:22:16] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> ك
-[11:22:22] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> باقولك
-[11:22:26] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> تدخل الجروب
-[11:22:31] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> لا
-[11:22:32] [Async Chat Thread - #4/INFO]: [Not Secure] <soonk> لازم تدخله
-[11:22:32] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> تعمل mlg ونديك دايمند
-[11:22:38] [Async Chat Thread - #4/INFO]: [Not Secure] <yayayayayay> ك
-[11:22:43] [Async Chat Thread - #4/INFO]: [Not Secure] <SIGMAxox> جاهز
-[11:22:44] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> اسمك اي
-[11:22:47] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> علي الفيس
-[11:22:47] [Async Chat Thread - #5/INFO]: [Not Secure] <yayayayayay> مابحب ادخل غروبات
-[11:23:08] [Server thread/INFO]: soonk issued server command: /ban yayayayayay
-[11:23:08] [Server thread/INFO]: [soonk: Banned yayayayayay: Banned by an operator.]
-[11:23:08] [Server thread/INFO]: yayayayayay lost connection: You are banned from this server
-[11:23:08] [Server thread/INFO]: [voicechat] Disconnecting client yayayayayay
-[11:23:08] [Server thread/INFO]: yayayayayay left the game
-[11:23:13] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> اديته بان
-[11:23:21] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> يسطا ده مش من السيرفر
-[11:23:31] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> الكلب بيدحل الناس تخرب
-[11:23:35] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> يا كلب انت قولت انك مش بتطرد حد
-[11:23:47] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> ده مش مننا
-[11:24:01] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> لازم نغير اي بي
-[11:24:15] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> يبني هو معملش حاجة
-[11:24:26] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> يسطا
-[11:24:39] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> كده السيرفر هيبوظ الولا نشر الاي بي غير مانقوله
-[11:24:52] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> طيب خلاص
-[11:25:03] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> اولا امبارح كان عامل اكس راي
-[11:25:05] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> كلم gojo
-[11:25:23] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> قوله مينشرش ip
-[11:25:42] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> انا بكلمو
-[11:25:44] [Async Chat Thread - #5/INFO]: [Not Secure] <SIGMAxox> ينشر بس الجروب
-[11:25:50] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> ويقولتنا
-[11:25:58] [Async Chat Thread - #5/INFO]: [Not Secure] <soonk> ويقولنا
-[11:26:56] [Craft Scheduler Thread - 39 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:28:11] [Server thread/INFO]: soonk lost connection: Timed out
-[11:28:11] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[11:28:11] [Server thread/INFO]: soonk left the game
-[11:29:01] [User Authenticator #3/INFO]: UUID of player gojo is c2e29503-0ac3-3ce6-bdf5-6f8a38949b35
-[11:29:02] [Server thread/INFO]: gojo joined the game
-[11:29:02] [TAB Processing Thread/INFO]: [TAB] [WARN] Player gojo's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[11:29:02] [Server thread/INFO]: gojo[/127.151.231.18:48575] logged in with entity id 3582 at ([world]304.69999998807907, 63.0, 825.4450815793894)
-[11:29:03] [Server thread/INFO]: [voicechat] Received secret request of gojo (20)
-[11:29:03] [Server thread/INFO]: [voicechat] Sent secret to gojo
-[11:29:04] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully authenticated player c2e29503-0ac3-3ce6-bdf5-6f8a38949b35
-[11:29:05] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Successfully validated connection of player c2e29503-0ac3-3ce6-bdf5-6f8a38949b35
-[11:29:05] [VoiceChatPacketProcessingThread/INFO]: [voicechat] Player gojo (c2e29503-0ac3-3ce6-bdf5-6f8a38949b35) successfully connected to voice chat
-[11:31:28] [Server thread/INFO]: gojo lost connection: Disconnected
-[11:31:28] [Server thread/INFO]: [voicechat] Disconnecting client gojo
-[11:31:28] [Server thread/INFO]: gojo left the game
-[11:31:29] [RCON Listener #1/INFO]: Thread RCON Client /127.208.153.198 started
-[11:32:44] [RCON Client /127.208.153.198 #9/INFO]: Thread RCON Client /127.208.153.198 shutting down
-[11:35:01] [RCON Listener #1/INFO]: Thread RCON Client /127.103.77.8 started
-[11:36:14] [RCON Client /127.103.77.8 #10/INFO]: Thread RCON Client /127.103.77.8 shutting down
-[11:36:20] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[11:36:23] [RCON Client /127.13.102.116 #11/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[11:36:56] [Craft Scheduler Thread - 63 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:37:37] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[11:37:37] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[11:37:37] [Server thread/INFO]: SIGMAxox left the game
-[11:42:08] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[11:42:11] [RCON Client /127.13.102.116 #12/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[11:46:56] [Craft Scheduler Thread - 76 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:47:36] [RCON Listener #1/INFO]: Thread RCON Client /127.111.237.92 started
-[11:48:44] [RCON Client /127.111.237.92 #13/INFO]: Thread RCON Client /127.111.237.92 shutting down
-[11:56:27] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:28] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:28] [RCON Client /127.60.254.118 #14/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[11:56:29] [RCON Client /127.60.254.118 #15/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[11:56:29] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:30] [RCON Client /127.60.254.118 #16/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[11:56:32] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:32] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:32] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
-[11:56:33] [RCON Client /127.60.254.118 #19/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[11:56:33] [RCON Client /127.60.254.118 #18/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[11:56:56] [Craft Scheduler Thread - 102 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[11:57:44] [RCON Client /127.60.254.118 #17/INFO]: Thread RCON Client /127.60.254.118 shutting down
-[12:06:05] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:05] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:06] [RCON Client /127.28.183.93 #20/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:07] [RCON Client /127.28.183.93 #21/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:07] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:07] [RCON Client /127.28.183.93 #22/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:07] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:07] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:07] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:06:09] [RCON Client /127.28.183.93 #23/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:09] [RCON Client /127.28.183.93 #24/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:09] [RCON Client /127.28.183.93 #25/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:06:56] [Craft Scheduler Thread - 122 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[12:10:28] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[12:10:31] [RCON Client /127.13.102.116 #26/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[12:12:24] [RCON Listener #1/INFO]: Thread RCON Client /127.208.153.198 started
-[12:13:29] [RCON Client /127.208.153.198 #27/INFO]: Thread RCON Client /127.208.153.198 shutting down
-[12:16:56] [Craft Scheduler Thread - 137 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[12:26:56] [Craft Scheduler Thread - 160 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[12:31:13] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[12:31:16] [RCON Client /127.13.102.116 #28/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[12:33:11] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:11] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:11] [RCON Client /127.163.141.116 #29/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:12] [RCON Client /127.163.141.116 #30/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:13] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:13] [RCON Client /127.163.141.116 #31/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:13] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:13] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:13] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
-[12:33:14] [RCON Client /127.163.141.116 #32/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:14] [RCON Client /127.163.141.116 #33/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:14] [RCON Client /127.163.141.116 #34/INFO]: Thread RCON Client /127.163.141.116 shutting down
-[12:33:41] [User Authenticator #4/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[12:33:41] [Server thread/INFO]: soonk joined the game
-[12:33:41] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[12:33:41] [Server thread/INFO]: soonk[/127.64.211.7:59107] logged in with entity id 5006 at ([world]241.4116101448538, 84.0, -280.4632634626399)
-[12:35:11] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[12:35:14] [RCON Client /127.13.102.116 #35/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[12:36:56] [Craft Scheduler Thread - 180 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[12:39:41] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:41] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:41] [RCON Client /127.28.183.93 #36/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:39:43] [RCON Client /127.28.183.93 #37/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:39:43] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:43] [RCON Client /127.28.183.93 #38/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:39:43] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:43] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:44] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
-[12:39:45] [RCON Client /127.28.183.93 #39/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:39:45] [RCON Client /127.28.183.93 #40/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:39:45] [RCON Client /127.28.183.93 #41/INFO]: Thread RCON Client /127.28.183.93 shutting down
-[12:40:11] [RCON Listener #1/INFO]: Thread RCON Client /127.23.130.128 started
-[12:41:10] [Async Chat Thread - #6/INFO]: [Not Secure] <soonk> \u00A76
-[12:41:14] [RCON Client /127.23.130.128 #42/INFO]: Thread RCON Client /127.23.130.128 shutting down
-[12:41:30] [Server thread/INFO]: soonk issued server command: /ban-ip yayayayayay
-[12:46:33] [Server thread/INFO]: soonk issued server command: /lp
-[12:46:56] [Craft Scheduler Thread - 201 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[12:56:56] [Craft Scheduler Thread - 221 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[13:01:56] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:01:56] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:01:56] [RCON Client /127.122.176.236 #43/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:01:58] [RCON Client /127.122.176.236 #44/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:02:00] [RCON Client /127.122.176.236 #45/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
-[13:02:01] [RCON Client /127.122.176.236 #47/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:02:01] [RCON Client /127.122.176.236 #48/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:02:01] [RCON Client /127.122.176.236 #46/INFO]: Thread RCON Client /127.122.176.236 shutting down
-[13:05:00] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
-[13:05:03] [RCON Client /127.13.102.116 #49/INFO]: Thread RCON Client /127.13.102.116 shutting down
-[13:06:56] [Craft Scheduler Thread - 230 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[13:12:04] [Server thread/INFO]: soonk lost connection: Timed out
-[13:12:04] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[13:12:04] [Server thread/INFO]: soonk left the game
-[13:15:04] [RCON Listener #1/INFO]: Thread RCON Client /127.84.156.9 started
-[13:16:14] [RCON Client /127.84.156.9 #50/INFO]: Thread RCON Client /127.84.156.9 shutting down
-[13:16:56] [Craft Scheduler Thread - 261 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[13:17:46] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username ShortAcorn5514
-[13:17:46] [localSession-7-2/INFO]: [Geyser-Spigot] ShortAcorn5514 (logged in as: ShortAcorn5514) has connected to the Java server
-[13:17:46] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .ShortAcorn5514's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:17:46] [Server thread/INFO]: [floodgate] Floodgate player logged in as .ShortAcorn5514 joined (UUID: 00000000-0000-0000-0009-01ff6d908c5d)
-[13:17:46] [Server thread/INFO]: .ShortAcorn5514 joined the game
-[13:17:46] [Server thread/INFO]: .ShortAcorn5514[/127.192.194.174:0] logged in with entity id 8062 at ([world]213.62741, 69.0, 21.172226)
-[13:18:31] [Server thread/WARN]: .ShortAcorn5514 was kicked due to keepalive timeout!
-[13:18:31] [Server thread/INFO]: .ShortAcorn5514 lost connection: Timed out
-[13:18:31] [Server thread/INFO]: [voicechat] Disconnecting client .ShortAcorn5514
-[13:18:31] [localSession-7-2/INFO]: [Geyser-Spigot] ShortAcorn5514 has disconnected from the Java server because of Timed out
-[13:18:31] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .ShortAcorn5514 disconnected
-[13:18:31] [Server thread/INFO]: .ShortAcorn5514 left the game
-[13:19:59] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Player connected with username ShortAcorn5514
-[13:19:59] [localSession-7-3/INFO]: [Geyser-Spigot] ShortAcorn5514 (logged in as: ShortAcorn5514) has connected to the Java server
-[13:19:59] [Server thread/INFO]: [floodgate] Floodgate player logged in as .ShortAcorn5514 joined (UUID: 00000000-0000-0000-0009-01ff6d908c5d)
-[13:19:59] [Server thread/INFO]: .ShortAcorn5514 joined the game
-[13:19:59] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .ShortAcorn5514's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:19:59] [Server thread/INFO]: .ShortAcorn5514[/127.192.194.174:0] logged in with entity id 8560 at ([world]213.62741, 69.0, 21.172226)
-[13:20:12] [User Authenticator #5/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[13:20:13] [Server thread/INFO]: soonk joined the game
-[13:20:13] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[13:20:13] [Server thread/INFO]: soonk[/127.64.211.7:39029] logged in with entity id 8749 at ([world]242.7265557197551, 87.0068313565442, -283.7976103507586)
-[13:20:27] [Server thread/INFO]: soonk issued server command: /restart
-[13:20:27] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
-[13:20:27] [Server thread/INFO]: .ShortAcorn5514 lost connection: Server is restarting
-[13:20:27] [Server thread/INFO]: [voicechat] Disconnecting client .ShortAcorn5514
-[13:20:27] [Geyser Spigot connection thread-6-4/INFO]: [floodgate] Floodgate player logged in as .ShortAcorn5514 disconnected
-[13:20:27] [localSession-7-3/INFO]: [Geyser-Spigot] ShortAcorn5514 has disconnected from the Java server because of Server is restarting
-[13:20:27] [Server thread/INFO]: .ShortAcorn5514 left the game
-[13:20:27] [Server thread/INFO]: soonk lost connection: Server is restarting
-[13:20:27] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[13:20:27] [Server thread/INFO]: soonk left the game
-[13:20:27] [Server thread/INFO]: Stopping server
-[13:20:27] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
-[13:20:27] [Server thread/INFO]: [CreeperRefund] Disabling CreeperRefund v1.0
-[13:20:27] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[13:20:27] [Server thread/INFO]: [TAB] Disabled in 1ms
-[13:20:27] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
-[13:20:27] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
-[13:20:27] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
-[13:20:27] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
-[13:20:27] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
-[13:20:27] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
-[13:20:27] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
-[13:20:27] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[13:20:27] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
-[13:20:27] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[13:20:27] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
-[13:20:27] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
-[13:20:27] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
-[13:20:27] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
-[13:20:27] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
-[13:20:27] [Server thread/INFO]: [packetevents] Failed to uninject server channel, handler not found
-[13:20:27] [Server thread/INFO]: [packetevents] Failed to uninject server channel, handler not found
-[13:20:27] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[13:20:27] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
-[13:20:27] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
-[13:20:27] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[13:20:27] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[13:20:27] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[13:20:27] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[13:20:27] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[13:20:27] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[13:20:27] [Server thread/INFO]: Saving players
-[13:20:27] [WebSocketConnectReadThread-102/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[13:20:27] [Server thread/INFO]: Saving worlds
-[13:20:27] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[13:20:27] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[13:20:27] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[13:20:27] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Saved 170 block chunks, 305 entity chunks, 0 poi chunks in world 'world' in 0.28s
-[13:20:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[13:20:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 50 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
-[13:20:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[13:20:28] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[13:20:28] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[13:20:28] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[13:20:28] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[13:20:28] [Server thread/INFO]: Flushing Chunk IO
-[13:20:28] [Server thread/INFO]: Closing Thread Pool
-[13:20:28] [Server thread/INFO]: Closing Server
+[13:22:13] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
+[13:22:13] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
+[13:22:13] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
+[13:22:13] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.5.3
+[13:22:14] [Server thread/INFO]: [InfiniteVillagerTrades] Enabled InstantRestock!
+[13:22:14] [Server thread/INFO]: [CreeperRefund] Enabling CreeperRefund v1.0
+[13:22:14] [Server thread/INFO]: [CreeperRefund] Thanks for using CreeperRefund!
+[13:22:14] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
+[13:22:14] [Folia Async Scheduler Thread #3/INFO]: [InfiniteVillagerTrades] A new update is available!
+[13:22:14] [Folia Async Scheduler Thread #3/INFO]: [https://modrinth.com/plugin/infinite-villager-trading]
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
+[13:22:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
+[13:22:14] [Server thread/INFO]: [TrollV4] -----------------------------------
+[13:22:14] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
+[13:22:14] [Server thread/INFO]: [TrollV4] In case of errors please report:
+[13:22:14] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
+[13:22:14] [Server thread/INFO]: [TrollV4] Otherwise have fun!
+[13:22:14] [Server thread/INFO]: [TrollV4] ------------------------------------
+[13:22:14] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
+[13:22:14] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
+[13:22:14] [Server thread/INFO]: [TrollV4] Server Software: PAPER
+[13:22:14] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
+[13:22:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[13:22:15] [Server thread/INFO]: [Geyser-Spigot] 
+[13:22:15] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
+[13:22:15] [Server thread/INFO]: [Geyser-Spigot] 
+[13:22:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[13:22:18] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[13:22:18] [Server thread/INFO]: [Geyser-Spigot] Done (3.337s)! Run /geyser help for help!
+[13:22:18] [Server thread/INFO]: Starting remote control listener
+[13:22:18] [Server thread/INFO]: Thread RCON Listener started
+[13:22:18] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[13:22:18] [Server thread/INFO]: Running delayed init tasks
+[13:22:18] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[13:22:18] [Server thread/INFO]: Done (23.465s)! For help, type "help"
+[13:22:18] [Server thread/INFO]: Timings Reset
+[13:22:18] [Server thread/INFO]: [voicechat] Loading plugins
+[13:22:18] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[13:22:18] [Server thread/INFO]: [voicechat] Initializing plugins
+[13:22:18] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[13:22:18] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[13:22:19] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[13:22:19] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[13:22:20] [Craft Scheduler Thread - 3 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:22:39] [User Authenticator #0/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[13:22:40] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[13:22:40] [Server thread/INFO]: soonk joined the game
+[13:22:40] [Server thread/INFO]: soonk[/127.64.211.7:56397] logged in with entity id 546 at ([world]242.7265557197551, 87.0068313565442, -283.7976103507586)
+[13:23:14] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[13:23:17] [RCON Client /127.13.102.116 #2/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[13:24:38] [Async Chat Thread - #1/INFO]: [Not Secure] world MEMBER soonk: .
+[13:26:04] [Server thread/INFO]: soonk issued server command: /pr createrank Youtube
+[13:27:13] [Server thread/INFO]: soonk issued server command: /pr setprefix Youtube [YOUTUBE]
+[13:28:18] [Server thread/INFO]: soonk issued server command: /pr setprefix Youtube &f[&cYOUTUBE&f]
+[13:29:45] [Server thread/INFO]: soonk issued server command: /pr setprefix Owner [OWNER]
+[13:30:16] [Server thread/INFO]: soonk issued server command: /pr setprefix Owner &f[&cOWNER&f]
+[13:30:30] [Server thread/INFO]: soonk issued server command: /pr addrank soonk Owner
+[13:30:33] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER soonk: .
+[13:31:19] [Server thread/INFO]: soonk issued server command: /pr clearusertag soonk
+[13:31:23] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER soonk: .
+[13:31:34] [Server thread/INFO]: soonk lost connection: Disconnected
+[13:31:34] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[13:31:34] [Server thread/INFO]: soonk left the game
+[13:32:19] [Craft Scheduler Thread - 24 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:40:57] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[13:41:00] [RCON Client /127.13.102.116 #3/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[13:42:19] [Craft Scheduler Thread - 43 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:52:19] [Craft Scheduler Thread - 63 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:59:12] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[13:59:15] [RCON Client /127.13.102.116 #4/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[14:01:11] [User Authenticator #1/INFO]: UUID of player MARO_SMR is c20b5d0a-9924-3d21-91d2-462b332c1684
+[14:01:12] [TAB Processing Thread/INFO]: [TAB] [WARN] Player MARO_SMR's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:01:12] [Server thread/INFO]: MARO_SMR joined the game
+[14:01:12] [Server thread/INFO]: MARO_SMR[/127.59.128.197:52265] logged in with entity id 1415 at ([world_nether]276.3709694467276, 64.0, 63.364351708788874)
+[14:01:37] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:01:42] [Server thread/INFO]: com.mojang.authlib.GameProfile@7eeb2250[id=4f745b20-dadc-361b-9ade-2660b67b7c53,name=soonk,properties={textures=[Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTc2MjYxMDQ5NzEzMiwKICAicHJvZmlsZUlkIiA6ICJmYWE2OTNlMTg3OGU0MjRiYjgzMjgwNGI5YzU4ZThhZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzb29uSyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zOTg5NjVhMzBhYjEyMmRiMjg1OTg5NTQzMjBlZTI2ZDI2MjI3YjlhN2EzZTY0OGZhYWQyMDc0OGIxY2Y2ODdlIgogICAgfQogIH0KfQ==, signature=qXwuBt/YmsYi0u6KZMDsrSsPrnT1m/Od1eppHiDMhF4SdRNyT8bdPuUSR9ezWMEqnpVdeodrquQlRTzCAzj4cyvXxur5Q9inQ+CMQL3Nhc9A6E9oeIReJxLaVuJqq4ZCKuL972BCBsuMf8+4DLULaQMXB3QV/ST2t/dEwsJKhzWlahQjdSEE3Ioj1bcDkizMWxWro+sBRhHRBB337CY/LEyUyDAu7FIJBZdSPHq1I+WCOXE09OtrdQLkWImQ/Fy/gJwcxrZ6O3997sx1ozwNy3cUx4LqAs16BzK+ulb16eYFXDgqvFH4yOUc0qF5Q2IhjaetbeT7dcJXjbqgU1G8lu09SBLxBSVBWJV8xMsrhk3D2LuNTDGApl799SWiZlAPGDlhfscm2jnYL5JyTmkp+Cf9Zq1Lnl5scUrxomTY9PDoCHf+47Uuj51QJteghrAOz6c/GhbQSmoDgrtbnF9QHnv5Eo+k++zGaShXT70MDhur0SXp7V1vaXkNvlEEHPuKBwxbNscq5WpW0OBUxJvs4+g1greHhkdT9k2N+ZnNbwo8rsfRPxv3/+eSKXlOjXm1JykRAfHv9IvthvauGICuIxaR+Ys+TFlsxe/0KzYKmX5BUm9wXgS3xQD7g7THT5V3vqjS09t9TpDppmwrhJOgnOAgzvvHNd/tYbFZauVdr5E=]]}] lost connection: Disconnected
+[14:01:44] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:02:05] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:02:05] [Server thread/INFO]: soonk joined the game
+[14:02:05] [Server thread/INFO]: soonk[/127.64.211.7:54001] logged in with entity id 1647 at ([world]231.9056731325329, 86.2568316951984, -317.8606029380796)
+[14:02:05] [Server thread/INFO]: soonk lost connection: Timed out
+[14:02:05] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[14:02:05] [Server thread/INFO]: soonk left the game
+[14:02:19] [Craft Scheduler Thread - 83 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:02:25] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:02:25] [Server thread/INFO]: com.mojang.authlib.GameProfile@52137986[id=4f745b20-dadc-361b-9ade-2660b67b7c53,name=soonk,properties={textures=[Property[name=textures, value=ewogICJ0aW1lc3RhbXAiIDogMTc2MjYxMDQ5NzEzMiwKICAicHJvZmlsZUlkIiA6ICJmYWE2OTNlMTg3OGU0MjRiYjgzMjgwNGI5YzU4ZThhZSIsCiAgInByb2ZpbGVOYW1lIiA6ICJzb29uSyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zOTg5NjVhMzBhYjEyMmRiMjg1OTg5NTQzMjBlZTI2ZDI2MjI3YjlhN2EzZTY0OGZhYWQyMDc0OGIxY2Y2ODdlIgogICAgfQogIH0KfQ==, signature=qXwuBt/YmsYi0u6KZMDsrSsPrnT1m/Od1eppHiDMhF4SdRNyT8bdPuUSR9ezWMEqnpVdeodrquQlRTzCAzj4cyvXxur5Q9inQ+CMQL3Nhc9A6E9oeIReJxLaVuJqq4ZCKuL972BCBsuMf8+4DLULaQMXB3QV/ST2t/dEwsJKhzWlahQjdSEE3Ioj1bcDkizMWxWro+sBRhHRBB337CY/LEyUyDAu7FIJBZdSPHq1I+WCOXE09OtrdQLkWImQ/Fy/gJwcxrZ6O3997sx1ozwNy3cUx4LqAs16BzK+ulb16eYFXDgqvFH4yOUc0qF5Q2IhjaetbeT7dcJXjbqgU1G8lu09SBLxBSVBWJV8xMsrhk3D2LuNTDGApl799SWiZlAPGDlhfscm2jnYL5JyTmkp+Cf9Zq1Lnl5scUrxomTY9PDoCHf+47Uuj51QJteghrAOz6c/GhbQSmoDgrtbnF9QHnv5Eo+k++zGaShXT70MDhur0SXp7V1vaXkNvlEEHPuKBwxbNscq5WpW0OBUxJvs4+g1greHhkdT9k2N+ZnNbwo8rsfRPxv3/+eSKXlOjXm1JykRAfHv9IvthvauGICuIxaR+Ys+TFlsxe/0KzYKmX5BUm9wXgS3xQD7g7THT5V3vqjS09t9TpDppmwrhJOgnOAgzvvHNd/tYbFZauVdr5E=]]}] lost connection: Disconnected
+[14:02:32] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:02:33] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:02:33] [Server thread/INFO]: soonk joined the game
+[14:02:33] [Server thread/INFO]: soonk[/127.64.211.7:35945] logged in with entity id 1655 at ([world]231.9056731325329, 86.2568316951984, -317.8606029380796)
+[14:02:42] [Server thread/INFO]: MARO_SMR burned to death
+[14:02:46] [RCON Listener #1/INFO]: Thread RCON Client /127.47.53.148 started
+[14:02:59] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER MARO_SMR: اي يبني
+[14:03:47] [Async Chat Thread - #4/INFO]: [Not Secure] world [OWNER] MEMBER soonk: ارمي اغراضك
+[14:03:54] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER MARO_SMR: انا مت في النذر اصلا
+[14:04:01] [RCON Client /127.47.53.148 #5/INFO]: Thread RCON Client /127.47.53.148 shutting down
+[14:04:12] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER MARO_SMR: بقولك السيرفر ده انت عامله منين
+[14:04:18] [Async Chat Thread - #4/INFO]: [Not Secure] world [OWNER] MEMBER soonk: سر
+[14:04:22] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: يعم انجز
+[14:04:25] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: لا
+[14:04:43] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: طب تعرف تعمل generate world زي اتيرنوس؟
+[14:04:49] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: لا
+[14:04:56] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: تعرف تغير العالم طب ؟
+[14:05:02] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: يبقا جديد متلمس
+[14:05:02] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: هات عالم
+[14:05:12] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: يسطا يعني اي هات العالم
+[14:05:23] [Server thread/INFO]: soonk issued server command: /tp MARO_SMR soonk
+[14:05:23] [Server thread/INFO]: [soonk: Teleported MARO_SMR to soonk]
+[14:05:24] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: فهم ميتيني يعم
+[14:05:36] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: هنسطح
+[14:06:07] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: هات كريتيف
+[14:06:11] [Server thread/INFO]: soonk issued server command: /give soonk minecraft:command_block_minecart
+[14:06:11] [Server thread/INFO]: [soonk: Gave 1 [Minecart with Command Block] to soonk]
+[14:06:16] [Server thread/INFO]: soonk issued server command: /give soonk minecraft:command_block_minecart
+[14:06:16] [Server thread/INFO]: [soonk: Gave 1 [Minecart with Command Block] to soonk]
+[14:06:22] [Server thread/INFO]: soonk issued server command: /give soonk minecraft:command_block
+[14:06:22] [Server thread/INFO]: [soonk: Gave 1 [Command Block] to soonk]
+[14:06:33] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: خد
+[14:06:44] [Server thread/INFO]: soonk issued server command: /gamemode creative MARO_SMR
+[14:06:44] [Server thread/INFO]: [soonk: Set MARO_SMR's game mode to Creative Mode]
+[14:07:10] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: هتعملوا فين
+[14:07:29] [Server thread/INFO]: soonk issued server command: /tp MARO_SMR soonk
+[14:07:29] [Server thread/INFO]: [soonk: Teleported MARO_SMR to soonk]
+[14:07:42] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: و الشجر؟
+[14:07:48] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: لا يجدع !!
+[14:07:51] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: احذفه
+[14:08:00] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER soonk: هات يعم الكومند
+[14:08:02] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER MARO_SMR: يعم مندور ع ارض مفهاش شجر
+[14:09:02] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:02] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:03] [RCON Client /127.60.254.118 #6/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:09:04] [RCON Client /127.60.254.118 #7/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:09:04] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:05] [RCON Client /127.60.254.118 #8/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:09:05] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:05] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:06] [RCON Listener #1/INFO]: Thread RCON Client /127.60.254.118 started
+[14:09:06] [RCON Client /127.60.254.118 #9/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:09:06] [RCON Client /127.60.254.118 #11/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:09:06] [RCON Client /127.60.254.118 #10/INFO]: Thread RCON Client /127.60.254.118 shutting down
+[14:10:08] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username Assermohmef
+[14:10:08] [localSession-7-2/INFO]: [Geyser-Spigot] Assermohmef (logged in as: Assermohmef) has connected to the Java server
+[14:10:08] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .Assermohmef's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:10:08] [Server thread/INFO]: [floodgate] Floodgate player logged in as .Assermohmef joined (UUID: 00000000-0000-0000-0009-01f1869602af)
+[14:10:08] [Server thread/INFO]: .Assermohmef joined the game
+[14:10:08] [Server thread/INFO]: .Assermohmef[/127.39.169.141:0] logged in with entity id 3821 at ([world]295.77112, -4.0, 882.62317)
+[14:11:58] [Async Chat Thread - #6/INFO]: [Not Secure] world MEMBER MARO_SMR: انت بتعمل اي
+[14:12:19] [Craft Scheduler Thread - 91 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:12:36] [RCON Listener #1/INFO]: Thread RCON Client /127.49.10.236 started
+[14:12:40] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[14:12:43] [RCON Client /127.13.102.116 #13/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[14:12:47] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Assermohmef has disconnected from the Java server because of Bedrock client disconnected
+[14:12:47] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .Assermohmef disconnected
+[14:12:47] [Server thread/INFO]: .Assermohmef lost connection: Disconnected
+[14:12:47] [Server thread/INFO]: [voicechat] Disconnecting client .Assermohmef
+[14:12:47] [Server thread/INFO]: .Assermohmef left the game
+[14:12:52] [Craft Scheduler Thread - 91 - OnePlayerSleep/INFO]: MARO_SMR nodded off
+[14:12:56] [Async Chat Thread - #6/INFO]: [Not Secure] world MEMBER MARO_SMR: 2
+[14:13:46] [RCON Client /127.49.10.236 #12/INFO]: Thread RCON Client /127.49.10.236 shutting down
+[14:14:15] [Server thread/INFO]: soonk issued server command: /give soonk minecraft:chain_command_block
+[14:14:15] [Server thread/INFO]: [soonk: Gave 1 [Chain Command Block] to soonk]
+[14:14:48] [Server thread/INFO]: soonk issued server command: /give soonk minecraft:repeating_command_block
+[14:14:48] [Server thread/INFO]: [soonk: Gave 1 [Repeating Command Block] to soonk]
+[14:19:45] [Server thread/INFO]: soonk issued server command: /fill 350 81 -928 8 64 -928
+[14:19:51] [Server thread/INFO]: soonk issued server command: /fill 350 81 -928 8 64 -928
+[14:20:03] [Server thread/INFO]: soonk issued server command: /fill 35 870 10 -928 8 64 -928
+[14:20:04] [Server thread/WARN]: soonk was kicked due to keepalive timeout!
+[14:20:04] [Server thread/INFO]: soonk lost connection: Timed out
+[14:20:04] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[14:20:04] [Server thread/INFO]: soonk left the game
+[14:20:10] [User Authenticator #2/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:20:13] [Server thread/WARN]: MARO_SMR was kicked due to keepalive timeout!
+[14:20:13] [Server thread/INFO]: MARO_SMR lost connection: Timed out
+[14:20:13] [Server thread/INFO]: [voicechat] Disconnecting client MARO_SMR
+[14:20:13] [Server thread/INFO]: MARO_SMR left the game
+[14:20:17] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:20:17] [Server thread/INFO]: soonk joined the game
+[14:20:17] [Server thread/INFO]: soonk[/127.64.211.7:54723] logged in with entity id 5804 at ([world]353.472439103137, 88.61294343808963, -918.826409943856)
+[14:20:34] [User Authenticator #2/INFO]: UUID of player MARO_SMR is c20b5d0a-9924-3d21-91d2-462b332c1684
+[14:20:34] [TAB Processing Thread/INFO]: [TAB] [WARN] Player MARO_SMR's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:20:34] [Server thread/INFO]: MARO_SMR joined the game
+[14:20:34] [Server thread/INFO]: MARO_SMR[/127.59.128.197:53249] logged in with entity id 6253 at ([world]321.30000001192093, 81.2451100997137, -942.41031782789)
+[14:21:07] [Async Chat Thread - #8/INFO]: [Not Secure] world [OWNER] MEMBER soonk: الكومند مش شغال
+[14:21:13] [Async Chat Thread - #8/INFO]: [Not Secure] world MEMBER MARO_SMR: م انا عارف
+[14:21:26] [Async Chat Thread - #8/INFO]: [Not Secure] world [OWNER] MEMBER soonk: انت كلببب
+[14:21:29] [Async Chat Thread - #8/INFO]: [Not Secure] world [OWNER] MEMBER soonk: مش قلت ليه
+[14:21:29] [Async Chat Thread - #8/INFO]: [Not Secure] world MEMBER MARO_SMR: لي
+[14:21:36] [Async Chat Thread - #8/INFO]: [Not Secure] world MEMBER MARO_SMR: فضلت اعبتلك و انت مش شايف
+[14:22:19] [Server thread/WARN]: MARO_SMR was kicked due to keepalive timeout!
+[14:22:19] [Server thread/INFO]: MARO_SMR lost connection: Timed out
+[14:22:19] [Server thread/INFO]: [voicechat] Disconnecting client MARO_SMR
+[14:22:19] [Server thread/INFO]: MARO_SMR left the game
+[14:22:19] [Craft Scheduler Thread - 100 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:22:20] [Server thread/WARN]: soonk was kicked due to keepalive timeout!
+[14:22:20] [Server thread/INFO]: soonk lost connection: Timed out
+[14:22:20] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[14:22:20] [Server thread/INFO]: soonk left the game
+[14:22:58] [User Authenticator #3/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[14:22:59] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:22:59] [Server thread/INFO]: soonk joined the game
+[14:22:59] [Server thread/INFO]: soonk[/127.64.211.7:37801] logged in with entity id 6512 at ([world]367.35391736536263, 81.0, -943.4399915552173)
+[14:23:05] [Server thread/INFO]: soonk issued server command: /gamemode survival soonk
+[14:23:05] [Server thread/INFO]: [soonk: Set own game mode to Survival Mode]
+[14:23:05] [User Authenticator #3/INFO]: UUID of player MARO_SMR is c20b5d0a-9924-3d21-91d2-462b332c1684
+[14:23:05] [TAB Processing Thread/INFO]: [TAB] [WARN] Player MARO_SMR's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[14:23:05] [Server thread/INFO]: MARO_SMR joined the game
+[14:23:05] [Server thread/INFO]: MARO_SMR[/127.59.128.197:57965] logged in with entity id 6924 at ([world]329.0510046884349, 81.0, -935.2285650876233)
+[14:23:09] [Server thread/INFO]: soonk issued server command: /gamemode survival soonk
+[14:23:47] [Server thread/INFO]: soonk issued server command: /gamemode creative
+[14:23:47] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
+[14:24:44] [Craft Scheduler Thread - 107 - OnePlayerSleep/INFO]: MARO_SMR has hit the hay
+[14:24:56] [Server thread/INFO]: soonk issued server command: /gamemode survival soonk
+[14:24:56] [Server thread/INFO]: [soonk: Set own game mode to Survival Mode]
+[14:25:02] [Server thread/INFO]: soonk issued server command: /gamemode survival soonk
+[14:25:08] [Server thread/INFO]: soonk was slain by MARO_SMR
+[14:25:44] [Server thread/INFO]: soonk issued server command: /tp MARO_SMR
+[14:25:44] [Server thread/INFO]: [soonk: Teleported soonk to MARO_SMR]
+[14:25:54] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: جتلي فكره
+[14:26:11] [Server thread/INFO]: soonk issued server command: /gamemode creative
+[14:26:11] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
+[14:26:19] [Async Chat Thread - #10/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اي هيا
+[14:26:21] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: ياهه
+[14:26:35] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: بص المكان اللي احنا عملناه ده جبل
+[14:26:58] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: اي رايك نخلي الجبل مكان في السبون و لوحة القوانين بتاعت السبون و المحلات و العالم
+[14:27:09] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: و نعمل منه سلالم للمحلات تحت
+[14:27:16] [Async Chat Thread - #10/INFO]: [Not Secure] world [OWNER] MEMBER soonk: ده كده كوسه
+[14:27:26] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: طب لو عملتها و نجحت؟
+[14:27:40] [Async Chat Thread - #10/INFO]: [Not Secure] world [OWNER] MEMBER soonk: لا
+[14:27:47] [Async Chat Thread - #10/INFO]: [Not Secure] world MEMBER MARO_SMR: يبني ولله جامده
+[14:29:22] [Async Chat Thread - #12/INFO]: [Not Secure] world [OWNER] MEMBER soonk: سطج المنطقه وانا هبني
+[14:29:39] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[14:29:42] [RCON Client /127.13.102.116 #14/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[14:32:19] [Craft Scheduler Thread - 117 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:33:21] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:21] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:21] [RCON Client /127.122.176.236 #15/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:22] [RCON Client /127.122.176.236 #16/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:22] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:23] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:24] [RCON Client /127.122.176.236 #17/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:24] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:24] [RCON Client /127.122.176.236 #18/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:24] [RCON Client /127.122.176.236 #19/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:24] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:24] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:24] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:26] [RCON Client /127.122.176.236 #22/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:26] [RCON Client /127.122.176.236 #20/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:26] [RCON Client /127.122.176.236 #21/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:33:26] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[14:33:27] [RCON Client /127.122.176.236 #23/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[14:34:21] [Async Chat Thread - #14/INFO]: [Not Secure] world MEMBER MARO_SMR: يسطا احا
+[14:34:44] [Async Chat Thread - #14/INFO]: [Not Secure] world MEMBER MARO_SMR: ده كلو لسه معملتش القاعده
+[14:35:30] [Async Chat Thread - #14/INFO]: [Not Secure] world MEMBER MARO_SMR: انا هشرب سجاره يعم
+[14:35:42] [Async Chat Thread - #14/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اشرب
+[14:42:05] [Async Chat Thread - #16/INFO]: [Not Secure] world [OWNER] MEMBER soonk: نام يعم
+[14:42:19] [Craft Scheduler Thread - 132 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:43:22] [Server thread/INFO]: soonk issued server command: /gamemode survival
+[14:43:22] [Server thread/INFO]: [soonk: Set own game mode to Survival Mode]
+[14:43:29] [Server thread/INFO]: soonk issued server command: /gamemode creative
+[14:43:29] [Server thread/INFO]: [soonk: Set own game mode to Creative Mode]
+[14:50:44] [Async Chat Thread - #18/INFO]: [Not Secure] world MEMBER MARO_SMR: اي الدنيا
+[14:51:01] [Async Chat Thread - #18/INFO]: [Not Secure] world [OWNER] MEMBER soonk: انت شايف اي
+[14:51:28] [Async Chat Thread - #18/INFO]: [Not Secure] world MEMBER MARO_SMR: اقرف
+[14:51:38] [Async Chat Thread - #18/INFO]: [Not Secure] world MEMBER MARO_SMR: من عندي و عندك :)
+[14:52:19] [Craft Scheduler Thread - 150 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[14:52:57] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: تعالى يسطا
+[14:52:59] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: بص
+[14:53:11] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: يااه
+[14:53:18] [Async Chat Thread - #20/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اي
+[14:53:21] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: تعالى
+[14:53:41] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: يبني تعالى
+[14:53:53] [Async Chat Thread - #20/INFO]: [Not Secure] world MEMBER MARO_SMR: تعالى عشان انت هتكسر تاني
+[14:53:59] [Async Chat Thread - #21/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اي
+[14:54:06] [Async Chat Thread - #21/INFO]: [Not Secure] world MEMBER MARO_SMR: يعم تعالى
+[14:54:22] [Async Chat Thread - #21/INFO]: [Not Secure] world [OWNER] MEMBER soonk: مش مظبوطه صح
+[14:54:45] [Async Chat Thread - #21/INFO]: [Not Secure] world MEMBER MARO_SMR: اكيد
+[14:54:56] [Async Chat Thread - #21/INFO]: [Not Secure] world [OWNER] MEMBER soonk: طززز
+[14:55:01] [Async Chat Thread - #21/INFO]: [Not Secure] world MEMBER MARO_SMR: احا
+[14:55:23] [Server thread/INFO]: MARO_SMR lost connection: Disconnected
+[14:55:23] [Server thread/INFO]: [voicechat] Disconnecting client MARO_SMR
+[14:55:23] [Server thread/INFO]: MARO_SMR left the game
+[15:01:57] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[15:02:19] [Craft Scheduler Thread - 162 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:02:41] [Server thread/WARN]: soonk was kicked due to keepalive timeout!
+[15:02:41] [Server thread/INFO]: soonk lost connection: Timed out
+[15:02:41] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[15:02:41] [Server thread/INFO]: soonk left the game
+[15:03:01] [RCON Client /127.13.102.116 #24/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[15:11:04] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:05] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:05] [RCON Client /127.244.232.196 #25/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:06] [RCON Client /127.244.232.196 #26/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:06] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:06] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:07] [RCON Client /127.244.232.196 #27/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:07] [RCON Client /127.244.232.196 #28/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:07] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:07] [RCON Client /127.244.232.196 #29/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:08] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:08] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:08] [RCON Client /127.244.232.196 #31/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:08] [RCON Client /127.244.232.196 #30/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:11:08] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:09] [RCON Listener #1/INFO]: Thread RCON Client /127.244.232.196 started
+[15:11:10] [RCON Client /127.244.232.196 #32/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:12:16] [RCON Client /127.244.232.196 #33/INFO]: Thread RCON Client /127.244.232.196 shutting down
+[15:12:19] [Craft Scheduler Thread - 189 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:16:09] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[15:16:12] [RCON Client /127.13.102.116 #34/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[15:22:19] [Craft Scheduler Thread - 210 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:24:36] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:36] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:36] [RCON Client /127.156.132.93 #35/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:37] [RCON Client /127.156.132.93 #36/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:37] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:37] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:38] [RCON Client /127.156.132.93 #37/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:38] [RCON Client /127.156.132.93 #38/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:38] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:38] [RCON Client /127.156.132.93 #39/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:39] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:39] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:39] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:40] [RCON Client /127.156.132.93 #41/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:40] [RCON Client /127.156.132.93 #42/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:40] [RCON Client /127.156.132.93 #40/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:24:40] [RCON Listener #1/INFO]: Thread RCON Client /127.156.132.93 started
+[15:24:42] [RCON Client /127.156.132.93 #43/INFO]: Thread RCON Client /127.156.132.93 shutting down
+[15:25:43] [RCON Listener #1/INFO]: Thread RCON Client /127.98.170.234 started
+[15:25:45] [RCON Listener #1/INFO]: Thread RCON Client /127.98.170.234 started
+[15:25:46] [RCON Client /127.98.170.234 #44/INFO]: Thread RCON Client /127.98.170.234 shutting down
+[15:25:48] [RCON Client /127.98.170.234 #45/INFO]: Thread RCON Client /127.98.170.234 shutting down
+[15:32:19] [Craft Scheduler Thread - 228 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:33:41] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:41] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:41] [RCON Client /127.63.223.224 #46/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:42] [RCON Client /127.63.223.224 #47/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:42] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:42] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:43] [RCON Client /127.63.223.224 #48/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:43] [RCON Client /127.63.223.224 #49/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:43] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:43] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:43] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:44] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:45] [RCON Client /127.63.223.224 #52/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:45] [RCON Client /127.63.223.224 #51/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:45] [RCON Client /127.63.223.224 #50/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:45] [RCON Listener #1/INFO]: Thread RCON Client /127.63.223.224 started
+[15:33:45] [RCON Client /127.63.223.224 #53/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:33:46] [RCON Client /127.63.223.224 #54/INFO]: Thread RCON Client /127.63.223.224 shutting down
+[15:36:02] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:02] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:03] [RCON Client /127.86.179.214 #55/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:04] [RCON Client /127.86.179.214 #56/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:04] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:04] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:04] [RCON Client /127.86.179.214 #57/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:04] [RCON Client /127.86.179.214 #58/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:05] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:05] [RCON Client /127.86.179.214 #59/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:05] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:05] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:05] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:07] [RCON Client /127.86.179.214 #61/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:07] [RCON Client /127.86.179.214 #62/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:07] [RCON Client /127.86.179.214 #60/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:07] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[15:36:08] [RCON Client /127.86.179.214 #63/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[15:36:57] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[15:36:59] [RCON Client /127.105.141.249 #64/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[15:37:55] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[15:37:55] [RCON Client /127.105.141.249 #65/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[15:42:19] [Craft Scheduler Thread - 250 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:48:49] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:49] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:50] [RCON Client /127.129.195.219 #66/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:52] [RCON Client /127.129.195.219 #67/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:52] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:53] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:55] [RCON Client /127.129.195.219 #69/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:56] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:56] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:57] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:58] [RCON Client /127.129.195.219 #71/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:58] [RCON Client /127.129.195.219 #72/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:59] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:59] [RCON Listener #1/INFO]: Thread RCON Client /127.129.195.219 started
+[15:48:59] [RCON Client /127.129.195.219 #70/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:48:59] [RCON Client /127.129.195.219 #74/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:49:55] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:55] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:56] [RCON Client /127.44.169.108 #75/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:49:57] [RCON Client /127.44.169.108 #76/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:49:57] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:57] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:58] [RCON Client /127.44.169.108 #77/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:49:58] [RCON Client /127.44.169.108 #78/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:49:58] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:59] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:59] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:59] [RCON Listener #1/INFO]: Thread RCON Client /127.44.169.108 started
+[15:49:59] [RCON Client /127.44.169.108 #79/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:50:00] [RCON Client /127.44.169.108 #80/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:50:00] [RCON Client /127.44.169.108 #82/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:50:00] [RCON Client /127.44.169.108 #81/INFO]: Thread RCON Client /127.44.169.108 shutting down
+[15:50:01] [RCON Client /127.129.195.219 #68/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:50:01] [RCON Client /127.129.195.219 #73/INFO]: Thread RCON Client /127.129.195.219 shutting down
+[15:50:08] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:08] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:08] [RCON Client /127.112.95.34 #83/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:09] [RCON Client /127.112.95.34 #84/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:10] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:10] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:10] [RCON Client /127.112.95.34 #85/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:10] [RCON Client /127.112.95.34 #86/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:10] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:11] [RCON Client /127.112.95.34 #87/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:11] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:11] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:11] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:13] [RCON Client /127.112.95.34 #90/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:13] [RCON Client /127.112.95.34 #89/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:13] [RCON Client /127.112.95.34 #88/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:13] [RCON Listener #1/INFO]: Thread RCON Client /127.112.95.34 started
+[15:50:14] [RCON Client /127.112.95.34 #91/INFO]: Thread RCON Client /127.112.95.34 shutting down
+[15:50:21] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:21] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:21] [RCON Client /127.116.251.49 #92/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:22] [RCON Client /127.116.251.49 #93/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:22] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:22] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:23] [RCON Client /127.116.251.49 #94/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:23] [RCON Client /127.116.251.49 #95/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:23] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:23] [RCON Client /127.116.251.49 #96/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:23] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:23] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:24] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:25] [RCON Client /127.116.251.49 #99/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:25] [RCON Client /127.116.251.49 #98/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:25] [RCON Client /127.116.251.49 #97/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:50:25] [RCON Listener #1/INFO]: Thread RCON Client /127.116.251.49 started
+[15:50:27] [RCON Client /127.116.251.49 #100/INFO]: Thread RCON Client /127.116.251.49 shutting down
+[15:52:19] [Craft Scheduler Thread - 270 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[15:54:23] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:23] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:23] [RCON Client /127.17.191.210 #101/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:24] [RCON Client /127.17.191.210 #102/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:24] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:24] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:26] [RCON Client /127.17.191.210 #104/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:26] [RCON Client /127.17.191.210 #103/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:26] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:27] [RCON Client /127.17.191.210 #105/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:27] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:27] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:27] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:28] [RCON Client /127.17.191.210 #106/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:28] [RCON Client /127.17.191.210 #107/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:28] [RCON Client /127.17.191.210 #108/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:54:29] [RCON Listener #1/INFO]: Thread RCON Client /127.17.191.210 started
+[15:54:30] [RCON Client /127.17.191.210 #109/INFO]: Thread RCON Client /127.17.191.210 shutting down
+[15:55:21] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:22] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:22] [RCON Client /127.180.207.119 #110/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:23] [RCON Client /127.180.207.119 #111/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:23] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:23] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:24] [RCON Client /127.180.207.119 #113/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:24] [RCON Client /127.180.207.119 #112/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:24] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:24] [RCON Client /127.180.207.119 #114/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:25] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:25] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:25] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:25] [RCON Client /127.180.207.119 #117/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:25] [RCON Client /127.180.207.119 #116/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:25] [RCON Client /127.180.207.119 #115/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:55:26] [RCON Listener #1/INFO]: Thread RCON Client /127.180.207.119 started
+[15:55:27] [RCON Client /127.180.207.119 #118/INFO]: Thread RCON Client /127.180.207.119 shutting down
+[15:56:43] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:43] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:43] [RCON Client /127.78.233.89 #119/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:44] [RCON Client /127.78.233.89 #120/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:44] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:44] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:45] [RCON Client /127.78.233.89 #122/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:45] [RCON Client /127.78.233.89 #121/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:45] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:45] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:45] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:46] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:46] [RCON Client /127.78.233.89 #126/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:47] [RCON Client /127.78.233.89 #125/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:47] [RCON Client /127.78.233.89 #123/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:47] [RCON Client /127.78.233.89 #124/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:56:47] [RCON Listener #1/INFO]: Thread RCON Client /127.78.233.89 started
+[15:56:48] [RCON Client /127.78.233.89 #127/INFO]: Thread RCON Client /127.78.233.89 shutting down
+[15:59:37] [RCON Listener #1/INFO]: Thread RCON Client /127.69.202.216 started
+[15:59:38] [RCON Client /127.69.202.216 #128/INFO]: Thread RCON Client /127.69.202.216 shutting down
+[16:00:20] [RCON Listener #1/INFO]: Thread RCON Client /127.69.202.216 started
+[16:00:21] [RCON Client /127.69.202.216 #129/INFO]: Thread RCON Client /127.69.202.216 shutting down
+[16:00:58] [RCON Listener #1/INFO]: Thread RCON Client /127.69.202.216 started
+[16:00:59] [RCON Client /127.69.202.216 #130/INFO]: Thread RCON Client /127.69.202.216 shutting down
+[16:02:19] [Craft Scheduler Thread - 289 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:03:12] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[16:03:14] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:14] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:14] [RCON Client /127.98.140.75 #132/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:15] [RCON Client /127.13.102.116 #131/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[16:03:16] [RCON Client /127.98.140.75 #133/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:16] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:16] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:16] [RCON Client /127.98.140.75 #135/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:16] [RCON Client /127.98.140.75 #134/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:16] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:17] [RCON Client /127.98.140.75 #136/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:17] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:17] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:18] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:18] [RCON Client /127.98.140.75 #137/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:18] [RCON Client /127.98.140.75 #138/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:18] [RCON Client /127.98.140.75 #139/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:03:18] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[16:03:19] [RCON Client /127.98.140.75 #140/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[16:06:34] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:37] [RCON Client /127.135.194.245 #141/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:38] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:39] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:41] [RCON Client /127.135.194.245 #142/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:42] [RCON Client /127.135.194.245 #143/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:43] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:46] [RCON Client /127.135.194.245 #144/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:52] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:52] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:53] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:54] [RCON Client /127.135.194.245 #145/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:55] [RCON Client /127.135.194.245 #146/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:56] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:56] [RCON Client /127.135.194.245 #147/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:56] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:57] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:57] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:06:58] [RCON Client /127.135.194.245 #148/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:06:59] [RCON Client /127.135.194.245 #149/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:07:00] [RCON Client /127.135.194.245 #150/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:07:00] [RCON Client /127.135.194.245 #151/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:07:00] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:07:03] [RCON Client /127.135.194.245 #152/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:07:03] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:07:03] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:07:06] [RCON Client /127.135.194.245 #154/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:07:06] [RCON Client /127.135.194.245 #153/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:12:19] [Craft Scheduler Thread - 306 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:18:19] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:19] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:19] [RCON Client /127.89.172.64 #155/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:20] [RCON Client /127.89.172.64 #156/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:20] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:20] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:21] [RCON Client /127.89.172.64 #157/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:21] [RCON Client /127.89.172.64 #158/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:21] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:21] [RCON Client /127.89.172.64 #159/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:22] [RCON Client /127.89.172.64 #161/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:22] [RCON Client /127.89.172.64 #160/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:23] [RCON Listener #1/INFO]: Thread RCON Client /127.89.172.64 started
+[16:18:24] [RCON Client /127.89.172.64 #162/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:19:05] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[16:19:07] [RCON Client /127.13.102.116 #164/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[16:19:31] [RCON Client /127.89.172.64 #163/INFO]: Thread RCON Client /127.89.172.64 shutting down
+[16:19:47] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:47] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:47] [RCON Client /127.184.62.120 #165/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:49] [RCON Client /127.184.62.120 #166/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:52] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:52] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:52] [RCON Client /127.184.62.120 #167/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:52] [RCON Client /127.184.62.120 #168/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:52] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:53] [RCON Client /127.184.62.120 #169/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:53] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:53] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:53] [RCON Client /127.184.62.120 #170/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:53] [RCON Client /127.184.62.120 #171/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:19:53] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:53] [RCON Listener #1/INFO]: Thread RCON Client /127.184.62.120 started
+[16:19:55] [RCON Client /127.184.62.120 #173/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:20:04] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:04] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:05] [RCON Client /127.72.36.25 #174/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:06] [RCON Client /127.72.36.25 #175/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:06] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:06] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:07] [RCON Client /127.72.36.25 #177/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:07] [RCON Client /127.72.36.25 #176/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:07] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:07] [RCON Client /127.72.36.25 #178/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:07] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:07] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:07] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:09] [RCON Client /127.72.36.25 #181/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:09] [RCON Client /127.72.36.25 #179/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:09] [RCON Client /127.72.36.25 #180/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:20:09] [RCON Listener #1/INFO]: Thread RCON Client /127.72.36.25 started
+[16:20:10] [RCON Client /127.72.36.25 #182/INFO]: Thread RCON Client /127.72.36.25 shutting down
+[16:21:01] [RCON Client /127.184.62.120 #172/INFO]: Thread RCON Client /127.184.62.120 shutting down
+[16:22:19] [Craft Scheduler Thread - 329 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:22:37] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:37] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:37] [RCON Client /127.118.169.130 #183/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:38] [RCON Client /127.118.169.130 #184/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:39] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:39] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:39] [RCON Client /127.118.169.130 #185/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:39] [RCON Client /127.118.169.130 #186/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:39] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:40] [RCON Client /127.118.169.130 #187/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:40] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:40] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:40] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:42] [RCON Client /127.118.169.130 #189/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:42] [RCON Client /127.118.169.130 #190/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:42] [RCON Client /127.118.169.130 #188/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:22:42] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[16:22:43] [RCON Client /127.118.169.130 #191/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[16:27:44] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[16:27:44] [RCON Client /127.105.141.249 #192/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[16:27:56] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:56] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:56] [RCON Client /127.137.70.126 #193/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:27:57] [RCON Client /127.137.70.126 #194/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:27:57] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:57] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:58] [RCON Client /127.137.70.126 #195/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:27:58] [RCON Client /127.137.70.126 #196/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:27:58] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:58] [RCON Client /127.137.70.126 #197/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:27:58] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:58] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:27:58] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:28:00] [RCON Client /127.137.70.126 #200/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:28:00] [RCON Client /127.137.70.126 #199/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:28:00] [RCON Client /127.137.70.126 #198/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:28:00] [RCON Listener #1/INFO]: Thread RCON Client /127.137.70.126 started
+[16:28:01] [RCON Client /127.137.70.126 #201/INFO]: Thread RCON Client /127.137.70.126 shutting down
+[16:29:00] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:00] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:00] [RCON Client /127.163.141.116 #202/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:01] [RCON Client /127.163.141.116 #203/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:02] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:02] [RCON Client /127.163.141.116 #204/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:02] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:02] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:03] [RCON Listener #1/INFO]: Thread RCON Client /127.163.141.116 started
+[16:29:03] [RCON Client /127.163.141.116 #206/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:03] [RCON Client /127.163.141.116 #205/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:03] [RCON Client /127.163.141.116 #207/INFO]: Thread RCON Client /127.163.141.116 shutting down
+[16:29:14] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[16:29:15] [RCON Client /127.105.141.249 #208/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[16:32:19] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[16:32:19] [Craft Scheduler Thread - 348 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:32:22] [RCON Client /127.13.102.116 #209/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[16:36:06] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:06] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:06] [RCON Client /127.28.183.93 #210/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:36:07] [RCON Client /127.28.183.93 #211/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:36:07] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:08] [RCON Client /127.28.183.93 #212/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:36:08] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:08] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:08] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[16:36:09] [RCON Client /127.28.183.93 #215/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:36:09] [RCON Client /127.28.183.93 #213/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:36:09] [RCON Client /127.28.183.93 #214/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[16:39:40] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:40] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:40] [RCON Client /127.232.1.244 #216/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:41] [RCON Client /127.232.1.244 #217/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:41] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:41] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:42] [RCON Client /127.232.1.244 #218/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:42] [RCON Client /127.232.1.244 #219/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:42] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:42] [RCON Client /127.232.1.244 #220/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:42] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:42] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:42] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:44] [RCON Client /127.232.1.244 #222/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:44] [RCON Client /127.232.1.244 #223/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:44] [RCON Client /127.232.1.244 #221/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:39:44] [RCON Listener #1/INFO]: Thread RCON Client /127.232.1.244 started
+[16:39:45] [RCON Client /127.232.1.244 #224/INFO]: Thread RCON Client /127.232.1.244 shutting down
+[16:42:15] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:15] [RCON Client /127.100.248.215 #225/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:15] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:16] [RCON Client /127.100.248.215 #226/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:17] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:17] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:17] [RCON Client /127.100.248.215 #227/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:17] [RCON Client /127.100.248.215 #228/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:17] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:18] [RCON Client /127.100.248.215 #229/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:18] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:18] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:18] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:19] [RCON Client /127.100.248.215 #230/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:19] [RCON Client /127.100.248.215 #232/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:19] [RCON Client /127.100.248.215 #231/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:19] [RCON Listener #1/INFO]: Thread RCON Client /127.100.248.215 started
+[16:42:19] [Craft Scheduler Thread - 367 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:42:21] [RCON Client /127.100.248.215 #233/INFO]: Thread RCON Client /127.100.248.215 shutting down
+[16:42:50] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[16:42:53] [RCON Client /127.13.102.116 #234/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[16:46:22] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:22] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:23] [RCON Client /127.14.75.27 #235/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:24] [RCON Client /127.14.75.27 #236/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:24] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:24] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:24] [RCON Client /127.14.75.27 #238/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:24] [RCON Client /127.14.75.27 #237/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:24] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:25] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:25] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:25] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:27] [RCON Client /127.14.75.27 #240/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:27] [RCON Client /127.14.75.27 #242/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:27] [RCON Client /127.14.75.27 #241/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:46:27] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[16:46:28] [RCON Client /127.14.75.27 #243/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:47:26] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:26] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:27] [RCON Client /127.219.146.251 #244/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:28] [RCON Client /127.219.146.251 #245/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:28] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:28] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:29] [RCON Client /127.219.146.251 #246/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:29] [RCON Client /127.219.146.251 #247/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:29] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:29] [RCON Client /127.219.146.251 #248/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:29] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:29] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:29] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:31] [RCON Client /127.219.146.251 #249/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:31] [RCON Client /127.219.146.251 #251/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:31] [RCON Client /127.219.146.251 #250/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:47:31] [RCON Listener #1/INFO]: Thread RCON Client /127.219.146.251 started
+[16:47:31] [RCON Client /127.14.75.27 #239/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[16:47:32] [RCON Client /127.219.146.251 #252/INFO]: Thread RCON Client /127.219.146.251 shutting down
+[16:51:39] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:40] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:42] [RCON Client /127.135.194.245 #253/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:43] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:43] [RCON Client /127.135.194.245 #254/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:43] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:44] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:44] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:44] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:45] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:46] [RCON Client /127.135.194.245 #255/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:46] [RCON Client /127.135.194.245 #256/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:47] [RCON Client /127.135.194.245 #257/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:47] [RCON Client /127.135.194.245 #258/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:47] [RCON Client /127.135.194.245 #259/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:47] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:48] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:48] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:48] [RCON Client /127.135.194.245 #260/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:48] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:50] [RCON Client /127.135.194.245 #261/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:51] [RCON Client /127.135.194.245 #262/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:51] [RCON Client /127.135.194.245 #263/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:51] [RCON Client /127.135.194.245 #264/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:51] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:52] [RCON Listener #1/INFO]: Thread RCON Client /127.135.194.245 started
+[16:51:54] [RCON Client /127.135.194.245 #266/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:51:54] [RCON Client /127.135.194.245 #265/INFO]: Thread RCON Client /127.135.194.245 shutting down
+[16:52:19] [Craft Scheduler Thread - 388 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[16:52:48] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:48] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:49] [RCON Client /127.100.173.234 #267/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:52:51] [RCON Client /127.100.173.234 #268/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:51] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:57] [RCON Client /127.100.173.234 #269/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:52:57] [RCON Client /127.100.173.234 #270/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:52:57] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:57] [RCON Client /127.100.173.234 #271/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:52:58] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:58] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:52:58] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:53:06] [RCON Client /127.100.173.234 #272/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:53:06] [RCON Client /127.100.173.234 #274/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:53:06] [RCON Listener #1/INFO]: Thread RCON Client /127.100.173.234 started
+[16:53:10] [RCON Client /127.100.173.234 #275/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:54:01] [RCON Client /127.100.173.234 #273/INFO]: Thread RCON Client /127.100.173.234 shutting down
+[16:55:22] [RCON Listener #1/INFO]: Thread RCON Client /127.128.70.68 started
+[16:56:31] [RCON Client /127.128.70.68 #276/INFO]: Thread RCON Client /127.128.70.68 shutting down
+[17:01:57] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:01:57] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:01:57] [RCON Client /127.14.75.27 #277/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:01:59] [RCON Client /127.14.75.27 #278/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:01:59] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:01:59] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:01:59] [RCON Client /127.14.75.27 #280/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:01:59] [RCON Client /127.14.75.27 #279/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:01:59] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:02:00] [RCON Client /127.14.75.27 #281/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:02:00] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:02:01] [RCON Client /127.14.75.27 #282/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:02:01] [RCON Client /127.14.75.27 #284/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:02:01] [RCON Client /127.14.75.27 #283/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:02:01] [RCON Listener #1/INFO]: Thread RCON Client /127.14.75.27 started
+[17:02:03] [RCON Client /127.14.75.27 #285/INFO]: Thread RCON Client /127.14.75.27 shutting down
+[17:02:19] [Craft Scheduler Thread - 409 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[17:05:38] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[17:05:38] [RCON Client /127.105.141.249 #286/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[17:07:32] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:32] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:32] [RCON Client /127.203.35.214 #287/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:33] [RCON Client /127.203.35.214 #288/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:33] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:33] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:34] [RCON Client /127.203.35.214 #290/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:34] [RCON Client /127.203.35.214 #289/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:34] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:35] [RCON Client /127.203.35.214 #291/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:35] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:35] [RCON Listener #1/INFO]: Thread RCON Client /127.203.35.214 started
+[17:07:51] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[17:07:51] [RCON Client /127.105.141.249 #294/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[17:07:56] [RCON Client /127.203.35.214 #293/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:07:56] [RCON Client /127.203.35.214 #292/INFO]: Thread RCON Client /127.203.35.214 shutting down
+[17:08:35] [RCON Listener #1/INFO]: Thread RCON Client /127.107.228.1 started
+[17:09:46] [RCON Client /127.107.228.1 #295/INFO]: Thread RCON Client /127.107.228.1 shutting down
+[17:12:19] [Craft Scheduler Thread - 430 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[17:13:37] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:37] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:38] [RCON Client /127.135.208.210 #297/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:38] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:38] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:39] [RCON Client /127.135.208.210 #298/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:39] [RCON Client /127.135.208.210 #299/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:39] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:39] [RCON Client /127.135.208.210 #300/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:39] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:40] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:40] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:40] [RCON Client /127.135.208.210 #301/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:40] [RCON Client /127.135.208.210 #303/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:40] [RCON Client /127.135.208.210 #302/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:13:40] [RCON Listener #1/INFO]: Thread RCON Client /127.135.208.210 started
+[17:13:41] [RCON Client /127.135.208.210 #304/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:14:12] [RCON Listener #1/INFO]: Thread RCON Client /127.122.183.194 started
+[17:14:12] [RCON Listener #1/INFO]: Thread RCON Client /127.216.120.67 started
+[17:14:13] [RCON Client /127.122.183.194 #305/INFO]: Thread RCON Client /127.122.183.194 shutting down
+[17:14:14] [RCON Client /127.216.120.67 #306/INFO]: Thread RCON Client /127.216.120.67 shutting down
+[17:14:14] [RCON Listener #1/INFO]: Thread RCON Client /127.87.10.233 started
+[17:14:14] [RCON Listener #1/INFO]: Thread RCON Client /127.122.183.194 started
+[17:14:15] [RCON Client /127.122.183.194 #308/INFO]: Thread RCON Client /127.122.183.194 shutting down
+[17:14:15] [RCON Client /127.87.10.233 #307/INFO]: Thread RCON Client /127.87.10.233 shutting down
+[17:14:15] [RCON Listener #1/INFO]: Thread RCON Client /127.122.183.194 started
+[17:14:15] [RCON Client /127.122.183.194 #309/INFO]: Thread RCON Client /127.122.183.194 shutting down
+[17:14:15] [RCON Listener #1/INFO]: Thread RCON Client /127.87.10.233 started
+[17:14:16] [RCON Listener #1/INFO]: Thread RCON Client /127.172.83.192 started
+[17:14:16] [RCON Listener #1/INFO]: Thread RCON Client /127.122.183.194 started
+[17:14:17] [RCON Client /127.172.83.192 #311/INFO]: Thread RCON Client /127.172.83.192 shutting down
+[17:14:17] [RCON Client /127.87.10.233 #310/INFO]: Thread RCON Client /127.87.10.233 shutting down
+[17:14:17] [RCON Client /127.122.183.194 #312/INFO]: Thread RCON Client /127.122.183.194 shutting down
+[17:14:17] [RCON Listener #1/INFO]: Thread RCON Client /127.122.183.194 started
+[17:14:19] [RCON Client /127.122.183.194 #313/INFO]: Thread RCON Client /127.122.183.194 shutting down
+[17:14:46] [RCON Client /127.135.208.210 #296/INFO]: Thread RCON Client /127.135.208.210 shutting down
+[17:16:08] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:08] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:09] [RCON Client /127.187.213.113 #314/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:10] [RCON Client /127.187.213.113 #315/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:10] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:10] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:10] [RCON Client /127.187.213.113 #316/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:10] [RCON Client /127.187.213.113 #317/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:10] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:11] [RCON Client /127.187.213.113 #318/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:11] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:11] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:11] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:12] [RCON Client /127.187.213.113 #319/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:12] [RCON Client /127.187.213.113 #320/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:12] [RCON Client /127.187.213.113 #321/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:16:12] [RCON Listener #1/INFO]: Thread RCON Client /127.187.213.113 started
+[17:16:14] [RCON Client /127.187.213.113 #322/INFO]: Thread RCON Client /127.187.213.113 shutting down
+[17:18:20] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:20] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:20] [RCON Client /127.56.137.185 #323/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:18:21] [RCON Client /127.56.137.185 #324/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:18:21] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:22] [RCON Client /127.56.137.185 #325/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:22] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[17:18:24] [RCON Client /127.56.137.185 #327/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:18:24] [RCON Client /127.56.137.185 #326/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:18:24] [RCON Client /127.56.137.185 #328/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[17:22:19] [Craft Scheduler Thread - 450 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[17:25:20] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:20] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:22] [RCON Client /127.241.44.105 #330/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:22] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:22] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:23] [RCON Client /127.241.44.105 #332/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:23] [RCON Client /127.241.44.105 #331/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:23] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:24] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:24] [RCON Client /127.241.44.105 #333/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:24] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:24] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:24] [RCON Client /127.241.44.105 #334/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:24] [RCON Client /127.241.44.105 #335/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:24] [RCON Client /127.241.44.105 #336/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:25:24] [RCON Listener #1/INFO]: Thread RCON Client /127.241.44.105 started
+[17:25:26] [RCON Client /127.241.44.105 #337/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:26:31] [RCON Client /127.241.44.105 #329/INFO]: Thread RCON Client /127.241.44.105 shutting down
+[17:32:19] [Craft Scheduler Thread - 462 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[17:38:36] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:36] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:36] [RCON Client /127.12.32.28 #338/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:37] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:37] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:38] [RCON Client /127.12.32.28 #340/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:38] [RCON Client /127.12.32.28 #341/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:38] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:38] [RCON Client /127.12.32.28 #342/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:38] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:40] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:40] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:40] [RCON Client /127.12.32.28 #343/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:40] [RCON Client /127.12.32.28 #345/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:40] [RCON Client /127.12.32.28 #344/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:38:40] [RCON Listener #1/INFO]: Thread RCON Client /127.12.32.28 started
+[17:38:41] [RCON Client /127.12.32.28 #346/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:39:47] [RCON Client /127.12.32.28 #339/INFO]: Thread RCON Client /127.12.32.28 shutting down
+[17:41:35] [RCON Listener #1/INFO]: Thread RCON Client /127.23.130.128 started
+[17:42:19] [Craft Scheduler Thread - 489 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[17:42:40] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:40] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:40] [RCON Client /127.86.67.176 #348/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:41] [RCON Client /127.86.67.176 #349/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:41] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:41] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:42] [RCON Client /127.86.67.176 #350/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:42] [RCON Client /127.86.67.176 #351/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:42] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:45] [RCON Client /127.86.67.176 #352/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:45] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:45] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:45] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:45] [RCON Client /127.86.67.176 #355/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:45] [RCON Client /127.86.67.176 #354/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:45] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[17:42:45] [RCON Client /127.86.67.176 #353/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:42:47] [RCON Client /127.23.130.128 #347/INFO]: Thread RCON Client /127.23.130.128 shutting down
+[17:42:47] [RCON Client /127.86.67.176 #356/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[17:44:25] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:25] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:25] [RCON Client /127.5.86.132 #357/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:26] [RCON Client /127.5.86.132 #358/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:26] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:26] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:27] [RCON Client /127.5.86.132 #360/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:27] [RCON Client /127.5.86.132 #359/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:27] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:28] [RCON Client /127.5.86.132 #361/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:28] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:28] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:28] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:29] [RCON Client /127.5.86.132 #362/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:29] [RCON Client /127.5.86.132 #363/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:29] [RCON Client /127.5.86.132 #364/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:44:30] [RCON Listener #1/INFO]: Thread RCON Client /127.5.86.132 started
+[17:44:31] [RCON Client /127.5.86.132 #365/INFO]: Thread RCON Client /127.5.86.132 shutting down
+[17:52:19] [Craft Scheduler Thread - 509 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:02:19] [Craft Scheduler Thread - 529 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:04:53] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:53] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:53] [RCON Client /127.185.91.45 #366/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:54] [RCON Client /127.185.91.45 #367/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:54] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:54] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:55] [RCON Client /127.185.91.45 #368/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:55] [RCON Client /127.185.91.45 #369/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:56] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:57] [RCON Client /127.185.91.45 #370/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:57] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:57] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:57] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:04:58] [RCON Client /127.185.91.45 #372/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:58] [RCON Client /127.185.91.45 #371/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:58] [RCON Client /127.185.91.45 #373/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:04:58] [RCON Listener #1/INFO]: Thread RCON Client /127.185.91.45 started
+[18:05:00] [RCON Client /127.185.91.45 #374/INFO]: Thread RCON Client /127.185.91.45 shutting down
+[18:10:52] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:52] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:54] [RCON Client /127.30.45.55 #376/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:54] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:54] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:55] [RCON Client /127.30.45.55 #377/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:55] [RCON Client /127.30.45.55 #378/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:55] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:55] [RCON Client /127.30.45.55 #379/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:55] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:56] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:56] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:56] [RCON Client /127.30.45.55 #380/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:56] [RCON Client /127.30.45.55 #381/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:56] [RCON Client /127.30.45.55 #382/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:10:56] [RCON Listener #1/INFO]: Thread RCON Client /127.30.45.55 started
+[18:10:58] [RCON Client /127.30.45.55 #383/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:11:46] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[18:11:49] [RCON Client /127.13.102.116 #384/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[18:12:02] [RCON Client /127.30.45.55 #375/INFO]: Thread RCON Client /127.30.45.55 shutting down
+[18:12:19] [Craft Scheduler Thread - 548 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:17:09] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[18:17:10] [RCON Client /127.105.141.249 #385/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[18:18:08] [RCON Listener #1/INFO]: Thread RCON Client /127.105.141.249 started
+[18:18:08] [RCON Client /127.105.141.249 #386/INFO]: Thread RCON Client /127.105.141.249 shutting down
+[18:22:19] [Craft Scheduler Thread - 569 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:22:35] [RCON Listener #1/INFO]: Thread RCON Client /127.122.176.236 started
+[18:22:35] [RCON Client /127.122.176.236 #387/INFO]: Thread RCON Client /127.122.176.236 shutting down
+[18:29:27] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:27] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:27] [RCON Client /127.118.169.130 #388/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:28] [RCON Client /127.118.169.130 #389/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:28] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:28] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:29] [RCON Client /127.118.169.130 #390/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:29] [RCON Client /127.118.169.130 #391/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:29] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:29] [RCON Client /127.118.169.130 #392/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:30] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:30] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:30] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:31] [RCON Client /127.118.169.130 #393/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:31] [RCON Client /127.118.169.130 #394/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:31] [RCON Client /127.118.169.130 #395/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:31] [RCON Listener #1/INFO]: Thread RCON Client /127.118.169.130 started
+[18:29:33] [RCON Client /127.118.169.130 #396/INFO]: Thread RCON Client /127.118.169.130 shutting down
+[18:29:37] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:37] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:38] [RCON Client /127.56.137.185 #397/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:29:39] [RCON Client /127.56.137.185 #398/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:29:39] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:39] [RCON Client /127.56.137.185 #399/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:29:40] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:40] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:40] [RCON Listener #1/INFO]: Thread RCON Client /127.56.137.185 started
+[18:29:41] [RCON Client /127.56.137.185 #401/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:29:41] [RCON Client /127.56.137.185 #402/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:29:41] [RCON Client /127.56.137.185 #400/INFO]: Thread RCON Client /127.56.137.185 shutting down
+[18:32:19] [Craft Scheduler Thread - 588 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:34:58] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[18:35:01] [RCON Client /127.13.102.116 #403/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[18:39:47] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:47] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:47] [RCON Client /127.86.67.176 #404/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:49] [RCON Client /127.86.67.176 #405/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:51] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:51] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:51] [RCON Client /127.86.67.176 #406/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:51] [RCON Client /127.86.67.176 #407/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:51] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:52] [RCON Client /127.86.67.176 #408/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:52] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:52] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:52] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:55] [RCON Client /127.86.67.176 #409/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:55] [RCON Client /127.86.67.176 #411/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:55] [RCON Client /127.86.67.176 #410/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:39:56] [RCON Listener #1/INFO]: Thread RCON Client /127.86.67.176 started
+[18:39:58] [RCON Client /127.86.67.176 #412/INFO]: Thread RCON Client /127.86.67.176 shutting down
+[18:42:19] [Craft Scheduler Thread - 608 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:48:35] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:35] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:36] [RCON Client /127.98.140.75 #413/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:37] [RCON Client /127.98.140.75 #414/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:37] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:38] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:38] [RCON Client /127.98.140.75 #415/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:38] [RCON Client /127.98.140.75 #416/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:38] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:40] [RCON Client /127.98.140.75 #417/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:40] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:40] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:40] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:40] [RCON Client /127.98.140.75 #420/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:40] [RCON Client /127.98.140.75 #418/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:40] [RCON Client /127.98.140.75 #419/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:48:41] [RCON Listener #1/INFO]: Thread RCON Client /127.98.140.75 started
+[18:48:42] [RCON Client /127.98.140.75 #421/INFO]: Thread RCON Client /127.98.140.75 shutting down
+[18:49:27] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:27] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:27] [RCON Client /127.28.183.93 #422/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:29] [RCON Client /127.28.183.93 #423/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:29] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:29] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:29] [RCON Client /127.28.183.93 #425/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:29] [RCON Client /127.28.183.93 #424/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:29] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:30] [RCON Client /127.28.183.93 #426/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:30] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:30] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:30] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:32] [RCON Client /127.28.183.93 #427/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:32] [RCON Client /127.28.183.93 #429/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:32] [RCON Client /127.28.183.93 #428/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:49:32] [RCON Listener #1/INFO]: Thread RCON Client /127.28.183.93 started
+[18:49:33] [RCON Client /127.28.183.93 #430/INFO]: Thread RCON Client /127.28.183.93 shutting down
+[18:51:21] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:21] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:21] [RCON Client /127.86.179.214 #431/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:23] [RCON Client /127.86.179.214 #432/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:23] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:23] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:23] [RCON Client /127.86.179.214 #434/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:23] [RCON Client /127.86.179.214 #433/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:23] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:24] [RCON Client /127.86.179.214 #435/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:24] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:24] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:24] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:25] [RCON Client /127.86.179.214 #437/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:25] [RCON Client /127.86.179.214 #436/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:25] [RCON Client /127.86.179.214 #438/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:51:25] [RCON Listener #1/INFO]: Thread RCON Client /127.86.179.214 started
+[18:51:27] [RCON Client /127.86.179.214 #439/INFO]: Thread RCON Client /127.86.179.214 shutting down
+[18:52:19] [Craft Scheduler Thread - 628 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:52:58] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:52:58] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:52:58] [RCON Client /127.252.68.73 #440/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:52:59] [RCON Client /127.252.68.73 #441/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:53:00] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:53:01] [RCON Client /127.252.68.73 #442/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:53:01] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:53:01] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:53:01] [RCON Listener #1/INFO]: Thread RCON Client /127.252.68.73 started
+[18:53:03] [RCON Client /127.252.68.73 #444/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:53:03] [RCON Client /127.252.68.73 #445/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:53:03] [RCON Client /127.252.68.73 #443/INFO]: Thread RCON Client /127.252.68.73 shutting down
+[18:55:02] [RCON Listener #1/INFO]: Thread RCON Client /127.103.147.21 started
+[18:55:03] [RCON Listener #1/INFO]: Thread RCON Client /127.201.240.13 started
+[18:55:03] [RCON Client /127.103.147.21 #446/INFO]: Thread RCON Client /127.103.147.21 shutting down
+[18:55:04] [RCON Client /127.201.240.13 #447/INFO]: Thread RCON Client /127.201.240.13 shutting down
+[18:55:05] [RCON Listener #1/INFO]: Thread RCON Client /127.1.164.88 started
+[18:55:05] [RCON Listener #1/INFO]: Thread RCON Client /127.172.83.192 started
+[18:55:05] [RCON Client /127.1.164.88 #448/INFO]: Thread RCON Client /127.1.164.88 shutting down
+[18:55:05] [RCON Client /127.172.83.192 #449/INFO]: Thread RCON Client /127.172.83.192 shutting down
+[18:55:05] [RCON Listener #1/INFO]: Thread RCON Client /127.160.149.3 started
+[18:55:06] [RCON Client /127.160.149.3 #450/INFO]: Thread RCON Client /127.160.149.3 shutting down
+[18:55:06] [RCON Listener #1/INFO]: Thread RCON Client /127.201.240.13 started
+[18:55:06] [RCON Listener #1/INFO]: Thread RCON Client /127.71.92.3 started
+[18:55:06] [RCON Listener #1/INFO]: Thread RCON Client /127.226.199.151 started
+[18:55:08] [RCON Client /127.201.240.13 #451/INFO]: Thread RCON Client /127.201.240.13 shutting down
+[18:55:08] [RCON Client /127.226.199.151 #453/INFO]: Thread RCON Client /127.226.199.151 shutting down
+[18:55:08] [RCON Client /127.71.92.3 #452/INFO]: Thread RCON Client /127.71.92.3 shutting down
+[18:55:08] [RCON Listener #1/INFO]: Thread RCON Client /127.160.149.3 started
+[18:55:09] [RCON Client /127.160.149.3 #454/INFO]: Thread RCON Client /127.160.149.3 shutting down
+[19:02:19] [Craft Scheduler Thread - 649 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[19:04:29] [RCON Listener #1/INFO]: Thread RCON Client /127.13.102.116 started
+[19:04:32] [RCON Client /127.13.102.116 #455/INFO]: Thread RCON Client /127.13.102.116 shutting down
+[19:07:40] [Server thread/INFO]: Stopping server
+[19:07:40] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
+[19:07:40] [Server thread/INFO]: [CreeperRefund] Disabling CreeperRefund v1.0
+[19:07:40] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
+[19:07:40] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
+[19:07:40] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
+[19:07:40] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
+[19:07:40] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
+[19:07:40] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
+[19:07:40] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
+[19:07:40] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
+[19:07:40] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
+[19:07:40] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[19:07:40] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
+[19:07:40] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[19:07:40] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
+[19:07:40] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
+[19:07:40] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[19:07:40] [Server thread/INFO]: [TAB] Disabled in 1ms
+[19:07:40] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.8.2
+[19:07:40] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
+[19:07:40] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
+[19:07:40] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[19:07:40] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[19:07:40] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
+[19:07:40] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[19:07:40] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[19:07:40] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[19:07:40] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[19:07:40] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[19:07:40] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[19:07:40] [Server thread/INFO]: Saving players
+[19:07:40] [Server thread/INFO]: Saving worlds
+[19:07:40] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:07:40] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:07:40] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:07:40] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:07:40] [WebSocketConnectReadThread-107/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Saved 173 block chunks, 190 entity chunks, 0 poi chunks in world 'world' in 0.17s
+[19:07:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:07:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 115 entity chunks, 0 poi chunks in world 'world_nether' in 0.03s
+[19:07:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:07:41] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:07:41] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
+[19:07:41] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:07:41] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:07:41] [Server thread/INFO]: Flushing Chunk IO
+[19:07:41] [Server thread/INFO]: Closing Thread Pool
+[19:07:41] [Server thread/INFO]: Closing Server
