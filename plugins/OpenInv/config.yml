@@ -1,7 +1,11 @@
-config-version: 4
+config-version: 8
 settings:
   disable-saving: false
-  locale: en_us
-toggles:
-  any-chest:
-    507a4a0e-3895-3b69-b1f3-67a25932246d: false
+  disable-offline-access: false
+  command:
+    open:
+      no-args-opens-self: false
+    searchcontainer:
+      max-radius: 10
+  console-locale: en
+  equal-access: view

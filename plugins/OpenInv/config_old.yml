@@ -1,0 +1,7 @@
+config-version: 4
+settings:
+  disable-saving: false
+  locale: en_us
+toggles:
+  any-chest:
+    507a4a0e-3895-3b69-b1f3-67a25932246d: false
