@@ -20,18 +20,20 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
   name: SIGMAxox
   nickname: ''
   ranks:
+  - name: Owner
+    tags: {}
   - name: Member
     tags: {}
   permissions: []
   usertags: []
-  playtime: 356
+  playtime: 918
 4f745b20-dadc-361b-9ade-2660b67b7c53:
   name: soonk
   nickname: ''
   ranks:
-  - name: Owner
-    tags: {}
   - name: Member
+    tags: {}
+  - name: Owner
     tags: {}
   permissions: []
   usertags: []
