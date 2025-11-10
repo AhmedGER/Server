@@ -29,9 +29,9 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
   name: SIGMAxox
   nickname: ''
   ranks:
-  - name: Member
-    tags: {}
   - name: Owner
+    tags: {}
+  - name: Member
     tags: {}
   permissions: []
   usertags: []
