@@ -49,9 +49,9 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
   name: soonk
   nickname: ''
   ranks:
-  - name: Owner
-    tags: {}
   - name: Member
+    tags: {}
+  - name: Owner
     tags: {}
   permissions: []
   usertags: []
