@@ -29,13 +29,13 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
   name: SIGMAxox
   nickname: ''
   ranks:
-  - name: Member
-    tags: {}
   - name: Owner
+    tags: {}
+  - name: Member
     tags: {}
   permissions: []
   usertags: []
-  playtime: 4290
+  playtime: 4339
 00000000-0000-0000-0009-01f7b7580c23:
   name: .Herobrain7786
   nickname: ''
