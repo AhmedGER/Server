@@ -1,0 +1,7 @@
+treasureChestOpenSound: elitemobs:treasure_chest.open
+guildRankUpSound: elitemobs:guild.rankup
+guildPrestigeSound: elitemobs:guild.prestige
+questProgressionSound: elitemobs:quest.progression
+questCompleteSound: elitemobs:quest.completion
+questAbandonSound: elitemobs:quest.abandon
+questAcceptSound: elitemobs:quest.accept

@@ -1,0 +1,201 @@
+# HomeSweetHome Messages Configuration
+# Support for color codes (&a, &b, etc.) and placeholders
+# Available placeholders: %player%, %home%, %time%, %cost%, %homes_count%, %max_homes%
+
+# General Messages
+prefix: "&8[&6&lHomeSweetHome&8]&r "
+no-permission: "&cYou don't have permission to use this command!"
+player-not-found: "&cPlayer '%player%' not found or is offline!"
+command-disabled: "&cThis command is disabled!"
+unknown-command: "&cUnknown command. Use &6/homegui &cfor the GUI interface."
+reload-success: "&aConfiguration reloaded successfully!"
+
+# Home Management
+home:
+  set-success: "&aHome '%home%' has been set successfully!"
+  set-failed: "&cFailed to set home '%home%'. Please try again."
+  set-limit-reached: "&cYou've reached your home limit! &7(&e%homes_count%&7/&e%max_homes%&7)"
+  set-name-too-long: "&cHome name is too long! Maximum length is %max_length% characters."
+  set-name-too-short: "&cHome name is too short! Minimum length is %min_length% characters."
+  set-invalid-name: "&cInvalid home name! Use only letters, numbers, and underscores."
+  set-already-exists: "&cA home named '%home%' already exists! Use a different name."
+  
+  delete-success: "&aHome '%home%' has been deleted successfully!"
+  delete-failed: "&cFailed to delete home '%home%'. Please try again."
+  delete-not-found: "&cHome '%home%' does not exist!"
+  delete-confirm: "&eAre you sure you want to delete home '%home%'? Type the command again to confirm."
+  
+  teleport-success: "&aTeleported to home '%home%'!"
+  teleport-failed: "&cTeleportation failed! The location may be unsafe or corrupted."
+  teleport-not-found: "&cHome '%home%' does not exist!"
+  teleport-unsafe: "&cTeleport location is unsafe! Please set a new home location."
+  teleport-world-disabled: "&cTeleportation is disabled in world '%world%'!"
+  teleport-cross-world-disabled: "&cCross-world teleportation is disabled!"
+  
+  list-header: "&6&l=== Your Homes (%homes_count%/%max_homes%) ==="
+  list-entry: "&7• &a%home% &7- &e%world% &7(%x%, %y%, %z%)"
+  list-entry-with-description: "&7• &a%home% &7- &e%world% &7(%x%, %y%, %z%) &8- &f%description%"
+  list-empty: "&7You don't have any homes set. Use &a/sethome <name> &7to create one!"
+  list-footer: "&7Use &a/home <name> &7to teleport or &a/homegui &7for the GUI."
+
+# Bed/Spawn
+bed:
+  teleport-success: "&aTeleported to your bed!"
+  teleport-spawn: "&aTeleported to spawn point!"
+  not-found: "&cYour bed is missing or obstructed! Teleporting to spawn instead."
+  no-spawn: "&cNo spawn point is set on this server!"
+
+# Teleport System
+teleport:
+  countdown-start: "&eTeleporting in &6%time% &eseconds... Don't move!"
+  countdown-tick: "&6%time%"
+  countdown-cancelled-move: "&cTeleportation cancelled! You moved."
+  countdown-cancelled-damage: "&cTeleportation cancelled! You took damage."
+  countdown-cancelled-combat: "&cTeleportation cancelled! You entered combat."
+  cooldown-active: "&cPlease wait %time% seconds before teleporting again."
+  
+# GUI Messages
+gui:
+  title: "&6&lYour Sweet Homes"
+  bed-name: "&c&lBed Location"
+  bed-lore:
+    - "&7Click to teleport to your bed"
+    - "&7or spawn point if no bed exists"
+    - ""
+    - "&e&lClick to teleport!"
+  
+  home-name: "&a&l%home%"
+  home-lore:
+    - "&7World: &e%world%"
+    - "&7Location: &e%x%, %y%, %z%"
+    - "&7Created: &e%created%"
+    - "&7Last used: &e%last_used%"
+    - ""
+    - "&e&lLeft-click: &7Teleport"
+    - "&c&lRight-click: &7Delete home"
+  
+  home-with-description-lore:
+    - "&7%description%"
+    - ""
+    - "&7World: &e%world%"
+    - "&7Location: &e%x%, %y%, %z%"
+    - "&7Created: &e%created%"
+    - "&7Last used: &e%last_used%"
+    - ""
+    - "&e&lLeft-click: &7Teleport"
+    - "&c&lRight-click: &7Delete home"
+  
+  next-page-name: "&a&lNext Page"
+  next-page-lore:
+    - "&7Go to page %next_page%"
+  
+  previous-page-name: "&c&lPrevious Page"
+  previous-page-lore:
+    - "&7Go to page %previous_page%"
+  
+  close-name: "&c&lClose"
+  close-lore:
+    - "&7Close this menu"
+  
+  no-homes: "&7No homes to display"
+  page-info: "&7Page %current_page% of %total_pages%"
+
+# Economy Integration
+economy:
+  insufficient-funds: "&cInsufficient funds! You need &6$%cost% &cto %action%."
+  cost-home-set: "&aHome set! Cost: &6$%cost%"
+  cost-teleport: "&aTeleported! Cost: &6$%cost%"
+  refund-received: "&aReceived refund: &6$%refund% &afor deleting home '%home%'."
+  free-user: "&aFree teleportation enabled for you!"
+
+# Administrative Commands
+admin:
+  home-set-other: "&aSet home '%home%' for player '%player%'!"
+  home-delete-other: "&aDeleted home '%home%' for player '%player%'!"
+  home-not-found-other: "&cPlayer '%player%' doesn't have a home named '%home%'!"
+  teleport-other-success: "&aTeleported to %player%'s home '%home%'!"
+  
+  list-other-header: "&6&l=== %player%'s Homes (%homes_count%/%max_homes%) ==="
+  list-other-empty: "&7Player '%player%' doesn't have any homes set."
+  
+  info-header: "&6&l=== Home Info for %player% ==="
+  info-homes-count: "&7Homes: &e%homes_count%&7/&e%max_homes%"
+  info-last-teleport: "&7Last teleport: &e%last_teleport%"
+  info-total-teleports: "&7Total teleports: &e%total_teleports%"
+  info-homes-created: "&7Homes created: &e%homes_created%"
+  info-unlimited: "&7Unlimited homes: &e%unlimited%"
+
+# Error Messages
+error:
+  database-error: "&cDatabase error occurred! Please contact an administrator."
+  world-not-loaded: "&cThe world '%world%' is not loaded!"
+  region-not-allowed: "&cYou cannot set a home in this region!"
+  unsafe-location: "&cThis location is unsafe for teleportation!"
+  command-from-console: "&cThis command can only be used by players!"
+  invalid-arguments: "&cInvalid arguments! Use: %usage%"
+  home-corrupted: "&cHome '%home%' data is corrupted and has been removed!"
+
+# Help Messages
+help:
+  header: "&6&l=== HomeSweetHome Help ==="
+  home: "&a/home [name] &7- Teleport to home (default or specified)"
+  sethome: "&a/sethome <name> &7- Set a new home location"
+  delhome: "&a/delhome <name> &7- Delete a home"
+  homes: "&a/homes &7- List all your homes"
+  bed: "&a/bed &7- Teleport to your bed/spawn"
+  homegui: "&a/homegui &7- Open home selection GUI"
+  admin: "&c/homeadmin &7- Administrative commands (requires permission)"
+  footer: "&7Use &a/homegui &7for an easy-to-use graphical interface!"
+
+# Admin Help
+admin-help:
+  header: "&c&l=== HomeSweetHome Admin Help ==="
+  tp: "&c/homeadmin tp <player> <home> &7- Teleport to player's home"
+  list: "&c/homeadmin list <player> &7- List player's homes"
+  delete: "&c/homeadmin delete <player> <home> &7- Delete player's home"
+  info: "&c/homeadmin info <player> &7- Show player information"
+  reload: "&c/homeadmin reload &7- Reload plugin configuration"
+  set: "&c/homeset <player> <home> &7- Set home for another player"
+  stats: "&c/homestats &7- Show plugin statistics"
+
+# Statistics
+stats:
+  header: "&6&l=== HomeSweetHome Statistics ==="
+  total-homes: "&7Total homes: &e%total_homes%"
+  total-players: "&7Players with homes: &e%total_players%"
+  total-teleports: "&7Total teleports: &e%total_teleports%"
+  average-homes: "&7Average homes per player: &e%average_homes%"
+  most-homes-player: "&7Most homes: &e%player% &7(&e%count%&7)"
+  database-type: "&7Database type: &e%database_type%"
+  uptime: "&7Plugin uptime: &e%uptime%"
+
+# Time Formatting
+time:
+  now: "now"
+  seconds: "%time%s"
+  minutes: "%time%m"
+  hours: "%time%h"
+  days: "%time%d"
+  never: "never"
+
+# Confirmation Messages
+confirm:
+  delete-home: "&eType &6/delhome %home% &eagain to confirm deletion."
+  timeout: "&cConfirmation timed out."
+
+# Update Messages
+update:
+  available: "&aA new version of HomeSweetHome is available: &6v%version%"
+  download: "&7Download: &e%download_url%"
+  current: "&7Current: &ev%current_version% &7→ &aLatest: &ev%latest_version%"
+
+# Integration Messages
+integration:
+  worldguard-blocked: "&cYou cannot set a home in this protected region!"
+  vault-not-found: "&cVault economy system not found! Economy features disabled."
+  placeholderapi-hooked: "&aPlaceholderAPI integration enabled!"
+
+# Multi-language Support (Future feature)
+language:
+  current: "en"
+  available: ["en", "es", "fr", "de"] 

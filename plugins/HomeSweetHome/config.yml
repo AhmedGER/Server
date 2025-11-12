@@ -1,0 +1,184 @@
+# HomeSweetHome Configuration
+# A comprehensive home management plugin for Minecraft
+
+settings:
+  # Teleportation Settings
+  teleport-delay: 3 # seconds before teleportation
+  teleport-cooldown: 5 # seconds between teleports
+  cancel-on-move: true # cancel teleport if player moves
+  cancel-on-damage: true # cancel teleport if player takes damage
+  safe-teleport: true # check for safe teleport locations
+  
+  # Home Limits
+  default-max-homes: 6 # default number of homes for players
+  unlimited-homes-permission: "homesweethome.unlimited"
+  
+  # Home limits by permission (higher permissions override lower ones)
+  home-limits:
+    "homesweethome.homes.5": 5
+    "homesweethome.homes.10": 10
+    "homesweethome.homes.25": 25
+    "homesweethome.homes.50": 50
+  
+  # GUI Settings
+  gui-title: "&6&lYour Sweet Homes"
+  gui-size: 54 # inventory size (must be multiple of 9)
+  items-per-page: 45 # items per page (leaving room for navigation)
+  bed-icon: "RED_BED"
+  home-icon: "OAK_DOOR"
+  next-page-icon: "ARROW"
+  previous-page-icon: "ARROW"
+  close-gui-icon: "BARRIER"
+  
+  # Database Settings
+  storage-type: "yaml" # yaml or sqlite
+  backup-interval: 24 # hours between automatic backups
+  backup-retention: 7 # days to keep backup files
+  
+  # Sound Settings
+  sounds:
+    enabled: true
+    teleport-sound: "ENTITY_ENDERMAN_TELEPORT"
+    countdown-sound: "BLOCK_NOTE_BLOCK_PLING"
+    error-sound: "ENTITY_VILLAGER_NO"
+    success-sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    gui-click-sound: "UI_BUTTON_CLICK"
+  
+  # World Restrictions
+  disabled-worlds:
+    - "creative_world"
+    - "minigame_world"
+  
+  # Cross-world teleportation
+  cross-world-teleport: true
+  
+  # PvP Protection
+  pvp-protection-duration: 5 # seconds of PvP immunity after teleport
+  
+  # Economy Integration (requires Vault)
+  economy:
+    enabled: false
+    cost-per-home: 100.0 # cost to set a new home
+    cost-per-teleport: 5.0 # cost per teleportation
+    refund-on-delete: true # refund cost when deleting home
+    refund-percentage: 50.0 # percentage of original cost to refund
+  
+  # Home Features
+  features:
+    home-descriptions: true # allow players to add descriptions
+    home-categories: true # allow home categorization
+    home-privacy: true # public/private homes
+    home-sharing: true # allow sharing homes with friends
+    home-favorites: true # star favorite homes
+    bed-validation: true # check if bed still exists
+  
+  # Advanced Settings
+  advanced:
+    async-database-operations: true # use async for database operations
+    teleport-warmup-movement-threshold: 0.1 # movement distance to cancel teleport
+    max-home-name-length: 16
+    min-home-name-length: 1
+    case-sensitive-home-names: false
+    auto-create-default-home: true # create 'home' when first setting
+  
+  # Integration Settings
+  integration:
+    worldguard:
+      enabled: true
+      respect-regions: true
+      allow-teleport-to-nonmember-regions: false
+    
+    placeholderapi:
+      enabled: true
+  
+  # Metrics and Updates
+  metrics:
+    update-checker: true
+
+# Home Categories (if enabled)
+home-categories:
+  base:
+    display-name: "&a&lBase"
+    icon: "CRAFTING_TABLE"
+    description: "&7Your main base location"
+  
+  farm:
+    display-name: "&2&lFarm"
+    icon: "WHEAT"
+    description: "&7Agricultural areas"
+  
+  shop:
+    display-name: "&6&lShop"
+    icon: "EMERALD"
+    description: "&7Trading and commerce"
+  
+  mine:
+    display-name: "&8&lMine"
+    icon: "DIAMOND_PICKAXE"
+    description: "&7Mining operations"
+  
+  build:
+    display-name: "&b&lBuild"
+    icon: "BUILDING_BLOCKS"
+    description: "&7Construction projects"
+  
+  other:
+    display-name: "&7&lOther"
+    icon: "COMPASS"
+    description: "&7Miscellaneous locations"
+
+# GUI Layout Configuration
+gui-layout:
+  # Bed teleport button position
+  bed-slot: 4 # top center
+  
+  # Navigation buttons
+  previous-page-slot: 48 # bottom left
+  next-page-slot: 50 # bottom right
+  close-slot: 49 # bottom center
+  
+  # Home slots (0-based, excludes navigation area)
+  home-slots:
+    - 9  # Second row start
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17 # Second row end
+    - 18 # Third row start
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26 # Third row end
+    - 27 # Fourth row start
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35 # Fourth row end
+    - 36 # Fifth row start
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44 # Fifth row end
+
+# Debug and Logging
+debug:
+  enabled: false
+  log-teleports: false
+  log-home-changes: false
+  log-database-operations: false 
