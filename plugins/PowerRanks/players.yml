@@ -29,13 +29,13 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
   name: SIGMAxox
   nickname: ''
   ranks:
-  - name: Member
-    tags: {}
   - name: Owner
+    tags: {}
+  - name: Member
     tags: {}
   permissions: []
   usertags: []
-  playtime: 5893
+  playtime: 6828
 c2e29503-0ac3-3ce6-bdf5-6f8a38949b35:
   name: gojo
   nickname: ''
@@ -64,4 +64,4 @@ c2e29503-0ac3-3ce6-bdf5-6f8a38949b35:
     tags: {}
   permissions: []
   usertags: []
-  playtime: 12245
+  playtime: 13414

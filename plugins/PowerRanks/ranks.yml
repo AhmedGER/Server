@@ -4,9 +4,9 @@ Moderator:
   weight: 50
   namecolor: ''
   suffix: ''
-  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
+  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
   prefix: '[gradient=#9d1dff,#e22581]MODERATOR[/gradient]'
@@ -17,9 +17,9 @@ Owner:
   weight: 100
   namecolor: ''
   suffix: ''
-  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
+  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
   prefix: '&f[&cOWNER&f]'
@@ -30,9 +30,9 @@ Youtube:
   weight: 0
   namecolor: ''
   suffix: ''
-  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
+  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
   prefix: '&f[&cYOUTUBE&f]'
@@ -43,9 +43,9 @@ Admin:
   weight: 75
   namecolor: ''
   suffix: ''
-  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
+  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
   prefix: '[gradient=#ffff00,#ef3300]ADMIN[/gradient]'
@@ -56,9 +56,9 @@ Member:
   weight: 0
   namecolor: ''
   suffix: ''
-  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
+  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
   prefix: '[gradient=#127e00,#3eaf18]MEMBER[/gradient]'
