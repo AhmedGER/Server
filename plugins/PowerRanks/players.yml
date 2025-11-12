@@ -35,7 +35,7 @@ c20b5d0a-9924-3d21-91d2-462b332c1684:
     tags: {}
   permissions: []
   usertags: []
-  playtime: 4339
+  playtime: 4438
 c2e29503-0ac3-3ce6-bdf5-6f8a38949b35:
   name: gojo
   nickname: ''
@@ -58,9 +58,9 @@ c2e29503-0ac3-3ce6-bdf5-6f8a38949b35:
   name: soonk
   nickname: ''
   ranks:
-  - name: Member
-    tags: {}
   - name: Owner
+    tags: {}
+  - name: Member
     tags: {}
   permissions: []
   usertags: []
