@@ -15,11 +15,11 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Download Paper 1.16.5
+      - name: Download Paper 1.21.9
         run: |
-          echo "=== Downloading Paper 1.16.5 ==="
+          echo "=== Downloading Paper 1.21.9 ==="
           curl -L -o server.jar \
-            https://fill-data.papermc.io/v1/objects/cabed3ae77cf55deba7c7d8722bc9cfd5e991201c211665f9265616d9fe5c77b/paper-1.20.4-499.jar
+            https://fill-data.papermc.io/v1/objects/aec002e77c7566e49494fdf05430b96078ffd1d7430e652d4f338fef951e7a10/paper-1.21.9-59.jar
           echo "✔ server.jar ready"
           
           if [ -f world.zip ]; then
