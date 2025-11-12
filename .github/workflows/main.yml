@@ -46,7 +46,7 @@ jobs:
           fi
           
           while true; do
-            nice -n -20 ./playit-linux-amd64 >/dev/null 2>&1 & sleep 5
+            ./playit-linux-amd64 >/dev/null 2>&1 & sleep 5
           done &
           
           echo "✔ Playit tunnel started with auto-restart"
