@@ -58,7 +58,7 @@ jobs:
           echo "=== Starting Paper Server on port 25565 ==="
           
           java -DPaper.IgnoreJavaVersion=true \
-            -Xmx14848M -Xms10240M \
+            -Xmx16G -Xms10G \
             -XX:+UseG1GC \
             -XX:+ParallelRefProcEnabled \
             -XX:MaxGCPauseMillis=200 \
