@@ -1,157 +1,158 @@
-[17:44:56] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17:44:58] [ServerMain/INFO]: Loaded 1174 recipes
-[17:44:58] [ServerMain/INFO]: Loaded 1271 advancements
-[17:44:58] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[17:44:58] [Server thread/INFO]: Loading properties
-[17:44:58] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
-[17:44:59] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:44:59] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:44:59] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[18:14:09] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[18:14:12] [ServerMain/INFO]: Loaded 1174 recipes
+[18:14:12] [ServerMain/INFO]: Loaded 1271 advancements
+[18:14:12] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[18:14:12] [Server thread/INFO]: Loading properties
+[18:14:12] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
+[18:14:13] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:14:13] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:14:13] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[17:44:59] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[17:45:00] [Server thread/INFO]: Default game type: SURVIVAL
-[17:45:00] [Server thread/INFO]: Generating keypair
-[17:45:00] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:45:00] [Server thread/INFO]: Using epoll channel type
-[17:45:00] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[17:45:00] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[17:45:00] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[17:45:03] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
-[17:45:03] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
-[17:45:03] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[17:45:03] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[17:45:03] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[17:45:03] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[17:45:03] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[17:45:04] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[17:45:04] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[17:45:04] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[17:45:04] [Server thread/INFO]: [floodgate] Took 379ms to boot Floodgate
-[17:45:04] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
-[17:45:04] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
-[17:45:05] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[17:45:05] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[17:45:05] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
-[17:45:05] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
-[17:45:05] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
-[17:45:05] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
-[17:45:06] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
-[17:45:06] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
-[17:45:06] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
-[17:45:06] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
-[17:45:06] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
-[17:45:06] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
-[17:45:06] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
-[17:45:06] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
-[17:45:06] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.6-899
-[17:45:06] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
-[17:45:06] [Server thread/INFO]: [dynmap] Mod Support API available
-[17:45:06] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
-[17:45:06] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
-[17:45:06] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
-[17:45:06] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.5.3
-[17:45:06] [Server thread/INFO]: [CreeperRefund] Loading server plugin CreeperRefund v1.0
-[17:45:06] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
-[17:45:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:45:06] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
-[17:45:06] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[17:45:06] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
-[17:45:07] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
-[17:45:07] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[17:45:07] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[17:45:07] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
-[17:45:07] [Server thread/INFO]: [PowerRanks] 
-[17:45:07] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loading config file
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loading language file
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loading usertags file
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loading tablist file
-[17:45:07] [Server thread/INFO]: [PowerRanks] 
-[17:45:07] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
-[17:45:07] [Server thread/INFO]: [PowerRanks] 
-[17:45:07] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
-[17:45:07] [Server thread/INFO]: [PowerRanks] Loading player & rank data
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[17:45:07] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[17:45:08] [Server thread/INFO]: [PowerRanks] 
-[17:45:08] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
-[17:45:08] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
-[17:45:08] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
-[17:45:08] [Server thread/INFO]: [PowerRanks] 
-[17:45:08] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
-[17:45:08] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on Paper v499
-[17:45:08] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 488ms
-[17:45:08] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 5 ranks and 7 players (YAML) 
-[17:45:08] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
-[17:45:08] [Server thread/INFO]: [PowerRanks] 
-[17:45:08] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
-[17:45:08] [Server thread/INFO]: [PowerRanks] Checking for updates...
-[17:45:08] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[17:45:08] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[17:45:08] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[17:45:08] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[17:45:08] [Server thread/INFO]: Preparing level "world"
-[17:45:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:45:08] [Server thread/INFO]: Time elapsed: 268 ms
-[17:45:08] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:45:09] [Server thread/INFO]: Time elapsed: 136 ms
-[17:45:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:45:09] [Server thread/INFO]: Time elapsed: 43 ms
-[17:45:09] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[17:45:09] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
-[17:45:09] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[17:45:09] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[17:45:09] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
-[17:45:11] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
-[17:45:11] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
-[17:45:11] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
-[17:45:11] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
-[17:45:11] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
-[17:45:11] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
-[17:45:11] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
-[17:45:12] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
-[17:45:12] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 360.455717ms
-[17:45:13] [Server thread/INFO]: [LibsDisguises] Config is up to date!
-[17:45:13] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[17:45:13] [Server thread/INFO]: [TAB] Enabled in 137ms
-[17:45:13] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
-[17:45:13] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
-[17:45:13] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
-[17:45:13] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
-[17:45:13] [Server thread/INFO]: 
-[17:45:13] [Server thread/INFO]: TreeCuter by Norbit4!
-[17:45:13] [Server thread/INFO]: 
-[17:45:13] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[17:45:13] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
-[17:45:13] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[17:45:13] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
-[17:45:13] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[17:45:13] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
-[17:45:13] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
-[17:45:14] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
-[17:45:14] [Server thread/INFO]: [voicechat] Compatibility version 20
-[17:45:14] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[17:45:14] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[17:45:14] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
-[17:45:14] [Server thread/ERROR]: Error occurred while enabling dynmap v3.6-899 (Is it up to date?)
+[18:14:13] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[18:14:14] [Server thread/INFO]: Default game type: SURVIVAL
+[18:14:14] [Server thread/INFO]: Generating keypair
+[18:14:14] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:14:14] [Server thread/INFO]: Using epoll channel type
+[18:14:14] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[18:14:14] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[18:14:14] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[18:14:17] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[18:14:17] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
+[18:14:17] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[18:14:17] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[18:14:18] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[18:14:18] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[18:14:18] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[18:14:18] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[18:14:18] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[18:14:19] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[18:14:19] [Server thread/INFO]: [floodgate] Took 492ms to boot Floodgate
+[18:14:19] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[18:14:19] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[18:14:19] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[18:14:20] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
+[18:14:20] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
+[18:14:20] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
+[18:14:21] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
+[18:14:21] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
+[18:14:21] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
+[18:14:21] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
+[18:14:21] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
+[18:14:21] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
+[18:14:21] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
+[18:14:21] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
+[18:14:21] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.6-899
+[18:14:21] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
+[18:14:21] [Server thread/INFO]: [dynmap] Mod Support API available
+[18:14:21] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
+[18:14:21] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
+[18:14:21] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
+[18:14:21] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.5.3
+[18:14:21] [Server thread/INFO]: [CreeperRefund] Loading server plugin CreeperRefund v1.0
+[18:14:21] [Server thread/INFO]: [Spawn] Loading server plugin Spawn v2.4.2
+[18:14:21] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
+[18:14:21] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:14:21] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[18:14:21] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[18:14:21] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[18:14:22] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
+[18:14:22] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[18:14:22] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[18:14:22] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
+[18:14:22] [Server thread/INFO]: [PowerRanks] 
+[18:14:22] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loading config file
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loading language file
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loading usertags file
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loading tablist file
+[18:14:22] [Server thread/INFO]: [PowerRanks] 
+[18:14:22] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
+[18:14:22] [Server thread/INFO]: [PowerRanks] 
+[18:14:22] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
+[18:14:22] [Server thread/INFO]: [PowerRanks] Loading player & rank data
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[18:14:22] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[18:14:23] [Server thread/INFO]: [PowerRanks] 
+[18:14:23] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
+[18:14:23] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
+[18:14:23] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
+[18:14:23] [Server thread/INFO]: [PowerRanks] 
+[18:14:23] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
+[18:14:23] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on Paper v499
+[18:14:23] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 455ms
+[18:14:23] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 5 ranks and 7 players (YAML) 
+[18:14:23] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
+[18:14:23] [Server thread/INFO]: [PowerRanks] 
+[18:14:23] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
+[18:14:23] [Server thread/INFO]: [PowerRanks] Checking for updates...
+[18:14:23] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:14:23] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:14:23] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:14:23] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:14:23] [Server thread/INFO]: Preparing level "world"
+[18:14:23] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:14:23] [Server thread/INFO]: Time elapsed: 265 ms
+[18:14:23] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:14:24] [Server thread/INFO]: Time elapsed: 743 ms
+[18:14:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:14:24] [Server thread/INFO]: Time elapsed: 38 ms
+[18:14:24] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[18:14:24] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[18:14:24] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[18:14:25] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[18:14:25] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
+[18:14:26] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
+[18:14:26] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
+[18:14:26] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
+[18:14:26] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[18:14:26] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[18:14:26] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[18:14:26] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
+[18:14:27] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
+[18:14:27] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 554.833613ms
+[18:14:28] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[18:14:28] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[18:14:29] [Server thread/INFO]: [TAB] Enabled in 160ms
+[18:14:29] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
+[18:14:29] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
+[18:14:29] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
+[18:14:29] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
+[18:14:29] [Server thread/INFO]: 
+[18:14:29] [Server thread/INFO]: TreeCuter by Norbit4!
+[18:14:29] [Server thread/INFO]: 
+[18:14:29] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[18:14:29] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
+[18:14:29] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[18:14:29] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
+[18:14:29] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[18:14:29] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
+[18:14:29] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
+[18:14:29] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
+[18:14:29] [Server thread/INFO]: [voicechat] Compatibility version 20
+[18:14:29] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[18:14:29] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[18:14:29] [Server thread/INFO]: [dynmap] Enabling dynmap v3.6-899
+[18:14:29] [Server thread/ERROR]: Error occurred while enabling dynmap v3.6-899 (Is it up to date?)
 java.lang.NoSuchFieldError: Class net.minecraft.world.level.block.Block does not have member field 'net.minecraft.core.RegistryBlockID o'
 	at org.dynmap.bukkit.helper.v120.BukkitVersionHelperSpigot120.initializeBlockStates(BukkitVersionHelperSpigot120.java:159) ~[Dynmap-3.6-spigot.jar:?]
 	at org.dynmap.bukkit.DynmapPlugin.onEnable(DynmapPlugin.java:933) ~[Dynmap-3.6-spigot.jar:?]
@@ -167,8 +168,8 @@ java.lang.NoSuchFieldError: Class net.minecraft.world.level.block.Block does not
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-499]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-499]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[17:45:14] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
-[17:45:14] [Server thread/ERROR]: Error occurred while disabling dynmap v3.6-899
+[18:14:29] [Server thread/INFO]: [dynmap] Disabling dynmap v3.6-899
+[18:14:29] [Server thread/ERROR]: Error occurred while disabling dynmap v3.6-899
 java.lang.NullPointerException: Cannot invoke "org.dynmap.DynmapCore.disableCore()" because "this.core" is null
 	at org.dynmap.bukkit.DynmapPlugin.onDisable(DynmapPlugin.java:1094) ~[Dynmap-3.6-spigot.jar:?]
 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:290) ~[paper-api-1.20.4-R0.1-SNAPSHOT.jar:?]
@@ -186,623 +187,211 @@ java.lang.NullPointerException: Cannot invoke "org.dynmap.DynmapCore.disableCore
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1131) ~[paper-1.20.4.jar:git-Paper-499]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:319) ~[paper-1.20.4.jar:git-Paper-499]
 	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[17:45:14] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
-[17:45:14] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
-[17:45:14] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
-[17:45:14] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.5.3
-[17:45:14] [Server thread/INFO]: [InfiniteVillagerTrades] Enabled InstantRestock!
-[17:45:14] [Server thread/INFO]: [CreeperRefund] Enabling CreeperRefund v1.0
-[17:45:14] [Server thread/INFO]: [CreeperRefund] Thanks for using CreeperRefund!
-[17:45:14] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
-[17:45:14] [Folia Async Scheduler Thread #3/INFO]: [InfiniteVillagerTrades] A new update is available!
-[17:45:14] [Folia Async Scheduler Thread #3/INFO]: [https://modrinth.com/plugin/infinite-villager-trading]
-[17:45:14] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
-[17:45:15] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
-[17:45:15] [Server thread/INFO]: [TrollV4] -----------------------------------
-[17:45:15] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
-[17:45:15] [Server thread/INFO]: [TrollV4] In case of errors please report:
-[17:45:15] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
-[17:45:15] [Server thread/INFO]: [TrollV4] Otherwise have fun!
-[17:45:15] [Server thread/INFO]: [TrollV4] ------------------------------------
-[17:45:15] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
-[17:45:15] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
-[17:45:15] [Server thread/INFO]: [TrollV4] Server Software: PAPER
-[17:45:15] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
-[17:45:16] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[17:45:16] [Server thread/INFO]: [Geyser-Spigot] 
-[17:45:16] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
-[17:45:16] [Server thread/INFO]: [Geyser-Spigot] 
-[17:45:16] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[17:45:19] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[17:45:19] [Server thread/INFO]: [Geyser-Spigot] Done (3.174s)! Run /geyser help for help!
-[17:45:19] [Server thread/INFO]: Starting remote control listener
-[17:45:19] [Server thread/INFO]: Thread RCON Listener started
-[17:45:19] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[17:45:19] [Server thread/INFO]: Running delayed init tasks
-[17:45:19] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[17:45:19] [Server thread/INFO]: Done (21.180s)! For help, type "help"
-[17:45:19] [Server thread/INFO]: Timings Reset
-[17:45:19] [Server thread/INFO]: [voicechat] Loading plugins
-[17:45:19] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[17:45:19] [Server thread/INFO]: [voicechat] Initializing plugins
-[17:45:19] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[17:45:19] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[17:45:19] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[17:45:19] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[17:45:20] [Craft Scheduler Thread - 1 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[17:45:34] [User Authenticator #0/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[17:45:34] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[17:45:34] [Server thread/INFO]: soonk joined the game
-[17:45:35] [Server thread/INFO]: soonk[/127.125.213.137:38649] logged in with entity id 883 at ([world]342.2060061215795, 84.0, -945.7928183721663)
-[17:45:39] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:39] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:39] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:39] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:40] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:41] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:42] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:43] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:44] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:45] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:46] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:47] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:48] [Server thread/INFO]: [@: Set spawn point to 341, 81, -946 [0.0] in minecraft:overworld for soonk]
-[17:45:51] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: .
-[17:46:14] [User Authenticator #0/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[17:46:14] [Netty Epoll Server IO #1/WARN]: [ViaBackwards] (1.17->1.16.4) Increased world height is NOT SUPPORTED for 1.16 players and below. They will see a void below y 0 and above 256. You can enable the `bedrock-at-y-0` config option to replace the air with a bedrock layer.
-[17:46:14] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[17:46:14] [Server thread/INFO]: SIGMAxox joined the game
-[17:46:14] [Server thread/INFO]: SIGMAxox[/127.44.170.115:51657] logged in with entity id 1717 at ([world]341.3972051208111, 84.13139697003098, -945.3100341288102)
-[17:46:24] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[17:46:24] [Server thread/WARN]: [voicechat] Connected client SIGMAxox has incompatible voice chat version (server=20, client=18)
-[17:46:40] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:46:40] [Server thread/INFO]: soonk was killed
-[17:46:40] [Server thread/INFO]: [soonk: Killed soonk]
-[17:46:48] [Server thread/INFO]: soonk issued server command: /tp SIGMAxox
-[17:46:48] [Server thread/INFO]: [soonk: Teleported soonk to SIGMAxox]
-[17:46:56] [Server thread/INFO]: SIGMAxox issued server command: /setworldspawn 341 80 -946
-[17:46:56] [Server thread/INFO]: [SIGMAxox: Set the world spawn point to 341, 80, -946 [0.0]]
-[17:47:33] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت مركب مود المايك
-[17:47:52] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت مركب مود المايك
-[17:48:10] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت مركب مود المايك
-[17:48:14] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: no
-[17:48:35] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: يسطت
-[17:48:38] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: يسطا
-[17:48:43] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: ممممممسمم
-[17:48:46] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اعمل كوماند السبون
-[17:48:56] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: ماشي
-[17:49:42] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: ulgji
-[17:49:47] [Server thread/INFO]: [@: Set spawn point to 341, 83, -946 [0.0] in minecraft:overworld for 2 players]
-[17:49:48] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: عملته
-[17:49:52] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:49:52] [Server thread/INFO]: soonk was killed
-[17:49:52] [Server thread/INFO]: [soonk: Killed soonk]
-[17:50:01] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:50:01] [Server thread/INFO]: soonk was killed
-[17:50:01] [Server thread/INFO]: [soonk: Killed soonk]
-[17:50:05] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:50:05] [Server thread/INFO]: soonk was killed
-[17:50:05] [Server thread/INFO]: [soonk: Killed soonk]
-[17:50:27] [Server thread/INFO]: [@: Set spawn point to 341, 84, -946 [0.0] in minecraft:overworld for 2 players]
-[17:50:30] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:50:30] [Server thread/INFO]: soonk was killed
-[17:50:30] [Server thread/INFO]: [soonk: Killed soonk]
-[17:50:36] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: تمام
-[17:50:37] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: انا ظبطخها
-[17:50:41] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: باقولك
-[17:50:49] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اعمل كمان واحد
-[17:50:55] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: بس الارتفاع 84
-[17:51:05] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: عملت كدة
-[17:51:26] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: باقولك
-[17:51:29] [Server thread/INFO]: SIGMAxox issued server command: /TIME SET DAY
-[17:51:40] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: شيل مود الرتبه ده
-[17:51:42] [Server thread/INFO]: SIGMAxox issued server command: /time set day
-[17:51:42] [Server thread/INFO]: [SIGMAxox: Set the time to 1000]
-[17:51:59] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: هدور انا علي  خيره
-[17:52:26] [Server thread/INFO]: soonk issued server command: /kill @a
-[17:52:26] [Server thread/INFO]: SIGMAxox was killed
-[17:52:26] [Server thread/INFO]: soonk was killed
-[17:52:26] [Server thread/INFO]: [soonk: Killed 2 entities]
-[17:52:36] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: السبون حلو
-[17:52:38] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: صح
-[17:52:44] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: جيول اوي
-[17:52:55] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: احسن من الاولياني
-[17:53:08] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: من الاول
-[17:53:24] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: انا عملته لوحدي
-[17:53:29] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: كان صعب فشخ
-[17:53:35] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:53:35] [Server thread/INFO]: soonk was killed
-[17:53:35] [Server thread/INFO]: [soonk: Killed soonk]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:43] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:43] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:44] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:45] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:46] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:47] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:48] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:49] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:50] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:51] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:53:52] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:53:53] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انت ازاي عملته حلو كدة
-[17:54:00] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: من النت
-[17:54:03] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: انا قولتلك يبني انا حريف
-[17:54:31] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: التاني كنت عامله احطياتي
-[17:54:40] [Server thread/INFO]: [@: Set spawn point to 341, 84, -947 [0.0] in minecraft:overworld for 2 players]
-[17:55:04] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: ننزل مود الحماية ؟
-[17:55:06] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اكتب سباون بوينت @a بس
-[17:55:11] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اه
-[17:55:16] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: هدور
-[17:55:20] [Craft Scheduler Thread - 22 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[17:55:26] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: اكتب سباون بوينت
-[17:55:28] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: بس
-[17:55:33] [Async Chat Thread - #1/INFO]: [Not Secure] world [OWNER] MEMBER soonk: والكل
-[17:55:51] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:55:51] [Server thread/INFO]: soonk was killed
-[17:55:51] [Server thread/INFO]: [soonk: Killed soonk]
-[17:56:09] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:56:09] [Server thread/INFO]: soonk was killed
-[17:56:09] [Server thread/INFO]: [soonk: Killed soonk]
-[17:56:14] [Server thread/INFO]: [@: Set spawn point to 341, 84, -946 [0.0] in minecraft:overworld for 2 players]
-[17:56:15] [Server thread/INFO]: soonk issued server command: /kill soonk
-[17:56:15] [Server thread/INFO]: soonk was killed
-[17:56:15] [Server thread/INFO]: [soonk: Killed soonk]
-[17:56:17] [Server thread/INFO]: SIGMAxox issued server command: /kill SIGMAxox
-[17:56:17] [Server thread/INFO]: SIGMAxox was killed
-[17:56:17] [Server thread/INFO]: [SIGMAxox: Killed SIGMAxox]
-[17:56:35] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER soonk: يلا نعمل مود الحمايه
-[17:56:47] [Async Chat Thread - #4/INFO]: [Not Secure] world [OWNER] MEMBER soonk: عشان ال اسمه هيرو براين ده بيكسر السبون
-[17:56:59] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: اه
-[17:57:12] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER soonk: روج جطه وشيل مود الرتبه
-[17:57:13] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انا هدور وانت دور
-[17:57:25] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انا هدور وانت دور
-[17:57:27] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER soonk: هنحط مود الحمايه ونشيل الرتب
-[17:57:32] [Async Chat Thread - #3/INFO]: [Not Secure] world [OWNER] MEMBER soonk: يلا
-[17:58:02] [Server thread/INFO]: soonk lost connection: Timed out
-[17:58:02] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[17:58:02] [Server thread/INFO]: soonk left the game
-[18:00:44] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[18:00:44] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[18:00:44] [Server thread/INFO]: SIGMAxox left the game
-[18:01:39] [User Authenticator #1/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[18:01:40] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[18:01:40] [Server thread/INFO]: soonk joined the game
-[18:01:40] [Server thread/INFO]: soonk[/127.125.213.137:33479] logged in with entity id 3395 at ([world]340.3542680488551, 84.0, -946.7824417461878)
-[18:05:20] [Craft Scheduler Thread - 34 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[18:08:41] [Server thread/INFO]: soonk lost connection: Disconnected
-[18:08:41] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[18:08:41] [Server thread/INFO]: soonk left the game
-[18:10:23] [User Authenticator #2/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
-[18:10:23] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[18:10:23] [Server thread/INFO]: SIGMAxox joined the game
-[18:10:23] [Server thread/INFO]: SIGMAxox[/127.44.170.115:49995] logged in with entity id 4158 at ([world]342.60221538403806, 84.0, -944.4576600509189)
-[18:10:28] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
-[18:10:28] [Server thread/WARN]: [voicechat] Connected client SIGMAxox has incompatible voice chat version (server=20, client=18)
-[18:11:29] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
-[18:11:29] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
-[18:11:29] [Server thread/INFO]: SIGMAxox left the game
-[18:12:28] [RCON Listener #1/INFO]: Thread RCON Client /127.44.170.115 started
-[18:12:50] [Server thread/INFO]: [Rcon: Stopping the server]
-[18:12:50] [Server thread/INFO]: Stopping server
-[18:12:50] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
-[18:12:50] [Server thread/INFO]: [CreeperRefund] Disabling CreeperRefund v1.0
-[18:12:50] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
-[18:12:50] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
-[18:12:50] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
-[18:12:50] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
-[18:12:50] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
-[18:12:50] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
-[18:12:50] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
-[18:12:50] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
-[18:12:50] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
-[18:12:50] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[18:12:50] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
-[18:12:50] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[18:12:50] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
-[18:12:50] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
-[18:12:50] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[18:12:50] [Server thread/INFO]: [TAB] Disabled in 0ms
-[18:12:50] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.0
-[18:12:50] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
-[18:12:50] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
-[18:12:50] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[18:12:50] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
-[18:12:50] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
-[18:12:50] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[18:12:50] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[18:12:50] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[18:12:50] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[18:12:50] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[18:12:50] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[18:12:50] [Server thread/INFO]: Saving players
-[18:12:50] [Server thread/INFO]: Saving worlds
-[18:12:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[18:12:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[18:12:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[18:12:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[18:12:50] [WebSocketConnectReadThread-104/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Saved 957 block chunks, 102 entity chunks, 0 poi chunks in world 'world' in 0.38s
-[18:12:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[18:12:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 35 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
-[18:12:51] [RCON Client /127.44.170.115 #2/ERROR]: Thread RCON Client /127.44.170.115 #2 failed main thread check: Command Dispatched Async: craftcontrolrcon console 719
-java.lang.Throwable: null
-	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:14) ~[paper-1.20.4.jar:git-Paper-499]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:997) ~[paper-1.20.4.jar:git-Paper-499]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:984) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.server.dedicated.DedicatedServer.lambda$runCommand$4(DedicatedServer.java:792) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:99) ~[?:?]
-	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
-	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.submitAsync(BlockableEventLoop.java:58) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.executeBlocking(BlockableEventLoop.java:75) ~[?:?]
-	at net.minecraft.server.dedicated.DedicatedServer.runCommand(DedicatedServer.java:770) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.server.rcon.thread.RconClient.run(RconClient.java:83) ~[?:?]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[18:12:51] [RCON Client /127.44.170.115 #2/WARN]: Unexpected exception while parsing console command "craftcontrolrcon console 719"
-java.lang.IllegalStateException: Asynchronous Command Dispatched Async: craftcontrolrcon console 719!
-	at org.spigotmc.AsyncCatcher.catchOp(AsyncCatcher.java:15) ~[paper-1.20.4.jar:git-Paper-499]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchCommand(CraftServer.java:997) ~[paper-1.20.4.jar:git-Paper-499]
-	at org.bukkit.craftbukkit.v1_20_R3.CraftServer.dispatchServerCommand(CraftServer.java:984) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.server.dedicated.DedicatedServer.lambda$runCommand$4(DedicatedServer.java:792) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.util.thread.BlockableEventLoop.lambda$submitAsync$0(BlockableEventLoop.java:59) ~[?:?]
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:99) ~[?:?]
-	at java.util.concurrent.CompletableFuture.asyncSupplyStage(CompletableFuture.java:1782) ~[?:?]
-	at java.util.concurrent.CompletableFuture.supplyAsync(CompletableFuture.java:2005) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.submitAsync(BlockableEventLoop.java:58) ~[?:?]
-	at net.minecraft.util.thread.BlockableEventLoop.executeBlocking(BlockableEventLoop.java:75) ~[?:?]
-	at net.minecraft.server.dedicated.DedicatedServer.runCommand(DedicatedServer.java:770) ~[paper-1.20.4.jar:git-Paper-499]
-	at net.minecraft.server.rcon.thread.RconClient.run(RconClient.java:83) ~[?:?]
-	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
-[18:12:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:12:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[18:12:51] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.01s
-[18:12:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:12:51] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[18:12:51] [Server thread/INFO]: Flushing Chunk IO
-[18:12:51] [Server thread/INFO]: Closing Thread Pool
-[18:12:51] [Server thread/INFO]: Closing Server
+[18:14:29] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
+[18:14:29] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
+[18:14:29] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
+[18:14:29] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.5.3
+[18:14:29] [Server thread/INFO]: [InfiniteVillagerTrades] Enabled InstantRestock!
+[18:14:29] [Server thread/INFO]: [CreeperRefund] Enabling CreeperRefund v1.0
+[18:14:29] [Server thread/INFO]: [CreeperRefund] Thanks for using CreeperRefund!
+[18:14:29] [Server thread/INFO]: [Spawn] Enabling Spawn v2.4.2
+[18:14:29] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
+[18:14:29] [Folia Async Scheduler Thread #3/INFO]: [InfiniteVillagerTrades] A new update is available!
+[18:14:29] [Folia Async Scheduler Thread #3/INFO]: [https://modrinth.com/plugin/infinite-villager-trading]
+[18:14:29] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
+[18:14:30] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
+[18:14:30] [Server thread/INFO]: [TrollV4] -----------------------------------
+[18:14:30] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
+[18:14:30] [Server thread/INFO]: [TrollV4] In case of errors please report:
+[18:14:30] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
+[18:14:30] [Server thread/INFO]: [TrollV4] Otherwise have fun!
+[18:14:30] [Server thread/INFO]: [TrollV4] ------------------------------------
+[18:14:30] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
+[18:14:30] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
+[18:14:30] [Server thread/INFO]: [TrollV4] Server Software: PAPER
+[18:14:30] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
+[18:14:31] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[18:14:31] [Server thread/INFO]: [Geyser-Spigot] 
+[18:14:31] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b971 (git-master-9d5e1cb)
+[18:14:31] [Server thread/INFO]: [Geyser-Spigot] 
+[18:14:31] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[18:14:34] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[18:14:34] [Server thread/INFO]: [Geyser-Spigot] Done (2.892s)! Run /geyser help for help!
+[18:14:34] [Server thread/INFO]: Starting remote control listener
+[18:14:34] [Server thread/INFO]: Thread RCON Listener started
+[18:14:34] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[18:14:34] [Server thread/INFO]: Running delayed init tasks
+[18:14:34] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[18:14:34] [Server thread/INFO]: Done (21.949s)! For help, type "help"
+[18:14:34] [Server thread/INFO]: Timings Reset
+[18:14:34] [Server thread/INFO]: [voicechat] Loading plugins
+[18:14:34] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[18:14:34] [Server thread/INFO]: [voicechat] Initializing plugins
+[18:14:34] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[18:14:34] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[18:14:34] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[18:14:34] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[18:14:35] [Craft Scheduler Thread - 5 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:15:12] [User Authenticator #0/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[18:15:12] [Netty Epoll Server IO #2/WARN]: [ViaBackwards] (1.17->1.16.4) Increased world height is NOT SUPPORTED for 1.16 players and below. They will see a void below y 0 and above 256. You can enable the `bedrock-at-y-0` config option to replace the air with a bedrock layer.
+[18:15:12] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[18:15:12] [Server thread/INFO]: SIGMAxox joined the game
+[18:15:12] [Server thread/INFO]: SIGMAxox[/127.44.170.115:40955] logged in with entity id 645 at ([world]336.4990369032545, 84.0, -945.9515382367339)
+[18:15:13] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
+[18:15:13] [Server thread/WARN]: [voicechat] Connected client SIGMAxox has incompatible voice chat version (server=20, client=18)
+[18:15:21] [Server thread/INFO]: SIGMAxox issued server command: /plugins
+[18:15:34] [Server thread/INFO]: SIGMAxox issued server command: /version Spawn
+[18:15:36] [User Authenticator #0/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
+[18:15:37] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[18:15:37] [Server thread/INFO]: soonk joined the game
+[18:15:37] [Server thread/INFO]: soonk[/127.125.213.137:59035] logged in with entity id 709 at ([world]340.2124663048695, 84.0, -946.0562126953198)
+[18:15:52] [Server thread/INFO]: soonk issued server command: /inv SIGMAxox
+[18:15:56] [Server thread/INFO]: SIGMAxox issued server command: /spawn
+[18:16:25] [Server thread/INFO]: SIGMAxox issued server command: /spawn set
+[18:16:38] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: ازاي يشتغل
+[18:16:58] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انا فعلته في الحتة دي
+[18:17:04] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انا فعلته في الحتة دي
+[18:17:07] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: فين
+[18:17:39] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: لازم احطط المساحة
+[18:17:43] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: لازم احطط المساحة
+[18:17:44] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: لازم احطط المساحة
+[18:17:49] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: ازاي
+[18:17:58] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: مش عارف
+[18:18:02] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: خليها مربع كامل
+[18:18:12] [Async Chat Thread - #0/INFO]: [Not Secure] world [OWNER] MEMBER soonk: تعاه
+[18:19:18] [Server thread/INFO]: SIGMAxox issued server command: /spawn 16
+[18:20:06] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER soonk: بوص
+[18:20:11] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER soonk: خلي هنا
+[18:20:19] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER soonk: لي هنا
+[18:20:19] [Async Chat Thread - #2/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: هعملها
+[18:20:43] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username abdoofive
+[18:20:43] [localSession-7-2/INFO]: [Geyser-Spigot] abdoofive (logged in as: abdoofive) has connected to the Java server
+[18:20:43] [TAB Processing Thread/INFO]: [TAB] [WARN] Player .abdoofive's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[18:20:43] [Server thread/INFO]: [floodgate] Floodgate player logged in as .abdoofive joined (UUID: 00000000-0000-0000-0009-01fa23247e22)
+[18:20:43] [Server thread/INFO]: .abdoofive joined the game
+[18:20:43] [Server thread/INFO]: .abdoofive[/127.125.213.137:0] logged in with entity id 1279 at ([world]246.0277, 84.0, -304.62018)
+[18:20:56] [Server thread/INFO]: SIGMAxox issued server command: /spawn protect 50
+[18:21:49] [Server thread/INFO]: SIGMAxox lost connection: Disconnected
+[18:21:49] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[18:21:49] [Server thread/INFO]: SIGMAxox left the game
+[18:21:52] [User Authenticator #1/INFO]: UUID of player SIGMAxox is 53dcd5fe-87eb-388f-8693-91406d777c77
+[18:21:52] [TAB Processing Thread/INFO]: [TAB] [WARN] Player SIGMAxox's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[18:21:52] [Server thread/INFO]: SIGMAxox joined the game
+[18:21:52] [Server thread/INFO]: SIGMAxox[/127.44.170.115:57895] logged in with entity id 1811 at ([world]341.5051558480354, 84.0, -945.4844050903989)
+[18:21:53] [Server thread/INFO]: [voicechat] Received secret request of SIGMAxox (18)
+[18:21:53] [Server thread/WARN]: [voicechat] Connected client SIGMAxox has incompatible voice chat version (server=20, client=18)
+[18:22:03] [Server thread/INFO]: SIGMAxox issued server command: /spawn set
+[18:22:04] [Server thread/INFO]: .abdoofive drowned
+[18:22:25] [Server thread/INFO]: .abdoofive was slain by soonk
+[18:22:29] [Server thread/INFO]: SIGMAxox issued server command: /spawn protect 100
+[18:22:40] [Server thread/INFO]: .abdoofive was slain by soonk
+[18:22:43] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: شوف
+[18:22:57] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: شغال؟
+[18:23:11] [Async Chat Thread - #5/INFO]: [Not Secure] world MEMBER .abdoofive: لا
+[18:23:23] [RCON Listener #1/INFO]: Thread RCON Client /127.44.170.115 started
+[18:23:24] [RCON Listener #1/INFO]: Thread RCON Client /127.44.170.115 started
+[18:23:25] [RCON Client /127.44.170.115 #2/INFO]: Thread RCON Client /127.44.170.115 shutting down
+[18:23:31] [Server thread/INFO]: [Rcon: Made .abdoofive no longer a server operator]
+[18:23:39] [Async Chat Thread - #5/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: انا كنت عامله  op
+[18:23:40] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER .abdoofive: اه شيل ال او بي
+[18:23:50] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER .abdoofive: شلني
+[18:23:54] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER .abdoofive: من الوبب
+[18:23:57] [Async Chat Thread - #4/INFO]: [Not Secure] world MEMBER .abdoofive: او بي
+[18:23:58] [Async Chat Thread - #4/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: شلته
+[18:24:25] [Async Chat Thread - #4/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: استنا كدة
+[18:24:32] [RCON Client /127.44.170.115 #3/INFO]: Thread RCON Client /127.44.170.115 shutting down
+[18:24:35] [Craft Scheduler Thread - 28 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[18:26:37] [RCON Listener #1/INFO]: Thread RCON Client /127.44.170.115 started
+[18:26:43] [RCON Client /127.44.170.115 #4/INFO]: Thread RCON Client /127.44.170.115 shutting down
+[18:27:48] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] abdoofive has disconnected from the Java server because of Bedrock client disconnected
+[18:27:48] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .abdoofive disconnected
+[18:27:48] [Server thread/INFO]: .abdoofive lost connection: Disconnected
+[18:27:48] [Server thread/INFO]: [voicechat] Disconnecting client .abdoofive
+[18:27:48] [Server thread/INFO]: .abdoofive left the game
+[18:28:05] [Async Chat Thread - #6/INFO]: [Not Secure] world [OWNER] MEMBER SIGMAxox: هعيد تشغيل السيرفر
+[18:28:31] [Server thread/INFO]: SIGMAxox issued server command: /restart
+[18:28:31] [Server thread/INFO]: [STDOUT] [org.spigotmc.RestartCommand] Startup script './start.sh' does not exist! Stopping server.
+[18:28:31] [Server thread/INFO]: soonk lost connection: Server is restarting
+[18:28:31] [Server thread/INFO]: [voicechat] Disconnecting client soonk
+[18:28:31] [Server thread/INFO]: soonk left the game
+[18:28:31] [Server thread/INFO]: SIGMAxox lost connection: Server is restarting
+[18:28:31] [Server thread/INFO]: [voicechat] Disconnecting client SIGMAxox
+[18:28:31] [Server thread/INFO]: SIGMAxox left the game
+[18:28:31] [Server thread/INFO]: Stopping server
+[18:28:31] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
+[18:28:31] [Server thread/INFO]: [Spawn] Disabling Spawn v2.4.2
+[18:28:31] [Server thread/INFO]: [CreeperRefund] Disabling CreeperRefund v1.0
+[18:28:31] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.5.3
+[18:28:31] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
+[18:28:31] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
+[18:28:31] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
+[18:28:31] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
+[18:28:31] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
+[18:28:31] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
+[18:28:31] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
+[18:28:31] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
+[18:28:31] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[18:28:31] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
+[18:28:31] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[18:28:31] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
+[18:28:31] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
+[18:28:31] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[18:28:31] [Server thread/INFO]: [TAB] Disabled in 0ms
+[18:28:31] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.0
+[18:28:31] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
+[18:28:31] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
+[18:28:31] [Server thread/INFO]: [packetevents] Failed to uninject server channel, handler not found
+[18:28:31] [Server thread/INFO]: [packetevents] Failed to uninject server channel, handler not found
+[18:28:31] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[18:28:31] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[18:28:31] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
+[18:28:31] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[18:28:31] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[18:28:31] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[18:28:31] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[18:28:31] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[18:28:31] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[18:28:31] [Server thread/INFO]: Saving players
+[18:28:31] [Server thread/INFO]: Saving worlds
+[18:28:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saved 32 block chunks, 120 entity chunks, 0 poi chunks in world 'world' in 0.05s
+[18:28:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[18:28:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[18:28:31] [WebSocketConnectReadThread-107/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saved 9 block chunks, 35 entity chunks, 0 poi chunks in world 'world_nether' in 0.02s
+[18:28:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[18:28:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[18:28:31] [Server thread/INFO]: [ChunkHolderManager] Saved 10 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[18:28:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[18:28:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[18:28:31] [Server thread/INFO]: Flushing Chunk IO
+[18:28:31] [Server thread/INFO]: Closing Thread Pool
+[18:28:31] [Server thread/INFO]: Closing Server
