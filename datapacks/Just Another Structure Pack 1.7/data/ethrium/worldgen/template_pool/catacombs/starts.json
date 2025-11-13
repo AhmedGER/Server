@@ -1,0 +1,15 @@
+{
+	  "name": "ethrium:dungeon/catacombs/starts/starts",
+	"fallback": "ethrium:catacombs/terminators",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"projection": "rigid",
+				"location": "ethrium:catacombs/starts",
+				"processors": "ethrium:catacombs"
+			}
+		}
+	]
+}

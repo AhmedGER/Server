@@ -1,0 +1,282 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:capped",
+      "limit": 3,
+      "delegate": {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "location_predicate": {
+              "predicate_type": "minecraft:always_true"
+            },
+            "input_predicate": {
+              "predicate_type": "minecraft:tag_match",
+              "tag": "minecraft:trail_ruins_replaceable"
+            },
+            "output_state": {
+              "Name": "minecraft:suspicious_gravel",
+              "Properties": {
+                "dusted": "0"
+              }
+            },
+            "block_entity_modifier": {
+              "type": "minecraft:append_loot",
+              "loot_table": "ethrium:archaeology/catacombs"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:bedrock"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:block_match",
+            "block": "minecraft:air"
+          },
+          "output_state": {
+            "Name": "minecraft:bedrock"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:deepslate_bricks",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:cracked_deepslate_bricks"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:spawner",
+            "probability": 0.5
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:soul_wall_torch",
+            "probability": 0.6
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:chest",
+            "probability": 0.5
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:deepslate_tiles",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:cracked_deepslate_tiles"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:gravel",
+            "probability": 0.4
+          },
+          "output_state": {
+            "Name": "minecraft:cobblestone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:gravel",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:mossy_cobblestone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:gravel",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:andesite"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:gravel",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:stone"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.3
+          },
+          "output_state": {
+            "Name": "minecraft:air"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:soul_lantern",
+            "Properties": {
+              "hanging": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.2
+          },
+          "output_state": {
+            "Name": "minecraft:potted_wither_rose"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:candle",
+            "Properties": {
+              "candles": "1",
+              "lit": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:candle",
+            "Properties": {
+              "candles": "2",
+              "lit": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:candle",
+            "Properties": {
+              "candles": "3",
+              "lit": "false",
+              "waterlogged": "false"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:skeleton_skull",
+            "probability": 0.05
+          },
+          "output_state": {
+            "Name": "minecraft:candle",
+            "Properties": {
+              "candles": "4",
+              "lit": "false",
+              "waterlogged": "false"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
