@@ -1,398 +1,177 @@
-[00:01:37] [Craft Scheduler Thread - 57 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[00:01:37] [Craft Scheduler Thread - 57 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[00:01:37] [Craft Scheduler Thread - 57 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[00:02:22] [User Authenticator #1/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[00:02:22] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[00:02:24] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 837, 72, -216
-[00:02:24] [Server thread/INFO]: jiko0 joined the game
-[00:02:24] [Server thread/INFO]: jiko0[/127.167.132.197:44321] logged in with entity id 511 at ([world]837.5, 72.0, -215.5)
-[00:02:53] [Async Chat Thread - #0/INFO]: [Not Secure]  MEMBER jiko0: tttttttttt
-[00:04:31] [User Authenticator #2/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[00:04:32] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[00:04:35] [Server thread/INFO]: [RandomSPAWNZ] Player soonk has been randomly spawned at: -705, 68, -756
-[00:04:35] [Server thread/INFO]: soonk joined the game
-[00:04:35] [Server thread/INFO]: soonk[/127.125.213.137:59871] logged in with entity id 987 at ([world]-704.5, 68.0, -755.5)
-[00:04:35] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3089ms or 61 ticks behind
-[00:04:50] [Async Chat Thread - #1/INFO]: [Not Secure]  [OWNER] soonk: منور
-[00:05:08] [Async Chat Thread - #1/INFO]: [Not Secure]  MEMBER jiko0: نورك
-[00:05:21] [Async Chat Thread - #1/INFO]: [Not Secure]  [OWNER] soonk: لو نشرت فيديو علي يوتيوب بعطيك رتبه يوتيوب
-[00:06:04] [Server thread/INFO]: soonk issued server command: /inv jiko0
-[00:07:07] [Server thread/INFO]: soonk has made the advancement [Stone Age]
-[00:07:24] [Server thread/INFO]: soonk has made the advancement [Getting an Upgrade]
-[00:07:41] [Craft Scheduler Thread - 66 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[00:08:12] [Server thread/INFO]: soonk issued server command: /inv jiko0
-[00:09:38] [Server thread/INFO]: soonk has made the advancement [Monster Hunter]
-[00:11:30] [Server thread/INFO]: soonk was slain by Zombie
-[00:11:37] [Server thread/INFO]: soonk issued server command: /back
-[00:12:09] [Server thread/INFO]: soonk issued server command: /inv jiko0
-[00:12:15] [Server thread/INFO]: soonk has made the advancement [Ice Bucket Challenge]
-[00:12:20] [Server thread/INFO]: soonk has made the advancement [Suit Up]
-[00:12:31] [Server thread/INFO]: jiko0 has made the advancement [Sweet Dreams]
-[00:12:31] [Craft Scheduler Thread - 78 - OnePlayerSleep/INFO]: jiko0 is slacking
-[00:12:38] [Async Chat Thread - #3/INFO]: [Not Secure]  MEMBER jiko0: zzzzzzzzzz
-[00:14:22] [Server thread/INFO]: soonk has made the advancement [Acquire Hardware]
-[00:15:10] [Server thread/INFO]: jiko0 has made the advancement [Stone Age]
-[00:16:02] [Server thread/INFO]: soonk has made the advancement [Isn't It Iron Pick]
-[00:16:51] [Server thread/INFO]: jiko0 has made the advancement [Getting an Upgrade]
-[00:17:29] [Async Chat Thread - #5/INFO]: [Not Secure]  [OWNER] soonk: hl,v; jlhl
-[00:17:33] [Async Chat Thread - #5/INFO]: [Not Secure]  [OWNER] soonk: امورك تمام
-[00:17:36] [Server thread/INFO]: soonk issued server command: /inv jiko0
-[00:17:41] [Craft Scheduler Thread - 87 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[00:17:43] [Async Chat Thread - #5/INFO]: [Not Secure]  [OWNER] soonk: ؟
-[00:18:18] [Async Chat Thread - #5/INFO]: [Not Secure]  MEMBER jiko0: تم بس رسبنوني يم ساحره
-[00:18:26] [Async Chat Thread - #5/INFO]: [Not Secure]  [OWNER] soonk: ههههه
-[00:18:27] [Async Chat Thread - #5/INFO]: [Not Secure]  MEMBER jiko0: ههههههههههه
-[00:18:34] [Async Chat Thread - #5/INFO]: [Not Secure]  [OWNER] soonk: حظك
-[00:21:58] [Server thread/INFO]: soonk has made the advancement [Not Today, Thank You]
-[00:23:32] [Craft Scheduler Thread - 97 - OnePlayerSleep/INFO]: jiko0 is cat napping
-[00:25:01] [Server thread/INFO]: jiko0 fell from a high place
-[00:25:15] [Async Chat Thread - #7/INFO]: [Not Secure]  [OWNER] soonk: اكتب سلاش back
-[00:25:40] [Craft Scheduler Thread - 101 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[00:25:40] [Craft Scheduler Thread - 101 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[00:25:40] [Craft Scheduler Thread - 101 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[00:26:11] [Server thread/INFO]: soonk issued server command: /inv jiko0
-[00:26:39] [Async Chat Thread - #9/INFO]: [Not Secure]  MEMBER jiko0: اكو قريه ملوته
-[00:26:45] [Async Chat Thread - #9/INFO]: [Not Secure]  [OWNER] soonk: hkh g,jih
-[00:26:53] [Async Chat Thread - #9/INFO]: [Not Secure]  [OWNER] soonk: انا لوتها
-[00:27:24] [Async Chat Thread - #9/INFO]: [Not Secure]  [OWNER] soonk: بجيلك اظبك
-[00:27:41] [Craft Scheduler Thread - 112 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[00:27:42] [Server thread/INFO]: jiko0 issued server command: /back
-[00:29:30] [Async Chat Thread - #11/INFO]: [Not Secure]  MEMBER jiko0: مارجعني !
-[00:29:47] [Async Chat Thread - #11/INFO]: [Not Secure]  [OWNER] soonk: لازم تسويها قبل دقيقه
-[00:30:03] [Async Chat Thread - #11/INFO]: [Not Secure]  [OWNER] soonk: طلامه الدقيقه مرت خلاص اغراضك ودعت
-[00:30:27] [Server thread/INFO]: soonk issued server command: /tp jiko0
-[00:30:27] [Server thread/INFO]: [soonk: Teleported soonk to jiko0]
-[00:30:34] [Async Chat Thread - #11/INFO]: [Not Secure]  MEMBER jiko0: طيب وش رئيك تجي ونبدي نلعب مع بعض
-[00:30:43] [Async Chat Thread - #11/INFO]: [Not Secure]  [OWNER] soonk: اك
-[00:31:10] [Server thread/INFO]: jiko0 has made the advancement [Acquire Hardware]
-[00:32:19] [Async Chat Thread - #13/INFO]: [Not Secure]  MEMBER jiko0: دسكورد
-[00:32:43] [Async Chat Thread - #13/INFO]: [Not Secure]  MEMBER jiko0: !
-[00:32:49] [Async Chat Thread - #13/INFO]: [Not Secure]  [OWNER] soonk: وش
-[00:33:03] [Async Chat Thread - #13/INFO]: [Not Secure]  MEMBER jiko0: دسكورد
-[00:33:09] [Async Chat Thread - #13/INFO]: [Not Secure]  [OWNER] soonk: ماله
-[00:33:31] [Async Chat Thread - #13/INFO]: [Not Secure]  MEMBER jiko0: نتكلم في الدسكورد
-[00:33:39] [Async Chat Thread - #13/INFO]: [Not Secure]  [OWNER] soonk: اك
-[00:33:47] [Async Chat Thread - #13/INFO]: [Not Secure]  [OWNER] soonk: بس شوي وانام
-[00:33:48] [Async Chat Thread - #13/INFO]: [Not Secure]  MEMBER jiko0: 7L6RR
-[00:35:05] [Async Chat Thread - #15/INFO]: [Not Secure]  [OWNER] soonk: تم
-[00:37:41] [Craft Scheduler Thread - 133 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[00:38:10] [Server thread/INFO]: soonk issued server command: /tp jiko0
-[00:38:10] [Server thread/INFO]: [soonk: Teleported soonk to jiko0]
-[00:38:19] [Server thread/INFO]: soonk has made the advancement [Sweet Dreams]
-[00:38:20] [Craft Scheduler Thread - 136 - OnePlayerSleep/INFO]: soonk is sawing logs
-[00:38:26] [Server thread/INFO]: soonk was blown up by Creeper
-[00:39:06] [Server thread/INFO]: soonk issued server command: /tp jiko0
-[00:39:06] [Server thread/INFO]: [soonk: Teleported soonk to jiko0]
-[00:44:17] [Async Chat Thread - #17/INFO]: [Not Secure]  [OWNER] soonk: sethome
-[00:44:31] [Server thread/INFO]: jiko0 issued server command: /sethome
-[00:45:01] [User Authenticator #3/INFO]: UUID of player soonk is 4f745b20-dadc-361b-9ade-2660b67b7c53
-[00:45:01] [Server thread/INFO]: soonk lost connection: You logged in from another location
-[00:45:01] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[00:45:01] [Server thread/INFO]: soonk left the game
-[00:45:02] [TAB Processing Thread/INFO]: [TAB] [WARN] Player soonk's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[00:45:05] [Server thread/INFO]: [RandomSPAWNZ] Player soonk has been randomly spawned at: -474, 69, -491
-[00:45:05] [Server thread/INFO]: soonk joined the game
-[00:45:05] [Server thread/INFO]: soonk[/127.125.213.137:47293] logged in with entity id 11963 at ([world]-473.5, 69.0, -490.5)
-[00:45:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3325ms or 66 ticks behind
-[00:45:10] [Server thread/INFO]: soonk lost connection: Disconnected
-[00:45:10] [Server thread/INFO]: [voicechat] Disconnecting client soonk
-[00:45:10] [Server thread/INFO]: soonk left the game
-[00:47:45] [Craft Scheduler Thread - 154 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[00:49:44] [Craft Scheduler Thread - 161 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[00:49:44] [Craft Scheduler Thread - 161 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[00:49:44] [Craft Scheduler Thread - 161 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[00:57:45] [Craft Scheduler Thread - 174 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:01:33] [Server thread/INFO]: jiko0 fell from a high place
-[01:03:22] [Server thread/INFO]: jiko0 was slain by Zombie
-[01:04:21] [Server thread/INFO]: jiko0 issued server command: /back
-[01:07:45] [Craft Scheduler Thread - 189 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:08:00] [Async Chat Thread - #19/INFO]: [Not Secure]  MEMBER jiko0: jiko0
-[01:12:36] [Server thread/INFO]: jiko0 has made the advancement [Suit Up]
-[01:13:44] [Craft Scheduler Thread - 204 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[01:13:44] [Craft Scheduler Thread - 204 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[01:13:44] [Craft Scheduler Thread - 204 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[01:17:45] [Craft Scheduler Thread - 209 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:18:30] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
-[01:18:31] [RCON Client /127.146.114.135 #2/INFO]: Thread RCON Client /127.146.114.135 shutting down
-[01:18:46] [RCON Listener #1/INFO]: Thread RCON Client /127.146.114.135 started
-[01:18:47] [RCON Client /127.146.114.135 #3/INFO]: Thread RCON Client /127.146.114.135 shutting down
-[01:27:45] [Craft Scheduler Thread - 226 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:32:30] [Async Chat Thread - #21/INFO]: [Not Secure]  MEMBER jiko0: bsr
-[01:37:44] [Craft Scheduler Thread - 245 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[01:37:44] [Craft Scheduler Thread - 245 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[01:37:44] [Craft Scheduler Thread - 245 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[01:37:45] [Craft Scheduler Thread - 245 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:40:03] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[01:40:03] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[01:40:03] [Server thread/INFO]: jiko0 left the game
-[01:47:45] [Craft Scheduler Thread - 264 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:57:45] [Craft Scheduler Thread - 283 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:01:44] [Craft Scheduler Thread - 290 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[02:01:44] [Craft Scheduler Thread - 290 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[02:01:44] [Craft Scheduler Thread - 290 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[02:07:45] [Craft Scheduler Thread - 304 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:17:45] [Craft Scheduler Thread - 324 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:25:44] [Craft Scheduler Thread - 339 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[02:25:44] [Craft Scheduler Thread - 339 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[02:25:44] [Craft Scheduler Thread - 339 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[02:27:45] [Craft Scheduler Thread - 342 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:37:45] [Craft Scheduler Thread - 363 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:47:45] [Craft Scheduler Thread - 380 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:49:44] [Craft Scheduler Thread - 380 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[02:49:44] [Craft Scheduler Thread - 380 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[02:49:44] [Craft Scheduler Thread - 380 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[02:57:45] [Craft Scheduler Thread - 400 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:00:16] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Bedrock user with ip: /127.227.213.47 has disconnected for reason Bedrock client timed out
-[03:05:10] [User Authenticator #4/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:05:11] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:05:12] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -473, 78, 308
-[03:05:12] [Server thread/INFO]: jiko0 joined the game
-[03:05:12] [Server thread/INFO]: jiko0[/127.167.132.197:38199] logged in with entity id 18815 at ([world]-472.5, 78.0, 308.5)
-[03:06:35] [Server thread/INFO]: jiko0 has made the advancement [Monster Hunter]
-[03:07:24] [Async Chat Thread - #23/INFO]: [Not Secure]  MEMBER jiko0: jiko0
-[03:07:45] [Craft Scheduler Thread - 419 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:08:02] [Server thread/INFO]: jiko0 issued server command: /ROM
-[03:11:41] [Async Chat Thread - #25/INFO]: [Not Secure]  MEMBER jiko0: W
-[03:12:38] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:12:38] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:12:38] [Server thread/INFO]: jiko0 left the game
-[03:13:44] [Craft Scheduler Thread - 427 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[03:13:44] [Craft Scheduler Thread - 427 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[03:13:44] [Craft Scheduler Thread - 427 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[03:14:05] [User Authenticator #5/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:14:06] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:14:10] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -394, 56, -351
-[03:14:10] [Server thread/INFO]: jiko0 joined the game
-[03:14:10] [Server thread/INFO]: jiko0[/127.167.132.197:41965] logged in with entity id 20300 at ([world]-393.5, 56.0, -350.5)
-[03:14:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3840ms or 76 ticks behind
-[03:15:22] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:15:22] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:15:22] [Server thread/INFO]: jiko0 left the game
-[03:15:24] [User Authenticator #6/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:15:25] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:15:26] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -375, 100, 656
-[03:15:26] [Server thread/INFO]: jiko0 joined the game
-[03:15:26] [Server thread/INFO]: jiko0[/127.167.132.197:59077] logged in with entity id 20641 at ([world]-374.5, 100.0, 656.5)
-[03:16:46] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:16:46] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:16:46] [Server thread/INFO]: jiko0 left the game
-[03:16:49] [User Authenticator #7/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:16:50] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:16:50] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -392, 72, 34
-[03:16:50] [Server thread/INFO]: jiko0 joined the game
-[03:16:50] [Server thread/INFO]: jiko0[/127.167.132.197:43069] logged in with entity id 21327 at ([world]-391.5, 72.0, 34.5)
-[03:17:46] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:17:46] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:17:46] [Server thread/INFO]: jiko0 left the game
-[03:17:47] [User Authenticator #7/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:17:48] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:17:50] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -94, 67, 867
-[03:17:50] [Server thread/INFO]: jiko0 joined the game
-[03:17:50] [Server thread/INFO]: jiko0[/127.167.132.197:48693] logged in with entity id 22034 at ([world]-93.5, 67.0, 867.5)
-[03:17:50] [Craft Scheduler Thread - 434 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:18:17] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:18:17] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:18:17] [Server thread/INFO]: jiko0 left the game
-[03:18:18] [User Authenticator #7/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:18:19] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:18:21] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 680, 64, 228
-[03:18:21] [Server thread/INFO]: jiko0 joined the game
-[03:18:21] [Server thread/INFO]: jiko0[/127.167.132.197:44747] logged in with entity id 22407 at ([world]680.5, 64.0, 228.5)
-[03:18:42] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:18:42] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:18:42] [Server thread/INFO]: jiko0 left the game
-[03:18:44] [User Authenticator #7/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:18:45] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:18:45] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -324, 69, -325
-[03:18:45] [Server thread/INFO]: jiko0 joined the game
-[03:18:45] [Server thread/INFO]: jiko0[/127.167.132.197:54047] logged in with entity id 22929 at ([world]-323.5, 69.0, -324.5)
-[03:18:59] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:18:59] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:18:59] [Server thread/INFO]: jiko0 left the game
-[03:19:00] [User Authenticator #7/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:19:01] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:19:01] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -297, 64, -248
-[03:19:01] [Server thread/INFO]: jiko0 joined the game
-[03:19:01] [Server thread/INFO]: jiko0[/127.167.132.197:50733] logged in with entity id 23235 at ([world]-296.5, 64.0, -247.5)
-[03:21:01] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:21:01] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:21:01] [Server thread/INFO]: jiko0 left the game
-[03:21:02] [User Authenticator #8/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:21:03] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:21:04] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -872, 64, 630
-[03:21:04] [Server thread/INFO]: jiko0 joined the game
-[03:21:04] [Server thread/INFO]: jiko0[/127.167.132.197:39591] logged in with entity id 23960 at ([world]-871.5, 64.0, 630.5)
-[03:21:36] [Server thread/INFO]: jiko0 issued server command: /delhome
-[03:22:43] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:22:43] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:22:43] [Server thread/INFO]: jiko0 left the game
-[03:22:44] [User Authenticator #9/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:22:45] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:22:45] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -128, 66, -326
-[03:22:45] [Server thread/INFO]: jiko0 joined the game
-[03:22:45] [Server thread/INFO]: jiko0[/127.167.132.197:56717] logged in with entity id 24263 at ([world]-127.5, 66.0, -325.5)
-[03:22:56] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:22:56] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:22:56] [Server thread/INFO]: jiko0 left the game
-[03:22:57] [User Authenticator #9/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:22:58] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:23:00] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 583, 71, -44
-[03:23:00] [Server thread/INFO]: jiko0 joined the game
-[03:23:00] [Server thread/INFO]: jiko0[/127.167.132.197:49189] logged in with entity id 24454 at ([world]583.5, 71.0, -43.5)
-[03:23:13] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:23:13] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:23:13] [Server thread/INFO]: jiko0 left the game
-[03:23:14] [User Authenticator #9/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:23:15] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:23:15] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 62, 66, -450
-[03:23:15] [Server thread/INFO]: jiko0 joined the game
-[03:23:15] [Server thread/INFO]: jiko0[/127.167.132.197:47099] logged in with entity id 24611 at ([world]62.5, 66.0, -449.5)
-[03:24:51] [Server thread/INFO]: jiko0 was doomed to fall by Zombie
-[03:25:04] [Server thread/INFO]: jiko0 issued server command: /cdis
-[03:25:12] [Server thread/INFO]: jiko0 issued server command: /bed
-[03:27:04] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:27:04] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:27:04] [Server thread/INFO]: jiko0 left the game
-[03:27:06] [User Authenticator #10/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:27:06] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:27:06] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -139, 68, -457
-[03:27:06] [Server thread/INFO]: jiko0 joined the game
-[03:27:06] [Server thread/INFO]: jiko0[/127.167.132.197:33013] logged in with entity id 25977 at ([world]-138.5, 68.0, -456.5)
-[03:27:48] [Craft Scheduler Thread - 454 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:30:32] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:30:32] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:30:32] [Server thread/INFO]: jiko0 left the game
-[03:30:33] [User Authenticator #11/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:30:34] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:30:34] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -731, 63, -827
-[03:30:34] [Server thread/INFO]: jiko0 joined the game
-[03:30:34] [Server thread/INFO]: jiko0[/127.167.132.197:46281] logged in with entity id 26882 at ([world]-730.5, 63.0, -826.5)
-[03:30:38] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:30:38] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:30:38] [Server thread/INFO]: jiko0 left the game
-[03:30:39] [User Authenticator #11/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:30:40] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:30:40] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 736, 82, -409
-[03:30:40] [Server thread/INFO]: jiko0 joined the game
-[03:30:40] [Server thread/INFO]: jiko0[/127.167.132.197:38413] logged in with entity id 27026 at ([world]736.5, 82.0, -408.5)
-[03:31:45] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:31:45] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:31:45] [Server thread/INFO]: jiko0 left the game
-[03:31:46] [User Authenticator #12/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:31:47] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:31:47] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: -412, 66, -311
-[03:31:47] [Server thread/INFO]: jiko0 joined the game
-[03:31:47] [Server thread/INFO]: jiko0[/127.167.132.197:40651] logged in with entity id 27365 at ([world]-411.5, 66.0, -310.5)
-[03:32:05] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:32:05] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:32:05] [Server thread/INFO]: jiko0 left the game
-[03:32:06] [User Authenticator #12/INFO]: UUID of player jiko0 is 52d220c9-2cb4-349f-b8dc-7bb074b45f0d
-[03:32:07] [TAB Processing Thread/INFO]: [TAB] [WARN] Player jiko0's group (none) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
-[03:32:08] [Server thread/INFO]: [RandomSPAWNZ] Player jiko0 has been randomly spawned at: 153, 73, 356
-[03:32:08] [Server thread/INFO]: jiko0 joined the game
-[03:32:08] [Server thread/INFO]: jiko0[/127.167.132.197:44581] logged in with entity id 27711 at ([world]153.5, 73.0, 356.5)
-[03:32:23] [Server thread/INFO]: jiko0 lost connection: Disconnected
-[03:32:23] [Server thread/INFO]: [voicechat] Disconnecting client jiko0
-[03:32:23] [Server thread/INFO]: jiko0 left the game
-[03:37:47] [Craft Scheduler Thread - 475 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[03:37:47] [Craft Scheduler Thread - 475 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[03:37:47] [Craft Scheduler Thread - 475 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[03:37:48] [Craft Scheduler Thread - 475 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:47:48] [Craft Scheduler Thread - 497 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:57:48] [Craft Scheduler Thread - 509 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:01:47] [Craft Scheduler Thread - 525 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[04:01:47] [Craft Scheduler Thread - 525 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[04:01:47] [Craft Scheduler Thread - 525 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[04:07:48] [Craft Scheduler Thread - 534 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:17:48] [Craft Scheduler Thread - 554 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:25:47] [Craft Scheduler Thread - 564 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[04:25:47] [Craft Scheduler Thread - 564 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[04:25:47] [Craft Scheduler Thread - 564 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[04:27:48] [Craft Scheduler Thread - 576 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:37:48] [Craft Scheduler Thread - 593 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:47:48] [Craft Scheduler Thread - 616 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:49:47] [Craft Scheduler Thread - 619 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[04:49:47] [Craft Scheduler Thread - 619 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[04:49:47] [Craft Scheduler Thread - 619 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[04:57:48] [Craft Scheduler Thread - 636 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:07:48] [Craft Scheduler Thread - 654 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:13:47] [Craft Scheduler Thread - 667 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[05:13:47] [Craft Scheduler Thread - 667 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:13:47] [Craft Scheduler Thread - 667 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[05:17:48] [Craft Scheduler Thread - 675 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:22:49] [Server thread/INFO]: Stopping server
-[05:22:49] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
-[05:22:49] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
-[05:22:49] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
-[05:22:49] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
-[05:22:49] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
-[05:22:49] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
-[05:22:49] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
-[05:22:49] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
-[05:22:49] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
-[05:22:49] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[05:22:49] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
-[05:22:49] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.6
-[05:22:49] [Server thread/INFO]: [InstantRestock] Disabled InstantRestock!
-[05:22:49] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[05:22:49] [Server thread/INFO]: [RandomSPAWNZ] Disabling RandomSPAWNZ v1.0.0
-[05:22:49] [Server thread/INFO]: [RandomSPAWNZ] RandomSPAWNZ has been disabled!
-[05:22:49] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
-[05:22:49] [Server thread/INFO]: [AntiCreeperGrief] Disabling AntiCreeperGrief v1.2
-[05:22:49] [Server thread/INFO]: [AntiCreeperGrief] Anti Creeper Grief Disabled!
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Disabling HomeSweetHome v1.0.0
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Shutting down HomeSweetHome...
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] EconomyManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] GUIManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] TeleportManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] HomeManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] DatabaseManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] MessageManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] ConfigManager shutdown complete.
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] HomeSweetHome has been disabled successfully!
-[05:22:49] [Server thread/INFO]: [HomeSweetHome] Total uptime: 5h 45m
-[05:22:49] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.15.2
-[05:22:49] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
-[05:22:49] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[05:22:49] [Server thread/INFO]: [TAB] Disabled in 0ms
-[05:22:49] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.0
-[05:22:49] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
-[05:22:49] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
-[05:22:49] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[05:22:49] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
-[05:22:49] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
-[05:22:49] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[05:22:50] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[05:22:50] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[05:22:50] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[05:22:50] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[05:22:50] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[05:22:50] [Server thread/INFO]: Saving players
-[05:22:50] [Server thread/INFO]: Saving worlds
-[05:22:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[05:22:50] [WebSocketConnectReadThread-683/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saved 344 block chunks, 438 entity chunks, 0 poi chunks in world 'world' in 0.33s
-[05:22:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[05:22:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saved 968 block chunks, 4 entity chunks, 0 poi chunks in world 'world_nether' in 0.15s
-[05:22:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[05:22:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[05:22:50] [Server thread/INFO]: [ChunkHolderManager] Saved 968 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.10s
-[05:22:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[05:22:50] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[05:22:50] [Server thread/INFO]: Flushing Chunk IO
-[05:22:50] [Server thread/INFO]: Closing Thread Pool
-[05:22:50] [Server thread/INFO]: Closing Server
+[10:23:41] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10:23:41] [main/INFO]: Reloading ResourceManager: Default, bukkit
+[10:23:42] [Worker-Main-2/INFO]: Loaded 7 recipes
+[10:23:42] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[10:23:42] [Server thread/INFO]: Loading properties
+[10:23:42] [Server thread/INFO]: This server is running Paper version git-Paper-794 (MC: 1.16.5) (Implementing API version 1.16.5-R0.1-SNAPSHOT)
+[10:23:43] [Server thread/INFO]: Debug logging is disabled
+[10:23:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[10:23:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[10:23:43] [Server thread/INFO]: Default game type: SURVIVAL
+[10:23:43] [Server thread/INFO]: Generating keypair
+[10:23:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[10:23:44] [Server thread/INFO]: Using epoll channel type
+[10:23:44] [Server thread/ERROR]: Could not load 'plugins/TreeCuter-v2.0.1.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.17
+	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:361) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[10:23:44] [Server thread/ERROR]: Could not load 'plugins/BetterStructures.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [WorldEdit]. Please download and install these plugins to run 'BetterStructures'.
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[10:23:44] [Server thread/WARN]: Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[10:23:47] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[10:23:47] [Server thread/ERROR]: Could not load 'plugins/RandomSPAWNZ-1.0.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: Unsupported API version 1.2
+	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.checkSupported(CraftMagicNumbers.java:361) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:149) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[10:23:47] [Server thread/ERROR]: Fatal error trying to convert OneHitOre v1.0:me/bebo/oneHitOre/OneHitOre.class
+java.lang.IllegalArgumentException: Unsupported class file major version 65
+	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:196) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:177) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.libs.org.objectweb.asm.ClassReader.<init>(ClassReader.java:163) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.util.Commodore.convert(Commodore.java:171) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicNumbers.processClass(CraftMagicNumbers.java:384) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:178) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:119) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:114) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at java.lang.Class.forName0(Native Method) ~[?:?]
+	at java.lang.Class.forName(Class.java:536) ~[?:?]
+	at java.lang.Class.forName(Class.java:515) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:82) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:153) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:414) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:322) ~[patched_1.16.5.jar:git-Paper-794]
+	at org.bukkit.craftbukkit.v1_16_R3.CraftServer.loadPlugins(CraftServer.java:393) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.DedicatedServer.init(DedicatedServer.java:269) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.w(MinecraftServer.java:1074) ~[patched_1.16.5.jar:git-Paper-794]
+	at net.minecraft.server.v1_16_R3.MinecraftServer.lambda$a$0(MinecraftServer.java:291) ~[patched_1.16.5.jar:git-Paper-794]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[10:23:47] [Server thread/INFO]: [OpenInv] Loading OpenInv v5.1.2
+[10:23:47] [Server thread/INFO]: [AntiCreeperGrief] Loading AntiCreeperGrief v1.2
+[10:23:47] [Server thread/INFO]: [OnePlayerSleep] Loading OnePlayerSleep v3.1.16
+[10:23:47] [Server thread/INFO]: [SimpleTpa] Loading SimpleTpa v8.0
+[10:23:47] [Server thread/INFO]: [BetterTeams] Loading BetterTeams v4.15.2
+[10:23:47] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file config.yml is up to date
+[10:23:47] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[10:23:47] [Server thread/INFO]: [InstantRestock] Loading InstantRestock v2.6
+[10:23:47] [Server thread/INFO]: [CraftControl-RCON] Loading CraftControl-RCON v1.4.0
+[10:23:47] [Server thread/INFO]: [NoteBlockAPI] Loading NoteBlockAPI v1.6.3
+[10:23:47] [Server thread/INFO]: [ViaVersion] Loading ViaVersion v5.5.1
+[10:23:47] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[10:23:47] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[10:23:47] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[10:23:48] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[10:23:48] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[10:23:48] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[10:23:48] [Server thread/INFO]: [OneHitOre] Loading OneHitOre v1.0
+[10:23:48] [Server thread/INFO]: [HomeSweetHome] Loading HomeSweetHome v1.0.0
+[10:23:48] [Server thread/INFO]: [floodgate] Loading floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[10:23:48] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[10:23:49] [Server thread/INFO]: [floodgate] Took 462ms to boot Floodgate
+[10:23:49] [Server thread/INFO]: [ViaBackwards] Loading ViaBackwards v5.5.0
+[10:23:49] [Server thread/INFO]: [ViaRewind] Loading ViaRewind v4.0.10
+[10:23:49] [Server thread/INFO]: [voicechat] Loading voicechat v2.6.6
+[10:23:49] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.4.0
+[10:23:49] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.9.0
+[10:23:49] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.9.0-SNAPSHOT
+[10:23:49] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[10:23:49] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[10:23:49] [Server thread/INFO]: [dynmap] Loading dynmap v3.6-899
+[10:23:49] [Server thread/INFO]: [dynmap] version=git-Paper-794 (MC: 1.16.5)
+[10:23:49] [Server thread/INFO]: [dynmap] Mod Support API available
+[10:23:49] [Server thread/INFO]: [packetevents] Loading packetevents v2.10.1
+[10:23:50] [Server thread/INFO]: [LibsDisguises] Loading LibsDisguises v11.0.11
+[10:23:51] [Server thread/INFO]: [TAB] Loading TAB v5.2.5
+[10:23:51] [Server thread/INFO]: [PowerRanks] Loading PowerRanks v1.10.9R2
+[10:23:51] [Server thread/INFO]: [TrollV4] Loading TrollV4 v4.5.30
+[10:23:51] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[10:23:51] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[10:23:51] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[10:23:51] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[10:23:51] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.16.5[32;1m.[0;39m
+[10:23:51] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mFloodgate skin listener registered[0;39m
+[10:23:52] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[10:23:52] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loading config file
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loading language file
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loading usertags file
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loading tablist file
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
+[10:23:52] [Server thread/INFO]: [PowerRanks] Loading player & rank data
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
+[10:23:52] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
+[10:23:52] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks]   ██████  ██████   PowerRanks v1.10.9R2
+[10:23:52] [Server thread/INFO]: [PowerRanks]   ██   ██ ██   ██  Running on Paper v794
+[10:23:52] [Server thread/INFO]: [PowerRanks]   ██████  ██████   Startup time: 350ms
+[10:23:52] [Server thread/INFO]: [PowerRanks]   ██      ██   ██  Loaded 5 ranks and 9 players (YAML) 
+[10:23:52] [Server thread/INFO]: [PowerRanks]   ██      ██   ██  
+[10:23:52] [Server thread/INFO]: [PowerRanks] 
+[10:23:52] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
+[10:23:52] [Server thread/INFO]: [PowerRanks] Checking for updates...
+[10:23:52] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[10:23:52] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[10:23:52] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[10:23:52] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[10:23:52] [Server thread/INFO]: Preparing level "world"
+[10:23:52] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
+[10:23:52] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
+[10:23:53] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
+[10:23:53] [Server thread/ERROR]: WorldGenSettings: No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}]; No key seed in MapLike[{type:"minecraft:the_end"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:overworld"}]; No key seed in MapLike[{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}]; No key weirdness_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key altitude_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key humidity_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key temperature_noise in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key biomes in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}]; No key seed in MapLike[{type:"minecraft:multi_noise",preset:"minecraft:nether"}] missed input: {"minecraft:the_nether":{type:"minecraft:the_nether",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:nether"},settings:"minecraft:nether"}},"minecraft:overworld":{type:"minecraft:overworld",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:multi_noise",preset:"minecraft:overworld"},settings:"minecraft:overworld"}},"minecraft:the_end":{type:"minecraft:the_end",generator:{type:"minecraft:noise",biome_source:{type:"minecraft:the_end"},settings:"minecraft:end"}}}; Overworld settings missing
+[10:23:53] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 3700 > 2586
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
+[10:23:53] [Paper Async Chunk Task Thread #2/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 3700 > 2586
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
+[10:23:53] [Paper Async Chunk Task Thread #1/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: java.lang.RuntimeException: Server attempted to load chunk saved with newer version of minecraft! 3700 > 2586
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: 	at net.minecraft.server.v1_16_R3.ChunkRegionLoader.loadChunk(ChunkRegionLoader.java:111)
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.executeTask(ChunkLoadTask.java:114)
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.chunk.ChunkLoadTask.run(ChunkLoadTask.java:39)
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.pollTasks(QueueExecutorThread.java:105)
+[10:23:53] [Paper Async Chunk Task Thread #0/WARN]: 	at com.destroystokyo.paper.io.QueueExecutorThread.run(QueueExecutorThread.java:38)
+[10:23:53] [Server thread/INFO]: Time elapsed: 115 ms
+[10:23:53] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[10:23:53] [Server thread/INFO]: Time elapsed: 55 ms
+[10:23:53] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[10:23:53] [Server thread/INFO]: Time elapsed: 33 ms
+[10:23:53] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[10:23:53] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
+[10:23:53] [Server thread/INFO]: [InstantRestock] Enabled InstantRestock!
+[10:23:54] [Thread-1/INFO]: Stopping main thread (Ignore any thread death message you see! - DO NOT REPORT THREAD DEATH TO PAPER)
