@@ -15,11 +15,11 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Download Paper 1.16.5 and Setup World
+      - name: Download Paper 1.20.4 and Setup World
         run: |
-          echo "=== Downloading Paper 1.16.5 ==="
+          echo "=== Downloading Paper 1.20.4 ==="
           curl -L -o server.jar \
-            https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar
+            https://fill-data.papermc.io/v1/objects/cabed3ae77cf55deba7c7d8722bc9cfd5e991201c211665f9265616d9fe5c77b/paper-1.20.4-499.jar
           echo "✔ server.jar ready"
           
           if [ -f world.zip ]; then
@@ -58,7 +58,7 @@ jobs:
           echo "=== Starting Minecraft Server ==="
           
           java -DPaper.IgnoreJavaVersion=true \
-            -Xmx15360M -Xms10240M \
+            -Xmx16G -Xms10G \
             -XX:+UseG1GC \
             -XX:+ParallelRefProcEnabled \
             -XX:MaxGCPauseMillis=200 \
