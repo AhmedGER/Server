@@ -2,8 +2,8 @@ Moderator:
   permissions: []
   inheritances: []
   weight: 50
-  suffix: ''
   namecolor: ''
+  suffix: ''
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
@@ -15,8 +15,8 @@ Owner:
   permissions: []
   inheritances: []
   weight: 100
-  suffix: ''
   namecolor: ''
+  suffix: ''
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
@@ -28,8 +28,8 @@ Youtube:
   permissions: []
   inheritances: []
   weight: 0
-  suffix: ''
   namecolor: ''
+  suffix: ''
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
@@ -41,8 +41,8 @@ Admin:
   permissions: []
   inheritances: []
   weight: 75
-  suffix: ''
   namecolor: ''
+  suffix: ''
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
@@ -54,8 +54,8 @@ Member:
   permissions: []
   inheritances: []
   weight: 0
-  suffix: ''
   namecolor: ''
+  suffix: ''
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0

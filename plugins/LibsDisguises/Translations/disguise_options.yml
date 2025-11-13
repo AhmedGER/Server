@@ -685,44 +685,8 @@
 # Used as a shortcut for setBaby(false) when disguising an entity
 "adult": "adult"
 
-# Found in the disguise options for Entity and uses a boolean
-"setScalePlayerToDisguise": "setScalePlayerToDisguise"
+# Found in the disguise options for Boat and uses a Type
+"setBoatType": "setBoatType"
 
-# Found in the disguise options for Armadillo and uses a ArmadilloState
-"setState": "setState"
-
-# Found in the disguise options for CopperGolem and uses a WeatheringCopperState
-"setOxidation": "setOxidation"
-
-# Found in the disguise options for Creaking and uses a boolean
-"setBrightEyes": "setBrightEyes"
-
-# Found in the disguise options for Creaking and uses a boolean
-"setMovementAnimations": "setMovementAnimations"
-
-# Found in the disguise options for Creaking and uses a boolean
-"setTearingDown": "setTearingDown"
-
-# Found in the disguise options for ExperienceOrb and uses a int
-"setExperience": "setExperience"
-
-# Found in the disguise options for HappyGhast and uses a DyeColor
-"setHarnessColor": "setHarnessColor"
-
-# Found in the disguise options for HappyGhast and uses a boolean
-"setHarnessed": "setHarnessed"
-
-# Found in the disguise options for HappyGhast and uses a boolean
-"setLeashHolder": "setLeashHolder"
-
-# Found in the disguise options for Mannequin and uses a Component
-"setDescription": "setDescription"
-
-# Found in the disguise options for Wolf and uses a WolfSoundVariant
-"setSoundVariant": "setSoundVariant"
-
-# Found in the disguise options for Wolf and uses a ItemStack
-"setWolfArmor": "setWolfArmor"
-
-# Found in the disguise options for Wolf and uses a Color
-"setWolfArmorColor": "setWolfArmorColor"
+# Found in the disguise options for Minecart and uses a boolean
+"setViewBlockInCart": "setViewBlockInCart"
