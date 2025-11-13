@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 26,
+    "description": {
+      "text": "Adds new structures to the overworld.",
+      "color": "gold",
+      "hoverEvent": {
+        "action": "show_text",
+        "value": "And More!"
+      }
+    }
+  }
+}
