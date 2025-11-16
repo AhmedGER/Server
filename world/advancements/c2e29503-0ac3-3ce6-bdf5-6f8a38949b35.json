@@ -304,6 +304,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:skeleton": "2025-11-15 22:54:51 +0000",
       "minecraft:spider": "2025-11-14 14:35:12 +0000"
     },
     "done": false
@@ -353,6 +354,18 @@
   "minecraft:recipes/decorations/loom": {
     "criteria": {
       "has_string": "2025-11-14 14:35:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_wood": {
+    "criteria": {
+      "has_log": "2025-11-15 22:51:38 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks": {
+    "criteria": {
+      "has_log": "2025-11-15 22:51:38 +0000"
     },
     "done": true
   },
