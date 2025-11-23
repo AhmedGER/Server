@@ -4,11 +4,11 @@ Moderator:
   weight: 50
   namecolor: ''
   suffix: ''
-  buyDescription: ''
-  buyCommand: ''
+  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
-  buyCost: 0.0
+  buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#9d1dff,#e22581]MODERATOR[/gradient]'
   default: false
 Owner:
@@ -17,11 +17,11 @@ Owner:
   weight: 100
   namecolor: ''
   suffix: ''
-  buyDescription: ''
-  buyCommand: ''
+  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
-  buyCost: 0.0
+  buyDescription: ''
+  buyCommand: ''
   prefix: '&f[&cOWNER&f]'
   default: false
 Youtube:
@@ -30,11 +30,11 @@ Youtube:
   weight: 0
   namecolor: ''
   suffix: ''
-  buyDescription: ''
-  buyCommand: ''
+  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
-  buyCost: 0.0
+  buyDescription: ''
+  buyCommand: ''
   prefix: '&f[&cYOUTUBE&f]'
   default: false
 Admin:
@@ -43,11 +43,11 @@ Admin:
   weight: 75
   namecolor: ''
   suffix: ''
-  buyDescription: ''
-  buyCommand: ''
+  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
-  buyCost: 0.0
+  buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#ffff00,#ef3300]ADMIN[/gradient]'
   default: false
 Member:
@@ -56,10 +56,10 @@ Member:
   weight: 0
   namecolor: ''
   suffix: ''
-  buyDescription: ''
-  buyCommand: ''
+  buyCost: 0.0
   chatcolor: ''
   buyableRanks: []
-  buyCost: 0.0
+  buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#127e00,#3eaf18]MEMBER[/gradient]'
   default: true
