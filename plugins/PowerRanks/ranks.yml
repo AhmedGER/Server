@@ -3,8 +3,8 @@ Moderator:
   inheritances: []
   weight: 50
   namecolor: ''
-  suffix: ''
   chatcolor: ''
+  suffix: ''
   buyableRanks: []
   buyCost: 0.0
   buyDescription: ''
@@ -16,8 +16,8 @@ Owner:
   inheritances: []
   weight: 100
   namecolor: ''
-  suffix: ''
   chatcolor: ''
+  suffix: ''
   buyableRanks: []
   buyCost: 0.0
   buyDescription: ''
@@ -29,8 +29,8 @@ Youtube:
   inheritances: []
   weight: 0
   namecolor: ''
-  suffix: ''
   chatcolor: ''
+  suffix: ''
   buyableRanks: []
   buyCost: 0.0
   buyDescription: ''
@@ -42,8 +42,8 @@ Admin:
   inheritances: []
   weight: 75
   namecolor: ''
-  suffix: ''
   chatcolor: ''
+  suffix: ''
   buyableRanks: []
   buyCost: 0.0
   buyDescription: ''
@@ -55,8 +55,8 @@ Member:
   inheritances: []
   weight: 0
   namecolor: ''
-  suffix: ''
   chatcolor: ''
+  suffix: ''
   buyableRanks: []
   buyCost: 0.0
   buyDescription: ''
