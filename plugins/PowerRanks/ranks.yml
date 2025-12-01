@@ -3,12 +3,12 @@ Moderator:
   inheritances: []
   weight: 50
   namecolor: ''
-  suffix: ''
-  chatcolor: ''
-  buyableRanks: []
-  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
+  buyableRanks: []
+  buyCost: 0.0
+  chatcolor: ''
+  suffix: ''
   prefix: '[gradient=#9d1dff,#e22581]MODERATOR[/gradient]'
   default: false
 Owner:
@@ -16,12 +16,12 @@ Owner:
   inheritances: []
   weight: 100
   namecolor: ''
-  suffix: ''
-  chatcolor: ''
-  buyableRanks: []
-  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
+  buyableRanks: []
+  buyCost: 0.0
+  chatcolor: ''
+  suffix: ''
   prefix: '&f[&cOWNER&f]'
   default: false
 Youtube:
@@ -29,12 +29,12 @@ Youtube:
   inheritances: []
   weight: 0
   namecolor: ''
-  suffix: ''
-  chatcolor: ''
-  buyableRanks: []
-  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
+  buyableRanks: []
+  buyCost: 0.0
+  chatcolor: ''
+  suffix: ''
   prefix: '&f[&cYOUTUBE&f]'
   default: false
 Admin:
@@ -42,12 +42,12 @@ Admin:
   inheritances: []
   weight: 75
   namecolor: ''
-  suffix: ''
-  chatcolor: ''
-  buyableRanks: []
-  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
+  buyableRanks: []
+  buyCost: 0.0
+  chatcolor: ''
+  suffix: ''
   prefix: '[gradient=#ffff00,#ef3300]ADMIN[/gradient]'
   default: false
 Member:
@@ -55,11 +55,11 @@ Member:
   inheritances: []
   weight: 0
   namecolor: ''
-  suffix: ''
-  chatcolor: ''
-  buyableRanks: []
-  buyCost: 0.0
   buyDescription: ''
   buyCommand: ''
+  buyableRanks: []
+  buyCost: 0.0
+  chatcolor: ''
+  suffix: ''
   prefix: '[gradient=#127e00,#3eaf18]MEMBER[/gradient]'
   default: true
