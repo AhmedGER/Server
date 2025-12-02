@@ -1,468 +1,480 @@
-[01:47:44] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[01:47:46] [ServerMain/INFO]: Loaded 1174 recipes
-[01:47:46] [ServerMain/INFO]: Loaded 1275 advancements
-[01:47:46] [Server thread/INFO]: Starting minecraft server version 1.20.4
-[01:47:46] [Server thread/INFO]: Loading properties
-[01:47:46] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
-[01:47:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[01:47:47] [Server thread/INFO]: Using 4 threads for Netty based IO
-[01:47:48] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[07:35:02] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:35:04] [ServerMain/INFO]: Loaded 1174 recipes
+[07:35:04] [ServerMain/INFO]: Loaded 1275 advancements
+[07:35:04] [Server thread/INFO]: Starting minecraft server version 1.20.4
+[07:35:04] [Server thread/INFO]: Loading properties
+[07:35:04] [Server thread/INFO]: This server is running Paper version git-Paper-499 (MC: 1.20.4) (Implementing API version 1.20.4-R0.1-SNAPSHOT) (Git: 9de3f75 on ver/1.20.4)
+[07:35:06] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:35:06] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:35:06] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[01:47:48] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
-[01:47:48] [Server thread/INFO]: Default game type: SURVIVAL
-[01:47:48] [Server thread/INFO]: Generating keypair
-[01:47:48] [Server thread/INFO]: Starting Minecraft server on *:25565
-[01:47:48] [Server thread/INFO]: Using epoll channel type
-[01:47:48] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[01:47:48] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[01:47:49] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
-[01:47:52] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
-[01:47:52] [Server thread/WARN]: Legacy plugin PingFix v1.2.0 does not specify an api-version.
-[01:47:52] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
-[01:47:52] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
-[01:47:52] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
-[01:47:52] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
-[01:47:52] [Server thread/INFO]: [ViaBackwards] Loading translations...
-[01:47:52] [Server thread/INFO]: [ViaBackwards] Registering protocols...
-[01:47:53] [Server thread/INFO]: [ViaRewind] Registering protocols...
-[01:47:53] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[01:47:53] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
-[01:47:53] [Server thread/INFO]: [floodgate] Took 386ms to boot Floodgate
-[01:47:53] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
-[01:47:53] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
-[01:47:54] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[01:47:54] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
-[01:47:54] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
-[01:47:54] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
-[01:47:54] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
-[01:47:54] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
-[01:47:55] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
-[01:47:55] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
-[01:47:55] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
-[01:47:55] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.15.2
-[01:47:55] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file config.yml is up to date
-[01:47:55] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
-[01:47:55] [Server thread/INFO]: [HomeSweetHome] Loading server plugin HomeSweetHome v1.0.0
-[01:47:55] [Server thread/INFO]: [AntiCreeperGrief] Loading server plugin AntiCreeperGrief v1.2
-[01:47:55] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
-[01:47:55] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
-[01:47:55] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.6
-[01:47:55] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
-[01:47:55] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
-[01:47:55] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
-[01:47:55] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-SNAPSHOT-968
-[01:47:55] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
-[01:47:55] [Server thread/INFO]: [dynmap] Mod Support API available
-[01:47:55] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
-[01:47:55] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
-[01:47:55] [Server thread/INFO]: [CleanPing] Loading server plugin CleanPing v1.7.1
-[01:47:55] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
-[01:47:55] [Server thread/INFO]: [PingFix] Loading server plugin PingFix v1.2.0
-[01:47:55] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
-[01:47:55] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[01:47:55] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
-[01:47:55] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
-[01:47:55] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
-[01:47:56] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
-[01:47:56] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
-[01:47:56] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
-[01:47:56] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
-[01:47:56] [Server thread/INFO]: [PowerRanks] 
-[01:47:56] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loading config file
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loading language file
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loading usertags file
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loading tablist file
-[01:47:56] [Server thread/INFO]: [PowerRanks] 
-[01:47:56] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
-[01:47:56] [Server thread/INFO]: [PowerRanks] 
-[01:47:56] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
-[01:47:56] [Server thread/INFO]: [PowerRanks] Loading player & rank data
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
-[01:47:57] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
-[01:47:57] [Server thread/INFO]: [PowerRanks] 
-[01:47:57] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
-[01:47:57] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
-[01:47:57] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
-[01:47:57] [Server thread/INFO]: [PowerRanks] 
-[01:47:57] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
-[01:47:57] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on Paper v499
-[01:47:57] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 498ms
-[01:47:57] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 5 ranks and 18 players (YAML) 
-[01:47:57] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
-[01:47:57] [Server thread/INFO]: [PowerRanks] 
-[01:47:57] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
-[01:47:57] [Server thread/INFO]: [PowerRanks] Checking for updates...
-[01:47:57] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[01:47:57] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[01:47:57] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[01:47:57] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[01:47:57] [Server thread/INFO]: Preparing level "world"
-[01:47:57] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[01:47:57] [Server thread/INFO]: Time elapsed: 121 ms
-[01:47:57] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[01:47:58] [Server thread/INFO]: Time elapsed: 43 ms
-[01:47:58] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[01:47:58] [Server thread/INFO]: Time elapsed: 37 ms
-[01:47:58] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
-[01:47:58] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
-[01:47:58] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[01:47:58] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
-[01:47:58] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
-[01:47:59] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
-[01:47:59] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
-[01:47:59] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
-[01:47:59] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
-[01:47:59] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
-[01:47:59] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
-[01:48:00] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
-[01:48:00] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
-[01:48:00] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 241.665064ms
-[01:48:01] [Server thread/INFO]: [LibsDisguises] Config is up to date!
-[01:48:01] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
-[01:48:01] [Server thread/INFO]: [TAB] Enabled in 136ms
-[01:48:01] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
-[01:48:01] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.15.2
-[01:48:01] [Server thread/INFO]: [BetterTeams] MessageSender declared: com.booksaw.betterTeams.message.AdventureMessageSender@57104e7c
-[01:48:01] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file messages.yml is up to date
-[01:48:01] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
-[01:48:01] [Server thread/INFO]: [BetterTeams] Display team name config value: prefix
-[01:48:01] [Server thread/INFO]: [BetterTeams] Loading below name. Type: PREFIX
-[01:48:01] [Server thread/INFO]: [BetterTeams] teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@2929edb0
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Enabling HomeSweetHome v1.0.0
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] =================================================
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]   _   _                 ____                   _
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  | | | | ___  _ __ ___  / ___|_      _____  ___| |_
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  | |_| |/ _ \| '_ ` _ \ \___ \ \ /\ / / _ \/ _ \ __|
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  |  _  | (_) | | | | | | ___) \ V  V /  __/  __/ |_
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  |_| |_|\___/|_| |_| |_||____/ \_/\_/ \___|\___|\__|
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]   _   _                     
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  | | | | ___  _ __ ___   ___
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  | |_| |/ _ \| '_ ` _ \ / _ \
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  |  _  | (_) | | | | | |  __/
-[01:48:01] [Server thread/INFO]: [HomeSweetHome]  |_| |_|\___/|_| |_| |_|\___|
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] 
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Version: 1.0.0
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Author: YourName
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] =================================================
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Initializing core managers...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Loading configuration files...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Configuration loaded successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Loading messages...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Messages loaded successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Initializing database manager...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] YAML storage initialized
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Player data folder: /home/runner/work/Server/Server/plugins/HomeSweetHome/data/players
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Backup system enabled (interval: 24 hours)
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Database manager initialized successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Storage type: YAML
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Async operations: Enabled
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Initializing home manager...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Home manager initialized successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Initializing teleport manager...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Teleport manager initialized successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Core managers initialized successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Setting up plugin integrations...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Initializing economy integration...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Economy integration disabled in configuration
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Registering commands...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Commands registered successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Registering event listeners...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Event listeners registered successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Starting background tasks...
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] HomeSweetHome has been enabled successfully!
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Database type: yaml
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Economy integration: Disabled
-[01:48:01] [Server thread/INFO]: [HomeSweetHome] Loaded 0 homes for 0 players
-[01:48:02] [Server thread/INFO]: [AntiCreeperGrief] Enabling AntiCreeperGrief v1.2
-[01:48:02] [Server thread/INFO]: [AntiCreeperGrief] Anti Creeper Grief Enabled!
-[01:48:02] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
-[01:48:02] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
-[01:48:02] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
-[01:48:02] [Server thread/INFO]: 
-[01:48:02] [Server thread/INFO]: TreeCuter by Norbit4!
-[01:48:02] [Server thread/INFO]: 
-[01:48:02] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
-[01:48:02] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.6
-[01:48:02] [Server thread/INFO]: [InstantRestock] Enabled InstantRestock!
-[01:48:02] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
-[01:48:02] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[01:48:02] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
-[01:48:02] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
-[01:48:02] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
-[01:48:02] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
-[01:48:02] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
-[01:48:02] [Server thread/INFO]: [voicechat] Compatibility version 20
-[01:48:02] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
-[01:48:02] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
-[01:48:02] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-SNAPSHOT-968
-[01:48:02] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
-[01:48:02] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
-[01:48:02] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
-[01:48:02] [Server thread/INFO]: [dynmap] Mod Support processing completed
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
-[01:48:04] [Server thread/INFO]: [dynmap] Starting enter/exit processing
-[01:48:04] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
-[01:48:04] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
-[01:48:04] [Server thread/INFO]: [dynmap] version 3.7-SNAPSHOT-968 is enabled - core version 3.7-SNAPSHOT-985
-[01:48:04] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
-[01:48:04] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
-[01:48:04] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
-[01:48:04] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
-[01:48:04] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
-[01:48:04] [Server thread/INFO]: [dynmap] Enabled
-[01:48:04] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
-[01:48:04] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
-[01:48:04] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
-[01:48:04] [Server thread/INFO]: [CleanPing] Enabling CleanPing v1.7.1
-[01:48:04] [Server thread/INFO]: [CleanPing] 
+[07:35:06] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 1 worker threads, and gen parallelism of 1 threads
+[07:35:06] [Server thread/INFO]: Default game type: SURVIVAL
+[07:35:06] [Server thread/INFO]: Generating keypair
+[07:35:06] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:35:06] [Server thread/INFO]: Using epoll channel type
+[07:35:06] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:35:06] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[07:35:07] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R3.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[07:35:10] [Server thread/WARN]: Legacy plugin CraftControl-RCON v1.4.0 does not specify an api-version.
+[07:35:10] [Server thread/WARN]: Legacy plugin PingFix v1.2.0 does not specify an api-version.
+[07:35:10] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.5.1
+[07:35:10] [Server thread/INFO]: [ViaVersion] ViaVersion 5.5.1 is now loaded. Registering protocol transformers and injecting...
+[07:35:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[07:35:10] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[07:35:10] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[07:35:10] [Server thread/INFO]: [ViaBackwards] Registering protocols...
+[07:35:11] [Server thread/INFO]: [ViaRewind] Registering protocols...
+[07:35:11] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[07:35:11] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[07:35:11] [Server thread/INFO]: [floodgate] Took 410ms to boot Floodgate
+[07:35:11] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.5.0
+[07:35:11] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.9.0-SNAPSHOT
+[07:35:12] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[07:35:12] [Server thread/INFO]: [Geyser-Spigot] Loaded 0 extension(s)
+[07:35:12] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[07:35:12] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.10
+[07:35:12] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.10.1
+[07:35:12] [Server thread/INFO]: [LibsDisguises] Loading server plugin LibsDisguises v11.0.11
+[07:35:13] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
+[07:35:13] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.5
+[07:35:13] [Server thread/INFO]: [NoteBlockAPI] Loading server plugin NoteBlockAPI v1.6.3
+[07:35:13] [Server thread/INFO]: [BetterTeams] Loading server plugin BetterTeams v4.15.2
+[07:35:13] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file config.yml is up to date
+[07:35:13] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[07:35:13] [Server thread/INFO]: [HomeSweetHome] Loading server plugin HomeSweetHome v1.0.0
+[07:35:13] [Server thread/INFO]: [AntiCreeperGrief] Loading server plugin AntiCreeperGrief v1.2
+[07:35:13] [Server thread/INFO]: [TreeCuter] Loading server plugin TreeCuter vv2.0.1
+[07:35:13] [Server thread/INFO]: [OnePlayerSleep] Loading server plugin OnePlayerSleep v3.1.16
+[07:35:13] [Server thread/INFO]: [InstantRestock] Loading server plugin InstantRestock v2.6
+[07:35:13] [Server thread/INFO]: [SimpleTpa] Loading server plugin SimpleTpa v8.0
+[07:35:13] [Server thread/INFO]: [OpenInv] Loading server plugin OpenInv v5.1.2
+[07:35:13] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.6.6
+[07:35:13] [Server thread/INFO]: [dynmap] Loading server plugin dynmap v3.7-SNAPSHOT-968
+[07:35:13] [Server thread/INFO]: [dynmap] version=git-Paper-499 (MC: 1.20.4)
+[07:35:13] [Server thread/INFO]: [dynmap] Mod Support API available
+[07:35:13] [Server thread/INFO]: [OneHitOre] Loading server plugin OneHitOre v1.0
+[07:35:13] [Server thread/INFO]: [CraftControl-RCON] Loading server plugin CraftControl-RCON v1.4.0
+[07:35:13] [Server thread/INFO]: [CleanPing] Loading server plugin CleanPing v1.7.1
+[07:35:13] [Server thread/INFO]: [PowerRanks] Loading server plugin PowerRanks v1.10.9R2
+[07:35:13] [Server thread/INFO]: [PingFix] Loading server plugin PingFix v1.2.0
+[07:35:13] [Server thread/INFO]: [TrollV4] Loading server plugin TrollV4 v4.5.30
+[07:35:13] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:35:13] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[07:35:13] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.10
+[07:35:13] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[07:35:14] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.20.4.
+[07:35:14] [Server thread/INFO]: [SkinsRestorer] Floodgate skin listener registered
+[07:35:14] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[07:35:14] [Server thread/INFO]: [PowerRanks] Enabling PowerRanks v1.10.9R2
+[07:35:14] [Server thread/INFO]: [PowerRanks] 
+[07:35:14] [Server thread/INFO]: [PowerRanks] === ------- LOADING CONFIGURATION ------ ===
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loading config file
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.0
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 1565b8f
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[07:35:14] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loading language file
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loading usertags file
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loading tablist file
+[07:35:14] [Server thread/INFO]: [PowerRanks] 
+[07:35:14] [Server thread/INFO]: [PowerRanks] === ---------- LOADING ADDONS ---------- ===
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loaded 0 add-on(s)!
+[07:35:14] [Server thread/INFO]: [PowerRanks] 
+[07:35:14] [Server thread/INFO]: [PowerRanks] === ----------- LOADING DATA ----------- ===
+[07:35:14] [Server thread/INFO]: [PowerRanks] Loading player & rank data
+[07:35:15] [Server thread/INFO]: [PowerRanks] 
+[07:35:15] [Server thread/INFO]: [PowerRanks] === ------- LOADING PLUGIN HOOKS ------- ===
+[07:35:15] [Server thread/INFO]: [PowerRanks] Checking for plugins to hook in to:
+[07:35:15] [Server thread/INFO]: [PowerRanks] No other plugins found! Working stand-alone.
+[07:35:15] [Server thread/INFO]: [PowerRanks] 
+[07:35:15] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  PowerRanks v1.10.9R2
+[07:35:15] [Server thread/INFO]: [PowerRanks] §b  ██   ██ ██   ██§a  Running on Paper v499
+[07:35:15] [Server thread/INFO]: [PowerRanks] §b  ██████  ██████ §a  Startup time: 449ms
+[07:35:15] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§a  Loaded 5 ranks and 18 players (YAML) 
+[07:35:15] [Server thread/INFO]: [PowerRanks] §b  ██      ██   ██§c  
+[07:35:15] [Server thread/INFO]: [PowerRanks] 
+[07:35:15] [Server thread/INFO]: [PowerRanks] If you'd like to donate, please visit https://ko-fi.com/svenar
+[07:35:15] [Server thread/INFO]: [PowerRanks] Checking for updates...
+[07:35:15] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:35:15] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:35:15] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:35:15] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:35:15] [Server thread/INFO]: Preparing level "world"
+[07:35:15] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:35:15] [Server thread/INFO]: Time elapsed: 139 ms
+[07:35:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:35:15] [Server thread/INFO]: Time elapsed: 36 ms
+[07:35:15] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:35:15] [Server thread/INFO]: Time elapsed: 32 ms
+[07:35:15] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.5.1
+[07:35:15] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.20.3-1.20.4 (765)
+[07:35:15] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[07:35:16] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.5.0
+[07:35:16] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.9.0-SNAPSHOT
+[07:35:17] [Server thread/INFO]: [packetevents] Enabling packetevents v2.10.1
+[07:35:17] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Enabling LibsDisguises v11.0.11
+[07:35:17] [Server thread/INFO]: [LibsDisguises] File Name: LibsDisguises.jar
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Discovered nms version (LD: v1_20_R3) (MC: 1.20.4)
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Jenkins Build: #1684
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Build Date: 30/10/2025 05:37
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Build Hash: org.gradle.api.internal.provider.sources.process.DefaultExecOutput@2d6d471d~1
+[07:35:17] [Server thread/INFO]: [LibsDisguises] If you own the plugin, place the premium jar downloaded from https://www.spigotmc.org/resources/libs-disguises.32453/ in plugins/LibsDisguises/
+[07:35:17] [Server thread/INFO]: [LibsDisguises] You are running the free version, commands limited to non-players and operators. (Console, Command Blocks, Admins)
+[07:35:17] [Server thread/INFO]: [LibsDisguises] Config 'TallSelfDisguises' is set to 'SCALED', LD will hide oversized disguises from self disguise. https://www.spigotmc.org/wiki/lib-s-disguises-faq/#tall-disguises-self-disguises
+[07:35:17] [packetevents-update-check-thread/INFO]: [packetevents] You are running the latest release of PacketEvents. Your build: (2.10.1)
+[07:35:18] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Loading block mappings for V_1_20_3/14...
+[07:35:18] [Server thread/INFO]: [com.github.retrooper.packetevents.PacketEventsAPI] Finished loading block mappings for V_1_20_3/14 in 414.991671ms
+[07:35:19] [Server thread/INFO]: [LibsDisguises] Config is up to date!
+[07:35:20] [Server thread/INFO]: [TAB] Enabling TAB v5.2.5
+[07:35:20] [Server thread/INFO]: [TAB] Enabled in 194ms
+[07:35:20] [Server thread/INFO]: [NoteBlockAPI] Enabling NoteBlockAPI v1.6.3
+[07:35:20] [Server thread/INFO]: [BetterTeams] Enabling BetterTeams v4.15.2
+[07:35:20] [Server thread/INFO]: [BetterTeams] MessageSender declared: com.booksaw.betterTeams.message.AdventureMessageSender@1d8c6bf0
+[07:35:20] [Server thread/INFO]: [BetterTeams] [BetterTeams] Checking if the file messages.yml is up to date
+[07:35:20] [Server thread/INFO]: [BetterTeams] [BetterTeams] File is up to date
+[07:35:20] [Server thread/INFO]: [BetterTeams] Display team name config value: prefix
+[07:35:20] [Server thread/INFO]: [BetterTeams] Loading below name. Type: PREFIX
+[07:35:20] [Server thread/INFO]: [BetterTeams] teamManagement declared: com.booksaw.betterTeams.events.MCTeamManagement@30101454
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Enabling HomeSweetHome v1.0.0
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] =================================================
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]   _   _                 ____                   _
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  | | | | ___  _ __ ___  / ___|_      _____  ___| |_
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  | |_| |/ _ \| '_ ` _ \ \___ \ \ /\ / / _ \/ _ \ __|
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  |  _  | (_) | | | | | | ___) \ V  V /  __/  __/ |_
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  |_| |_|\___/|_| |_| |_||____/ \_/\_/ \___|\___|\__|
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]   _   _                     
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  | | | | ___  _ __ ___   ___
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  | |_| |/ _ \| '_ ` _ \ / _ \
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  |  _  | (_) | | | | | |  __/
+[07:35:20] [Server thread/INFO]: [HomeSweetHome]  |_| |_|\___/|_| |_| |_|\___|
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] 
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Version: 1.0.0
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Author: YourName
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] =================================================
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Initializing core managers...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Loading configuration files...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Configuration loaded successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Loading messages...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Messages loaded successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Initializing database manager...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] YAML storage initialized
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Player data folder: /home/runner/work/Server/Server/plugins/HomeSweetHome/data/players
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Backup system enabled (interval: 24 hours)
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Database manager initialized successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Storage type: YAML
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Async operations: Enabled
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Initializing home manager...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Home manager initialized successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Initializing teleport manager...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Teleport manager initialized successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Core managers initialized successfully!
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Setting up plugin integrations...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Initializing economy integration...
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Economy integration disabled in configuration
+[07:35:20] [Server thread/INFO]: [HomeSweetHome] Registering commands...
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Commands registered successfully!
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Registering event listeners...
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Event listeners registered successfully!
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Starting background tasks...
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] HomeSweetHome has been enabled successfully!
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Database type: yaml
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Economy integration: Disabled
+[07:35:21] [Server thread/INFO]: [HomeSweetHome] Loaded 0 homes for 0 players
+[07:35:21] [Server thread/INFO]: [AntiCreeperGrief] Enabling AntiCreeperGrief v1.2
+[07:35:21] [Server thread/INFO]: [AntiCreeperGrief] Anti Creeper Grief Enabled!
+[07:35:21] [Server thread/INFO]: [TreeCuter] Enabling TreeCuter vv2.0.1
+[07:35:21] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Found server version 1.20.4
+[07:35:21] [Server thread/INFO]: [GlowingEntities] [GlowingEntities] Loaded mappings for 1.20.4
+[07:35:21] [Server thread/INFO]: 
+[07:35:21] [Server thread/INFO]: TreeCuter by Norbit4!
+[07:35:21] [Server thread/INFO]: 
+[07:35:21] [Server thread/INFO]: [OnePlayerSleep] Enabling OnePlayerSleep v3.1.16
+[07:35:21] [Server thread/INFO]: [InstantRestock] Enabling InstantRestock v2.6
+[07:35:21] [Server thread/INFO]: [InstantRestock] Enabled InstantRestock!
+[07:35:21] [Server thread/INFO]: [SimpleTpa] Enabling SimpleTpa v8.0
+[07:35:21] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[07:35:21] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been enabled on version 8.0
+[07:35:21] [Server thread/INFO]: Enabled metrics. You may opt-out by changing plugins/bStats/config.yml
+[07:35:21] [Server thread/INFO]: [OpenInv] Enabling OpenInv v5.1.2
+[07:35:21] [Server thread/INFO]: [voicechat] Enabling voicechat v2.6.6
+[07:35:21] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.20.4-R0.1
+[07:35:21] [Server thread/INFO]: [voicechat] Compatibility version 20
+[07:35:21] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[07:35:21] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[07:35:21] [Server thread/INFO]: [dynmap] Enabling dynmap v3.7-SNAPSHOT-968
+[07:35:21] [Server thread/INFO]: [dynmap] Added 20 custom biome mappings
+[07:35:21] [Server thread/INFO]: [dynmap] Using Bukkit Permissions (superperms) for access control
+[07:35:21] [Server thread/INFO]: [dynmap] Web interface permissions only available for online users
+[07:35:21] [Server thread/INFO]: [dynmap] Mod Support processing completed
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 27 shaders.
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 83 perspectives.
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 22 lightings.
+[07:35:24] [Server thread/INFO]: [dynmap] Starting enter/exit processing
+[07:35:24] [Dynmap Render Thread/INFO]: [dynmap] Finish marker initialization
+[07:35:24] [Server thread/INFO]: [dynmap] Web server started on address 0.0.0.0:8123
+[07:35:24] [Server thread/INFO]: [dynmap] version 3.7-SNAPSHOT-968 is enabled - core version 3.7-SNAPSHOT-985
+[07:35:24] [Server thread/INFO]: [dynmap] For support, visit our Discord at https://discord.gg/s3rd5qn
+[07:35:24] [Server thread/INFO]: [dynmap] For news, visit https://reddit.com/r/Dynmap or follow https://universeodon.com/@dynmap
+[07:35:24] [Server thread/INFO]: [dynmap] To report or track bugs, visit https://github.com/webbukkit/dynmap/issues
+[07:35:24] [Server thread/INFO]: [dynmap] If you'd like to donate, please visit https://www.patreon.com/dynmap or https://ko-fi.com/michaelprimm
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 3 maps of world 'world'.
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_nether'.
+[07:35:24] [Server thread/INFO]: [dynmap] Loaded 2 maps of world 'world_the_end'.
+[07:35:24] [Server thread/INFO]: [dynmap] Enabled
+[07:35:24] [Server thread/INFO]: [OneHitOre] Enabling OneHitOre v1.0
+[07:35:24] [Server thread/INFO]: [OneHitOre] OneHitOre has been enabled!
+[07:35:24] [Server thread/INFO]: [CraftControl-RCON] Enabling CraftControl-RCON v1.4.0*
+[07:35:24] [Server thread/INFO]: [CleanPing] Enabling CleanPing v1.7.1
+[07:35:24] [Server thread/INFO]: [CleanPing] 
    ___ _                 ___ _           
   / __| |___ __ _ _ _   | _ (_)_ _  __ _ 
  | (__| / -_) _` | ' \  |  _/ | ' \/ _` |
   \___|_\___\__,_|_||_| |_| |_|_||_\__, |
                                    |___/ 
 
-[01:48:04] [Server thread/INFO]: [CleanPing] Server version: 1.20.4-R0.1-SNAPSHOT
-[01:48:04] [Server thread/INFO]: [CleanPing] Loading configuration...
-[01:48:04] [Server thread/INFO]: [CleanPing] Loading commands...
-[01:48:04] [Server thread/INFO]: [CleanPing] Metrics loaded successfully!
-[01:48:04] [Server thread/INFO]: [CleanPing] Plugin successfully loaded!
-[01:48:04] [Server thread/INFO]: [PingFix] Enabling PingFix v1.2.0*
-[01:48:04] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
-[01:48:04] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
-[01:48:04] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
-[01:48:04] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
-[01:48:04] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
-[01:48:05] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
-[01:48:05] [Server thread/INFO]: [TrollV4] -----------------------------------
-[01:48:05] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
-[01:48:05] [Server thread/INFO]: [TrollV4] In case of errors please report:
-[01:48:05] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
-[01:48:05] [Server thread/INFO]: [TrollV4] Otherwise have fun!
-[01:48:05] [Server thread/INFO]: [TrollV4] ------------------------------------
-[01:48:05] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
-[01:48:05] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
-[01:48:05] [Server thread/INFO]: [TrollV4] Server Software: PAPER
-[01:48:05] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
-[01:48:06] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[01:48:06] [Server thread/INFO]: [Geyser-Spigot] 
-[01:48:06] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b979 (git-master-73e67fc)
-[01:48:06] [Server thread/INFO]: [Geyser-Spigot] 
-[01:48:06] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[01:48:09] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[01:48:09] [Server thread/INFO]: [Geyser-Spigot] Done (3.714s)! Run /geyser help for help!
-[01:48:09] [ForkJoinPool.commonPool-worker-1/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 1.21.124. Download it here: https://geysermc.org/download
-[01:48:10] [Server thread/INFO]: Starting remote control listener
-[01:48:10] [Server thread/INFO]: Thread RCON Listener started
-[01:48:10] [Server thread/INFO]: RCON running on 0.0.0.0:25575
-[01:48:10] [Server thread/INFO]: Running delayed init tasks
-[01:48:10] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[01:48:10] [Server thread/INFO]: Done (23.259s)! For help, type "help"
-[01:48:10] [Server thread/INFO]: Timings Reset
-[01:48:10] [Server thread/INFO]: [voicechat] Loading plugins
-[01:48:10] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
-[01:48:10] [Server thread/INFO]: [voicechat] Initializing plugins
-[01:48:10] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
-[01:48:10] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
-[01:48:10] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
-[01:48:10] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
-[01:48:10] [Craft Scheduler Thread - 0 - HomeSweetHome/INFO]: [HomeSweetHome] Plugin is up to date! (Version: 1.0.0)
-[01:48:10] [Craft Scheduler Thread - 3 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[01:58:10] [Craft Scheduler Thread - 22 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:08:10] [Craft Scheduler Thread - 47 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:12:09] [Craft Scheduler Thread - 54 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[02:12:09] [Craft Scheduler Thread - 54 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[02:12:09] [Craft Scheduler Thread - 54 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[02:18:10] [Craft Scheduler Thread - 62 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:28:10] [Craft Scheduler Thread - 85 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:36:09] [Craft Scheduler Thread - 100 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[02:36:09] [Craft Scheduler Thread - 100 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[02:36:09] [Craft Scheduler Thread - 100 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[02:38:10] [Craft Scheduler Thread - 106 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:48:10] [Craft Scheduler Thread - 126 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[02:58:10] [Craft Scheduler Thread - 146 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:00:09] [Craft Scheduler Thread - 148 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[03:00:09] [Craft Scheduler Thread - 148 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[03:00:09] [Craft Scheduler Thread - 148 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[03:08:10] [Craft Scheduler Thread - 165 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:18:10] [Craft Scheduler Thread - 185 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:24:09] [Craft Scheduler Thread - 196 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[03:24:09] [Craft Scheduler Thread - 196 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[03:24:09] [Craft Scheduler Thread - 196 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[03:28:10] [Craft Scheduler Thread - 201 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:38:10] [Craft Scheduler Thread - 224 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:48:09] [Craft Scheduler Thread - 243 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[03:48:09] [Craft Scheduler Thread - 243 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[03:48:09] [Craft Scheduler Thread - 243 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[03:48:10] [Craft Scheduler Thread - 243 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[03:58:10] [Craft Scheduler Thread - 261 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:08:10] [Craft Scheduler Thread - 282 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:12:09] [Craft Scheduler Thread - 288 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[04:12:09] [Craft Scheduler Thread - 288 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[04:12:09] [Craft Scheduler Thread - 288 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[04:18:10] [Craft Scheduler Thread - 301 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:28:10] [Craft Scheduler Thread - 322 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:36:09] [Craft Scheduler Thread - 337 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[04:36:09] [Craft Scheduler Thread - 337 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[04:36:09] [Craft Scheduler Thread - 337 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[04:38:10] [Craft Scheduler Thread - 341 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:48:10] [Craft Scheduler Thread - 362 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[04:58:10] [Craft Scheduler Thread - 381 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:00:09] [Craft Scheduler Thread - 368 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[05:00:09] [Craft Scheduler Thread - 368 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:00:09] [Craft Scheduler Thread - 368 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[05:08:10] [Craft Scheduler Thread - 398 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:18:10] [Craft Scheduler Thread - 420 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:24:09] [Craft Scheduler Thread - 426 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[05:24:09] [Craft Scheduler Thread - 426 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:24:09] [Craft Scheduler Thread - 426 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[05:28:10] [Craft Scheduler Thread - 440 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:38:10] [Craft Scheduler Thread - 457 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:48:09] [Craft Scheduler Thread - 479 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[05:48:09] [Craft Scheduler Thread - 479 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[05:48:09] [Craft Scheduler Thread - 479 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[05:48:10] [Craft Scheduler Thread - 479 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[05:58:10] [Craft Scheduler Thread - 500 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:08:10] [Craft Scheduler Thread - 520 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:12:09] [Craft Scheduler Thread - 528 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[06:12:09] [Craft Scheduler Thread - 528 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[06:12:09] [Craft Scheduler Thread - 528 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[06:18:10] [Craft Scheduler Thread - 540 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:28:10] [Craft Scheduler Thread - 560 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:36:09] [Craft Scheduler Thread - 576 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[06:36:09] [Craft Scheduler Thread - 576 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[06:36:09] [Craft Scheduler Thread - 576 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[06:38:10] [Craft Scheduler Thread - 579 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:48:10] [Craft Scheduler Thread - 595 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[06:58:10] [Craft Scheduler Thread - 620 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[07:00:09] [Craft Scheduler Thread - 624 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[07:00:09] [Craft Scheduler Thread - 624 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[07:00:09] [Craft Scheduler Thread - 624 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[07:08:10] [Craft Scheduler Thread - 640 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[07:18:10] [Craft Scheduler Thread - 660 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[07:24:09] [Craft Scheduler Thread - 659 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
-[07:24:09] [Craft Scheduler Thread - 659 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
-[07:24:09] [Craft Scheduler Thread - 659 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
-[07:25:44] [RCON Listener #1/INFO]: Thread RCON Client /127.19.44.161 started
-[07:26:59] [RCON Client /127.19.44.161 #2/INFO]: Thread RCON Client /127.19.44.161 shutting down
-[07:28:10] [Craft Scheduler Thread - 659 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
-[07:33:37] [Server thread/INFO]: Stopping server
-[07:33:37] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
-[07:33:37] [Server thread/INFO]: [PingFix] Disabling PingFix v1.2.0
-[07:33:37] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
-[07:33:37] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
-[07:33:37] [Server thread/INFO]: [CleanPing] Disabling CleanPing v1.7.1
-[07:33:37] [Server thread/INFO]: [CleanPing] Clearing instances...
-[07:33:37] [Server thread/INFO]: [CleanPing] Plugin successfully disabled!
-[07:33:37] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
-[07:33:37] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
-[07:33:37] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
-[07:33:37] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-SNAPSHOT-968
-[07:33:37] [Server thread/INFO]: [dynmap] Unloaded 11 components.
-[07:33:37] [Server thread/INFO]: [dynmap] Stopping map renderer...
-[07:33:38] [Server thread/INFO]: [dynmap] Disabled
-[07:33:38] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
-[07:33:38] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
-[07:33:38] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
-[07:33:38] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
-[07:33:38] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
-[07:33:38] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.6
-[07:33:38] [Server thread/INFO]: [InstantRestock] Disabled InstantRestock!
-[07:33:38] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
-[07:33:38] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
-[07:33:38] [Server thread/INFO]: [AntiCreeperGrief] Disabling AntiCreeperGrief v1.2
-[07:33:38] [Server thread/INFO]: [AntiCreeperGrief] Anti Creeper Grief Disabled!
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Disabling HomeSweetHome v1.0.0
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Shutting down HomeSweetHome...
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] EconomyManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] GUIManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] TeleportManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] HomeManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] DatabaseManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] MessageManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] ConfigManager shutdown complete.
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] HomeSweetHome has been disabled successfully!
-[07:33:38] [Server thread/INFO]: [HomeSweetHome] Total uptime: 5h 45m
-[07:33:38] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.15.2
-[07:33:38] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
-[07:33:38] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
-[07:33:38] [Server thread/INFO]: [TAB] Disabled in 0ms
-[07:33:38] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.0
-[07:33:38] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
-[07:33:38] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
-[07:33:38] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
-[07:33:38] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
-[07:33:38] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
-[07:33:38] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[07:33:38] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[07:33:38] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
-[07:33:38] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
-[07:33:38] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
-[07:33:38] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[07:33:38] [Server thread/INFO]: Saving players
-[07:33:38] [Server thread/INFO]: Saving worlds
-[07:33:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 56 entity chunks, 0 poi chunks in world 'world' in 0.01s
-[07:33:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[07:33:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saved 3 block chunks, 19 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
-[07:33:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[07:33:38] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[07:33:38] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[07:33:38] [WebSocketConnectReadThread-118/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[07:33:38] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[07:33:38] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[07:33:38] [Server thread/INFO]: Flushing Chunk IO
-[07:33:38] [Server thread/INFO]: Closing Thread Pool
-[07:33:38] [Server thread/INFO]: Closing Server
+[07:35:24] [Server thread/INFO]: [CleanPing] Server version: 1.20.4-R0.1-SNAPSHOT
+[07:35:24] [Server thread/INFO]: [CleanPing] Loading configuration...
+[07:35:24] [Server thread/INFO]: [CleanPing] Loading commands...
+[07:35:24] [Server thread/INFO]: [CleanPing] Metrics loaded successfully!
+[07:35:24] [Server thread/INFO]: [CleanPing] Plugin successfully loaded!
+[07:35:24] [Server thread/INFO]: [PingFix] Enabling PingFix v1.2.0*
+[07:35:24] [Server thread/INFO]: [TrollV4] Enabling TrollV4 v4.5.30
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: de_de
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: de_de!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file de_de is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: en_us
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: en_us!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file en_us is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: es_es
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: es_es!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file es_es is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: id_id
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: id_id!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file id_id is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: it_it
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: it_it!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file it_it is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: ru_ru
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: ru_ru!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file ru_ru is up to date!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Downloading Language: zh_cn
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Version comparing: zh_cn!
+[07:35:24] [Server thread/INFO]: [de.presti.trollv4.config.language.LanguageService] Language file zh_cn is up to date!
+[07:35:24] [Server thread/INFO]: [TrollV4] -----------------------------------
+[07:35:24] [Server thread/INFO]: [TrollV4] TrollV4.5.30 by Presti
+[07:35:24] [Server thread/INFO]: [TrollV4] In case of errors please report:
+[07:35:24] [Server thread/INFO]: [TrollV4] Email: spigotmc@presti.me
+[07:35:24] [Server thread/INFO]: [TrollV4] Otherwise have fun!
+[07:35:24] [Server thread/INFO]: [TrollV4] ------------------------------------
+[07:35:24] [Server thread/INFO]: [TrollV4] Plugin Version: 4.5.30
+[07:35:24] [Server thread/INFO]: [TrollV4] Server Version: 1.20.4
+[07:35:24] [Server thread/INFO]: [TrollV4] Server Software: PAPER
+[07:35:24] [Server thread/INFO]: [TrollV4] Community Surprise is disabled!
+[07:35:25] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[07:35:25] [Server thread/INFO]: [Geyser-Spigot] 
+[07:35:25] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.9.0-b979 (git-master-73e67fc)
+[07:35:25] [Server thread/INFO]: [Geyser-Spigot] 
+[07:35:25] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[07:35:28] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[07:35:28] [Server thread/INFO]: [Geyser-Spigot] Done (3.458s)! Run /geyser help for help!
+[07:35:28] [ForkJoinPool.commonPool-worker-1/INFO]: [Geyser-Spigot] There's a new Geyser update available to support Bedrock version 1.21.124. Download it here: https://geysermc.org/download
+[07:35:29] [Server thread/INFO]: Starting remote control listener
+[07:35:29] [Server thread/INFO]: Thread RCON Listener started
+[07:35:29] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[07:35:29] [Server thread/INFO]: Running delayed init tasks
+[07:35:29] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[07:35:29] [Craft Scheduler Thread - 0 - HomeSweetHome/INFO]: [HomeSweetHome] Plugin is up to date! (Version: 1.0.0)
+[07:35:29] [Server thread/INFO]: Done (24.686s)! For help, type "help"
+[07:35:29] [Server thread/INFO]: Timings Reset
+[07:35:29] [Server thread/INFO]: [voicechat] Loading plugins
+[07:35:29] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[07:35:29] [Server thread/INFO]: [voicechat] Initializing plugins
+[07:35:29] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[07:35:29] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[07:35:29] [VoiceChatServerThread/INFO]: [voicechat] Voice host is 'bring-recorder.gl.at.ply.gg:12144'
+[07:35:29] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 12144
+[07:35:30] [Craft Scheduler Thread - 3 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[07:45:30] [Craft Scheduler Thread - 26 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[07:55:30] [Craft Scheduler Thread - 41 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[07:59:29] [Craft Scheduler Thread - 52 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[07:59:29] [Craft Scheduler Thread - 52 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[07:59:29] [Craft Scheduler Thread - 52 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[08:05:30] [Craft Scheduler Thread - 64 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[08:15:30] [Craft Scheduler Thread - 83 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[08:23:29] [Craft Scheduler Thread - 99 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[08:23:29] [Craft Scheduler Thread - 99 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[08:23:29] [Craft Scheduler Thread - 99 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[08:25:30] [Craft Scheduler Thread - 103 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[08:31:10] [RCON Listener #1/INFO]: Thread RCON Client /127.14.204.41 started
+[08:32:14] [RCON Client /127.14.204.41 #2/INFO]: Thread RCON Client /127.14.204.41 shutting down
+[08:35:30] [Craft Scheduler Thread - 114 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[08:45:30] [Craft Scheduler Thread - 141 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[08:47:29] [Craft Scheduler Thread - 140 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[08:47:29] [Craft Scheduler Thread - 140 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[08:47:29] [Craft Scheduler Thread - 140 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[08:48:28] [RCON Listener #1/INFO]: Thread RCON Client /127.154.169.199 started
+[08:49:29] [RCON Client /127.154.169.199 #3/INFO]: Thread RCON Client /127.154.169.199 shutting down
+[08:55:30] [Craft Scheduler Thread - 161 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:05:30] [Craft Scheduler Thread - 180 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:11:29] [Craft Scheduler Thread - 189 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[09:11:29] [Craft Scheduler Thread - 189 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[09:11:29] [Craft Scheduler Thread - 189 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[09:15:30] [Craft Scheduler Thread - 200 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:25:30] [Craft Scheduler Thread - 220 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:35:29] [Craft Scheduler Thread - 240 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[09:35:29] [Craft Scheduler Thread - 240 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[09:35:29] [Craft Scheduler Thread - 240 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[09:35:30] [Craft Scheduler Thread - 240 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:45:30] [Craft Scheduler Thread - 258 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:55:30] [Craft Scheduler Thread - 277 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[09:56:51] [RCON Listener #1/INFO]: Thread RCON Client /127.235.8.211 started
+[09:58:00] [RCON Client /127.235.8.211 #4/INFO]: Thread RCON Client /127.235.8.211 shutting down
+[09:59:29] [Craft Scheduler Thread - 287 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[09:59:29] [Craft Scheduler Thread - 287 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[09:59:29] [Craft Scheduler Thread - 287 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[10:05:30] [Craft Scheduler Thread - 299 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[10:15:30] [Craft Scheduler Thread - 318 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[10:19:31] [RCON Listener #1/INFO]: Thread RCON Client /127.96.30.39 started
+[10:20:45] [RCON Client /127.96.30.39 #5/INFO]: Thread RCON Client /127.96.30.39 shutting down
+[10:23:29] [Craft Scheduler Thread - 335 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[10:23:29] [Craft Scheduler Thread - 335 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[10:23:29] [Craft Scheduler Thread - 335 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[10:25:30] [Craft Scheduler Thread - 339 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[10:35:30] [Craft Scheduler Thread - 356 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[10:45:30] [Craft Scheduler Thread - 377 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[10:47:29] [Craft Scheduler Thread - 381 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[10:47:29] [Craft Scheduler Thread - 381 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[10:47:29] [Craft Scheduler Thread - 381 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[10:51:27] [RCON Listener #1/INFO]: Thread RCON Client /127.189.86.110 started
+[10:52:30] [RCON Client /127.189.86.110 #6/INFO]: Thread RCON Client /127.189.86.110 shutting down
+[10:55:30] [Craft Scheduler Thread - 397 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:05:30] [Craft Scheduler Thread - 416 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:11:29] [Craft Scheduler Thread - 425 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[11:11:29] [Craft Scheduler Thread - 425 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[11:11:29] [Craft Scheduler Thread - 425 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[11:15:30] [Craft Scheduler Thread - 436 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:19:33] [RCON Listener #1/INFO]: Thread RCON Client /127.10.52.46 started
+[11:20:45] [RCON Client /127.10.52.46 #7/INFO]: Thread RCON Client /127.10.52.46 shutting down
+[11:25:30] [Craft Scheduler Thread - 457 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:34:56] [RCON Listener #1/INFO]: Thread RCON Client /127.202.121.191 started
+[11:35:29] [Craft Scheduler Thread - 470 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[11:35:29] [Craft Scheduler Thread - 470 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[11:35:29] [Craft Scheduler Thread - 470 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[11:35:30] [Craft Scheduler Thread - 470 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:36:00] [RCON Client /127.202.121.191 #8/INFO]: Thread RCON Client /127.202.121.191 shutting down
+[11:45:30] [Craft Scheduler Thread - 496 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:55:30] [Craft Scheduler Thread - 515 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[11:59:29] [Craft Scheduler Thread - 523 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[11:59:29] [Craft Scheduler Thread - 523 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[11:59:29] [Craft Scheduler Thread - 523 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[12:05:30] [Craft Scheduler Thread - 523 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[12:15:30] [Craft Scheduler Thread - 555 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[12:23:29] [Craft Scheduler Thread - 571 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[12:23:29] [Craft Scheduler Thread - 571 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[12:23:29] [Craft Scheduler Thread - 571 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[12:25:30] [Craft Scheduler Thread - 574 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[12:35:30] [Craft Scheduler Thread - 595 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[12:45:30] [Craft Scheduler Thread - 615 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[12:47:29] [Craft Scheduler Thread - 617 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[12:47:29] [Craft Scheduler Thread - 617 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[12:47:29] [Craft Scheduler Thread - 617 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[12:55:30] [Craft Scheduler Thread - 632 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:05:30] [Craft Scheduler Thread - 655 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:11:29] [Craft Scheduler Thread - 666 - HomeSweetHome/INFO]: [HomeSweetHome] Saving all home data...
+[13:11:29] [Craft Scheduler Thread - 666 - HomeSweetHome/INFO]: [HomeSweetHome] Saved 0 homes to database
+[13:11:29] [Craft Scheduler Thread - 666 - HomeSweetHome/INFO]: [HomeSweetHome] Auto-save completed!
+[13:15:30] [Craft Scheduler Thread - 673 - TrollV4/INFO]: [TrollV4] TrollV4 has no update
+[13:20:54] [Server thread/INFO]: Stopping server
+[13:20:54] [Server thread/INFO]: [TrollV4] Disabling TrollV4 v4.5.30
+[13:20:54] [Server thread/INFO]: [PingFix] Disabling PingFix v1.2.0
+[13:20:54] [Server thread/INFO]: [PowerRanks] Disabling PowerRanks v1.10.9R2
+[13:20:54] [Server thread/INFO]: [PowerRanks] Disabled PowerRanks v1.10.9R2
+[13:20:54] [Server thread/INFO]: [CleanPing] Disabling CleanPing v1.7.1
+[13:20:54] [Server thread/INFO]: [CleanPing] Clearing instances...
+[13:20:54] [Server thread/INFO]: [CleanPing] Plugin successfully disabled!
+[13:20:54] [Server thread/INFO]: [CraftControl-RCON] Disabling CraftControl-RCON v1.4.0
+[13:20:54] [Server thread/INFO]: [OneHitOre] Disabling OneHitOre v1.0
+[13:20:54] [Server thread/INFO]: [OneHitOre] OneHitOre has been disabled!
+[13:20:54] [Server thread/INFO]: [dynmap] Disabling dynmap v3.7-SNAPSHOT-968
+[13:20:54] [Server thread/INFO]: [dynmap] Unloaded 11 components.
+[13:20:54] [Server thread/INFO]: [dynmap] Stopping map renderer...
+[13:20:55] [Server thread/INFO]: [dynmap] Disabled
+[13:20:55] [Server thread/INFO]: [voicechat] Disabling voicechat v2.6.6
+[13:20:55] [Server thread/INFO]: [OpenInv] Disabling OpenInv v5.1.2
+[13:20:55] [Server thread/INFO]: [SimpleTpa] Disabling SimpleTpa v8.0
+[13:20:55] [Server thread/INFO]: [SimpleTpa] If you need support contact me at https://discord.gg/SZUkza9
+[13:20:55] [Server thread/INFO]: [SimpleTpa] Simple Tpa has been disabled on version 8.0
+[13:20:55] [Server thread/INFO]: [InstantRestock] Disabling InstantRestock v2.6
+[13:20:55] [Server thread/INFO]: [InstantRestock] Disabled InstantRestock!
+[13:20:55] [Server thread/INFO]: [OnePlayerSleep] Disabling OnePlayerSleep v3.1.16
+[13:20:55] [Server thread/INFO]: [TreeCuter] Disabling TreeCuter vv2.0.1
+[13:20:55] [Server thread/INFO]: [AntiCreeperGrief] Disabling AntiCreeperGrief v1.2
+[13:20:55] [Server thread/INFO]: [AntiCreeperGrief] Anti Creeper Grief Disabled!
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Disabling HomeSweetHome v1.0.0
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Shutting down HomeSweetHome...
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] EconomyManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] GUIManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] TeleportManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Saving all home data...
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Saved 0 homes to database
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] HomeManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] DatabaseManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] MessageManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] ConfigManager shutdown complete.
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] HomeSweetHome has been disabled successfully!
+[13:20:55] [Server thread/INFO]: [HomeSweetHome] Total uptime: 5h 45m
+[13:20:55] [Server thread/INFO]: [BetterTeams] Disabling BetterTeams v4.15.2
+[13:20:55] [Server thread/INFO]: [NoteBlockAPI] Disabling NoteBlockAPI v1.6.3
+[13:20:55] [Server thread/INFO]: [TAB] Disabling TAB v5.2.5
+[13:20:55] [Server thread/INFO]: [TAB] Disabled in 0ms
+[13:20:55] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.9.0
+[13:20:55] [Server thread/INFO]: [LibsDisguises] Disabling LibsDisguises v11.0.11
+[13:20:55] [Server thread/INFO]: [packetevents] Disabling packetevents v2.10.1
+[13:20:55] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.10
+[13:20:55] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.4.0
+[13:20:55] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.9.0-SNAPSHOT
+[13:20:55] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[13:20:55] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[13:20:55] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.5.0
+[13:20:55] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b121-55a85ec)
+[13:20:55] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.5.1
+[13:20:55] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[13:20:55] [Server thread/INFO]: Saving players
+[13:20:55] [Server thread/INFO]: Saving worlds
+[13:20:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 57 entity chunks, 0 poi chunks in world 'world' in 0.01s
+[13:20:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[13:20:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[13:20:55] [WebSocketConnectReadThread-120/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saved 3 block chunks, 19 entity chunks, 0 poi chunks in world 'world_nether' in 0.01s
+[13:20:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[13:20:55] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[13:20:55] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[13:20:55] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[13:20:55] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[13:20:55] [Server thread/INFO]: Flushing Chunk IO
+[13:20:55] [Server thread/INFO]: Closing Thread Pool
+[13:20:55] [Server thread/INFO]: Closing Server
