@@ -7,8 +7,8 @@ Moderator:
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
-  buyCommand: ''
   buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#9d1dff,#e22581]MODERATOR[/gradient]'
   default: false
 Owner:
@@ -20,8 +20,8 @@ Owner:
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
-  buyCommand: ''
   buyDescription: ''
+  buyCommand: ''
   prefix: '&f[&cOWNER&f]'
   default: false
 Youtube:
@@ -33,8 +33,8 @@ Youtube:
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
-  buyCommand: ''
   buyDescription: ''
+  buyCommand: ''
   prefix: '&f[&cYOUTUBE&f]'
   default: false
 Admin:
@@ -46,8 +46,8 @@ Admin:
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
-  buyCommand: ''
   buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#ffff00,#ef3300]ADMIN[/gradient]'
   default: false
 Member:
@@ -59,7 +59,7 @@ Member:
   chatcolor: ''
   buyableRanks: []
   buyCost: 0.0
-  buyCommand: ''
   buyDescription: ''
+  buyCommand: ''
   prefix: '[gradient=#127e00,#3eaf18]MEMBER[/gradient]'
   default: true
