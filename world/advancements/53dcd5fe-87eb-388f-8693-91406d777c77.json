@@ -557,6 +557,7 @@
       "rotten_flesh": "2025-11-13 18:33:47 +0000",
       "cooked_mutton": "2025-11-14 11:49:27 +0000",
       "cooked_beef": "2025-11-13 20:21:48 +0000",
+      "rabbit_stew": "2025-12-04 15:11:42 +0000",
       "porkchop": "2025-11-13 18:26:28 +0000"
     },
     "done": false
@@ -1768,6 +1769,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2025-12-03 09:06:59 +0000"
+    },
+    "done": true
+  },
   "minecraft:husbandry/tame_an_animal": {
     "criteria": {
       "tamed_animal": "2025-12-03 09:10:09 +0000"
@@ -1783,12 +1790,6 @@
   "minecraft:recipes/decorations/black_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_black_dye": "2025-12-03 09:14:30 +0000"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/cauldron": {
-    "criteria": {
-      "has_water_bucket": "2025-12-03 09:06:59 +0000"
     },
     "done": true
   },
@@ -1819,6 +1820,12 @@
   "minecraft:recipes/building_blocks/dye_black_wool": {
     "criteria": {
       "has_needed_dye": "2025-12-03 09:14:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_bowl": "2025-12-04 15:11:42 +0000"
     },
     "done": true
   },
